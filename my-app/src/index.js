@@ -8,6 +8,7 @@ import App from './App';
 //import Home from ".pages/Home"
 import Login from "./pages/Login"
 import NewEvent from "./pages/NewEvent"
+import SignUp from "./pages/SignUp"
 
 //This are our routes
 
@@ -29,6 +30,7 @@ render (
         {/* <Route index element={<Home />} /> */}
         <Route path="Login" element={<Login />} />
         <Route path="addEvent" element={<NewEvent />} />
+        <Route path="signUp" element={<SignUp />} />
       </Route>
     </Routes>
   </BrowserRouter>,

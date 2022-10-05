@@ -29,6 +29,7 @@ function App() {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/login">Login</Link></li>
               <li><Link to="/addEvent">Add Event</Link></li>
+              <li><Link to="/signUp">Sign Up</Link></li>
             </ul>
             <input class="SearchBar" type="text" placeholder="search" id="eventName" />
           </nav>
