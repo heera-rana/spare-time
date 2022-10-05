@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "633d8eb9d716934622154dbb"
+  },
+  "username": "heera",
+  "password": "cookie01"
+},{
+  "_id": {
+    "$oid": "633d8eb9d716934622154dbc"
+  },
+  "username": "maria",
+  "password": "orange_2"
+},{
+  "_id": {
+    "$oid": "633d8eb9d716934622154dbd"
+  },
+  "username": "rachael",
+  "password": "sweet$"
+},{
+  "_id": {
+    "$oid": "633d8eb9d716934622154dbe"
+  },
+  "username": "ryan",
+  "password": "chocolate_4"
+}]

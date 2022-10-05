@@ -20,6 +20,7 @@ import NewEvent from "./pages/NewEvent"
 //     <App />
 //   </BrowserRouter>
 // );
+
 const rootElement = document.getElementById("root");
 render (
   <BrowserRouter>
