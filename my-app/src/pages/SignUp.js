@@ -2,7 +2,16 @@
 import React, {useState} from "react"
 import { useNavigate } from "react-router"
 
+// const dbo = require("./db/connection");
+// var ObjectId = dbo.getObjectId();
+/*
+const db=client.db('school')
+const coursers = db.collection('courses')
+courses.insertOne({name: "Web security"},{err,result)=>{}})
+*/
+
 function SignUp (){
+    
     const [user, setUser] = useState({
         username: "",
         password: ""
@@ -21,8 +30,9 @@ function SignUp (){
 
         const newUser ={ ...user}
 
-        await fetch("http://localhost:3000/signUp", {
+        await fetch("http://localhost:5000/register", {
             method: "POST",
+            mode:"cors",
             headers: {
                 "Content-Type": "application/json"
             },
@@ -35,6 +45,7 @@ function SignUp (){
 
         setUser({ username: "", password: ""})
         navigate("/")
+        // db.users.insert(setUser) 
     }
 
     return (
