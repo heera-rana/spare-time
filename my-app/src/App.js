@@ -10,13 +10,13 @@ function App() {
   const eventName = data.eventName
 
   return (
-    <body>
+    <div>
       <div className="App">
         <header className="App-header">
           <div>
             <h1>Spare Time</h1>
           </div>
-          <div class="burgerMenuContainer">
+          <div className="burgerMenuContainer">
             <img
               src={whiteMenu}
               alt="Menu"
@@ -28,13 +28,16 @@ function App() {
             <ul>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/login">Login</Link></li>
+              <li><Link to="/addEvent">Add Event</Link></li>
+              <li><Link to="/signUp">Sign Up</Link></li>
+              <li><Link to="/events">Events</Link></li>
             </ul>
+            <input className="SearchBar" type="text" placeholder="search" id="eventName" />
           </nav>
         </header>
-        <input class="SearchBar" type="text" placeholder="search" id="eventName" />
       <Outlet/>
       </div>
-    </body>
+    </div>
   );
 }
 
