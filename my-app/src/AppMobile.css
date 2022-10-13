@@ -16,3 +16,12 @@
 nav ul{
   list-style: none;
 }
+
+.burgerMenuContainer {
+  color: #232946;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+}
+

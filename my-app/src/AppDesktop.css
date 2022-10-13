@@ -3,12 +3,36 @@
   }
   
   .App-header {
-    background-color: #5886e2;
+    background-color: #eebbc3;
     /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
     color: white;
+  }
+
+  .h1 {
+    font-size: 50px; 
+    color: #232946 ;
+    font-family: Optima, sans-serif ;
+    font-weight: bold ;
+    text-shadow: 2px 2px #b8c1ec;
+
+  }
+
+  .searchBar {
+    position: absolute;
+    align-items: center;
+    height: 100px; 
+    
+  }
+
+
+  .burgerMenuContainer {
+    color: #232946;
+    position: absolute;
+    top: 0;
+    right: 0;
+
   }
