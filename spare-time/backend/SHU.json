@@ -1,0 +1,24 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "Title ": "Yellow",
+      "Categories": "Evening Events",
+      "Provider/Host": "Zebulen McAlarney",
+      "Time": "21/10/2022 22:21",
+      "Duration(Minutes)": "57",
+      "Price": "�16.58 ",
+      "Description": "Pub quiz"
+    },
+    {
+      "id": "2",
+      "Title ": "Green",
+      "Categories": "Classes and Workshops ",
+      "Provider/Host": "Merv Worsam",
+      "Time": "11/12/2022 05:00",
+      "Duration(Minutes)": "46",
+      "Price": "�4.38 ",
+      "Description": "Beginners French"
+    }
+  ]
+}
