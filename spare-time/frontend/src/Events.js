@@ -1,37 +1,62 @@
-import React, {useState, useEffect} from 'react';
-import './App.css';
+import React from "react";
+// import "./App.css";
+import EventsCollection from "./EventsCollection";
 
-function Events () {
-//     useEffect(() => {
-//         fetchItems();
-//     }, []);
-//     const [items, setItems] = useState([]);
+function Events() {
+  const events = [
+    {
+      id: "1",
+      title: "Yellow",
+      categories: "Evening Events",
+      price: 9.99,
+      date: new Date(2022, 10, 14),
+    },
+    {
+      id: "2",
+      title: "Green",
+      categories: "Classes and Workshops ",
+      price: 25.99,
+      date: new Date(2022, 11, 28),
+    },
+    {
+      id: "3",
+      title: "Red",
+      categories: "Childrens Events",
+      price: 12.99,
+      date: new Date(2022, 10, 19),
+    },
+    {
+      id: "4",
+      title: "Yellow",
+      categories: "Evening Events",
+      price: 18.99,
+      date: new Date(2022, 11, 19),
+    },
+  ];
 
-//     const fetchItems = async () => {
-        
-//     const data = await fetch("https://localhost:3000/events");
-//     const items = await data.json();
-//     console.log(items);
-//     setItems(items);
-// }
+  // const [events, setEvents] = useState([]);
 
-    const [data, setData] = useState(null);
-    fetch("https://localhost:3000/events")
-    .then((res) => {
-if (res.ok) {
-    return res.json();
+  // useEffect(() => {
+  //   const getEvents = async () => {
+  //     const data = await fetch("http://localhost:5000/events");
+  //     if (data) {
+  //       const response = await data.json();
+  //       setEvents(response);
+  //       console.log(events);
+  //     } else {
+  //       console.log("No events found.");
+  //     }
+  //   };
+
+  //   getEvents().catch(console.error);
+  // }, []);
+
+  return (
+    <div className="App">
+      <h1>Collection of Events</h1>
+      <EventsCollection items={events} />
+    </div>
+  );
 }
-    throw new Error("Server says bad response");
-    })
-    .then((res) => setData(res.data))
-    .catch((err) => console.log(err));
-
-    return (
-        <div className = "App">
-            <h1>[data.map((events)]</h1>
-        </div>
-    );
-};
-
 
 export default Events;

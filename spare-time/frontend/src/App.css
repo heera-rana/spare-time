@@ -1,5 +1,5 @@
 body {
-  background-color: #f2f7f5;
+  background-color: #f9f8fc;
 }
 
 .App {
@@ -14,8 +14,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: #ffa8ba;
-  color: #00473e;
+  color: #0e172c;
+  background-color: #fec7d7;
 
 }
 

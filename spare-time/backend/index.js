@@ -31,6 +31,7 @@ MongoClient.connect(
     },
     (err, client) => {
       if (err) {
+        console.log(err);
         return console.log(err)
       }
     
