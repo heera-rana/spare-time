@@ -9,7 +9,8 @@ app.use(bodyParser.json());
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    // the port needs to be changed depending on what port the backend is using
+    origin: "http://localhost:3001",
   })
 );
 
