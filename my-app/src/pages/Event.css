@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+  }
+  .item-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  .card {
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 1em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #90b4ce;
+  }
+  img {
+    height: 200px;
+    display: flex;
+    border-radius: 5px;
+    width: 300px;
+    text-align:left;
+    padding: 10px;
+
+
+    /* width: auto; */
+  }
+
+  
+  
