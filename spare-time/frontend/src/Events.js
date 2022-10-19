@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Events.css";
-// import axios from "axios";
+import "./EventDate.css";
 
 function Events() {
   const [events, setEvents] = useState([]);
