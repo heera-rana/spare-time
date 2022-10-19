@@ -1,0 +1,3442 @@
+[{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03b3"
+  },
+  "id": "1",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Zebulen McAlarney",
+  "time": "Friday, 21 October 2022",
+  "duration(minutes)": "57",
+  "price": "16.58",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03b4"
+  },
+  "id": "2",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Merv Worsam",
+  "time": "Sunday, 11 December 2022",
+  "duration(minutes)": "46",
+  "price": "4.38",
+  "description": "Beginners French"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03b5"
+  },
+  "id": "4",
+  "title": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Shalne Harsum",
+  "time": "Monday, 17 October 2022",
+  "duration(minutes)": "3",
+  "price": "6.78",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03b6"
+  },
+  "id": "11",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Reta Bellee",
+  "time": "Friday, 30 December 2022",
+  "duration(minutes)": "195",
+  "price": "8.24",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03b7"
+  },
+  "id": "13",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Faina Ivanikhin",
+  "time": "Monday, 14 November 2022",
+  "duration(minutes)": "226",
+  "price": "7.64",
+  "description": "Cinema "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03b8"
+  },
+  "id": "15",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Jacinda Geleman",
+  "time": "Tuesday, 8 November 2022",
+  "duration(minutes)": "31",
+  "price": "8.8",
+  "description": "Cocktail making "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03b9"
+  },
+  "id": "19",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Anatollo Clemett",
+  "time": "Monday, 26 December 2022",
+  "duration(minutes)": "33",
+  "price": "15.84",
+  "description": "Open mic night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03ba"
+  },
+  "id": "26",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Bendick Hartup",
+  "time": "Thursday, 8 December 2022",
+  "duration(minutes)": "73",
+  "price": "18.78",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03bb"
+  },
+  "id": "27",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Thorsten By",
+  "time": "Saturday, 5 November 2022",
+  "duration(minutes)": "82",
+  "price": "5.15",
+  "description": "Yoga"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03bc"
+  },
+  "id": "28",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Kath Bendare",
+  "time": "Thursday, 27 October 2022",
+  "duration(minutes)": "69",
+  "price": "15.31",
+  "description": "Comedy club "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03bd"
+  },
+  "id": "29",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Nicolette April",
+  "time": "Saturday, 22 October 2022",
+  "duration(minutes)": "136",
+  "price": "1.41",
+  "description": "Lego build "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03be"
+  },
+  "id": "34",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Marlin Mandeville",
+  "time": "Sunday, 25 December 2022",
+  "duration(minutes)": "177",
+  "price": "13.19",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03bf"
+  },
+  "id": "36",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Dalli Naile",
+  "time": "Saturday, 3 December 2022",
+  "duration(minutes)": "52",
+  "price": "14.41",
+  "description": "Pilates"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03c0"
+  },
+  "id": "39",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Flem Marusic",
+  "time": "Monday, 10 October 2022",
+  "duration(minutes)": "174",
+  "price": "0.09",
+  "description": "Sweaty mama "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03c1"
+  },
+  "id": "46",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Klarika Colum",
+  "time": "Friday, 2 December 2022",
+  "duration(minutes)": "45",
+  "price": "13.61",
+  "description": "Baby opera "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03c2"
+  },
+  "id": "49",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Anthe Langrick",
+  "time": "Tuesday, 1 November 2022",
+  "duration(minutes)": "120",
+  "price": "3.13",
+  "description": "Pub crawl "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03c3"
+  },
+  "id": "50",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Elbertina Aldis",
+  "time": "Saturday, 31 December 2022",
+  "duration(minutes)": "65",
+  "price": "8.13",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03c4"
+  },
+  "id": "56",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Rollie Normanton",
+  "time": "Monday, 24 October 2022",
+  "duration(minutes)": "73",
+  "price": "2.4",
+  "description": "Ghost walk "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03c5"
+  },
+  "id": "59",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Kimmy Wettern",
+  "time": "Sunday, 20 November 2022",
+  "duration(minutes)": "214",
+  "price": "0.63",
+  "description": "Beginners Italian "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03c6"
+  },
+  "id": "61",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Tammara Chantler",
+  "time": "Saturday, 19 November 2022",
+  "duration(minutes)": "197",
+  "price": "10.94",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03c7"
+  },
+  "id": "64",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Samson Tyrie",
+  "time": "Thursday, 8 December 2022",
+  "duration(minutes)": "59",
+  "price": "3.67",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03c8"
+  },
+  "id": "66",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Felicdad Winwood",
+  "time": "Wednesday, 14 December 2022",
+  "duration(minutes)": "144",
+  "price": "17.42",
+  "description": "Soft play "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03c9"
+  },
+  "id": "69",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Kiley Snellman",
+  "time": "Saturday, 29 October 2022",
+  "duration(minutes)": "198",
+  "price": "17.58",
+  "description": "Blobbie Williams Tribute act"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03ca"
+  },
+  "id": "75",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Susy Shiell",
+  "time": "Friday, 16 December 2022",
+  "duration(minutes)": "146",
+  "price": "3.34",
+  "description": "Beginners German "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03cb"
+  },
+  "id": "84",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Patrick Zink",
+  "time": "Saturday, 19 November 2022",
+  "duration(minutes)": "23",
+  "price": "13.91",
+  "description": "Improv Drama Class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03cc"
+  },
+  "id": "90",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Stanislaw Guilbert",
+  "time": "Sunday, 20 November 2022",
+  "duration(minutes)": "52",
+  "price": "15.57",
+  "description": "Paint and Prosecco "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03cd"
+  },
+  "id": "92",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Nani Hembrow",
+  "time": "Sunday, 9 October 2022",
+  "duration(minutes)": "26",
+  "price": "17.14",
+  "description": "5-a-side"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03ce"
+  },
+  "id": "94",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Shaine Bremmer",
+  "time": "Saturday, 26 November 2022",
+  "duration(minutes)": "20",
+  "price": "18.31",
+  "description": "Gym open day "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03cf"
+  },
+  "id": "97",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Deonne Michieli",
+  "time": "Thursday, 13 October 2022",
+  "duration(minutes)": "115",
+  "price": "5.36",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03d0"
+  },
+  "id": "104",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Otes Dugald",
+  "time": "Friday, 21 October 2022",
+  "duration(minutes)": "132",
+  "price": "3.37",
+  "description": "Fake That"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03d1"
+  },
+  "id": "107",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Yard Chastand",
+  "time": "Friday, 9 December 2022",
+  "duration(minutes)": "138",
+  "price": "7.54",
+  "description": "Parent and Child football "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03d2"
+  },
+  "id": "109",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Dal Tamblyn",
+  "time": "Thursday, 15 December 2022",
+  "duration(minutes)": "162",
+  "price": "1.35",
+  "description": "Lez Zepplin"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03d3"
+  },
+  "id": "110",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Cornell Prayer",
+  "time": "Monday, 17 October 2022",
+  "duration(minutes)": "188",
+  "price": "18.11",
+  "description": "Bootcamp"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03d4"
+  },
+  "id": "113",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Tammi Mirfin",
+  "time": "Tuesday, 22 November 2022",
+  "duration(minutes)": "189",
+  "price": "4.27",
+  "description": "Nature walk "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03d5"
+  },
+  "id": "115",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Jessi Hosier",
+  "time": "Thursday, 15 December 2022",
+  "duration(minutes)": "94",
+  "price": "18.07",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03d6"
+  },
+  "id": "119",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Jacquie Hethron",
+  "time": "Friday, 18 November 2022",
+  "duration(minutes)": "214",
+  "price": "4.13",
+  "description": "Paint- a- long "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03d7"
+  },
+  "id": "127",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Michale Necolds",
+  "time": "Wednesday, 23 November 2022",
+  "duration(minutes)": "237",
+  "price": "3.63",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03d8"
+  },
+  "id": "133",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Cosmo Solesbury",
+  "time": "Friday, 14 October 2022",
+  "duration(minutes)": "28",
+  "price": "11.08",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03d9"
+  },
+  "id": "134",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Kristal Matuszinski",
+  "time": "Thursday, 10 November 2022",
+  "duration(minutes)": "142",
+  "price": "17.85",
+  "description": "Sweaty mama"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03da"
+  },
+  "id": "135",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Dwight Tocher",
+  "time": "Tuesday, 11 October 2022",
+  "duration(minutes)": "226",
+  "price": "19.44",
+  "description": "Crochet workshop"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03db"
+  },
+  "id": "138",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Maiga Skittles",
+  "time": "Tuesday, 6 December 2022",
+  "duration(minutes)": "182",
+  "price": "5.49",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03dc"
+  },
+  "id": "140",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Kirstin Halbeard",
+  "time": "Saturday, 24 December 2022",
+  "duration(minutes)": "174",
+  "price": "12.25",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03dd"
+  },
+  "id": "144",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Maddi Ambrogiotti",
+  "time": "Wednesday, 16 November 2022",
+  "duration(minutes)": "73",
+  "price": "11.86",
+  "description": "Chocolate making Class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03de"
+  },
+  "id": "147",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Dannel Jamieson",
+  "time": "Sunday, 27 November 2022",
+  "duration(minutes)": "209",
+  "price": "14.25",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03df"
+  },
+  "id": "151",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Alana Ilieve",
+  "time": "Monday, 5 December 2022",
+  "duration(minutes)": "61",
+  "price": "19.97",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03e0"
+  },
+  "id": "154",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Ivonne Laye",
+  "time": "Sunday, 27 November 2022",
+  "duration(minutes)": "8",
+  "price": "12.19",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03e1"
+  },
+  "id": "155",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Rey Gonnelly",
+  "time": "Friday, 4 November 2022",
+  "duration(minutes)": "138",
+  "price": "2.46",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03e2"
+  },
+  "id": "157",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Peg Zoanetti",
+  "time": "Sunday, 25 December 2022",
+  "duration(minutes)": "216",
+  "price": "14.27",
+  "description": "Park Run "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03e3"
+  },
+  "id": "158",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Kit Yarnton",
+  "time": "Monday, 26 December 2022",
+  "duration(minutes)": "171",
+  "price": "2.75",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03e4"
+  },
+  "id": "159",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Michaelina Laherty",
+  "time": "Sunday, 16 October 2022",
+  "duration(minutes)": "47",
+  "price": "5.45",
+  "description": "The Koronas"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03e5"
+  },
+  "id": "160",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Orsa Strother",
+  "time": "Friday, 18 November 2022",
+  "duration(minutes)": "156",
+  "price": "13.4",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03e6"
+  },
+  "id": "161",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Saundra Phillins",
+  "time": "Monday, 31 October 2022",
+  "duration(minutes)": "231",
+  "price": "1.39",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03e7"
+  },
+  "id": "166",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Rubie Staner",
+  "time": "Tuesday, 13 December 2022",
+  "duration(minutes)": "94",
+  "price": "0.68",
+  "description": "Pasta Masterclass"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03e8"
+  },
+  "id": "173",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Niels Hoodless",
+  "time": "Sunday, 18 December 2022",
+  "duration(minutes)": "95",
+  "price": "5.79",
+  "description": "Seafood and Paella Class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03e9"
+  },
+  "id": "176",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Nora Birrell",
+  "time": "Thursday, 17 November 2022",
+  "duration(minutes)": "43",
+  "price": "2.14",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03ea"
+  },
+  "id": "178",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Elbert Berget",
+  "time": "Thursday, 1 December 2022",
+  "duration(minutes)": "56",
+  "price": "6.23",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03eb"
+  },
+  "id": "185",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Hoyt Morl",
+  "time": "Wednesday, 19 October 2022",
+  "duration(minutes)": "35",
+  "price": "9.67",
+  "description": "Comedy gig "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03ec"
+  },
+  "id": "188",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Lonnard Andrzej",
+  "time": "Tuesday, 6 December 2022",
+  "duration(minutes)": "61",
+  "price": "0.32",
+  "description": "Zed Lepplin "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03ed"
+  },
+  "id": "189",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Hebert Childs",
+  "time": "Tuesday, 6 December 2022",
+  "duration(minutes)": "67",
+  "price": "5.83",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03ee"
+  },
+  "id": "190",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Desdemona Sennett",
+  "time": "Sunday, 30 October 2022",
+  "duration(minutes)": "21",
+  "price": "16.09",
+  "description": "The Koronas"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03ef"
+  },
+  "id": "196",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Roseann Semarke",
+  "time": "Monday, 19 December 2022",
+  "duration(minutes)": "168",
+  "price": "17.02",
+  "description": "Photography composition "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03f0"
+  },
+  "id": "200",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Emmeline Scrinage",
+  "time": "Monday, 31 October 2022",
+  "duration(minutes)": "101",
+  "price": "11.36",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03f1"
+  },
+  "id": "202",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Merrel Phythien",
+  "time": "Sunday, 16 October 2022",
+  "duration(minutes)": "17",
+  "price": "6.99",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03f2"
+  },
+  "id": "203",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Bale Westcar",
+  "time": "Monday, 28 November 2022",
+  "duration(minutes)": "31",
+  "price": "2.17",
+  "description": "Comedy gig "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03f3"
+  },
+  "id": "205",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Sheena Galliard",
+  "time": "Wednesday, 2 November 2022",
+  "duration(minutes)": "87",
+  "price": "18.77",
+  "description": "Zed Lepplin "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03f4"
+  },
+  "id": "211",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Shirleen Titmuss",
+  "time": "Thursday, 1 December 2022",
+  "duration(minutes)": "36",
+  "price": "15.49",
+  "description": "Charity singing contest"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03f5"
+  },
+  "id": "214",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Chane Driscoll",
+  "time": "Wednesday, 16 November 2022",
+  "duration(minutes)": "189",
+  "price": "6.47",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03f6"
+  },
+  "id": "219",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Willyt Paty",
+  "time": "Wednesday, 26 October 2022",
+  "duration(minutes)": "178",
+  "price": "14.89",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03f7"
+  },
+  "id": "220",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Rowland Poncet",
+  "time": "Wednesday, 26 October 2022",
+  "duration(minutes)": "46",
+  "price": "4.98",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03f8"
+  },
+  "id": "224",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Melodie Mogford",
+  "time": "Saturday, 26 November 2022",
+  "duration(minutes)": "212",
+  "price": "0.38",
+  "description": "Comedy club "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03f9"
+  },
+  "id": "230",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Chrissy Nower",
+  "time": "Thursday, 17 November 2022",
+  "duration(minutes)": "48",
+  "price": "18.41",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03fa"
+  },
+  "id": "234",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Brianna Reedyhough",
+  "time": "Tuesday, 6 December 2022",
+  "duration(minutes)": "102",
+  "price": "5.76",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03fb"
+  },
+  "id": "239",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Augustina Caghan",
+  "time": "Sunday, 13 November 2022",
+  "duration(minutes)": "101",
+  "price": "7.39",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03fc"
+  },
+  "id": "240",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Hettie Jordison",
+  "time": "Monday, 28 November 2022",
+  "duration(minutes)": "111",
+  "price": "17",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03fd"
+  },
+  "id": "245",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Adelind Foss",
+  "time": "Sunday, 20 November 2022",
+  "duration(minutes)": "132",
+  "price": "0.51",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03fe"
+  },
+  "id": "248",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Sonya Silk",
+  "time": "Wednesday, 14 December 2022",
+  "duration(minutes)": "225",
+  "price": "18.16",
+  "description": "Resin Jewellery class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae03ff"
+  },
+  "id": "250",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Conroy Tubridy",
+  "time": "Wednesday, 28 December 2022",
+  "duration(minutes)": "195",
+  "price": "19.25",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0400"
+  },
+  "id": "251",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Yves Dechelette",
+  "time": "Friday, 30 December 2022",
+  "duration(minutes)": "55",
+  "price": "18.13",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0401"
+  },
+  "id": "253",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Lavinia Brunsden",
+  "time": "Wednesday, 30 November 2022",
+  "duration(minutes)": "23",
+  "price": "12.79",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0402"
+  },
+  "id": "255",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Kienan Mozzi",
+  "time": "Sunday, 27 November 2022",
+  "duration(minutes)": "234",
+  "price": "6.14",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0403"
+  },
+  "id": "258",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Tamarra Bowshire",
+  "time": "Thursday, 27 October 2022",
+  "duration(minutes)": "21",
+  "price": "6.55",
+  "description": "Rock climbing "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0404"
+  },
+  "id": "262",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Dolley Tabram",
+  "time": "Monday, 21 November 2022",
+  "duration(minutes)": "177",
+  "price": "18.78",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0405"
+  },
+  "id": "269",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Agnella Grafton",
+  "time": "Friday, 18 November 2022",
+  "duration(minutes)": "175",
+  "price": "3.9",
+  "description": "Water Aerobics "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0406"
+  },
+  "id": "282",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Roxie Auten",
+  "time": "Monday, 19 December 2022",
+  "duration(minutes)": "169",
+  "price": "5.4",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0407"
+  },
+  "id": "285",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Hale Ostick",
+  "time": "Monday, 19 December 2022",
+  "duration(minutes)": "221",
+  "price": "13.34",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0408"
+  },
+  "id": "293",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Harmony Sidey",
+  "time": "Friday, 16 December 2022",
+  "duration(minutes)": "146",
+  "price": "18.93",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0409"
+  },
+  "id": "294",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Marius Cowser",
+  "time": "Monday, 5 December 2022",
+  "duration(minutes)": "63",
+  "price": "9.5",
+  "description": "Neighbourhood walkabout "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae040a"
+  },
+  "id": "298",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Margaret Pieter",
+  "time": "Saturday, 10 December 2022",
+  "duration(minutes)": "15",
+  "price": "3.72",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae040b"
+  },
+  "id": "301",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Andros McGuckin",
+  "time": "Wednesday, 7 December 2022",
+  "duration(minutes)": "119",
+  "price": "18.76",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae040c"
+  },
+  "id": "307",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Marijo Netherwood",
+  "time": "Sunday, 30 October 2022",
+  "duration(minutes)": "32",
+  "price": "13.94",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae040d"
+  },
+  "id": "308",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Cosmo Hennemann",
+  "time": "Saturday, 12 November 2022",
+  "duration(minutes)": "134",
+  "price": "4.26",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae040e"
+  },
+  "id": "309",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Floria Wilmott",
+  "time": "Tuesday, 25 October 2022",
+  "duration(minutes)": "97",
+  "price": "7.13",
+  "description": "Dog walking"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae040f"
+  },
+  "id": "317",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Doy Dinwoodie",
+  "time": "Friday, 18 November 2022",
+  "duration(minutes)": "118",
+  "price": "17.7",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0410"
+  },
+  "id": "319",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Massimo Pitt",
+  "time": "Sunday, 16 October 2022",
+  "duration(minutes)": "182",
+  "price": "0.93",
+  "description": "Netball (open)"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0411"
+  },
+  "id": "323",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Tory Copnall",
+  "time": "Sunday, 1 January 2023",
+  "duration(minutes)": "91",
+  "price": "2.57",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0412"
+  },
+  "id": "326",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Jodi Olliar",
+  "time": "Saturday, 22 October 2022",
+  "duration(minutes)": "157",
+  "price": "3.89",
+  "description": "Tennis (open)"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0413"
+  },
+  "id": "329",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Pet Montague",
+  "time": "Tuesday, 20 December 2022",
+  "duration(minutes)": "97",
+  "price": "12.09",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0414"
+  },
+  "id": "330",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Rochette Schruur",
+  "time": "Tuesday, 6 December 2022",
+  "duration(minutes)": "199",
+  "price": "4.25",
+  "description": "Escape room creator "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0415"
+  },
+  "id": "336",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Algernon Dries",
+  "time": "Thursday, 27 October 2022",
+  "duration(minutes)": "190",
+  "price": "5.6",
+  "description": "Sweet morning pastry class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0416"
+  },
+  "id": "338",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Carolyn Nicholson",
+  "time": "Wednesday, 26 October 2022",
+  "duration(minutes)": "12",
+  "price": "18.26",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0417"
+  },
+  "id": "340",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Grannie Dy",
+  "time": "Saturday, 19 November 2022",
+  "duration(minutes)": "42",
+  "price": "16.25",
+  "description": "Badminton (open)"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0418"
+  },
+  "id": "342",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Lorine Guise",
+  "time": "Wednesday, 21 December 2022",
+  "duration(minutes)": "187",
+  "price": "13.68",
+  "description": "Bowling (open)"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0419"
+  },
+  "id": "345",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Delmer Carlton",
+  "time": "Monday, 28 November 2022",
+  "duration(minutes)": "205",
+  "price": "15.47",
+  "description": "Cocktail masterclass"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae041a"
+  },
+  "id": "346",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Jacquie Pechacek",
+  "time": "Saturday, 22 October 2022",
+  "duration(minutes)": "4",
+  "price": "0.63",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae041b"
+  },
+  "id": "349",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Pamella Epsly",
+  "time": "02/12/2022  18.00",
+  "duration(minutes)": "237",
+  "price": "11.07",
+  "description": "Ten pin bowling fun night"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae041c"
+  },
+  "id": "352",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Valry Stollenwerck",
+  "time": "Monday, 10 October 2022",
+  "duration(minutes)": "222",
+  "price": "19.1",
+  "description": "Pub quiz"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae041d"
+  },
+  "id": "353",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Amye Virgoe",
+  "time": "Saturday, 24 December 2022",
+  "duration(minutes)": "209",
+  "price": "0.96",
+  "description": "Ghost walk "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae041e"
+  },
+  "id": "365",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Melisse Grishagin",
+  "time": "Monday, 24 October 2022",
+  "duration(minutes)": "66",
+  "price": "2.11",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae041f"
+  },
+  "id": "368",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Markos Gripton",
+  "time": "Sunday, 9 October 2022",
+  "duration(minutes)": "112",
+  "price": "16.75",
+  "description": "Pole"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0420"
+  },
+  "id": "369",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Monah Sulley",
+  "time": "Thursday, 3 November 2022",
+  "duration(minutes)": "151",
+  "price": "14.6",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0421"
+  },
+  "id": "370",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Lavinia Learmond",
+  "time": "Saturday, 15 October 2022",
+  "duration(minutes)": "153",
+  "price": "13.61",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0422"
+  },
+  "id": "374",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Fidela Weymont",
+  "time": "Wednesday, 23 November 2022",
+  "duration(minutes)": "184",
+  "price": "1.67",
+  "description": "Ghost walk "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0423"
+  },
+  "id": "377",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Wallache Van Dale",
+  "time": "Tuesday, 15 November 2022",
+  "duration(minutes)": "118",
+  "price": "0.87",
+  "description": "Waste Plastic Jewellery making "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0424"
+  },
+  "id": "378",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Zonda Ramalho",
+  "time": "Wednesday, 26 October 2022",
+  "duration(minutes)": "203",
+  "price": "5.31",
+  "description": "Glass blowing "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0425"
+  },
+  "id": "381",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Pattie Sear",
+  "time": "Sunday, 1 January 2023",
+  "duration(minutes)": "73",
+  "price": "4.03",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0426"
+  },
+  "id": "384",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Nanice Barrat",
+  "time": "Saturday, 12 November 2022",
+  "duration(minutes)": "160",
+  "price": "5.94",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0427"
+  },
+  "id": "386",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Roxie Rigler",
+  "time": "Friday, 4 November 2022",
+  "duration(minutes)": "136",
+  "price": "13.9",
+  "description": "Sugar making "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0428"
+  },
+  "id": "390",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Sibella Willacot",
+  "time": "Friday, 30 December 2022",
+  "duration(minutes)": "72",
+  "price": "15.6",
+  "description": "Beginners French"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0429"
+  },
+  "id": "393",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Claudie McMackin",
+  "time": "Saturday, 24 December 2022",
+  "duration(minutes)": "17",
+  "price": "4.95",
+  "description": "Ghost walk "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae042a"
+  },
+  "id": "397",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Eugenie Chalcraft",
+  "time": "Thursday, 17 November 2022",
+  "duration(minutes)": "239",
+  "price": "2.59",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae042b"
+  },
+  "id": "399",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Vale Gussie",
+  "time": "Monday, 21 November 2022",
+  "duration(minutes)": "56",
+  "price": "19.65",
+  "description": "Ghost walk "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae042c"
+  },
+  "id": "404",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Birch Rendle",
+  "time": "Wednesday, 28 December 2022",
+  "duration(minutes)": "221",
+  "price": "2.34",
+  "description": "Music"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae042d"
+  },
+  "id": "405",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Kele Faill",
+  "time": "Wednesday, 26 October 2022",
+  "duration(minutes)": "240",
+  "price": "7.64",
+  "description": "Music"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae042e"
+  },
+  "id": "409",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Zerk Chastan",
+  "time": "Friday, 25 November 2022",
+  "duration(minutes)": "6",
+  "price": "1.97",
+  "description": "Crochet workshop"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae042f"
+  },
+  "id": "410",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Arlette Robberts",
+  "time": "Thursday, 20 October 2022",
+  "duration(minutes)": "75",
+  "price": "10.18",
+  "description": "Chocolate making Class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0430"
+  },
+  "id": "417",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Camilla Gosforth",
+  "time": "Saturday, 5 November 2022",
+  "duration(minutes)": "16",
+  "price": "15.71",
+  "description": "Pasta Masterclass"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0431"
+  },
+  "id": "422",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Alexandra Matusovsky",
+  "time": "Wednesday, 12 October 2022",
+  "duration(minutes)": "189",
+  "price": "16.91",
+  "description": "Ghost walk "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0432"
+  },
+  "id": "424",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Hildagarde Zmitruk",
+  "time": "Tuesday, 15 November 2022",
+  "duration(minutes)": "28",
+  "price": "19.13",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0433"
+  },
+  "id": "427",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Gelya Caws",
+  "time": "Thursday, 29 December 2022",
+  "duration(minutes)": "6",
+  "price": "18.18",
+  "description": "Ghost walk "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0434"
+  },
+  "id": "428",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Malcolm Galero",
+  "time": "Wednesday, 12 October 2022",
+  "duration(minutes)": "215",
+  "price": "17.38",
+  "description": "Ghost walk "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0435"
+  },
+  "id": "430",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Yasmin Reding",
+  "time": "Sunday, 1 January 2023",
+  "duration(minutes)": "18",
+  "price": "16.2",
+  "description": "Music"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0436"
+  },
+  "id": "437",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Barrie Allibon",
+  "time": "Monday, 5 December 2022",
+  "duration(minutes)": "54",
+  "price": "15.16",
+  "description": "Resin Jewellery class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0437"
+  },
+  "id": "438",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Randell Stapford",
+  "time": "Saturday, 22 October 2022",
+  "duration(minutes)": "115",
+  "price": "13.72",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0438"
+  },
+  "id": "442",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Ernst Cacacie",
+  "time": "Wednesday, 7 December 2022",
+  "duration(minutes)": "201",
+  "price": "9.12",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0439"
+  },
+  "id": "447",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Crystal Harlin",
+  "time": "Monday, 19 December 2022",
+  "duration(minutes)": "24",
+  "price": "4.42",
+  "description": "Cocktail making "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae043a"
+  },
+  "id": "452",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Adi Congreave",
+  "time": "Friday, 11 November 2022",
+  "duration(minutes)": "68",
+  "price": "7.04",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae043b"
+  },
+  "id": "453",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Germaine Findlay",
+  "time": "Sunday, 13 November 2022",
+  "duration(minutes)": "101",
+  "price": "1.25",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae043c"
+  },
+  "id": "460",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Jaquith Simants",
+  "time": "Friday, 16 December 2022",
+  "duration(minutes)": "103",
+  "price": "0.78",
+  "description": "Kettlebell (Online class)"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae043d"
+  },
+  "id": "467",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Mareah Caughte",
+  "time": "Thursday, 15 December 2022",
+  "duration(minutes)": "112",
+  "price": "11.6",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae043e"
+  },
+  "id": "468",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Rubie Trasler",
+  "time": "Tuesday, 29 November 2022",
+  "duration(minutes)": "103",
+  "price": "1.93",
+  "description": "Archery"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae043f"
+  },
+  "id": "469",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Rubia Bachnic",
+  "time": "Sunday, 23 October 2022",
+  "duration(minutes)": "213",
+  "price": "17.42",
+  "description": "Ice skating"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0440"
+  },
+  "id": "470",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Carlie Adamec",
+  "time": "Friday, 2 December 2022",
+  "duration(minutes)": "174",
+  "price": "16.51",
+  "description": "Music"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0441"
+  },
+  "id": "472",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Stefanie Prisk",
+  "time": "Tuesday, 20 December 2022",
+  "duration(minutes)": "34",
+  "price": "8.59",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0442"
+  },
+  "id": "477",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Luciano Westcarr",
+  "time": "Thursday, 13 October 2022",
+  "duration(minutes)": "15",
+  "price": "13.7",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0443"
+  },
+  "id": "482",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Tillie Lyle",
+  "time": "Wednesday, 19 October 2022",
+  "duration(minutes)": "16",
+  "price": "12.41",
+  "description": "Cocktail making "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0444"
+  },
+  "id": "484",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Washington Dawidowitz",
+  "time": "Monday, 7 November 2022",
+  "duration(minutes)": "36",
+  "price": "5.75",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0445"
+  },
+  "id": "485",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Shaina Giraldon",
+  "time": "Wednesday, 14 December 2022",
+  "duration(minutes)": "31",
+  "price": "18.05",
+  "description": "Beginners French"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0446"
+  },
+  "id": "489",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Hillary Harce",
+  "time": "Tuesday, 20 December 2022",
+  "duration(minutes)": "155",
+  "price": "18.04",
+  "description": "Beginners Italian "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0447"
+  },
+  "id": "490",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Manfred Rousby",
+  "time": "Thursday, 29 December 2022",
+  "duration(minutes)": "93",
+  "price": "6.9",
+  "description": "Beginners German "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0448"
+  },
+  "id": "495",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Amalee Stollenhof",
+  "time": "Saturday, 19 November 2022",
+  "duration(minutes)": "96",
+  "price": "6.36",
+  "description": "Music"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0449"
+  },
+  "id": "496",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Kristyn Opdenort",
+  "time": "Friday, 16 December 2022",
+  "duration(minutes)": "138",
+  "price": "15.15",
+  "description": "Music"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae044a"
+  },
+  "id": "498",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Orville Dunridge",
+  "time": "Wednesday, 19 October 2022",
+  "duration(minutes)": "240",
+  "price": "2.95",
+  "description": "Sensory class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae044b"
+  },
+  "id": "503",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Augusta Baldini",
+  "time": "Saturday, 31 December 2022",
+  "duration(minutes)": "3",
+  "price": "7.85",
+  "description": "Music"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae044c"
+  },
+  "id": "508",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Roderigo Toward",
+  "time": "Saturday, 3 December 2022",
+  "duration(minutes)": "184",
+  "price": "3.61",
+  "description": "Chocolate making Class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae044d"
+  },
+  "id": "510",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Tracey Thurman",
+  "time": "Monday, 26 December 2022",
+  "duration(minutes)": "51",
+  "price": "8.39",
+  "description": "Nature walk "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae044e"
+  },
+  "id": "513",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Humbert McAllister",
+  "time": "Saturday, 15 October 2022",
+  "duration(minutes)": "54",
+  "price": "15.78",
+  "description": "Cocktail making "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae044f"
+  },
+  "id": "516",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Kiley Pow",
+  "time": "Tuesday, 29 November 2022",
+  "duration(minutes)": "203",
+  "price": "19.22",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0450"
+  },
+  "id": "517",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Trescha Ismead",
+  "time": "Monday, 17 October 2022",
+  "duration(minutes)": "23",
+  "price": "0.99",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0451"
+  },
+  "id": "518",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Jenifer Stritton",
+  "time": "Wednesday, 12 October 2022",
+  "duration(minutes)": "163",
+  "price": "16.71",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0452"
+  },
+  "id": "521",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Grace Antic",
+  "time": "Thursday, 17 November 2022",
+  "duration(minutes)": "149",
+  "price": "1.47",
+  "description": "Nature walk "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0453"
+  },
+  "id": "530",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Gerladina Stallan",
+  "time": "Friday, 30 December 2022",
+  "duration(minutes)": "18",
+  "price": "1.29",
+  "description": "Nature walk "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0454"
+  },
+  "id": "533",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Patric Alen",
+  "time": "Tuesday, 20 December 2022",
+  "duration(minutes)": "78",
+  "price": "16.18",
+  "description": "Nature walk "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0455"
+  },
+  "id": "535",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Ancell MacKim",
+  "time": "Tuesday, 25 October 2022",
+  "duration(minutes)": "9",
+  "price": "7.61",
+  "description": "Cocktail masterclass"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0456"
+  },
+  "id": "537",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Corena Craythorn",
+  "time": "Monday, 12 December 2022",
+  "duration(minutes)": "148",
+  "price": "11.49",
+  "description": "Waste Plastic Jewellery making "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0457"
+  },
+  "id": "538",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Vivi Corsan",
+  "time": "Friday, 16 December 2022",
+  "duration(minutes)": "111",
+  "price": "0.43",
+  "description": "Glass blowing "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0458"
+  },
+  "id": "539",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Bendite Hearley",
+  "time": "Thursday, 17 November 2022",
+  "duration(minutes)": "54",
+  "price": "15.83",
+  "description": "Cocktail making "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0459"
+  },
+  "id": "540",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Kordula Farr",
+  "time": "Sunday, 18 December 2022",
+  "duration(minutes)": "132",
+  "price": "19.05",
+  "description": "Soft play "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae045a"
+  },
+  "id": "542",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Ginger Ratcliff",
+  "time": "Tuesday, 20 December 2022",
+  "duration(minutes)": "114",
+  "price": "13.19",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae045b"
+  },
+  "id": "544",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Timi Welfair",
+  "time": "Sunday, 11 December 2022",
+  "duration(minutes)": "112",
+  "price": "4.55",
+  "description": "Cocktail making "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae045c"
+  },
+  "id": "546",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Phillis Arrighi",
+  "time": "Tuesday, 27 December 2022",
+  "duration(minutes)": "70",
+  "price": "14.48",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae045d"
+  },
+  "id": "548",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Tallia Gallimore",
+  "time": "Tuesday, 27 December 2022",
+  "duration(minutes)": "46",
+  "price": "15.24",
+  "description": "Beginners Pilates"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae045e"
+  },
+  "id": "549",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Goldy Joblin",
+  "time": "Sunday, 25 December 2022",
+  "duration(minutes)": "40",
+  "price": "6",
+  "description": "Music"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae045f"
+  },
+  "id": "551",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Nikki MacCarlich",
+  "time": "Tuesday, 18 October 2022",
+  "duration(minutes)": "43",
+  "price": "11.22",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0460"
+  },
+  "id": "552",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Annabelle Thackeray",
+  "time": "Sunday, 30 October 2022",
+  "duration(minutes)": "240",
+  "price": "14.31",
+  "description": "Music"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0461"
+  },
+  "id": "554",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Nanete Antonsson",
+  "time": "Saturday, 19 November 2022",
+  "duration(minutes)": "40",
+  "price": "1.62",
+  "description": "Music"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0462"
+  },
+  "id": "560",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Elvin Espadas",
+  "time": "Monday, 26 December 2022",
+  "duration(minutes)": "168",
+  "price": "12.05",
+  "description": "Card house building "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0463"
+  },
+  "id": "563",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Killian Methley",
+  "time": "Saturday, 22 October 2022",
+  "duration(minutes)": "73",
+  "price": "8.76",
+  "description": "Seafood and Paella Class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0464"
+  },
+  "id": "565",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Marmaduke Hanton",
+  "time": "Sunday, 13 November 2022",
+  "duration(minutes)": "59",
+  "price": "19.12",
+  "description": "Open Mic night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0465"
+  },
+  "id": "568",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Ronnie O'Dunniom",
+  "time": "Friday, 30 December 2022",
+  "duration(minutes)": "171",
+  "price": "7.71",
+  "description": "Basic Photography "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0466"
+  },
+  "id": "569",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Loretta Dimond",
+  "time": "Friday, 9 December 2022",
+  "duration(minutes)": "33",
+  "price": "9.15",
+  "description": "Cocktail making "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0467"
+  },
+  "id": "586",
+  "title ": "Blue",
+  "categories": "Sports and Fitness",
+  "provider": "Tawsha Ibbott",
+  "time": "Saturday, 5 November 2022",
+  "duration(minutes)": "171",
+  "price": "19.45",
+  "description": "Wreath making (Live stream)"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0468"
+  },
+  "id": "587",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Brennan Fullbrook",
+  "time": "Monday, 14 November 2022",
+  "duration(minutes)": "127",
+  "price": "15.97",
+  "description": "Soft play "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0469"
+  },
+  "id": "592",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Wash Swire",
+  "time": "Sunday, 6 November 2022",
+  "duration(minutes)": "8",
+  "price": "7.7",
+  "description": "Sweet morning pastry class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae046a"
+  },
+  "description": "Cocktail masterclass"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae046b"
+  },
+  "id": "602",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Perice Trever",
+  "time": "26/12/2022 18:56",
+  "duration(minutes)": "35",
+  "price": "£9.99",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae046c"
+  },
+  "id": "617",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Vincents Doerren",
+  "time": "09/12/2022 02:45",
+  "duration(minutes)": "84",
+  "price": "£6.31",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae046d"
+  },
+  "id": "624",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Hali Povlsen",
+  "time": "30/11/2022 07:08",
+  "duration(minutes)": "136",
+  "price": "£14.16",
+  "description": "Sugar making "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae046e"
+  },
+  "id": "625",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Woodie Croxon",
+  "time": "09/11/2022 13:05",
+  "duration(minutes)": "171",
+  "price": "£11.16",
+  "description": "Soft play "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae046f"
+  },
+  "id": "627",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Augusta Kingshott",
+  "time": "23/10/2022 19:55",
+  "duration(minutes)": "67",
+  "price": "£16.63",
+  "description": "Pasta Masterclass"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0470"
+  },
+  "id": "637",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Eydie Matysik",
+  "time": "21/10/2022 02:36",
+  "duration(minutes)": "95",
+  "price": "£11.18",
+  "description": "Open Mic night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0471"
+  },
+  "id": "638",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Gert Queree",
+  "time": "13/10/2022 09:07",
+  "duration(minutes)": "221",
+  "price": "£18.42",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0472"
+  }
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0473"
+  },
+  "id": "644",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Scotty Van Leeuwen",
+  "time": "15/10/2022 11:32",
+  "duration(minutes)": "89",
+  "price": "£16.25",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0474"
+  },
+  "id": "645",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Jermayne Strettle",
+  "time": "19/10/2022 11:54",
+  "duration(minutes)": "186",
+  "price": "£6.08",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0475"
+  },
+  "id": "646",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Zabrina Choulerton",
+  "time": "31/12/2022 02:39",
+  "duration(minutes)": "72",
+  "price": "£14.11",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0476"
+  },
+  "id": "648",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Ebony Putnam",
+  "time": "13/10/2022 09:51",
+  "duration(minutes)": "131",
+  "price": "£17.12",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0477"
+  },
+  "id": "649",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Jamey Albiston",
+  "time": "15/12/2022 10:54",
+  "duration(minutes)": "185",
+  "price": "£5.26",
+  "description": "Cake making "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0478"
+  },
+  "id": "651",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Janetta Roly",
+  "time": "16/10/2022 14:48",
+  "duration(minutes)": "114",
+  "price": "£3.39",
+  "description": "Open Mic night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0479"
+  },
+  "id": "653",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Sallie Garrique",
+  "time": "14/11/2022 23:12",
+  "duration(minutes)": "211",
+  "price": "£3.01",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae047a"
+  },
+  "id": "661",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Lorna Hammatt",
+  "time": "06/12/2022 23:09",
+  "duration(minutes)": "133",
+  "price": "£5.77",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae047b"
+  },
+  "id": "662",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Hollis Thaw",
+  "time": "06/12/2022 21:01",
+  "duration(minutes)": "90",
+  "price": "£7.55",
+  "description": "Open Mic night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae047c"
+  }
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae047d"
+  },
+  "id": "667",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Mathilde Davioud",
+  "time": "11/11/2022 18:32",
+  "duration(minutes)": "179",
+  "price": "£18.55",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae047e"
+  },
+  "id": "669",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Josephina Darleston",
+  "time": "22/10/2022 06:56",
+  "duration(minutes)": "236",
+  "price": "£0.12",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae047f"
+  },
+  "id": "670",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Lanie Jeffes",
+  "time": "14/11/2022 08:47",
+  "duration(minutes)": "109",
+  "price": "£4.16",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0480"
+  },
+  "id": "673",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Malinde Holley",
+  "time": "27/12/2022 08:59",
+  "duration(minutes)": "237",
+  "price": "£6.59",
+  "description": "Soft play "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0481"
+  },
+  "id": "680",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Zena Machent",
+  "time": "11/12/2022 08:16",
+  "duration(minutes)": "122",
+  "price": "£8.05",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0482"
+  },
+  "id": "686",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Aline Rucklidge",
+  "time": "27/12/2022 00:43",
+  "duration(minutes)": "170",
+  "price": "£17.61",
+  "description": "Knitting workshop "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0483"
+  },
+  "id": "694",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Marika Bursell",
+  "time": "26/11/2022 22:33",
+  "duration(minutes)": "237",
+  "price": "£12.10",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0484"
+  },
+  "id": "696",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Joella MacNeill",
+  "time": "15/10/2022 03:32",
+  "duration(minutes)": "218",
+  "price": "£13.09",
+  "description": "Lego build "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0485"
+  },
+  "id": "701",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Hillary Klehn",
+  "time": "12/10/2022 01:21",
+  "duration(minutes)": "118",
+  "price": "£19.31",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0486"
+  },
+  "id": "702",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Nealy Jewkes",
+  "time": "13/10/2022 20:45",
+  "duration(minutes)": "152",
+  "price": "£0.29",
+  "description": "Soft play "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0487"
+  },
+  "id": "704",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Jamesy Pattullo",
+  "time": "22/10/2022 21:01",
+  "duration(minutes)": "217",
+  "price": "£16.22",
+  "description": "Soft play "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0488"
+  },
+  "id": "708",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Lionello Coil",
+  "time": "08/11/2022 07:40",
+  "duration(minutes)": "11",
+  "price": "£18.34",
+  "description": "Open Mic night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0489"
+  },
+  "id": "710",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Edwin McEvoy",
+  "time": "27/11/2022 07:35",
+  "duration(minutes)": "227",
+  "price": "£18.83",
+  "description": "Creative writing Workshop"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae048a"
+  },
+  "id": "712",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Melodee Tooth",
+  "time": "17/10/2022 02:25",
+  "duration(minutes)": "239",
+  "price": "£4.14",
+  "description": "Horror writing Workshop "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae048b"
+  },
+  "id": "713",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Corina Barbery",
+  "time": "14/11/2022 14:01",
+  "duration(minutes)": "169",
+  "price": "£13.76",
+  "description": "Open Mic night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae048c"
+  },
+  "id": "721",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Stacia Rubinchik",
+  "time": "05/11/2022 16:28",
+  "duration(minutes)": "100",
+  "price": "£18.57",
+  "description": "Poetry writing Workshop"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae048d"
+  },
+  "id": "722",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Ruben Czadla",
+  "time": "18/10/2022 22:01",
+  "duration(minutes)": "219",
+  "price": "£11.19",
+  "description": "Open Mic night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae048e"
+  },
+  "id": "732",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Sammie Balharry",
+  "time": "28/10/2022 09:45",
+  "duration(minutes)": "232",
+  "price": "£3.15",
+  "description": "Open Mic night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae048f"
+  },
+  "id": "738",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Shea McKelvey",
+  "time": "21/12/2022 04:55",
+  "duration(minutes)": "14",
+  "price": "£13.01",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0490"
+  },
+  "id": "740",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Jobye Gutsell",
+  "time": "08/12/2022 14:53",
+  "duration(minutes)": "129",
+  "price": "£11.21",
+  "description": "Open Mic night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0491"
+  }
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0492"
+  },
+  "id": "743",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Olimpia Nutten",
+  "time": "17/11/2022 08:34",
+  "duration(minutes)": "225",
+  "price": "£9.49",
+  "description": "Open Mic night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0493"
+  },
+  "id": "750",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Clarance Andreasson",
+  "time": "19/10/2022 11:55",
+  "duration(minutes)": "212",
+  "price": "£17.76",
+  "description": "Open Mic night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0494"
+  },
+  "id": "755",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Sebastien Coneau",
+  "time": "21/10/2022 21:15",
+  "duration(minutes)": "171",
+  "price": "£3.72",
+  "description": "Baby opera "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0495"
+  }
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0496"
+  },
+  "id": "765",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Hogan Spavon",
+  "time": "26/11/2022 01:05",
+  "duration(minutes)": "163",
+  "price": "£9.74",
+  "description": "Open Mic night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0497"
+  },
+  "id": "769",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Neddie Flattman",
+  "time": "30/11/2022 03:42",
+  "duration(minutes)": "13",
+  "price": "£9.37",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0498"
+  },
+  "id": "773",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Timotheus Heers",
+  "time": "17/12/2022 03:10",
+  "duration(minutes)": "228",
+  "price": "£0.10",
+  "description": "Open Mic night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae0499"
+  },
+  "id": "776",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Hort Barwise",
+  "time": "23/12/2022 03:14",
+  "duration(minutes)": "94",
+  "price": "£9.51",
+  "description": "Baby opera "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae049a"
+  },
+  "id": "778",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Modestia Hosier",
+  "time": "12/10/2022 22:18",
+  "duration(minutes)": "109",
+  "price": "£5.58",
+  "description": "Baby opera "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae049b"
+  },
+  "id": "779",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Geno Davison",
+  "time": "14/12/2022 06:31",
+  "duration(minutes)": "192",
+  "price": "£8.92",
+  "description": "Drop in wood working class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae049c"
+  },
+  "id": "780",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Joanne Tatters",
+  "time": "16/12/2022 22:38",
+  "duration(minutes)": "198",
+  "price": "£5.55",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae049d"
+  },
+  "id": "782",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Garey Jinda",
+  "time": "10/11/2022 03:08",
+  "duration(minutes)": "73",
+  "price": "£2.47",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae049e"
+  },
+  "id": "783",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Tanhya Ivanichev",
+  "time": "28/10/2022 20:51",
+  "duration(minutes)": "35",
+  "price": "£14.06",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae049f"
+  },
+  "id": "786",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Goldia McManus",
+  "time": "30/10/2022 12:10",
+  "duration(minutes)": "233",
+  "price": "£15.47",
+  "description": "Baby opera "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04a0"
+  },
+  "id": "789",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Cazzie Skeeles",
+  "time": "14/11/2022 15:52",
+  "duration(minutes)": "7",
+  "price": "£19.58",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04a1"
+  },
+  "id": "791",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Gerard Harlowe",
+  "time": "30/10/2022 12:55",
+  "duration(minutes)": "168",
+  "price": "£19.72",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04a2"
+  },
+  "id": "793",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Mia Papaminas",
+  "time": "07/12/2022 01:41",
+  "duration(minutes)": "166",
+  "price": "£18.95",
+  "description": "Paint and Sip "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04a3"
+  },
+  "id": "795",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Harlene Wardlaw",
+  "time": "05/12/2022 05:42",
+  "duration(minutes)": "171",
+  "price": "£19.46",
+  "description": "Parent and Child football "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04a4"
+  },
+  "id": "797",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Adamo Abbotts",
+  "time": "06/11/2022 07:22",
+  "duration(minutes)": "88",
+  "price": "£5.39",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04a5"
+  },
+  "id": "801",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Emmeline Hustler",
+  "time": "22/12/2022 21:21",
+  "duration(minutes)": "142",
+  "price": "£14.49",
+  "description": "Parent and Child football "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04a6"
+  },
+  "id": "802",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Darius Frankcomb",
+  "time": "18/10/2022 15:32",
+  "duration(minutes)": "97",
+  "price": "£13.49",
+  "description": "Cocktail masterclass"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04a7"
+  },
+  "id": "803",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Dari Waltering",
+  "time": "23/11/2022 12:15",
+  "duration(minutes)": "157",
+  "price": "£15.37",
+  "description": "Lego build "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04a8"
+  },
+  "id": "808",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Dalt Kitchin",
+  "time": "16/11/2022 12:33",
+  "duration(minutes)": "56",
+  "price": "£12.14",
+  "description": "Glass blowing "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04a9"
+  },
+  "id": "809",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Lance MacGhee",
+  "time": "24/12/2022 21:34",
+  "duration(minutes)": "15",
+  "price": "£14.13",
+  "description": "Parent and Child football "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04aa"
+  },
+  "id": "813",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Seamus Cogar",
+  "time": "12/10/2022 19:05",
+  "duration(minutes)": "75",
+  "price": "£10.35",
+  "description": "Lego build "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04ab"
+  },
+  "id": "818",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Andy Strettle",
+  "time": "14/11/2022 12:16",
+  "duration(minutes)": "207",
+  "price": "£0.04",
+  "description": "Pasta Masterclass"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04ac"
+  },
+  "id": "826",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Bjorn Boeter",
+  "time": "24/10/2022 17:56",
+  "duration(minutes)": "93",
+  "price": "£11.21",
+  "description": "Resin Jewellery class"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04ad"
+  },
+  "id": "829",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Ciel Poetz",
+  "time": "31/12/2022 07:48",
+  "duration(minutes)": "191",
+  "price": "£8.14",
+  "description": "Lego build "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04ae"
+  },
+  "id": "831",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Lance Jerisch",
+  "time": "12/12/2022 05:29",
+  "duration(minutes)": "180",
+  "price": "£19.39",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04af"
+  },
+  "id": "832",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Jud Lindhe",
+  "time": "22/11/2022 03:41",
+  "duration(minutes)": "186",
+  "price": "£16.11",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04b0"
+  },
+  "id": "834",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Marybelle Hempel",
+  "time": "26/11/2022 12:37",
+  "duration(minutes)": "193",
+  "price": "£9.21",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04b1"
+  }
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04b2"
+  },
+  "id": "837",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Koressa O'Grada",
+  "time": "30/11/2022 15:57",
+  "duration(minutes)": "225",
+  "price": "£7.43",
+  "description": "Beginners Thai cookery "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04b3"
+  },
+  "id": "838",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Rourke Cranham",
+  "time": "21/11/2022 14:38",
+  "duration(minutes)": "161",
+  "price": "£15.46",
+  "description": "Board game night "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04b4"
+  },
+  "id": "840",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Sadie Abrahams",
+  "time": "30/10/2022 19:53",
+  "duration(minutes)": "77",
+  "price": "£6.27",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04b5"
+  },
+  "id": "842",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Sallee Dittson",
+  "time": "26/11/2022 08:15",
+  "duration(minutes)": "107",
+  "price": "£12.27",
+  "description": "Cinema "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04b6"
+  },
+  "id": "852",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Merlina Klesl",
+  "time": "17/12/2022 05:15",
+  "duration(minutes)": "169",
+  "price": "£11.62",
+  "description": "Cinema "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04b7"
+  },
+  "id": "853",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Hans Urwin",
+  "time": "20/11/2022 06:42",
+  "duration(minutes)": "116",
+  "price": "£19.16",
+  "description": "Greek food workshop "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04b8"
+  },
+  "id": "859",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Alberta Abbett",
+  "time": "15/11/2022 18:47",
+  "duration(minutes)": "27",
+  "price": "£12.50",
+  "description": "Create your own doll "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04b9"
+  },
+  "id": "861",
+  "title ": "Green",
+  "categories": "Classes and Workshops ",
+  "provider": "Francesca Coldham",
+  "time": "16/12/2022 05:21",
+  "duration(minutes)": "168",
+  "price": "£10.46",
+  "description": "Chinese food for beginners"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04ba"
+  },
+  "id": "867",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Donal Lytell",
+  "time": "30/11/2022 16:22",
+  "duration(minutes)": "40",
+  "price": "£14.74",
+  "description": "Parent and Child football "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04bb"
+  },
+  "id": "868",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Byrle Hursthouse",
+  "time": "28/11/2022 19:16",
+  "duration(minutes)": "222",
+  "price": "£7.26",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04bc"
+  },
+  "id": "873",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Clemmy Spire",
+  "time": "05/11/2022 01:07",
+  "duration(minutes)": "173",
+  "price": "£8.67",
+  "description": "Lego build "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04bd"
+  },
+  "id": "876",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Debee Manley",
+  "time": "16/10/2022 01:05",
+  "duration(minutes)": "215",
+  "price": "£10.42",
+  "description": "Cinema "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04be"
+  },
+  "id": "894",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Tommi Almond",
+  "time": "15/10/2022 14:58",
+  "duration(minutes)": "153",
+  "price": "£16.90",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04bf"
+  }
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04c0"
+  },
+  "id": "901",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Helsa Cattow",
+  "time": "23/11/2022 16:30",
+  "duration(minutes)": "51",
+  "price": "£6.29",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04c1"
+  },
+  "id": "904",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Saw Watting",
+  "time": "25/11/2022 18:57",
+  "duration(minutes)": "60",
+  "price": "£10.60",
+  "description": "Cinema "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04c2"
+  },
+  "id": "907",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Crosby Ellerbeck",
+  "time": "25/10/2022 17:46",
+  "duration(minutes)": "47",
+  "price": "£15.80",
+  "description": "Lego build "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04c3"
+  },
+  "id": "914",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Tessi Woofendell",
+  "time": "16/12/2022 02:19",
+  "duration(minutes)": "175",
+  "price": "£3.72",
+  "description": "Cinema "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04c4"
+  },
+  "id": "917",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Pace Micheau",
+  "time": "08/11/2022 10:26",
+  "duration(minutes)": "47",
+  "price": "£7.87",
+  "description": "Cinema "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04c5"
+  }
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04c6"
+  },
+  "id": "928",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Rosemary Lauchlan",
+  "time": "11/11/2022 16:47",
+  "duration(minutes)": "82",
+  "price": "£4.90",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04c7"
+  },
+  "id": "929",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Micheil Whifen",
+  "time": "25/10/2022 19:36",
+  "duration(minutes)": "129",
+  "price": "£0.08",
+  "description": "Cinema "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04c8"
+  },
+  "id": "932",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Juli Peasegod",
+  "time": "06/12/2022 10:01",
+  "duration(minutes)": "154",
+  "price": "£2.02",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04c9"
+  },
+  "id": "933",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Valentine Dilleway",
+  "time": "08/12/2022 03:18",
+  "duration(minutes)": "8",
+  "price": "£6.71",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04ca"
+  },
+  "id": "934",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Galen Dorgon",
+  "time": "21/10/2022 03:32",
+  "duration(minutes)": "2",
+  "price": "£2.22",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04cb"
+  }
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04cc"
+  },
+  "id": "942",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Rollin Swash",
+  "time": "13/10/2022 19:12",
+  "duration(minutes)": "134",
+  "price": "£2.74",
+  "description": "Cinema "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04cd"
+  }
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04ce"
+  }
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04cf"
+  },
+  "id": "947",
+  "title ": "Orange",
+  "categories": "Music Events ",
+  "provider": "Lilas Gillie",
+  "time": "31/12/2022 02:33",
+  "duration(minutes)": "225",
+  "price": "£6.53",
+  "description": "Concert"
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04d0"
+  },
+  "id": "951",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Nellie Jeffryes",
+  "time": "26/11/2022 08:33",
+  "duration(minutes)": "111",
+  "price": "£11.23",
+  "description": "Lego build "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04d1"
+  },
+  "id": "952",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Blondy Axelby",
+  "time": "30/11/2022 04:30",
+  "duration(minutes)": "104",
+  "price": "£12.95",
+  "description": "Parent and Child football "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04d2"
+  }
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04d3"
+  },
+  "id": "957",
+  "title ": "Purple",
+  "categories": "Misc",
+  "provider": "Modestia Leroy",
+  "time": "18/10/2022 06:58",
+  "duration(minutes)": "190",
+  "price": "£1.10",
+  "description": "Lego build "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04d4"
+  },
+  "id": "968",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Mauricio Filintsev",
+  "time": "17/10/2022 15:36",
+  "duration(minutes)": "192",
+  "price": "£13.96",
+  "description": "Parent and Child football "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04d5"
+  }
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04d6"
+  },
+  "id": "981",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Dulcine Karpf",
+  "time": "29/10/2022 01:59",
+  "duration(minutes)": "70",
+  "price": "£3.61",
+  "description": "Parent and Child football "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04d7"
+  },
+  "id": "991",
+  "title ": "Red",
+  "categories": "Childrens Events ",
+  "provider": "Temple Hatherell",
+  "time": "29/11/2022 23:35",
+  "duration(minutes)": "56",
+  "price": "£17.85",
+  "description": "Parent and Child football "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04d8"
+  },
+  "id": "992",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Genni Beamish",
+  "time": "20/12/2022 08:02",
+  "duration(minutes)": "80",
+  "price": "£13.52",
+  "description": "Cinema "
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04d9"
+  }
+},{
+  "_id": {
+    "$oid": "634f14367696f0f2d9ae04da"
+  },
+  "id": "999",
+  "title ": "Yellow",
+  "categories": "Evening Events",
+  "provider": "Mozes Millard",
+  "time": "16/10/2022 02:23",
+  "duration(minutes)": "26",
+  "price": "£19.51",
+  "description": "Cinema "
+}]

@@ -23,14 +23,18 @@ function Events() {
 
   return (
     <div className="App">
-      <h1>Collection of Events</h1>
+      <h2>Collection of Events</h2>
       <div className="item-container">
         {events.map((event) => (
           <div className="card" key={event.id}>
-            <h3>{event.Title}</h3>
-            <p>{event.Categories}</p>
-            <p>{event.Time}</p>
-            <p>{event.Price}</p>
+            <img src={event.image} alt="" />
+            <h3>{event.title}</h3>
+            <p>{event.categories}</p>
+            <p>{event.time}</p>
+            <p>{event.provider}</p>
+            <p>{event.duration}</p>
+            <p>£{event.price}</p>
+            <p>{event.description}</p>
           </div>
         ))}
       </div>
