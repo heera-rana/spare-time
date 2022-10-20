@@ -22,11 +22,19 @@
   }
 
   .searchBar {
-    position: absolute;
-    align-items: center;
-    height: 100px; 
+    position:relative;  
+    left:0%;
+    top:25%;
+    width:30%;  
     
   }
+
+  li {
+    display: inline;
+    border-right: 1px solid #0e172c;
+    padding: 6px;
+
+    }
 
 
   .burgerMenuContainer {
