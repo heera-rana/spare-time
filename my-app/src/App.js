@@ -36,17 +36,16 @@ function App() {
             </ul>
           </nav>
         </header>
-    <div>
-      <body>
-        <div class="Container">
-          <div class="headerContainer">   
-          </div>
-          <main>
-            <div>
-              <h1>Welcome</h1>
-            </div>
-            <div Class="eventImages">
-              <div>
+      <div>
+            <div class="Container">
+              <div class="headerContainer">   
+      </div>
+      <main>
+        <div>
+           <h1>Welcome</h1>
+        </div>
+        <div Class="eventImages">
+          <div>
                 <div><img src= "eventImages/Class.jpg" alt= "Class"></img></div>
                 <div><img src= "eventImages/Fitness.jpg" alt= "Fitness"></img></div>
                 <div><img src= "eventImages/Random.jpg" alt= "Misc"></img></div>
@@ -55,15 +54,11 @@ function App() {
               </div>
             </div>
           </main>
-        </div>
-      </body>
-      
-      </div>
+		  </div>
+	  </div>
+       </div>
       <Outlet/>
       </div>
-    </div>
-  
-    
   );
 }
 
