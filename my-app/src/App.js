@@ -4,6 +4,7 @@ import data from "./events.json"
 import { Outlet, Link } from "react-router-dom";
 import whiteMenu from "./images/whiteMenu.svg";
 
+
 //this is our landing page
 function App() {
 
@@ -23,12 +24,7 @@ function App() {
             <button>Click me</button>
             </div>
           <div className="burgerMenuContainer">
-            <img
-              src={whiteMenu}
-              alt="Menu"
-              width="30px"
-              id="burgerMenu"
-            />
+            <img src={whiteMenu} alt="Menu" width="30px" id="burgerMenu"/>
           </div>
           <nav>
             <ul>
@@ -40,6 +36,29 @@ function App() {
             </ul>
           </nav>
         </header>
+    <div>
+      <body>
+        <div class="Container">
+          <div class="headerContainer">   
+          </div>
+          <main>
+            <div>
+              <h1>Welcome</h1>
+            </div>
+            <div Class="eventImages">
+              <div>
+                <div><img src= "eventImages/Class.jpg" alt= "Class"></img></div>
+              </div>
+              <div><img src= "eventImages/Fitness.jpg" alt= "Fitness"></img></div>
+            </div>
+            <div><img src= "eventImages/Random.jpg" alt= "Misc"></img></div>
+            <div><img src= "eventImages/Night out.jpg" alt= "Evening"></img></div>
+            <div><img src= "eventImages/Child friendly.jpg" alt= "Child friendly"></img></div>
+          </main>
+        </div>
+      </body>
+      
+      </div>
       <Outlet/>
       </div>
     </div>
