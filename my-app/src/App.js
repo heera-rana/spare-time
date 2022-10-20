@@ -20,6 +20,7 @@ function App() {
           </div>
           <div className= "searchBar">
             <input className="SearchBar" type="text" placeholder="search" id="eventName" />
+            <button>Click me</button>
             </div>
           <div className="burgerMenuContainer">
             <img
