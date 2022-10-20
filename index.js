@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(
   cors({
     // the port needs to be changed depending on what port the backend is using
-    origin: "http://localhost:3001",
+    origin: "http://localhost:3000",
   })
 );
 
@@ -22,10 +22,10 @@ app.get("/", (req, res) => {
 });
 
 app.get("/events", async (req, res) => {
-  const dbInstance = await dbo.getDbInstance("events");
+  const dbInstance = await dbo.getDbInstance("SHU");
 
   const collection = await dbInstance
-    .collection("eventsCollection")
+    .collection("events")
     .find()
     .toArray();
 
