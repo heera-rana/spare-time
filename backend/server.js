@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
-const port = 5000;
+const port = 5000 || 8000
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const dbo = require("./db/connection");
+const dbconnect = require("./config/dbconnection");
 //app.use(require("./routes/router"));
 
 app.use(bodyParser.json());
@@ -22,14 +22,14 @@ app.get("/", (req, res) => {
   res.send("hi");
 });
 
-dbo.connectToServer(function(err,client){
+dbconnect.connectToServer(function(err,client){
   if (err)
      console.long(err)
   
 })
 
 app.get("/events", async (req, res) => {
-  const dbInstance = await dbo.getDb()
+  const dbInstance = await dbconnect.getDb()
 
   const collection = await dbInstance
     .collection("events")
@@ -40,7 +40,7 @@ app.get("/events", async (req, res) => {
 });
 
 app.post('/register', async function (req, res) {
-  const db = dbo.getDb()
+  const db = dbconnect.getDb()
 
   var addedUser = req.body
 
@@ -56,7 +56,7 @@ app.post('/register', async function (req, res) {
 })
 
 app.post('/add-event', function (req, res) {
-  const db = dbo.getDb()
+  const db = dbconnect.getDb()
 
   var addedEvent = req.body
 
