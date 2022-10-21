@@ -29,13 +29,12 @@ dbo.connectToServer(function(err,client){
 })
 
 app.get("/events", async (req, res) => {
-  const dbInstance = await dbo.getDb()
-
-  const collection = await dbInstance
-    .collection("events")
-    .find()
-    .toArray();
-
+  
+  const collection = await dbo.getDb()
+  .collection("events")
+  .find()
+  .toArray()
+  
   res.send(collection);
 });
 
@@ -57,6 +56,7 @@ app.post('/register', async function (req, res) {
 
 app.post('/add-event', function (req, res) {
   const db = dbo.getDb()
+  console.log("connected in index")
 
   var addedEvent = req.body
 

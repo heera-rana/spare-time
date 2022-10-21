@@ -46,11 +46,11 @@ function App() {
             </div>
             <div className="eventImages">
               <div>
-                <div><img src= "eventImages/Class.jpg" alt= "Class"></img></div>
-                <div><img src= "eventImages/Fitness.jpg" alt= "Fitness"></img></div>
-                <div><img src= "eventImages/Random.jpg" alt= "Misc"></img></div>
-                <div><img src= "eventImages/Night out.jpg" alt= "Evening"></img></div>
-               <div><img src= "eventImages/Child friendly.jpg" alt= "Child friendly"></img></div>
+                <div><img src= "eventImages/Classes and Workshops.jpg" alt= "Class"></img></div>
+                <div><img src= "eventImages/Sports and Fitness.jpg" alt= "Fitness"></img></div>
+                <div><img src= "eventImages/Misc.jpg" alt= "Misc"></img></div>
+                <div><img src= "eventImages/Evening Events.jpg" alt= "Evening"></img></div>
+               <div><img src= "eventImages/Childrens Events.jpg" alt= "Child friendly"></img></div>
               </div>
             </div>
           </main>
