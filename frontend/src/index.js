@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 //import Event from "./pages/Events"
-//import Home from ".pages/Home"
+import Home from "./pages/Home"
 import Login from "./pages/Login";
 import NewEvent from "./pages/NewEvent";
 import SignUp from "./pages/SignUp";
@@ -19,7 +19,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        {/* <Route index element={<Home />} /> */}
+        <Route index element={<Home />} />
         <Route path="Login" element={<Login />} />
         <Route path="addEvent" element={<NewEvent />} />
         <Route path="signUp" element={<SignUp />} />
