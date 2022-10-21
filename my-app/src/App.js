@@ -1,6 +1,6 @@
 import './AppMobile.css';
 import './AppDesktop.css';
-import data from "./events.json"
+//import data from "./events.json"
 import { Outlet, Link } from "react-router-dom";
 import whiteMenu from "./images/whiteMenu.svg";
 
@@ -8,7 +8,7 @@ import whiteMenu from "./images/whiteMenu.svg";
 //this is our landing page
 function App() {
 
-  const eventName = data.eventName
+  //const eventName = data.eventName
 
   return (
     <div>
@@ -28,7 +28,7 @@ function App() {
           </div>
           <nav>
             <ul>
-              <li><Link to="/home">Home</Link></li>
+              <li><Link to="/">Home</Link></li>
               <li><Link to="/login">Login</Link></li>
               <li><Link to="/addEvent">Add Event</Link></li>
               <li><Link to="/signUp">Sign Up</Link></li>
@@ -36,16 +36,16 @@ function App() {
             </ul>
           </nav>
         </header>
-      <div>
-            <div class="Container">
-              <div class="headerContainer">   
-      </div>
-      <main>
-        <div>
-           <h1>Welcome</h1>
-        </div>
-        <div Class="eventImages">
-          <div>
+    <div>
+        <div className="Container">
+          <div className="headerContainer">   
+          </div>
+          <main>
+            <div>
+              <h1>Welcome</h1>
+            </div>
+            <div className="eventImages">
+              <div>
                 <div><img src= "eventImages/Class.jpg" alt= "Class"></img></div>
                 <div><img src= "eventImages/Fitness.jpg" alt= "Fitness"></img></div>
                 <div><img src= "eventImages/Random.jpg" alt= "Misc"></img></div>
@@ -54,9 +54,8 @@ function App() {
               </div>
             </div>
           </main>
-		  </div>
-	  </div>
-       </div>
+        </div>
+      </div>
       <Outlet/>
       </div>
   );

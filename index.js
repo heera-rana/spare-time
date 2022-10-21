@@ -4,7 +4,8 @@ const port = 5000;
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const dbo = require("./db/connection");
-app.use(require("./routes/router"));
+//app.use(require("./routes/router"));
+
 app.use(bodyParser.json());
 
 app.use(
@@ -21,31 +22,53 @@ app.get("/", (req, res) => {
   res.send("hi");
 });
 
+dbo.connectToServer(function(err,client){
+  if (err)
+     console.long(err)
+  
+})
+
 app.get("/events", async (req, res) => {
-  const dbInstance = await dbo.getDbInstance("SHU");
+  const dbInstance = await dbo.getDb()
 
   const collection = await dbInstance
     .collection("events")
     .find()
     .toArray();
 
-  console.log(collection);
-
   res.send(collection);
 });
 
-app.post("/register", (req, response) => {
-  console.log("hi");
-  let db_connect = dbo.getDb();
-  let newUser = req.body;
-  db_connect.collection("users").insertOne(newUser, function (err, res) {
-    if (err) throw err;
-    response.json(res);
-  });
-});
+app.post('/register', async function (req, res) {
+  const db = dbo.getDb()
 
-/*
-const db=client.db('school')
-const coursers = db.collection('courses')
-courses.insertOne({name: "Web security"},{err,result)=>{}})
-*/
+  var addedUser = req.body
+
+  db.collection('users').insertOne(addedUser, function (err, info) {
+    if (err){
+        console.error(err)
+    } else if (info.acknowledged === true) {
+        res.json(info)
+    } else{
+        console.log("error")
+    }
+    })
+})
+
+app.post('/add-event', function (req, res) {
+  const db = dbo.getDb()
+
+  var addedEvent = req.body
+
+  db.collection('events').insertOne(addedEvent, function (err, info) {
+    if (err){
+        console.error(err)
+    } else if (info.acknowledged === true) {
+        res.json(info)
+    } else{
+        console.log("error")
+    }
+    })
+})
+
+// module.exports = app

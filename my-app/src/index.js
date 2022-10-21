@@ -29,18 +29,3 @@ root.render(
   </BrowserRouter>
 );
 
-const rootElement = document.getElementById("root");
-// render (
-//   <BrowserRouter>
-//     <Routes>
-//       <Route path="/" element={<App />}>
-//         {/* <Route index element={<Home />} /> */}
-//         <Route path="Login" element={<Login />} />
-//         <Route path="addEvent" element={<NewEvent />} />
-//         <Route path="signUp" element={<SignUp />} />
-//         {/* <Route path="events" element={<Event />} /> */}
-//       </Route>
-//     </Routes>
-//   </BrowserRouter>,
-//   rootElement
-// );
