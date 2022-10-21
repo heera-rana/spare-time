@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-//import Event from "./pages/Events"
 import Home from "./pages/Home"
 import Login from "./pages/Login";
 import NewEvent from "./pages/NewEvent";

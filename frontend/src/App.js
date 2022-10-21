@@ -1,5 +1,5 @@
-import './AppMobile.css';
-import './AppDesktop.css';
+import './CSS/AppMobile.css';
+import './CSS/AppDesktop.css';
 import { Outlet } from "react-router-dom";
 import Header from './components/Header';
 
