@@ -1,22 +1,11 @@
 
 import React, {useState} from "react"
-import { useNavigate } from "react-router"
-
-// const dbo = require("./db/connection");
-// var ObjectId = dbo.getObjectId();
-/*
-const db=client.db('school')
-const coursers = db.collection('courses')
-courses.insertOne({name: "Web security"},{err,result)=>{}})
-*/
+//import { useNavigate } from "react-router-dom"
 
 function SignUp (){
     
-    const [user, setUser] = useState({
-        username: "",
-        password: ""
-    })
-    const navigate = useNavigate
+    const [user, setUser] = useState([])
+    //const navigate = useNavigate
 
     function updateUser(value){
         return setUser((prev) => {
@@ -42,10 +31,8 @@ function SignUp (){
             window.alert(error);
             return
         })
-
         setUser({ username: "", password: ""})
-        navigate("/")
-        // db.users.insert(setUser) 
+       // navigate('/')
     }
 
     return (
