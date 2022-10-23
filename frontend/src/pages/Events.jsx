@@ -20,13 +20,20 @@ function Events() {
     getEvents().catch(console.error);
   }, []);
 
+  const navigateToEventDetails = (event) => {
+    navigate(`/event-details/${event.id}`, {state:{
+      id: event.id, 
+      categories: event.categories
+    }}
+    )};
+
   return (
     <div className="App">
       <h2>Collection of Events</h2>
       <div className="item-container">
         {events.map((event) => (
           <div className="card" key={event.id}>
-            <button onClick={() => navigate(`/event-details/${event.id}`, {state:{id: event.id, categories: event.categories}})}> Click Me! </button>
+            <button onClick={() => navigateToEventDetails(event)} > Click Me! </button>
             <img src={event.image} alt="" />
             <h3>{event.title}</h3>
             <p>{event.categories}</p>
