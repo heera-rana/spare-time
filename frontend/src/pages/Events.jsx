@@ -1,8 +1,10 @@
 
 import React, { useState, useEffect } from "react";
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 function Events() {
   const [events, setEvents] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getEvents = async () => {
@@ -24,6 +26,7 @@ function Events() {
       <div className="item-container">
         {events.map((event) => (
           <div className="card" key={event.id}>
+            <button onClick={() => navigate(`/event-details/${event.id}`, {state:{id: event.id, categories: event.categories}})}> Click Me! </button>
             <img src={event.image} alt="" />
             <h3>{event.title}</h3>
             <p>{event.categories}</p>

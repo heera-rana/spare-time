@@ -3,15 +3,16 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import Home from "./pages/Home"
+import Home from "./pages/Home";
 import Login from "./pages/Login";
 import NewEvent from "./pages/NewEvent";
 import SignUp from "./pages/SignUp";
 import Events from "./pages/Events";
+import EventDetails from "./pages/EventDetails";
 
 //This are our routes
 
-//Rednering Root as App: App's id is Root
+//Rendering Root as App: App's id is Root
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,8 +24,8 @@ root.render(
         <Route path="addEvent" element={<NewEvent />} />
         <Route path="signUp" element={<SignUp />} />
         <Route path="events" element={<Events />} />
+        <Route path="event-details/:id" element={<EventDetails />} />
       </Route>
     </Routes>
   </BrowserRouter>
 );
-
