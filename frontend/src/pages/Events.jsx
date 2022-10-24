@@ -1,8 +1,10 @@
 
 import React, { useState, useEffect } from "react";
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 function Events() {
   const [events, setEvents] = useState([]);
+  const navigate = useNavigate();
 
   function addImage(someData){
     console.log("got response data")
@@ -43,6 +45,19 @@ function Events() {
     getEvents().catch(console.error);
   }, []);
 
+  const navigateToEventDetails = (event) => {
+    navigate(`/event-details/${event.id}`, {state:{
+      id: event.id, 
+      title: event.title,
+      categories: event.categories,
+      time: event.time, 
+      provider: event.provider,
+      duration: event.duration,
+      price: event.price,
+      description: event.description
+    }}
+    )};
+
   return (
     <div className="App">
       <h2>Collection of Events</h2>
@@ -57,6 +72,7 @@ function Events() {
             <p>{event.duration}</p>
             <p>£{event.price}</p>
             <p>{event.description}</p>
+            <button onClick={() => navigateToEventDetails(event)} > Click Me! </button>
           </div>
         ))}
       </div>
