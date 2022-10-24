@@ -4,11 +4,36 @@ import React, { useState, useEffect } from "react";
 function Events() {
   const [events, setEvents] = useState([]);
 
+  function addImage(someData){
+    console.log("got response data")
+    let i,j
+    var len = Object.keys(someData).length
+    var myData = Object.values(someData)
+
+    for (i = 0; i<len; i++){
+      var myElement= Object.values(myData)[i]
+      var value = Object.values(myElement)
+      var key = Object.keys(myElement)
+
+      for (j = 0; j<value.length; j++){
+        var myValue = value[j]
+        var myKey = key[j]
+
+
+        if (myKey === "categories"){
+          myElement.image = `eventImages/${myValue}.jpg`
+
+        }
+      }
+    }
+  }
+
   useEffect(() => {
     const getEvents = async () => {
       const data = await fetch("http://localhost:5000/events");
       if (data) {
         const response = await data.json();
+        addImage(response)
         setEvents(response);
       } else {
         console.log("No events found.");
