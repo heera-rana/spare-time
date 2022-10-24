@@ -45,3 +45,32 @@
     right: 10px;
   }
 
+  .slideshow-container {
+    max-width: fit-content;
+    max-height: fit-content;
+    position: relative;
+    margin: auto;
+  }
+  
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+
