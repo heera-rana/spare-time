@@ -24,20 +24,4 @@ module.exports = {
     return _db;
   },
 
-  // getObjectId: function () {
-  //   return ObjectId;
-  // },
-
-  // getDbInstance: async function () {
-  //  // const MongoClient = require("mongodb").MongoClient;
-  //   //const url = "mongodb://127.0.0.1:27017";
-
-  //   //const client = new MongoClient(url);
-
-  //   //await client.connect();
-
-  //   //console.log("Successfully connected to MongoDB.")
-
-  //   return client.db();
-  // },
 };

@@ -46,7 +46,7 @@ function Events() {
   }, []);
 
   const navigateToEventDetails = (event) => {
-    navigate(`/event-details/${event.id}`, {state:{
+    navigate(`/event-details/${event._id}`, {state:{
       id: event.id, 
       title: event.title,
       categories: event.categories,
