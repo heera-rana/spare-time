@@ -23,7 +23,13 @@ function Events() {
   const navigateToEventDetails = (event) => {
     navigate(`/event-details/${event.id}`, {state:{
       id: event.id, 
-      categories: event.categories
+      title: event.title,
+      categories: event.categories,
+      time: event.time, 
+      provider: event.provider,
+      duration: event.duration,
+      price: event.price,
+      description: event.description
     }}
     )};
 
@@ -33,7 +39,6 @@ function Events() {
       <div className="item-container">
         {events.map((event) => (
           <div className="card" key={event.id}>
-            <button onClick={() => navigateToEventDetails(event)} > Click Me! </button>
             <img src={event.image} alt="" />
             <h3>{event.title}</h3>
             <p>{event.categories}</p>
@@ -42,6 +47,7 @@ function Events() {
             <p>{event.duration}</p>
             <p>£{event.price}</p>
             <p>{event.description}</p>
+            <button onClick={() => navigateToEventDetails(event)} > Click Me! </button>
           </div>
         ))}
       </div>

@@ -29,10 +29,7 @@ dbconnect.connectToServer(function (err, client) {
 app.get("/events", async (req, res) => {
   const dbInstance = await dbconnect.getDb();
 
-  const collection = await dbInstance
-    .collection("eventsCollection")
-    .find()
-    .toArray();
+  const collection = await dbInstance.collection("events").find().toArray();
 
   res.send(collection);
 });
@@ -58,7 +55,7 @@ app.post("/add-event", function (req, res) {
 
   var addedEvent = req.body;
 
-  db.collection("eventsCollection").insertOne(addedEvent, function (err, info) {
+  db.collection("events").insertOne(addedEvent, function (err, info) {
     if (err) {
       console.error(err);
     } else if (info.acknowledged === true) {

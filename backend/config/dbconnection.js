@@ -12,7 +12,7 @@ module.exports = {
       { useNewUrlParser: true, useUnifiedTopology: true },
       function (err, client) {
         if (client) {
-          _db = client.db("events");
+          _db = client.db("SHU");
           console.log("Successfully connected to MongoDb");
         }
         return callback(err);
