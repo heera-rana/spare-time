@@ -47,6 +47,7 @@ function SignUp (){
                     id="username"
                     value={user.username}
                     onChange={(e)=>updateUser({username: e.target.value})}
+                    required
                     />
                 </div>
                 <div className="form-group">
@@ -57,6 +58,8 @@ function SignUp (){
                     id="password"
                     value={user.password}
                     onChange={(e)=>updateUser({password: e.target.value})}
+                    required
+                    password
                     />
                 </div>
                 <div className="form-group">

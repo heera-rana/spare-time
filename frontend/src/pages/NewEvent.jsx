@@ -52,6 +52,7 @@ function NewEvent (){
                     id="title"
                     value={event.title}
                     onChange={(e)=>updateEvent({title: e.target.value})}
+                    required
                     />
                 </div>
                 <div className="form-group">
