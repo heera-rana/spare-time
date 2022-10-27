@@ -24,7 +24,7 @@ root.render(
         <Route path="addEvent" element={<NewEvent />} />
         <Route path="signUp" element={<SignUp />} />
         <Route path="events" element={<Events />} />
-        <Route path="event-details/:id" element={<EventDetails />} />
+        <Route path=":id" element={<EventDetails />} />
       </Route>
     </Routes>
   </BrowserRouter>

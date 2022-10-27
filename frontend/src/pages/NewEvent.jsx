@@ -1,8 +1,10 @@
 import React, {useState} from "react"
+import { useNavigate } from "react-router-dom"
 
-function NewEvent (){
-    
+function NewEvent (){  
     const [event, setEvent] = useState([])
+    const [isPending, setIsPending] = useState(false)
+    const navigate = useNavigate()
 
     function updateEvent(value){
         return setEvent((prev) => {
@@ -10,11 +12,12 @@ function NewEvent (){
         })
     } //... or spread syntax allows us to make shallow copies of js opjects  by expanding an array into individual elements
 
-
     async function onSubmit(e){
         e.preventDefault()
 
         const newEvent ={ ...event}
+
+        setIsPending(true)
 
         await fetch("http://localhost:5000/add-event", {
             method: "POST",
@@ -24,103 +27,116 @@ function NewEvent (){
             },
             body: JSON.stringify(newEvent),
         })
+        .then(()=>{
+            setIsPending(false)
+            alert("new event added")
+            navigate("/")
+        })
         .catch(error => {
             window.alert(error);
             return
         })
 
-
-
-
-        setEvent({ title: "", categories: "", provider: "", time: "", duration: "", price: "", description:""})
-
-
-
-
-       // navigate('/')
+        setEvent([])
     }
+
+
 
     return (
         <div>
             <h1>Add new event</h1>
             <form onSubmit={onSubmit}>
-                <div className="form-group">
-                    Event Title:
+                <label className="form-group"> Event Title: </label>
                     <input
-                    type="text"
-                    className="form-control"
-                    id="title"
-                    value={event.title}
-                    onChange={(e)=>updateEvent({title: e.target.value})}
-                    required
+                        type="text"
+                        className="form-control"
+                        id="title"
+                        value={event.title}
+                        onChange={(e)=>updateEvent({title: e.target.value})}
+                        required
                     />
-                </div>
-                <div className="form-group">
-                    Category:
+                
+                <label className="form-group"> Category: </label>
+                    <select 
+                        value={event.categories} 
+                        className="form-control" 
+                        onChange={(e)=>updateEvent({categories: e.target.value})}
+                        required
+                    >
+                        <option value="" disabled selected>--- Select category ---</option>
+                        <option value= "Childrens Events">Childrens Events</option>
+                        <option value="Classes and Workshops">Classes and Workshops</option>
+                        <option value="Evening Events">Evening Events</option>
+                        <option value="Misc">Misc</option>
+                        <option value="Music Events">Music Events</option>
+                        <option value="Sports and Fitness">Sports and Fitness</option>
+                    </select>
+
+                <label className="form-group"> Provider: </label>
                     <input
-                    type="text"
-                    className="form-control"
-                    id="categories"
-                    value={event.categories}
-                    onChange={(e)=>updateEvent({categories: e.target.value})}
+                        type="text"
+                        className="form-control"
+                        id="provider"
+                        value={event.provider}
+                        onChange={(e)=>updateEvent({provider: e.target.value})}
+                        required
                     />
-                </div>
-                <div className="form-group">
-                    Provider:
+               
+                <label className="form-group"> Date: </label>
                     <input
-                    type="text"
-                    className="form-control"
-                    id="provider"
-                    value={event.provider}
-                    onChange={(e)=>updateEvent({provider: e.target.value})}
+                        type="date"
+                        className="form-control"
+                        id="time"
+                        value={event.time}
+                        onChange={(e)=>updateEvent({time: e.target.value})}
+                        required
                     />
-                </div>
-                <div className="form-group">
-                    Time:
+
+                {/* <label className="form-group"> Time: </label>
                     <input
-                    type="text"
-                    className="form-control"
-                    id="time"
-                    value={event.time}
-                    onChange={(e)=>updateEvent({time: e.target.value})}
-                    />
-                </div>
-                <div className="form-group">
-                    Duration:
+                        type="time"
+                        className="form-control"
+                        id="time"
+                        value={event.time}
+                        onChange={(e)=>updateEvent({time: e.target.value})}
+                        required
+                    /> */}
+
+                <label className="form-group"> Duration: </label>
                     <input
-                    type="text"
-                    className="form-control"
-                    id="duration"
-                    value={event.duration}
-                    onChange={(e)=>updateEvent({duration: e.target.value})}
+                        type="number"
+                        className="form-control"
+                        id="duration"
+                        value={event.duration}
+                        onChange={(e)=>updateEvent({duration: e.target.value})}
+                        required
+                        placeholder="minutes"
+                        min = "10"
+                        step = "5"
                     />
-                </div>
-                <div className="form-group">
-                    Price:
+                
+                <label className="form-group"> Price: </label>
                     <input
-                    type="text"
-                    className="form-control"
-                    id="price"
-                    value={event.price}
-                    onChange={(e)=>updateEvent({price: e.target.value})}
+                        type="number"
+                        className="form-control"
+                        id="price"
+                        value={event.price}
+                        onChange={(e)=>updateEvent({price: e.target.value})}
+                        step="0.01"
+                        required
                     />
-                </div>
-                <div className="form-group">
-                    Description:
-                    <input
-                    type="text"
-                    className="form-control"
-                    id="description"
-                    value={event.description}
-                    onChange={(e)=>updateEvent({description: e.target.value})}
+               
+                <label className="form-group">Description: </label>
+                    <textarea
+                        type="text"
+                        className="form-control"
+                        id="description"
+                        value={event.description}
+                        onChange={(e)=>updateEvent({description: e.target.value})}
+                        required
                     />
-                </div>
-                <div className="form-group">
-                    <input
-                        type="submit"
-                        value="Submit"
-                    />
-                </div>
+                { !isPending && <button> Add new Event</button>}
+                { isPending && <button disabled> Adding new Event ...</button>}
             </form>
         </div>
     )
