@@ -1,10 +1,10 @@
 import React, {useState} from "react"
-//import { useHistoy } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 function NewEvent (){  
     const [event, setEvent] = useState([])
     const [isPending, setIsPending] = useState(false)
-    //const history = useHistoy()
+    const navigate = useNavigate()
 
     function updateEvent(value){
         return setEvent((prev) => {
@@ -28,9 +28,9 @@ function NewEvent (){
             body: JSON.stringify(newEvent),
         })
         .then(()=>{
-            console.log("new blog added")
             setIsPending(false)
-            //history.push("/")
+            alert("new event added")
+            navigate("/")
         })
         .catch(error => {
             window.alert(error);
