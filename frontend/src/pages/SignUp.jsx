@@ -42,7 +42,7 @@ function SignUp (){
                 <div className="form-group">
                     Username:
                     <input
-                    type="text"
+                    type="email"
                     className="form-control"
                     id="username"
                     value={user.username}
@@ -53,7 +53,7 @@ function SignUp (){
                 <div className="form-group">
                     Password:
                     <input
-                    type="text"
+                    type="password"
                     className="form-control"
                     id="password"
                     value={user.password}
