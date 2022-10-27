@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useReducer} from "react"
 
 function NewEvent (){
     
@@ -55,15 +55,26 @@ function NewEvent (){
                     required
                     />
                 </div>
+                
                 <div className="form-group">
                     Category:
-                    <input
+                    <select value={event.categories || ""} onChange={updateEvent} className="form-control">
+                        <option value= "Childrens Events">Childrens Events</option>
+                        <option value="Classes and Workshops">Classes and Workshops</option>
+                        <option value="Evening Events">Evening Events</option>
+                        <option value="Misc">Misc</option>
+                        <option value="Music Events">Music Events</option>
+                        <option value="Sports and Fitness">Sports and Fitness</option>
+                        {/* onChange={(e)=>updateEvent({categories: e.target.value})} */}
+                    </select>
+
+                    {/* <input
                     type="text"
                     className="form-control"
                     id="categories"
                     value={event.categories}
                     onChange={(e)=>updateEvent({categories: e.target.value})}
-                    />
+                    /> */}
                 </div>
                 <div className="form-group">
                     Provider:

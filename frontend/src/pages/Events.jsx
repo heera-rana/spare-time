@@ -7,7 +7,6 @@ function Events() {
   const navigate = useNavigate();
 
   function addImage(someData){
-    console.log("got response data")
     let i,j
     var len = Object.keys(someData).length
     var myData = Object.values(someData)
@@ -36,6 +35,7 @@ function Events() {
       if (data) {
         const response = await data.json();
         addImage(response)
+       // console.log(response)
         setEvents(response);
       } else {
         console.log("No events found.");
@@ -46,8 +46,9 @@ function Events() {
   }, []);
 
   const navigateToEventDetails = (event) => {
-    navigate(`/event-details/${event._id}`, {state:{
+    navigate(`/${event._id}`, {state:{
       id: event.id, 
+      image: event.image,
       title: event.title,
       categories: event.categories,
       time: event.time, 
@@ -62,8 +63,8 @@ function Events() {
     <div className="App">
       <h2>Collection of Events</h2>
       <div className="item-container">
-        {events.map((event) => (
-          <div className="card" key={event.id}>
+        {events.map((event,id) => (
+          <div className="card" key={id}>
             <img src={event.image} alt="" />
             <h3>{event.title}</h3>
             <p>{event.categories}</p>

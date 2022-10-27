@@ -9,18 +9,12 @@ function App() {
 
   return (
     <div className="App">
-
         <Header />
-   
           <div>
-            
-          
+              
           </div>
-      
         <footer />
-      
-        <Outlet/>
-        
+        <Outlet/>  
     </div>
   
     
