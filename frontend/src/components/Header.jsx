@@ -25,8 +25,10 @@ function Header() {
               <li><Link to="/events">Events</Link></li>
             </ul>
           </nav>
+          
         </header>
   )
 }
+
 
 export default Header
