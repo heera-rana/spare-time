@@ -1,5 +1,13 @@
-const Login = () => {
-    return <h1>Login Page</h1>;
-  };
-  
-  export default Login
+
+function Login() {
+  return (
+    <div>
+      <h1>Login</h1>
+      <input type="text" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button> Login </button>
+    </div>
+  )
+}
+
+export default Login
