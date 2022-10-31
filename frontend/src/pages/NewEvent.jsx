@@ -19,7 +19,7 @@ function NewEvent (){
 
         setIsPending(true)
 
-        await fetch("http://localhost:5000/add-event", {
+        await fetch("http://localhost:5000/api/events/newEvent", {
             method: "POST",
             mode:"cors",
             headers: {
@@ -84,11 +84,11 @@ function NewEvent (){
                
                 <label className="form-group"> Date: </label>
                     <input
-                        type="date"
+                        type="datetime-local"
                         className="form-control"
-                        id="time"
+                        id="date"
                         value={event.time}
-                        onChange={(e)=>updateEvent({time: e.target.value})}
+                        onChange={(e)=>updateEvent({date: e.target.value})}
                         required
                     />
 

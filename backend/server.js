@@ -1,14 +1,14 @@
-const express = require("express");
-const app = express();
-const port = 5000 || 8000;
+const express = require('express')
+const connectDB = require('./config/dbconnection')
+const PORT = 5000 || 8000//use port 500, if unavalible it will use 80000
 const cors = require("cors");
-const bodyParser = require("body-parser");
-const dbconnect = require("./config/dbconnection")
 
-var routesApi = require("../backend/routes/routes");
-const router = require("../backend/routes/routes");
 
-app.use(bodyParser.json());
+
+connectDB() // calls the fucnction from db connection to conenct to the db 
+
+
+const app = express () //sets 'app' to the const varible type and to use express
 
 app.use(
   cors({
@@ -16,19 +16,16 @@ app.use(
     origin: "http://localhost:3000",
   })
 );
+app.use(express.json())
+app.use(express.urlencoded({ extended: false})) // thee encode the data sent from the register user controller
 
-app.use(express.json());
 
-//routes
-app.use(router);
-app.use("/api", routesApi);
+app.get('/', (req, res) => {
+    res.status(200).json({message: 'Welcome to the SpareTime API'})
+}) //app.get is a express fuction that displays a message  localhost:5000/ 
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
 
-app.get("/", (req, res) => {
-  res.send("Welcome to spare time api");
-});
-
-dbconnect.connectToServer(function (err, client) {
-  if (err) console.log(err);
-});
+//Routes 
+app.use('/api/users', require('./routes/userRoutes')) //this allows you to go to http://localhost:5000/api/users to access the userroutes.js file
+app.use('/api/events', require('./routes/eventRoutes')) 
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`)) //after 'npm run server' it will display which port in the console
