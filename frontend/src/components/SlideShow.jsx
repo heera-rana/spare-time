@@ -23,48 +23,48 @@ function SlideShow() {
 
   return (
     <div>
-      <div class="slideshow-container">
+      <div className="slideshow-container">
 
-<div class="mySlides fade">
+<div className="mySlides fade">
   <img src="eventImages/Childrens Events.jpg" alt='childrens events' style={{width:'100%'}}/>
-  <div class="text">Child friendly </div>
+  <div className="text">Child friendly </div>
 </div>
 
-<div class="mySlides fade">
+<div className="mySlides fade">
   <img src="eventImages/Classes and Workshops.jpg" alt='classes and workshops' style={{width:'100%'}}/>
-  <div class="text">Classes and Workshops</div>
+  <div className="text">Classes and Workshops</div>
 </div>
 
-<div class="mySlides fade">
+<div className="mySlides fade">
   <img src="eventImages/Evening Events.jpg" alt='evening events' style={{width:'100%'}}/>
-  <div class="text">Evening events</div>
+  <div className="text">Evening events</div>
 </div>
 
-<div class="mySlides fade">
+<div className="mySlides fade">
   <img src="eventImages/Misc.jpg" alt='misc' style={{width:'100%'}}/>
-  <div class="text">Miscellanious</div>
+  <div className="text">Miscellanious</div>
 </div>
 
-<div class="mySlides fade">
+<div className="mySlides fade">
   <img src="eventImages/Music Events.jpg" alt='music events' style={{width:'100%'}}/>
-  <div class="text">Music</div>
+  <div className="text">Music</div>
 </div>
 
-<div class="mySlides fade">
+<div className="mySlides fade">
   <img src="eventImages/Sports and Fitness.jpg" alt='sports and fitness' style={{width:'100%'}}/>
-  <div class="text">Sports and Fitness</div>
+  <div className="text">Sports and Fitness</div>
 </div>
 
 </div>
 <br/>
 
 <div style={{textAlign: 'center'}}>
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span className="dot"></span> 
+  <span className="dot"></span> 
+  <span className="dot"></span> 
+  <span className="dot"></span> 
+  <span className="dot"></span> 
+  <span className="dot"></span> 
 </div>
     </div>
   )

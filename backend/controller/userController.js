@@ -1,6 +1,7 @@
 const asyncHandler = require('express-async-handler')
 const bcrypt = require('bcryptjs')
 const User = require('../models/userModels')
+const jwt = require('jsonwebtoken')
 
 
 
@@ -72,8 +73,10 @@ const loginUser =  asyncHandler(async (req, res) => {
         res.status(401)
         throw new Error('Invalid Credentials')
     }
-    
+
 })
+
+
 
 module.exports = {
     registerUser,

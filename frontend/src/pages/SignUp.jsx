@@ -32,7 +32,7 @@ function SignUp (){
             return
         })
         setUser({ name: "", email:"", password: ""})
-       // navigate('/')
+      
     }
 
     return (
@@ -53,7 +53,7 @@ function SignUp (){
                 <div className="form-group">
                 Email:
                     <input
-                    type="text"
+                    type="email"
                     className="form-control"
                     id="email"
                     value={user.email}
@@ -70,7 +70,7 @@ function SignUp (){
                     value={user.password}
                     onChange={(e)=>updateUser({password: e.target.value})}
                     required
-                    password
+                    password='true'
                     />
                 </div>
                 <div className="form-group">
