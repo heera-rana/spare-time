@@ -1,5 +1,6 @@
 const express = require('express')
 const connectDB = require('./config/dbconnection')
+const dotenv = require('dotenv').config()
 const PORT = 5000 || 8000//use port 500, if unavalible it will use 80000
 const cors = require("cors");
 

@@ -43,15 +43,12 @@ if (user) {
         _id: user._id,
         name: user.name,
         email:user.email,
+        token: generateToken(user.id),
     }) 
 }   else {
         res.status(400)
         throw new error('Invalid user data')
     }
-
-
-    //console.log(req.body) //this places the body data posted from postman into /api/users/
-    //res.send('Register Route')
 })
 
 
@@ -67,7 +64,8 @@ const loginUser =  asyncHandler(async (req, res) => {
         res.status(200).json({
             _id: user._id,
             name: user.name,
-            email:user.email,
+            email: user.email,
+            token: generateToken(user.id),
         }) 
     } else {
         res.status(401)
@@ -75,6 +73,14 @@ const loginUser =  asyncHandler(async (req, res) => {
     }
 
 })
+
+
+//generate webtoken function 
+const generateToken = (id) => {
+    return jwt.sign({ id }, process.env.JWT_SECRET, {
+        expiresIn: '30d',
+    })
+}
 
 
 
