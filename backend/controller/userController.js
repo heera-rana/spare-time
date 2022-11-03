@@ -18,7 +18,7 @@ const registerUser =  asyncHandler(async (req, res) => {
     }
 
 //duplicate user check then returns error message if duplicated
-const userExists = await User.findOne({email})
+const userExists = await User.findOne({email: `${email}`})
 
 if (userExists) {
     res.status(400)
