@@ -5,8 +5,8 @@ const { newEvent, allEvents } = require('../controller/eventController') // this
 const {protectAddEvent} = require('../authorisation/auth')
 
 router.get('/allEvents', allEvents) //
-router.post('/newEvent', protectAddEvent, newEvent) //brings in the registe set fucntion from the controller
-
+// router.post('/newEvent', protectAddEvent, newEvent) //brings in the registe set fucntion from the controller
+router.post('/newEvent', newEvent)
 
 
 module.exports = router
