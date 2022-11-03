@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
     "@remix-run/router": "^1.0.2",
     "concurrently": "^7.5.0",
     "cors": "^2.8.5",
