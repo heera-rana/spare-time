@@ -7,7 +7,7 @@ const protectAddEvent = asyncHandler(async (req, res, next) => {
     let token 
     if(req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
         try {
-            token = req.headers.authorization.split(' ') //this get the token from the header ansd then splits the string the space is important
+            token = req.headers.authorization.split(' ')[1] //this get the token from the header ansd then splits the string the space is important
             const decoded = jwt.verify(token, process.env.JWT_SECRET)
             req.event = await Event.findById(decoded.id).select('-password')
 
