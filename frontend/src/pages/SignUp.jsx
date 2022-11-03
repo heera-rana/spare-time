@@ -19,7 +19,7 @@ function SignUp (){
 
         const newUser ={ ...user}
 
-        await fetch("http://localhost:5000/register", {
+        await fetch("http://localhost:5000/api/users/register", {
             method: "POST",
             mode:"cors",
             headers: {
@@ -31,8 +31,8 @@ function SignUp (){
             window.alert(error);
             return
         })
-        setUser({ username: "", password: ""})
-       // navigate('/')
+        setUser({ name: "", email:"", password: ""})
+      
     }
 
     return (
@@ -40,13 +40,24 @@ function SignUp (){
             <h1>Sign Up</h1>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
-                    Username:
+                Name:
+                    <input
+                    type="text"
+                    className="form-control"
+                    id="name"
+                    value={user.name}
+                    onChange={(e)=>updateUser({name: e.target.value})}
+                    required
+                    />
+                </div>
+                <div className="form-group">
+                Email:
                     <input
                     type="email"
                     className="form-control"
-                    id="username"
-                    value={user.username}
-                    onChange={(e)=>updateUser({username: e.target.value})}
+                    id="email"
+                    value={user.email}
+                    onChange={(e)=>updateUser({email: e.target.value})}
                     required
                     />
                 </div>
@@ -59,7 +70,7 @@ function SignUp (){
                     value={user.password}
                     onChange={(e)=>updateUser({password: e.target.value})}
                     required
-                    password
+                    password='true'
                     />
                 </div>
                 <div className="form-group">

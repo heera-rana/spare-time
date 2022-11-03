@@ -1,27 +1,15 @@
-const MongoClient = require("mongodb").MongoClient;
-const url = "mongodb://localhost:27017";
+const mongoose = require('mongoose')
 
-let _db;
 
-const ObjectId = require("mongodb").ObjectId;
+//creates a fuction called connectDB(), this 
+const connectDB = async () => {
+    try {
+        const conn = await mongoose.connect('mongodb://localhost:27017/SHU')
+        console.log(`MongoDB Connected: ${conn.connection.host}`);
+    } catch (error) {
+        console.log(`Error: ${error.message}`);
+        process.exit(1)
+    }
+}
 
-module.exports = {
-  connectToServer: function (callback) {
-    MongoClient.connect(
-      url,
-      { useNewUrlParser: true, useUnifiedTopology: true },
-      function (err, client) {
-        if (client) {
-          _db = client.db("SHU");
-          console.log("Successfully connected to MongoDb");
-        }
-        return callback(err);
-      }
-    );
-  },
-
-  getDb: function () {
-    return _db;
-  },
-
-};
+module.exports = connectDB

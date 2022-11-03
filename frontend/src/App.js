@@ -14,7 +14,7 @@ function App() {
               
           </div>
         <footer />
-        <Outlet/>  
+        <Outlet />  
     </div>
   
     
