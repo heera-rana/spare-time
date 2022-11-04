@@ -20,11 +20,8 @@ function Login (){
            e.preventDefault();
         await loginUser({
              email,
-             password
+             password,
            });
-
-           console.log({email})
-           
 
          }
        
