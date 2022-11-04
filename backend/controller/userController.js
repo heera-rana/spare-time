@@ -47,7 +47,7 @@ if (user) {
     }) 
 }   else {
         res.status(400)
-        throw new error('Invalid user data')
+        res.json('Invalid user data')
     }
 })
 
