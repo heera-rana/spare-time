@@ -1,23 +1,30 @@
-function Login (){
+import { useState } from "react";
 
-async function onSubmit (e) {
-    e.preventDefault()
-    console.log('user verification submitted')
-
-    await fetch("http://localhost:5000/api/users/login", {
+async function loginUser() {
+    return fetch("http://localhost:5000/api/users/login", {
         method: "POST",
         mode:"cors",
         headers: {
             "Content-Type": "application/json"
         },
+      body: JSON.stringify()
     })
-    .catch(error => {
-        window.alert(error);
-        return
-    })
+      .then(users => users.json())
+   }
 
-}
-
+function Login (){
+     
+         const [username, setEmail] = useState();
+         const [password, setPassword] = useState();
+       
+         const onSubmit = async e => {
+           e.preventDefault();
+        await loginUser({
+             username,
+             password
+           });
+         }
+       
     return (
         <div>
             <h1>Login</h1>
@@ -28,6 +35,7 @@ async function onSubmit (e) {
                     type="email"
                     className="form-control"
                     id="email"
+                    onChange={e => setEmail(e.target.value)}
                     required
                     />
                 </div>
@@ -37,6 +45,7 @@ async function onSubmit (e) {
                     type="password"
                     className="form-control"
                     id="password"
+                    onChange={e => setPassword(e.target.value)}
                     required
                     password='true'
                     />
