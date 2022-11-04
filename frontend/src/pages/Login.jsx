@@ -1,28 +1,31 @@
 import { useState } from "react";
 
-async function loginUser() {
+async function loginUser(userData) {
     return fetch("http://localhost:5000/api/users/login", {
         method: "POST",
-        mode:"cors",
         headers: {
             "Content-Type": "application/json"
         },
-      body: JSON.stringify()
+      body: JSON.stringify(userData)
     })
       .then(users => users.json())
    }
 
 function Login (){
      
-         const [username, setEmail] = useState();
+         const [email, setEmail] = useState();
          const [password, setPassword] = useState();
        
          const onSubmit = async e => {
            e.preventDefault();
         await loginUser({
-             username,
+             email,
              password
            });
+
+           console.log({email})
+           
+
          }
        
     return (
