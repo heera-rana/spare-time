@@ -10,7 +10,7 @@ const slideStyles={
     borderRadius: '10px',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    //transition: 'ease 1000ms',
+   // transition: 'ease 1000ms',
 }
 const dotsContainerStyles = {
     display: "flex",
@@ -22,15 +22,6 @@ const dotStyle = {
     cursor: "pointer",
     fontSize: "20px",
 };
-const dotContainerStyles = {
-    display: 'flex',
-    justifyContent:'center'
-}
-const dotStyles ={
-    margin: '0 3px',
-    cursor: 'pointer',
-    fontSize: '20px',
-}
 
 const SlideShow = ({slides})=>{
     const [currentIndex, setCurrentIndex] = useState(0)
