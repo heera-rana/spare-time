@@ -46,8 +46,7 @@ if (user) {
         token: generateToken(user.id),
     }) 
 }   else {
-        res.status(400)
-        res.json('Invalid user data')
+        res.status(400).json('Invalid user data')
     }
 })
 
@@ -68,8 +67,7 @@ const loginUser =  asyncHandler(async (req, res) => {
             token: generateToken(user.id),
         }) 
     } else {
-        res.status(401)
-        res.json('Invalid Credentials')
+        res.status(401).json('Invalid Credentials')
     }
 
 })
