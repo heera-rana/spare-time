@@ -1,29 +1,35 @@
 import { useState } from "react";
 
+function Login (){
+
 async function loginUser(userData) {
     return fetch("http://localhost:5000/api/users/login", {
         method: "POST",
+        mode:"cors",
         headers: {
             "Content-Type": "application/json"
+           
         },
-      body: JSON.stringify(userData)
+        body: JSON.stringify(userData),
     })
       .then(users => users.json())
-   }
-
-function Login (){
-
-         const [email, setEmail] = useState();
-         const [password, setPassword] = useState();
-       
+}
+         const [email, setEmail] = useState({});
+         const [password, setPassword] = useState({});
+    
          const onSubmit = async e => {
            e.preventDefault();
-        await loginUser({
+        loginUser({
              email,
              password,
-           });
-         }
-       
+           }); fetch(loginUser).then((res) => {
+            console.log(res.status); //for some reason it only returns 200 even if login fails
+          
+          });
+           //if there is a reponse status of 200 then successful login, reset the form and nav to home page, console.log the recieved token
+           //else if user login failed invalid credentials and display the invalid credatial in the console
+           //save the JWT in local storage 
+         } 
     return (
         <div>
             <h1>Login</h1>

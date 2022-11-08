@@ -1,7 +1,6 @@
 import whiteMenu from "../images/whiteMenu.svg";
 import { Link } from "react-router-dom";
-import SearchBar from "./SearchBar";
-import EventData from './Data.json';
+
 
 function Header() {
   return (
@@ -10,11 +9,9 @@ function Header() {
                   <div className= "h1">
                   <h1>Spare Time</h1>
                   </div>
-                  <SearchBar placeholder ="Search for an event..."  data={EventData}/>
                 </div>          
                 <div className="burgerMenuContainer">
-                  <img src={whiteMenu} alt="Menu" width="30px" id="burgerMenu"/>
-                  
+                  <img src={whiteMenu} alt="Menu" width="30px" id="burgerMenu"/>  
                 </div>
                 <nav>
                   <ul>
@@ -27,6 +24,4 @@ function Header() {
                 </nav>
             </header>
           )}
-
-
 export default Header
