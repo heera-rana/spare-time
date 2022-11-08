@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import {useNavigate} from 'react-router-dom';
 import '../CSS/AppMobile.css';
 import '../CSS/AppDesktop.css';
+import EventsList from "../components/EventsList";
+
 
 function Events() {
   const [events, setEvents] = useState([]);
@@ -64,21 +66,7 @@ function Events() {
   return (
     <div className="App">
       <h2>Collection of Events</h2>
-      <div className="item-container">
-        {events.map((event,id) => (
-          <div className="card" key={id}>
-            <img src={event.image} alt="" />
-            <h3>{event.title}</h3>
-            <p>{event.categories}</p>
-            <p>{event.date}</p>
-            <p>{event.provider}</p>
-            <p>{event.duration}</p>
-            <p>£{event.price}</p>
-            <p>{event.description}</p>
-            <button onClick={() => navigateToEventDetails(event)} > Click Me! </button>
-          </div>
-        ))}
-      </div>
+      <EventsList events = {events} handleClick = {navigateToEventDetails} />
     </div>
   );
 }
