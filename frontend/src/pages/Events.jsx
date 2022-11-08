@@ -1,7 +1,10 @@
 
 import React, { useState, useEffect } from "react";
 import {useNavigate} from 'react-router-dom';
+import '../CSS/AppMobile.css';
+import '../CSS/AppDesktop.css';
 import EventsList from "../components/EventsList";
+
 
 function Events() {
   const [events, setEvents] = useState([]);

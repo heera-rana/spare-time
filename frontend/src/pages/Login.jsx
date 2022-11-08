@@ -1,42 +1,38 @@
-
-import React, {useState} from "react"
+import { useState } from "react";
 
 function Login (){
+
+async function loginUser(userData) {
+    return fetch("http://localhost:5000/api/users/login", {
+        method: "POST",
+        mode:"cors",
+        headers: {
+            "Content-Type": "application/json"
+           
+        },
+        body: JSON.stringify(userData),
+    })
+      .then(users => users.json())
+}
+         const [email, setEmail] = useState({});
+         const [password, setPassword] = useState({});
     
-    const [user, setUser] = useState([])
-    
-
-    function updateUser(value){
-        return setUser((prev) => {
-            return {...prev, ...value}
-        })
-    } //... or spread syntax allows us to make shallow copies of js opjects  by expanding an array into individual elements
-
-
-    async function onSubmit(e){
-        e.preventDefault()
-
-        const loginUser ={ ...user}
-
-        await fetch("http://localhost:5000/api/users/login", {
-            method: "POST",
-            mode:"cors",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(loginUser),
-        })
-        .catch(error => {
-            window.alert(error);
-            return
-        })
-        setUser({ email:" ", password: " "})
-      
-    }
-
+         const onSubmit = async e => {
+           e.preventDefault();
+        loginUser({
+             email,
+             password,
+           }); fetch(loginUser).then((res) => {
+            console.log(res.status); //for some reason it only returns 200 even if login fails
+          
+          });
+           //if there is a reponse status of 200 then successful login, reset the form and nav to home page, console.log the recieved token
+           //else if user login failed invalid credentials and display the invalid credatial in the console
+           //save the JWT in local storage 
+         } 
     return (
         <div>
-            <h1>Login to add a new event</h1>
+            <h1>Login</h1>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
                 Email:
@@ -44,8 +40,7 @@ function Login (){
                     type="email"
                     className="form-control"
                     id="email"
-                    value={user.email}
-                    onChange={(e)=>updateUser({email: e.target.value})}
+                    onChange={e => setEmail(e.target.value)}
                     required
                     />
                 </div>
@@ -55,8 +50,7 @@ function Login (){
                     type="password"
                     className="form-control"
                     id="password"
-                    value={user.password}
-                    onChange={(e)=>updateUser({password: e.target.value})}
+                    onChange={e => setPassword(e.target.value)}
                     required
                     password='true'
                     />
