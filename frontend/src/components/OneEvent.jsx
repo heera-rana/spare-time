@@ -1,10 +1,11 @@
 function OneEvent(props){
+
     const eventData = props.eventData
     
     return(
         <div>
             <h3>{eventData.state.description}</h3>
-            <img src= {eventData.state.image}/>
+            <img src= {eventData.state.image} alt= "oneevent"/>
             <p>{eventData.state.time}</p>
             <p>{eventData.state.provider}</p>
             <p>{eventData.state.duration}</p>
