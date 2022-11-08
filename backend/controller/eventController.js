@@ -33,7 +33,7 @@ const newEvent =  asyncHandler(async (req, res) => {
 
     if (eventExists) {
         res.status(400)
-        throw new Error('User already exists')
+        throw new Error('Event already exists')
     }
 
     //create an event
