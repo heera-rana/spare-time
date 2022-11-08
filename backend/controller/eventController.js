@@ -20,33 +20,48 @@ const newEvent =  asyncHandler(async (req, res) => {
         res.status(400)
         throw new Error ('Please include all of the fields')
     }
+    //duplicate user check then returns error message if duplicated
+    const eventExists = await Event.findOne({
+        title: `${title}`,
+        categories: `${categories}`,
+        provide: `${provider}`,
+        data: `${date}`,
+        duration: `${duration}`,
+        price: `${price}`,
+        description: `${description}`
+    })
 
-//create a user
-const event = await Event.create({
-    title,
-    categories,
-    provider,
-    date,
-    duration,
-    price,
-    description,
-})
-
-//this comes from the user above and then sends the data back into the database
-if (event) {
-    res.status(201).json({
-        _id: event._id,
-        title: event.title,
-        categories: event.categories,
-        provider: event.provider,
-        date: event.date,  
-        price: event.price,
-        description: event.description,
-    }) 
-}   else {
+    if (eventExists) {
         res.status(400)
-        throw new error('Invalid event data')
+        throw new Error('User already exists')
     }
+
+    //create an event
+    const event = await Event.create({
+        title,
+        categories,
+        provider,
+        date,
+        duration,
+        price,
+        description,
+    })
+
+    //this comes from the user above and then sends the data back into the database
+    if (event) {
+        res.status(201).json({
+            _id: event._id,
+            title: event.title,
+            categories: event.categories,
+            provider: event.provider,
+            date: event.date,  
+            price: event.price,
+            description: event.description,
+        }) 
+    }   else {
+            res.status(400)
+            throw new error('Invalid event data')
+        }
 })
 
 
