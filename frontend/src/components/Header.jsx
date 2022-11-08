@@ -1,6 +1,9 @@
 import whiteMenu from "../images/whiteMenu.svg";
 import { Link } from "react-router-dom";
-
+import React, { useState } from "react";
+import './SearchBar.css';
+import  SearchIcon from "@material-ui/icons/Search";
+import CloseIcon from '@material-ui/icons/Close';
 
 function Header() {
   return (
@@ -31,6 +34,10 @@ function Header() {
 }
 
 
+
 export default Header
+
+
+
 
 

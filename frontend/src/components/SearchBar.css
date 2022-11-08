@@ -4,7 +4,10 @@
 }
 
 .searchInput {
-    background-color: white;
+    position:absolute;
+    left:45%;
+    top: 20%;
+    width:30%;
     border: 0px;
     border-radius: 2px;
     border-top-right-radius: 0px;
@@ -12,14 +15,14 @@
     font-size: 18px;
     padding: 15px; 
     height: 30px; 
-    width: 30px;
+    
 }
 
 .dataResult {
-    margin-top:5px;
+    margin-top:auto;
     width: 300px;
     height: 200px;
-    background-color: grey;
+    background-color: white;
     box-shadow: rgba(0,0,0,0.35);
     overflow-y: auto;
     overflow: hidden;

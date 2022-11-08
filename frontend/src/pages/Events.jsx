@@ -1,5 +1,7 @@
+
 import React, { useState, useEffect } from "react";
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
+import EventsList from "../components/EventsList";
 
 function Events() {
   const [events, setEvents] = useState([]);
@@ -30,7 +32,7 @@ function Events() {
 
   useEffect(() => {
     const getEvents = async () => {
-      const data = await fetch("http://localhost:5000/events");
+      const data = await fetch("http://localhost:5000/api/events/allevents");
       if (data) {
         const response = await data.json();
         addImage(response)
@@ -50,7 +52,7 @@ function Events() {
       image: event.image,
       title: event.title,
       categories: event.categories,
-      time: event.time, 
+      time: event.date, 
       provider: event.provider,
       duration: event.duration,
       price: event.price,
@@ -61,21 +63,7 @@ function Events() {
   return (
     <div className="App">
       <h2>Collection of Events</h2>
-      <div className="item-container">
-        {events.map((event,id) => (
-          <div className="card" key={id}>
-            <img src={event.image} alt="" />
-            <h3>{event.title}</h3>
-            <p>{event.categories}</p>
-            <p>{event.time}</p>
-            <p>{event.provider}</p>
-            <p>{event.duration}</p>
-            <p>£{event.price}</p>
-            <p>{event.description}</p>
-            <button onClick={() => navigateToEventDetails(event)} > Click Me! </button>
-          </div>
-        ))}
-      </div>
+      <EventsList events = {events} handleClick = {navigateToEventDetails} />
     </div>
   );
 }
