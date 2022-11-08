@@ -6,6 +6,7 @@ function NewEvent (){
     const [isPending, setIsPending] = useState(false)
     const navigate = useNavigate()
 
+
     function updateEvent(value){
         return setEvent((prev) => {
             return {...prev, ...value}
@@ -27,16 +28,21 @@ function NewEvent (){
             },
             body: JSON.stringify(newEvent),
         })
-        .then(()=>{
-            setIsPending(false)
-            alert("new event added")
-            navigate("/")
+        .then((response)=>{
+            if (response.status === 201){
+                setIsPending(false)
+                alert("new event added")
+                navigate("/")
+            } else {
+                var error = response.status
+                console.log(error)
+                alert("Event already exists")
+            }
         })
-        .catch(error => {
-            window.alert(error);
-            return
-        })
-
+        // .catch(error => {
+        //     alert(error);
+        //     return
+        // })
         setEvent([])
     }
 

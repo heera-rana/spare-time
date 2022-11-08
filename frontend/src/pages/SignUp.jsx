@@ -27,9 +27,14 @@ function SignUp (){
             },
             body: JSON.stringify(newUser),
         })
-        .catch(error => {
-            window.alert(error);
-            return
+        .then((response)=>{
+            if (response.status === 201){
+                alert("Successfully registered")
+            } else {
+                var error = response.status
+                console.log(error)
+                alert("User already exists")
+            }
         })
         setUser({ name: "", email:"", password: ""})
       
