@@ -1,11 +1,11 @@
 
 import React, {useState} from "react"
-//import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 function SignUp (){
     
     const [user, setUser] = useState([])
-    //const navigate = useNavigate
+    const navigate = useNavigate
 
     function updateUser(value){
         return setUser((prev) => {
@@ -30,6 +30,7 @@ function SignUp (){
         .then((response)=>{
             if (response.status === 201){
                 alert("Successfully registered")
+                navigate("/")
             } else {
                 var error = response.status
                 console.log(error)

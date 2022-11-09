@@ -10,7 +10,7 @@ const slideStyles={
     borderRadius: '10px',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-   // transition: 'ease 1000ms',
+    transition: 'ease 1000ms',
 
 }
 const dotsContainerStyles = {
@@ -41,7 +41,7 @@ const SlideShow = ({slides})=>{
     
     setTimeout(() => {
         goToNext()
-      }, 2000);
+      }, 3000);
 
     return (
         <div style={sliderStyles}>
