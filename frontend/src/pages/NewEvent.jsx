@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import { useNavigate } from "react-router-dom"
+import Swal from "sweetalert2"
 
 function NewEvent (){  
     const [event, setEvent] = useState([])
@@ -31,12 +32,21 @@ function NewEvent (){
         .then((response)=>{
             if (response.status === 201){
                 setIsPending(false)
-                alert("new event added")
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Yay',
+                    text: 'new event added',
+                  })
                 navigate("/")
             } else {
                 var error = response.status
                 console.log(error)
-                alert("Event already exists")
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'event already exists',
+                    footer: '<a href="">Why do I have this issue?</a>'
+                  })
             }
         })
         // .catch(error => {
