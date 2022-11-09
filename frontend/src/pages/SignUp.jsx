@@ -1,6 +1,7 @@
 
 import React, {useState} from "react"
 import { useNavigate } from "react-router-dom"
+import Swal from "sweetalert2"
 
 function SignUp (){
     
@@ -29,12 +30,21 @@ function SignUp (){
         })
         .then((response)=>{
             if (response.status === 201){
-                alert("Successfully registered")
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Yay',
+                    text: 'successfully resgistered',
+                  })
                 navigate("/")
             } else {
                 var error = response.status
                 console.log(error)
-                alert("User already exists")
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'something went wrong',
+                    footer: '<a href="">Why do I have this issue?</a>'
+                  })
             }
         })
         setUser({ name: "", email:"", password: ""})

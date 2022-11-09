@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2"
 
 function Login (){
     const [user, setUser] = useState([]);
@@ -27,12 +28,21 @@ function Login (){
         .then((response)=>{
             if (response.status === 200){
                 // response.json()
-                alert("Successfully logged in")
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Yay',
+                    text: 'you are successfully logged in',
+                  })
                 navigate("/")
             } else {
                 var error = response.status
                 console.log(error)
-                alert("Wrong username or password")
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'wrong username or password',
+                    footer: '<a href="">Why do I have this issue?</a>'
+                  })
             }
         })
         setUser([])
