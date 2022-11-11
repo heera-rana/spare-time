@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "63690306c790b44c0f242f8b"
+  },
+  "name": "admin",
+  "email": "admin@gmail.com",
+  "password": "$2a$10$6Cy75nl/8wlQK9i8Jy0H3u1YQqDgXNTjzFzXD9LbV9XoeIJQMkA5W",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667826438843"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1667826438843"
+    }
+  },
+  "__v": 0
+}]

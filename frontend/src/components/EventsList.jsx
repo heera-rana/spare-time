@@ -15,7 +15,6 @@ function EventsList (props) {
                 <p>{event.provider}</p>
                 <p>{event.duration}</p>
                 <p>£{event.price}</p>
-                <p>{event.description}</p>
                 <button onClick={() => handleClick(event)} > Click Me! </button>
               </div>
             ))}
