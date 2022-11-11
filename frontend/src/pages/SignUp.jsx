@@ -43,7 +43,6 @@ function SignUp (){
                     icon: 'error',
                     title: 'Oops...',
                     text: 'something went wrong',
-                    footer: '<a href="">Why do I have this issue?</a>'
                   })
             }
         })
@@ -61,6 +60,8 @@ function SignUp (){
                     type="text"
                     className="form-control"
                     id="name"
+                    pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%&^*(){}|~<>;:[\]]{2,}$"
+                    alert='please do not include any special characters'
                     value={user.name}
                     onChange={(e)=>updateUser({name: e.target.value})}
                     required
@@ -86,8 +87,17 @@ function SignUp (){
                     value={user.password}
                     onChange={(e)=>updateUser({password: e.target.value})}
                     required
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"
+                    alert='Please follow the password guidence below'
                     password='true'
                     />
+                    <ul>
+                    <li>Password Must contain:</li>
+                        <li>At least 1 Uppercase</li>
+                        <li>At least 1 Lowercase</li>
+                        <li>At least 1 Number</li>
+                        <li>Min 5 chars</li>
+                    </ul>
                 </div>
                 <div className="form-group">
                     <input
