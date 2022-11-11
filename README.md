@@ -4,6 +4,11 @@ Clone repo from 'https://github.com/hra03/shu-ass-1'
 
 1. open new terminal, 
 
+2. Configure the base data in Mongodb
+    1. in the terminal, now back in the spare-time folder, run the following
+        1. mongoimport --db 'spare-time' --collection 'events' --jsonArray './backend/mongodbdata/eventsData.json'
+        2. mongoimport --db 'spare-time' --collection 'users' --jsonArray './backend/mongodbdata/userData.json'
+
 2. In the terminal 
     1. navigate to the folder where you cloned the repo (e.g cd '/Users/Ryan.Sutcliffe/Desktop/shu-ass-1' )
     2. type the following command in the spare-time folder
@@ -13,8 +18,8 @@ Clone repo from 'https://github.com/hra03/shu-ass-1'
         4. cd ../
     3. you should now have all the node modules and dependecies installed. 
 
-4. Configure the base data in Mongodb
-    1. in the terminal, now back in the spare-time folder, run the following
-        1. mongoimport --db 'spare-time' --collection 'events' --jsonArray './backend/mongodbdata/eventsData.json'
-        2. mongoimport --db 'spare-time' --collection 'users' --jsonArray './backend/mongodbdata/userData.json'
+3. run the application 
+    1. npm run dev
+
+
 
