@@ -26,6 +26,11 @@ const eventSchema = mongoose.Schema({
         required: true,
     }, 
 
+    availability: {
+        type: Number,
+        required: true,
+    }, 
+
     price: {
         type: Number,
         required: true,

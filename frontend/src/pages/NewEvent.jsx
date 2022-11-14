@@ -45,18 +45,11 @@ function NewEvent (){
                     icon: 'error',
                     title: 'Oops...',
                     text: 'event already exists',
-                    footer: '<a href="">Why do I have this issue?</a>'
                   })
             }
         })
-        // .catch(error => {
-        //     alert(error);
-        //     return
-        // })
         setEvent([])
     }
-
-
 
     return (
         <div>
@@ -108,15 +101,15 @@ function NewEvent (){
                         required
                     />
 
-                {/* <label className="form-group"> Time: </label>
+                <label className="form-group"> Availability: </label>
                     <input
-                        type="time"
+                        type="number"
                         className="form-control"
-                        id="time"
-                        value={event.time}
-                        onChange={(e)=>updateEvent({time: e.target.value})}
+                        id="availability"
+                        value={event.availability}
+                        onChange={(e)=>updateEvent({availability: e.target.value})}
                         required
-                    /> */}
+                    />
 
                 <label className="form-group"> Duration: </label>
                     <input

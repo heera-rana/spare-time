@@ -59,7 +59,8 @@ function Events() {
       provider: event.provider,
       duration: event.duration,
       price: event.price,
-      description: event.description
+      description: event.description,
+      availability: event.availability,
     }}
     )};
 

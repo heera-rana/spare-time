@@ -13,10 +13,10 @@ const allEvents =  asyncHandler(async (req, res) => {
 //add a new event
 // using the route /api/users
 const newEvent =  asyncHandler(async (req, res) => {
-    const {title, categories, provider, date, duration, price, description } = req.body
+    const {title, categories, provider, date, duration, price, description, availability } = req.body
 
     //form validation this is too ensure all data is forms are filled out
-    if(!title || !categories || !provider || !date || !duration || !price || !description) {
+    if(!title || !categories || !provider || !date || !duration || !price || !description || !availability) {
         res.status(400)
         throw new Error ('Please include all of the fields')
     }
@@ -28,7 +28,8 @@ const newEvent =  asyncHandler(async (req, res) => {
         data: `${date}`,
         duration: `${duration}`,
         price: `${price}`,
-        description: `${description}`
+        description: `${description}`,
+        availability: `${availability}`
     })
 
     if (eventExists) {
@@ -45,6 +46,7 @@ const newEvent =  asyncHandler(async (req, res) => {
         duration,
         price,
         description,
+        availability,
     })
 
     //this comes from the user above and then sends the data back into the database
@@ -57,6 +59,7 @@ const newEvent =  asyncHandler(async (req, res) => {
             date: event.date,  
             price: event.price,
             description: event.description,
+            availability: event.availability
         }) 
     }   else {
             res.status(400)

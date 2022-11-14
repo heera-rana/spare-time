@@ -4,13 +4,17 @@ function OneEvent(props){
     
     return(
         <div>
-            <h3>{eventData.state.description}</h3>
+            <h1>{eventData.state.title}</h1>
+            <h3>{eventData.state.time}</h3>
+            
             <img src= {eventData.state.image} alt= "oneevent"/>
-            <p>{eventData.state.time}</p>
-            <p>{eventData.state.provider}</p>
-            <p>{eventData.state.duration}</p>
-            <p>{eventData.state.price}</p>
+            
+            <p>Hosted by: {eventData.state.provider}</p>
+            <p>The event will last approximately {eventData.state.duration} minutes</p>
+            <p>£{eventData.state.price} per person</p>
             <p>{eventData.state.categories}</p>
+            <p>Availability: {eventData.state.availability}</p>
+            <p>{eventData.state.description}</p>
         </div>
     )
 }
