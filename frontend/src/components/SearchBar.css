@@ -4,7 +4,7 @@
 
 
 .search input {
-    background-color: orange;
+    background-color: #abd1c6;
     border:0;
     border-radius:2px;
     border-top-right-radius: 0px;
@@ -14,9 +14,6 @@
     height:30px;
     width: 300px;
 }
-
-
-
 
 .dataResult {
     margin-top: 5px;

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2"
+import './Login.css';
 
 function Login (){
 
@@ -48,8 +49,8 @@ async function loginUser(userData) {
            }); 
          } 
     return (
-        <div>
-            <h1>Login</h1>
+        <div className= "loginForm">
+            <h1>Good to see you again</h1>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
                 Email:

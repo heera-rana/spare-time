@@ -2,6 +2,7 @@
 import React, {useState} from "react"
 import { useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
+import "./Signup.css";
 
 function SignUp (){
     
@@ -52,6 +53,7 @@ function SignUp (){
 
     return (
         <div>
+            <div className= "signUp">
             <h1>Sign Up</h1>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
@@ -91,6 +93,7 @@ function SignUp (){
                     alert='Please follow the password guidence below'
                     password='true'
                     />
+                    <div className="mustHave">
                     <ul>
                     <li>Password Must contain:</li>
                         <li>At least 1 Uppercase</li>
@@ -98,14 +101,17 @@ function SignUp (){
                         <li>At least 1 Number</li>
                         <li>Min 5 chars</li>
                     </ul>
+                    </div>
                 </div>
                 <div className="form-group">
                     <input
                         type="submit"
                         value="Submit"
                     />
+                    
                 </div>
             </form>
+                </div>
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Slideshow.css" ;
 
 const sliderStyles ={
     height: '100%',
