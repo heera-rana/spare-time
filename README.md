@@ -1,4 +1,8 @@
-install Mongodb
+install Mongodb //more here
+
+install node //more here
+
+//any other pre-requisties? // need instructions for mac and windows
 
 Clone repo from 'https://github.com/hra03/shu-ass-1'
 
