@@ -1,38 +1,25 @@
-
 import React, { useState, useEffect } from "react";
 import {useNavigate} from 'react-router-dom';
 import '../CSS/AppMobile.css';
 import '../CSS/AppDesktop.css';
 import EventsList from "../components/EventsList";
-
+// import EventFilter from "../components/EventFilter";
+import { useMemo } from "react";
+import addImage from "../components/util/addImage";
 
 function Events() {
   const [events, setEvents] = useState([]);
+  const [categoryList, setCategoryList] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
   const navigate = useNavigate();
 
-  function addImage(someData){
-    let i,j
-    var len = Object.keys(someData).length
-    var myData = Object.values(someData)
-
-    for (i = 0; i<len; i++){
-      var myElement= Object.values(myData)[i]
-      var value = Object.values(myElement)
-      var key = Object.keys(myElement)
-
-      for (j = 0; j<value.length; j++){
-        var myValue = value[j]
-        var myKey = key[j]
-
-
-        if (myKey === "categories"){
-          myElement.image = `eventImages/${myValue}.jpg`
-
-        }
-      }
-    }
-  }
-
+  let defaultCategory = [
+    {category: "Evening Events"},
+    {category: "Sports and Fitness"},
+    {category: "Misc"}
+  ];
+  
   useEffect(() => {
     const getEvents = async () => {
       const data = await fetch("http://localhost:5000/api/events/allevents");
@@ -47,6 +34,8 @@ function Events() {
     };
 
     getEvents().catch(console.error);
+
+    setCategoryList(defaultCategory);
   }, []);
 
   const navigateToEventDetails = (event) => {
@@ -64,12 +53,49 @@ function Events() {
     }}
     )};
 
-  return (
-    <div className="App">
-      <h2>Collection of Events</h2>
-      <EventsList events = {events} handleClick = {navigateToEventDetails} />
-    </div>
-  );
-}
+ 
+    function getFilteredList() {
+      if (!selectedCategory) {
+        console.log("No selected category:", events)
+        return events;
+      }
 
-export default Events;
+      console.log("Selected category: ", selectedCategory)
+      const filteredEvents = events.filter((event) => event.categories === selectedCategory);
+      console.log("Filtered events: ", filteredEvents)
+
+      return filteredEvents;
+    }
+
+    function handleCategoryChange(event) {
+      setSelectedCategory(event.target.value);
+    }
+
+    const eventsList = useMemo(getFilteredList, [selectedCategory, events]);
+    
+    return (
+      <div className="App">
+        <h2>Collection of Events</h2>
+        <div>Filter by Category
+        <div>
+            <select
+              name="category-list"
+              id="category-list"
+              onChange={handleCategoryChange}
+            >
+              <option value="">All</option>
+              <option value="Evening Events">Evening Events</option>
+              <option value="Sports and Fitness">Sports and Fitness</option>
+              <option value="Misc">Misc</option>
+            </select>
+          </div>
+          </div>
+        <EventsList 
+        events={eventsList} 
+        handleClick={navigateToEventDetails} 
+        />
+      </div> 
+    );
+  }
+  
+  export default Events;
