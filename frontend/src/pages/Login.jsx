@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2"
@@ -11,9 +12,10 @@ async function loginUser(userData) {
         method: "POST",
         mode:"cors",
         headers: {
-            "Content-Type": "application/json"
-           
+            "Content-Type": "application/json",
+            "Authorization": "bearer"      
         },
+        
         body: JSON.stringify(userData),
     })
     .then((response)=>{
@@ -22,7 +24,7 @@ async function loginUser(userData) {
                 icon: 'success',
                 title: 'Yay',
                 text: 'you are successfully logged in',
-              })
+              }) 
             navigate("/")
         } else {
             var error = response.status
@@ -31,7 +33,6 @@ async function loginUser(userData) {
                 icon: 'error',
                 title: 'Oops...',
                 text: 'wrong username or password',
-                footer: '<a href="">Why do I have this issue?</a>'
               })
         }
     })

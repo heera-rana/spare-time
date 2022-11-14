@@ -3,9 +3,6 @@ const bcrypt = require('bcryptjs')
 const User = require('../models/userModels')
 const jwt = require('jsonwebtoken')
 
-
-
-
 //Register a new user
 // using the route /api/users
 const registerUser =  asyncHandler(async (req, res) => {
@@ -16,7 +13,6 @@ const registerUser =  asyncHandler(async (req, res) => {
         res.status(400)
         throw new Error ('Please include all of the fields')
     }
-
 //duplicate user check then returns error message if duplicated
 const userExists = await User.findOne({email: `${email}`})
 
@@ -24,19 +20,15 @@ if (userExists) {
     res.status(400)
     throw new Error('User already exists')
 }
-
 //password encrytion
 const salt = await bcrypt.genSalt(10)
 const hashedPassword = await bcrypt.hash(password, salt)
-
 //create a user
 const user = await User.create({
     name,
     email,
     password: hashedPassword
 })
-
-
 //this comes from the user above and then sends the data back
 if (user) {
     res.status(201).json({
@@ -49,8 +41,6 @@ if (user) {
         res.status(400).json('Invalid user data')
     }
 })
-
-
 //user login 
 // using the route /api/users/login
 const loginUser =  asyncHandler(async (req, res) => {
@@ -71,8 +61,6 @@ const loginUser =  asyncHandler(async (req, res) => {
     }
 
 })
-
-
 //generate webtoken function 
 const generateToken = (id) => {
     return jwt.sign({ id }, process.env.JWT_SECRET, {
