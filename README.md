@@ -14,7 +14,7 @@ Clone repo from 'https://github.com/hra03/spare-time'
         2. mongoimport --db 'spare-time' --collection 'users' --jsonArray './backend/mongodbdata/userData.json'
 
 2. In the terminal 
-    1. navigate to the folder where you cloned the repo (e.g cd '/Users/Ryan.Sutcliffe/Desktop/shu-ass-1' )
+    1. navigate to the folder where you cloned the repo (e.g cd '/Users/Ryan.Sutcliffe/Desktop/spare-time' )
     2. type the following command in the spare-time folder
         1. npm install 
         2. cd frontend/
