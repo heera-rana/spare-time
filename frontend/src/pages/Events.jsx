@@ -3,7 +3,6 @@ import {useNavigate} from 'react-router-dom';
 import '../CSS/AppMobile.css';
 import '../CSS/AppDesktop.css';
 import EventsList from "../components/EventsList";
-// import EventFilter from "../components/EventFilter";
 import { useMemo } from "react";
 import addImage from "../components/util/addImage";
 
@@ -89,9 +88,9 @@ function Events() {
               <option value="Misc">Misc</option>
             </select>
           </div>
-          </div>
+          </div> 
         <EventsList 
-        events={eventsList} 
+           events={eventsList} 
         handleClick={navigateToEventDetails} 
         />
       </div> 
