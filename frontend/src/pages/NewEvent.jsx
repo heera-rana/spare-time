@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import { useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
+import "./NewEvent.css"
 
 function NewEvent (){  
     const [event, setEvent] = useState([])
@@ -60,6 +61,7 @@ function NewEvent (){
 
     return (
         <div>
+            <div className= "newEvent">
             <h1>Add new event</h1>
             <form onSubmit={onSubmit}>
                 <label className="form-group"> Event Title: </label>
@@ -141,9 +143,9 @@ function NewEvent (){
                         step="0.01"
                         required
                     />
-               
+
                 <label className="form-group">Description: </label>
-                    <textarea
+                    <input
                         type="text"
                         className="form-control"
                         id="description"
@@ -151,9 +153,13 @@ function NewEvent (){
                         onChange={(e)=>updateEvent({description: e.target.value})}
                         required
                     />
+
+                    <div className="button">
                 { !isPending && <button> Add new Event</button>}
                 { isPending && <button disabled> Adding new Event ...</button>}
+                </div>
             </form>
+            </div>
         </div>
     )
 }
