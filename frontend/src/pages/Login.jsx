@@ -6,48 +6,61 @@ import './Login.css';
 
 function Login (){
 
-const navigate = useNavigate()
+    const navigate = useNavigate()
+    let myToken
 
-async function loginUser(userData) {
-    return fetch("http://localhost:5000/api/users/login", {
-        method: "POST",
-        mode:"cors",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": "bearer"      
-        },
+    async function loginUser(userData) {
+        let content
+        fetch("http://localhost:5000/api/users/login", {
+            method: "POST",
+            mode:"cors",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "bearer"      
+            },
         
-        body: JSON.stringify(userData),
-    })
-    .then((response)=>{
-        if (response.status === 200){
-            Swal.fire({
-                icon: 'success',
-                title: 'Yay',
-                text: 'you are successfully logged in',
-              }) 
-            navigate("/")
-        } else {
-            var error = response.status
-            console.log(error)
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'wrong username or password',
-              })
-        }
-    })
-}
-         const [email, setEmail] = useState({});
-         const [password, setPassword] = useState({});
+            body: JSON.stringify(userData),
+        })
+        .then((response)=>{
+            if (response.status === 200){
+                //console.log(response)
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Yay',
+                    text: 'you are successfully logged in',
+                }) 
+                navigate("/")
+                content = response.json()
+                return content
+            } else {
+                var error = response.status
+                console.log(error)
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'wrong username or password',
+                })
+            }
+        })
+        .then((data)=>{
+            console.log(data)
+            myToken = data["token"]
+            console.log(myToken)
+            return myToken
+        })
+        return 
+    }
+    const [email, setEmail] = useState({});
+    const [password, setPassword] = useState({});
     
-         const onSubmit = async e => {
-           e.preventDefault();
+    const onSubmit = async e => {
+        e.preventDefault();
         loginUser({
-             email,
-             password,
-           }); 
-         } 
+            email,
+            password,
+        })
+    } 
+
     return (
         <div className= "loginForm">
             <h1>Good to see you again</h1>
