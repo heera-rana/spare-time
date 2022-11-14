@@ -4,7 +4,7 @@ const userSchema = mongoose.Schema({
     name: {
         type: String,
         required: [true, 'Please add a name'],
-        match: [/^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%&^*(){}|~<>;:[\]]{2,}$/, 'Please only use non-special character values'],
+        match: [/^[\w'\-,.][^0-9_!,.§±¡?÷?¿/\\+=@#$£€›%&^*(){}"|~<>;:[\]]{2,49}$/, 'Please only use non-special character values'],
     }, 
 
     email: {
