@@ -60,7 +60,7 @@ function SignUp (){
                     type="text"
                     className="form-control"
                     id="name"
-                    pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%&^*(){}|~<>;:[\]]{2,}$"
+                    pattern="^[\w'\-,.][^0-9_!,.§±¡?÷?¿/\\+=@#$£€›%&^*(){}|~<>;:[\]]{2,49}$"
                     alert='please do not include any special characters'
                     value={user.name}
                     onChange={(e)=>updateUser({name: e.target.value})}
