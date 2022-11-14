@@ -2,6 +2,7 @@ const asyncHandler = require('express-async-handler')
 const bcrypt = require('bcryptjs')
 const User = require('../models/userModels')
 const jwt = require('jsonwebtoken')
+
 //Register a new user
 // using the route /api/users
 const registerUser =  asyncHandler(async (req, res) => {
@@ -44,7 +45,9 @@ if (user) {
 // using the route /api/users/login
 const loginUser =  asyncHandler(async (req, res) => {
     const {email, password} = req.body
+
     const user = await User.findOne({email})
+
 //checks if the user name and password match. password from the login request agaainst the user password from database
     if(user && (await bcrypt.compare(password, user.password))) {
         res.status(200).json({
@@ -64,6 +67,9 @@ const generateToken = (id) => {
         expiresIn: '30d',
     })
 }
+
+
+
 module.exports = {
     registerUser,
     loginUser,
