@@ -2,6 +2,7 @@ import React, {useState} from "react"
 import { useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
 import "./NewEvent.css"
+import { useEffect } from "react"
 
 function NewEvent (){  
     const [event, setEvent] = useState([])
@@ -14,9 +15,17 @@ function NewEvent (){
             return {...prev, ...value}
         })
     } //... or spread syntax allows us to make shallow copies of js opjects  by expanding an array into individual elements
+    const [token, setToken] = useState([]);
 
+    useEffect(() => {
+      const token = (localStorage.getItem('token'));
+      if (token) {
+        setToken(token);
+      }
+    }, []);
     async function onSubmit(e){
         e.preventDefault()
+
 
         const newEvent ={ ...event}
 
@@ -26,7 +35,8 @@ function NewEvent (){
             method: "POST",
             mode:"cors",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${token}`
             },
             body: JSON.stringify(newEvent),
         })

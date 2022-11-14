@@ -16,7 +16,7 @@ function Login (){
             mode:"cors",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": "bearer"      
+                "Authorization": `Bearer`     
             },
         
             body: JSON.stringify(userData),
@@ -31,6 +31,7 @@ function Login (){
                 }) 
                 navigate("/")
                 content = response.json()
+                
                 return content
             } else {
                 var error = response.status
@@ -46,7 +47,8 @@ function Login (){
             console.log(data)
             myToken = data["token"]
             console.log(myToken)
-            return myToken
+            localStorage.setItem('token', myToken)
+            return myToken   
         })
         return 
     }
