@@ -44,9 +44,9 @@ function Login (){
             }
         })
         .then((data)=>{
-            console.log(data)
+            //console.log(data)
             myToken = data["token"]
-            console.log(myToken)
+            //console.log(myToken)
             sessionStorage.setItem('token', myToken)
             return myToken   
         })
