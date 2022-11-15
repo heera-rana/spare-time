@@ -28,10 +28,12 @@ function Login (){
                     icon: 'success',
                     title: 'Yay',
                     text: 'you are successfully logged in',
-                }) 
+                })
+                .then(()=>{
+                    window.location.reload()
+                })
                 navigate("/")
                 content = response.json()
-                
                 return content
             } else {
                 var error = response.status
@@ -44,9 +46,9 @@ function Login (){
             }
         })
         .then((data)=>{
-            console.log(data)
+            //console.log(data)
             myToken = data["token"]
-            console.log(myToken)
+            //console.log(myToken)
             sessionStorage.setItem('token', myToken)
             return myToken   
         })

@@ -19,7 +19,7 @@
     "$oid": "636d10ba2026309d9a2fa661"
   },
   "title": "Beginners French",
-  "categories": "Classes and Workshops ",
+  "categories": "Classes and Workshops",
   "provider": "Merv Worsam",
   "date": {
     "$date": {
@@ -35,7 +35,7 @@
     "$oid": "636d10ba2026309d9a2fa662"
   },
   "title": "Sensory class",
-  "categories": "Childrens Events ",
+  "categories": "Childrens Events",
   "provider": "Shalne Harsum",
   "date": {
     "$date": {
@@ -50,7 +50,7 @@
   "_id": {
     "$oid": "636d10ba2026309d9a2fa663"
   },
-  "title": "Board game night ",
+  "title": "Board game night",
   "categories": "Evening Events",
   "provider": "Reta Bellee",
   "date": {
@@ -66,7 +66,7 @@
   "_id": {
     "$oid": "636d10ba2026309d9a2fa664"
   },
-  "title": "Cinema ",
+  "title": "Cinema",
   "categories": "Evening Events",
   "provider": "Faina Ivanikhin",
   "date": {
@@ -82,7 +82,7 @@
   "_id": {
     "$oid": "636d10ba2026309d9a2fa665"
   },
-  "title": "Cocktail making ",
+  "title": "Cocktail making",
   "categories": "Evening Events",
   "provider": "Jacinda Geleman",
   "date": {
@@ -98,8 +98,8 @@
   "_id": {
     "$oid": "636d10ba2026309d9a2fa666"
   },
-  "title": "Open mic night ",
-  "categories": "Music Events ",
+  "title": "Open mic night",
+  "categories": "Music Events",
   "provider": "Anatollo Clemett",
   "date": {
     "$date": {
@@ -114,7 +114,7 @@
   "_id": {
     "$oid": "636d10ba2026309d9a2fa667"
   },
-  "title": "Escape room creator ",
+  "title": "Escape room creator",
   "categories": "Misc",
   "provider": "Bendick Hartup",
   "date": {
@@ -146,8 +146,8 @@
   "_id": {
     "$oid": "636d10ba2026309d9a2fa669"
   },
-  "title": "Comedy club ",
-  "categories": "Music Events ",
+  "title": "Comedy club",
+  "categories": "Music Events",
   "provider": "Kath Bendare",
   "date": {
     "$date": {
@@ -162,7 +162,7 @@
   "_id": {
     "$oid": "636d10ba2026309d9a2fa66a"
   },
-  "title": "Lego build ",
+  "title": "Lego build",
   "categories": "Misc",
   "provider": "Nicolette April",
   "date": {
@@ -178,7 +178,7 @@
   "_id": {
     "$oid": "636d10ba2026309d9a2fa66b"
   },
-  "title": "Board game night ",
+  "title": "Board game night",
   "categories": "Misc",
   "provider": "Marlin Mandeville",
   "date": {
@@ -210,8 +210,8 @@
   "_id": {
     "$oid": "636d10ba2026309d9a2fa66d"
   },
-  "title": "Sweaty mama ",
-  "categories": "Childrens Events ",
+  "title": "Sweaty mama",
+  "categories": "Childrens Events",
   "provider": "Flem Marusic",
   "date": {
     "$date": {
@@ -226,8 +226,8 @@
   "_id": {
     "$oid": "636d10ba2026309d9a2fa66e"
   },
-  "title": "Baby opera ",
-  "categories": "Childrens Events ",
+  "title": "Baby opera",
+  "categories": "Childrens Events",
   "provider": "Klarika Colum",
   "date": {
     "$date": {
@@ -242,7 +242,7 @@
   "_id": {
     "$oid": "636d10ba2026309d9a2fa66f"
   },
-  "title": "Pub crawl ",
+  "title": "Pub crawl",
   "categories": "Evening Events",
   "provider": "Anthe Langrick",
   "date": {
@@ -258,7 +258,7 @@
   "_id": {
     "$oid": "636d10ba2026309d9a2fa670"
   },
-  "title": "Escape room creator ",
+  "title": "Escape room creator",
   "categories": "Misc",
   "provider": "Elbertina Aldis",
   "date": {
@@ -274,7 +274,7 @@
   "_id": {
     "$oid": "636d10ba2026309d9a2fa671"
   },
-  "title": "Ghost walk ",
+  "title": "Ghost walk",
   "categories": "Evening Events",
   "provider": "Rollie Normanton",
   "date": {
@@ -290,8 +290,8 @@
   "_id": {
     "$oid": "636d10ba2026309d9a2fa672"
   },
-  "title": "Beginners Italian ",
-  "categories": "Classes and Workshops ",
+  "title": "Beginners Italian",
+  "categories": "Classes and Workshops",
   "provider": "Kimmy Wettern",
   "date": {
     "$date": {
