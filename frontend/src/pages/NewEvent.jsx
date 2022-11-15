@@ -18,7 +18,7 @@ function NewEvent (){
     const [token, setToken] = useState([]);
 
     useEffect(() => {
-      const token = (localStorage.getItem('token'));
+      const token = (sessionStorage.getItem('token'));
       if (token) {
         setToken(token);
       }
@@ -50,13 +50,13 @@ function NewEvent (){
                   })
                 navigate("/")
             } else {
-                var error = response.status
-                console.log(error)
+                var error = (response.status === 401)
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
-                    text: 'event already exists',
+                    text: 'you must login to add an event',
                   })
+                  navigate("/login")
             }
         })
         setEvent([])

@@ -26,7 +26,6 @@ function Events() {
       if (data) {
         const response = await data.json();
         addImage(response)
-       // console.log(response)
         setEvents(response);
       } else {
         console.log("No events found.");

@@ -36,7 +36,7 @@ function SignUp (){
                     title: 'Yay',
                     text: 'successfully resgistered',
                   })
-                navigate("/")
+                navigate("/login")
             } else {
                 var error = response.status
                 console.log(error)
