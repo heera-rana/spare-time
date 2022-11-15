@@ -1,13 +1,14 @@
 function OneEvent(props){
 
     const eventData = props.eventData
+    console.log(eventData.state)
     
     return(
         <div>
             <h2>{eventData.state.title}</h2>
             <h3>{eventData.state.time}</h3>
             
-            <img src= {eventData.state.image} alt= "oneevent"/>
+            <img src= {eventData.state.image} alt= "oneEvent"/>
             
             <p>Hosted by: {eventData.state.provider}</p>
             <p>The event will last approximately {eventData.state.duration} minutes</p>

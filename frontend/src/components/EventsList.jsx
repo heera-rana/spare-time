@@ -1,7 +1,4 @@
-function EventsList (props) {
-    const events = props.events
-    const handleClick = props.handleClick
-
+function EventsList ({events, handleClick, deleteClick}) {
     return (
         <div className="App">
           <div className="item-container">
@@ -14,6 +11,7 @@ function EventsList (props) {
                 <p> Hosted by: {event.provider}</p>
                 <p>£{event.price}</p>
                 <button onClick={() => handleClick(event)} > More details  </button>
+                <button onClick={()=>deleteClick(event)}>Delete</button>
               </div>
             ))}
           </div>

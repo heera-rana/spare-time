@@ -1,6 +1,6 @@
 const asyncHandler = require('express-async-handler')
+const { ObjectId } = require('mongodb')
 const Event = require('../models/eventModels')
-
 
 
 //pulls through all the current event data uses - http://localhost:5000/api/events
@@ -9,6 +9,14 @@ const allEvents =  asyncHandler(async (req, res) => {
     res.status(201)
     res.send(allEvents)
     }) 
+
+//find one event
+const deleteEvent = asyncHandler(async(req, res)=>{
+    let id = req.params
+    const oneEvent = await Event.findOneAndDelete({_id: ObjectId(`${id}`)})
+    res.status(201)
+    res.send(oneEvent)
+})
 
 //add a new event
 // using the route /api/users
@@ -73,4 +81,5 @@ const newEvent =  asyncHandler(async (req, res) => {
 module.exports = {
     newEvent,
     allEvents,
+    deleteEvent
 }

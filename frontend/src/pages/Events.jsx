@@ -12,6 +12,8 @@ function Events() {
   const [categoryList, setCategoryList] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
 
+  const [oneEvent, setOneEvent] = useState([])
+
   const navigate = useNavigate();
 
   let defaultCategory = [
@@ -39,9 +41,35 @@ function Events() {
     setCategoryList(defaultCategory);
   }, []);
 
+  useEffect(() => {
+    const getOneEvent = async () => {
+      const data = await fetch(`http://localhost:5000/api/events/deleteEvent/:id`,{
+        method: "DELETE",
+        mode:"cors",
+        headers: {
+            "Content-Type": "application/json",
+            //Authorization: `Bearer ${token}`
+        },
+        body: JSON.stringify()
+      })
+      .then((response)=>{
+          console.log(response)
+      })
+      if (data) {
+        console.log(data)
+        const response = await data.json();
+        // addImage(response)
+        setOneEvent(response);
+      } else {
+        console.log("No events found.");
+      }
+    }
+    getOneEvent()
+  }, []);
+
   const navigateToEventDetails = (event) => {
     navigate(`/${event._id}`, {state:{
-      id: event.id, 
+      id: event._id, 
       image: event.image,
       title: event.title,
       categories: event.categories,
@@ -71,7 +99,17 @@ function Events() {
   }
 
   const eventsList = useMemo(getFilteredList, [selectedCategory, events]);
-  
+
+  function deleteFunction(event){
+    var id
+    console.log(events)
+    events.map((event)=>(
+      id = event._id,
+      console.log(id)
+    ))
+   // getOneEvent(id)
+  }
+
   
   return (
       <div className="App">
@@ -96,6 +134,7 @@ function Events() {
         <EventsList 
         events={eventsList} 
         handleClick={navigateToEventDetails} 
+        deleteClick={deleteFunction}
         />
       </div> 
   )
