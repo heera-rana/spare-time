@@ -4,23 +4,35 @@ import SearchBar from "./SearchBar";
 import EventData from './Data.json'
 import {useState, useEffect} from "react"
 
-const Navigation = ({ token, onLogout }) => {
-  console.log(token)
+const Navigation = ({ token }) => {
+
+  const isLoggedIn=((check)=>{
+    if (check.length === 0){
+      return false
+    } else {
+      return true
+    }
+  })
+
   return (
     <nav>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/login">Login</Link></li>
-        <li><Link to="/addEvent">Add Event</Link></li>
-        <li><Link to="/signUp">Sign Up</Link></li>
-        <li><Link to="/events">Events</Link></li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        {!isLoggedIn(token) && (
+            <li>
+              <Link to="/login">Login</Link>
+              <Link to="/signUp">Sign Up</Link>
+            </li>
+        )}
+        {isLoggedIn(token) && (
+          <li><Link to="/addEvent">Add Event</Link></li>
+        )}
+        <li>
+          <Link to="/events">Events</Link>
+        </li>
       </ul>
-
-      {token && (
-        <button type="button" onClick={onLogout}>
-          Sign Out
-        </button>
-      )}
     </nav>
   );
 };
@@ -29,7 +41,7 @@ function Header() {
   const [token, setToken] = useState([]);
 
   useEffect(() => {
-    const token = (localStorage.getItem('token'));
+    const token = (sessionStorage.getItem('token'))
     if (token) {
     setToken(token);
     }
