@@ -47,7 +47,7 @@ function Login (){
             console.log(data)
             myToken = data["token"]
             console.log(myToken)
-            localStorage.setItem('token', myToken)
+            sessionStorage.setItem('token', myToken)
             return myToken   
         })
         return 
