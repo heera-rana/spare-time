@@ -88,10 +88,8 @@ function Events() {
               <option value="Sports and Fitness">Sports and Fitness</option>
               <option value="Classes and Workshops">Classes and Workshops</option>
               <option value="Music Events">Music Events</option>
-              <option value="Misc">Misc</option>
-              <option value="Music Events">Music Events</option>
-              <option value="Classes and Workshops">Classes and Workshops</option>
               <option value="Childrens Events">Childrens Events</option>
+              <option value="Misc">Misc</option>
             </select>
           </div>
           </div>
