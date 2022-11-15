@@ -1,51 +1,37 @@
 import whiteMenu from "../images/whiteMenu.svg";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import EventData from './Data.json'
 import {useState, useEffect} from "react"
-
-const Navigation = ({ token }) => {
-
-  const isLoggedIn=((check)=>{
-    if (check.length === 0){
-      return false
-    } else {
-      return true
-    }
-  })
-
-  return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        {!isLoggedIn(token) && (
-            <li>
-              <Link to="/login">Login</Link>
-              <Link to="/signUp">Sign Up</Link>
-            </li>
-        )}
-        {isLoggedIn(token) && (
-          <li><Link to="/addEvent">Add Event</Link></li>
-        )}
-        <li>
-          <Link to="/events">Events</Link>
-        </li>
-      </ul>
-    </nav>
-  );
-};
+import Navigation from "./Navigation"
+import Swal from "sweetalert2"
 
 function Header() {
-  const [token, setToken] = useState([]);
+  const [token, setToken] = useState([])
+  const navigate = useNavigate()
 
   useEffect(() => {
     const token = (sessionStorage.getItem('token'))
+    //console.log(token)
     if (token) {
     setToken(token);
     }
   }, [])
+
+  const signOut = ()=>{
+    sessionStorage.removeItem('token')
+    // const token = (sessionStorage.getItem('token'))
+    // console.log(token)
+    Swal.fire({
+      icon: 'success',
+      title: 'Logged out',
+      text: 'you are successfully logged out',
+    }) 
+    .then(()=>{
+      window.location.reload()
+    })
+    navigate("/")
+  }
 
   return (
           <header className="App-header">
@@ -58,7 +44,7 @@ function Header() {
                 <div className="burgerMenuContainer">
                   <img src={whiteMenu} alt="Menu" width="30px" id="burgerMenu"/>  
                 </div>
-                <Navigation token={token}/>
+                <Navigation token={token} signOut = {signOut}/>
             </header>
           )}
 

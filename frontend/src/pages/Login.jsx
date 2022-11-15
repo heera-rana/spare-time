@@ -28,10 +28,12 @@ function Login (){
                     icon: 'success',
                     title: 'Yay',
                     text: 'you are successfully logged in',
-                }) 
+                })
+                .then(()=>{
+                    window.location.reload()
+                })
                 navigate("/")
                 content = response.json()
-                
                 return content
             } else {
                 var error = response.status
