@@ -17,7 +17,9 @@ function Events() {
   let defaultCategory = [
     {category: "Evening Events"},
     {category: "Sports and Fitness"},
-    {category: "Misc"}
+    {category: "Misc"},
+    {category: "Classes and Workshops"}, 
+    {category: "Music Events"}
   ];
   
   useEffect(() => {
@@ -85,6 +87,8 @@ function Events() {
               <option value="">All</option>
               <option value="Evening Events">Evening Events</option>
               <option value="Sports and Fitness">Sports and Fitness</option>
+              <option value="Classes and Workshops">Classes and Workshops</option>
+              <option value="Music Events">Music Events</option>
               <option value="Misc">Misc</option>
             </select>
           </div>
