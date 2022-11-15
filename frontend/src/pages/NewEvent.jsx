@@ -1,8 +1,7 @@
-import React, {useState} from "react"
+import {useState, useEffect} from "react"
 import { useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
 import "./NewEvent.css"
-import { useEffect } from "react"
 
 function NewEvent (){  
     const [event, setEvent] = useState([])

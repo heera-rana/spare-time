@@ -14,11 +14,7 @@ function Events() {
 
   const navigate = useNavigate();
 
-  let defaultCategory = [
-    {category: "Evening Events"},
-    {category: "Sports and Fitness"},
-    {category: "Misc"}
-  ];
+  let defaultCategory = [];
   
   useEffect(() => {
     const getEvents = async () => {
@@ -50,29 +46,28 @@ function Events() {
       description: event.description,
       availability: event.availability,
     }}
-    )};
+  )};
 
  
-    function getFilteredList() {
-      if (!selectedCategory) {
-        console.log("No selected category:", events)
-        return events;
-      }
-
-      console.log("Selected category: ", selectedCategory)
-      const filteredEvents = events.filter((event) => event.categories === selectedCategory);
-      console.log("Filtered events: ", filteredEvents)
-
-      return filteredEvents;
+  function getFilteredList() {
+    if (!selectedCategory) {
+     // console.log("No selected category:", events)
+      return events;
     }
+    // console.log("Selected category: ", selectedCategory)
+    const filteredEvents = events.filter((event) => event.categories === selectedCategory);
+    //console.log("Filtered events: ", filteredEvents)
+    return filteredEvents;
+  }
 
-    function handleCategoryChange(event) {
-      setSelectedCategory(event.target.value);
-    }
+  function handleCategoryChange(event) {
+    setSelectedCategory(event.target.value);
+  }
 
-    const eventsList = useMemo(getFilteredList, [selectedCategory, events]);
-    
-    return (
+  const eventsList = useMemo(getFilteredList, [selectedCategory, events]);
+  
+  
+  return (
       <div className="App">
         <h2>Collection of Events</h2>
         <div>Filter by Category
@@ -86,6 +81,9 @@ function Events() {
               <option value="Evening Events">Evening Events</option>
               <option value="Sports and Fitness">Sports and Fitness</option>
               <option value="Misc">Misc</option>
+              <option value="Music Events">Music Events</option>
+              <option value="Classes and Workshops">Classes and Workshops</option>
+              <option value="Childrens Events">Childrens Events</option>
             </select>
           </div>
           </div>
@@ -94,7 +92,7 @@ function Events() {
         handleClick={navigateToEventDetails} 
         />
       </div> 
-    );
-  }
+  )
+}
   
-  export default Events;
+export default Events
