@@ -1,5 +1,4 @@
 function OneEvent({eventData}){
-    console.log(eventData.image)
     return(
         <div>
                 <h2>{eventData.title}</h2>

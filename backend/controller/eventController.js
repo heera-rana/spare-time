@@ -20,6 +20,15 @@ const oneEvent = asyncHandler(async(req, res)=>{
     res.send(oneEvent)
 })
 
+//delete one event
+const deleteEvent = asyncHandler(async(req, res)=>{ 
+    let id = req.params.id
+    const o_id = new ObjectId(id)
+    const deleteEvent = await Event.deleteOne({_id: `${o_id}`})
+    res.status(201)
+    res.send(deleteEvent)
+})
+
 //add a new event
 // using the route /api/users
 const newEvent =  asyncHandler(async (req, res) => {
@@ -83,5 +92,6 @@ const newEvent =  asyncHandler(async (req, res) => {
 module.exports = {
     newEvent,
     allEvents,
-    oneEvent
+    oneEvent,
+    deleteEvent
 }
