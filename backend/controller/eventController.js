@@ -14,8 +14,8 @@ const allEvents =  asyncHandler(async (req, res) => {
 //find one event
 const oneEvent = asyncHandler(async(req, res)=>{
     let id = req.params.id
-    const oneEvent = await Event.findOne({title: `${id}`})
-    console.log(oneEvent)
+    const o_id = new ObjectId(id)
+    const oneEvent = await Event.findOne({_id: `${o_id}`})
     res.status(201)
     res.send(oneEvent)
 })
