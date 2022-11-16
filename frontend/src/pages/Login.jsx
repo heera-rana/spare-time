@@ -67,7 +67,7 @@ function Login (){
 
     return (
         <div className= "loginForm">
-            <h1>Good to see you again</h1>
+            <h2>Good to see you again!</h2>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
                 Email:

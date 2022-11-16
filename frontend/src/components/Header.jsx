@@ -1,4 +1,4 @@
-import whiteMenu from "../images/whiteMenu.svg";
+// import whiteMenu from "../images/whiteMenu.svg";
 import { useNavigate } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import EventData from './Data.json'
@@ -34,18 +34,16 @@ function Header() {
   }
 
   return (
-          <header className="App-header">
-                <div>
-                  <div className= "h1">
+    <div className="App-header">
                   <h1>Spare Time</h1>
-                  </div>
-                </div>   
+                  <div className="h1">
+            <Navigation token={token} signOut = {signOut}/>
+            </div>
                 <SearchBar placeholder="Search for an event..." data={EventData}/>       
-                <div className="burgerMenuContainer">
-                  <img src={whiteMenu} alt="Menu" width="30px" id="burgerMenu"/>  
-                </div>
-                <Navigation token={token} signOut = {signOut}/>
-            </header>
+                {/* <div className="burgerMenuContainer"> */}
+                  {/* <img src={whiteMenu} alt="Menu" width="30px" id="burgerMenu"/>   */}
+                {/* </div> */}
+            </div>
           )}
 
 export default Header

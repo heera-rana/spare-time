@@ -4,7 +4,7 @@ function OneEvent(props){
     
     return(
         <div>
-            <h1>{eventData.state.title}</h1>
+            <h2>{eventData.state.title}</h2>
             <h3>{eventData.state.time}</h3>
             
             <img src= {eventData.state.image} alt= "oneevent"/>
