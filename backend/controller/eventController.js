@@ -1,5 +1,6 @@
 const asyncHandler = require('express-async-handler')
 const { ObjectId } = require('mongodb')
+const mongoose = require("mongoose")
 const Event = require('../models/eventModels')
 
 
@@ -11,9 +12,10 @@ const allEvents =  asyncHandler(async (req, res) => {
     }) 
 
 //find one event
-const deleteEvent = asyncHandler(async(req, res)=>{
-    let id = req.params
-    const oneEvent = await Event.findOneAndDelete({_id: ObjectId(`${id}`)})
+const oneEvent = asyncHandler(async(req, res)=>{
+    let id = req.params.id
+    const oneEvent = await Event.findOne({title: `${id}`})
+    console.log(oneEvent)
     res.status(201)
     res.send(oneEvent)
 })
@@ -81,5 +83,5 @@ const newEvent =  asyncHandler(async (req, res) => {
 module.exports = {
     newEvent,
     allEvents,
-    deleteEvent
+    oneEvent
 }
