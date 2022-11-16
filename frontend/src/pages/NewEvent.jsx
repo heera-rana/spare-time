@@ -64,7 +64,7 @@ function NewEvent (){
     return (
         <div>
             <div className= "newEvent">
-            <h1>Add new event</h1>
+            <h2>Add new event</h2>
             <form onSubmit={onSubmit}>
                 <label className="form-group"> Event Title: </label>
                     <input

@@ -54,7 +54,7 @@ function SignUp (){
     return (
         <div>
             <div className= "signUp">
-            <h1>Sign Up</h1>
+            <h2>Sign Up</h2>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
                 Name:
