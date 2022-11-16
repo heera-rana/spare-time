@@ -1,4 +1,4 @@
-import whiteMenu from "../images/whiteMenu.svg";
+// import whiteMenu from "../images/whiteMenu.svg";
 import { Link } from "react-router-dom";
 
 const Navigation = ({ token , signOut}) => {

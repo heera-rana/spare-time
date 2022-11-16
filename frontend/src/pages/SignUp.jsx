@@ -36,7 +36,8 @@ function SignUp (){
                     title: 'Yay',
                     text: 'successfully resgistered',
                   })
-                navigate("/login")
+                navigate("/")
+                console.log('User has been sucessfully registered')
             } else {
                 var error = response.status
                 console.log(error)
@@ -64,7 +65,7 @@ function SignUp (){
                     id="name"
                     pattern="^[\w'\-,.][^0-9_!,.§±¡?÷?¿/\\+=@#$£€›%&^*(){}|~<>;:[\]]{2,49}$"
                     alert='please do not include any special characters'
-                    value={user.name}
+                    value={user.name || ""}
                     onChange={(e)=>updateUser({name: e.target.value})}
                     required
                     />
@@ -75,7 +76,7 @@ function SignUp (){
                     type="email"
                     className="form-control"
                     id="email"
-                    value={user.email}
+                    value={user.email || ""}
                     onChange={(e)=>updateUser({email: e.target.value})}
                     required
                     />
@@ -86,7 +87,7 @@ function SignUp (){
                     type="password"
                     className="form-control"
                     id="password"
-                    value={user.password}
+                    value={user.password || ""}
                     onChange={(e)=>updateUser({password: e.target.value})}
                     required
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"

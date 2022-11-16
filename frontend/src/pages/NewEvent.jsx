@@ -56,6 +56,7 @@ function NewEvent (){
                     text: 'you must login to add an event',
                   })
                   navigate("/login")
+                  console.log('error occured:',error, '. user must be logged in to add an event')
             }
         })
         setEvent([])
@@ -71,19 +72,21 @@ function NewEvent (){
                         type="text"
                         className="form-control"
                         id="title"
-                        value={event.title}
+                        value={event.title || ""}
                         onChange={(e)=>updateEvent({title: e.target.value})}
                         required
                     />
                 
                 <label className="form-group"> Category: </label>
                     <select 
+
                         value={event.categories} 
                         className="form-control" 
                         onChange={(e)=>updateEvent({categories: e.target.value})}
                         required
+                        defaultValue={'DEFAULT'} 
                     >
-                        <option value="" disabled selected>--- Select category ---</option>
+                        <option value="DEFAULT" disabled>--- Select category ---</option>
                         <option value= "Childrens Events">Childrens Events</option>
                         <option value="Classes and Workshops">Classes and Workshops</option>
                         <option value="Evening Events">Evening Events</option>
@@ -97,7 +100,7 @@ function NewEvent (){
                         type="text"
                         className="form-control"
                         id="provider"
-                        value={event.provider}
+                        value={event.provider || ""}
                         onChange={(e)=>updateEvent({provider: e.target.value})}
                         required
                     />
@@ -117,7 +120,7 @@ function NewEvent (){
                         type="number"
                         className="form-control"
                         id="availability"
-                        value={event.availability}
+                        value={event.availability || ""}
                         onChange={(e)=>updateEvent({availability: e.target.value})}
                         required
                     />
@@ -127,7 +130,7 @@ function NewEvent (){
                         type="number"
                         className="form-control"
                         id="duration"
-                        value={event.duration}
+                        value={event.duration || ""}
                         onChange={(e)=>updateEvent({duration: e.target.value})}
                         required
                         placeholder="minutes"
@@ -140,7 +143,7 @@ function NewEvent (){
                         type="number"
                         className="form-control"
                         id="price"
-                        value={event.price}
+                        value={event.price || ""}
                         onChange={(e)=>updateEvent({price: e.target.value})}
                         step="0.01"
                         required
@@ -151,7 +154,7 @@ function NewEvent (){
                         type="text"
                         className="form-control"
                         id="description"
-                        value={event.description}
+                        value={event.description || ""}
                         onChange={(e)=>updateEvent({description: e.target.value})}
                         required
                     />
