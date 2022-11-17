@@ -1,20 +1,5 @@
 [{
-  "_id": {
-    "$oid": "636d10ba2026309d9a2fa660"
-  },
-  "title": "Pub quiz",
-  "categories": "Evening Events",
-  "provider": "Zebulen McAlarney",
-  "date": {
-    "$date": {
-      "$numberLong": "1641060000000"
-    }
-  },
-  "duration": 57,
-  "price": 16.58,
-  "description": "Grab you knowledge squad for a classic pub quiz",
-  "availability": 82
-},{
+  
   "_id": {
     "$oid": "636d10ba2026309d9a2fa661"
   },
