@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 
 const Navigation = ({ token , signOut}) => {
+  //console.log(token)
   const isLoggedIn=((check)=>{
     if (check.length === 0){
       return false

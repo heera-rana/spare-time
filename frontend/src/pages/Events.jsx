@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {useNavigate} from 'react-router-dom';
 import EventsList from "../components/EventsList";
 // import EventFilter from "../components/EventFilter";
@@ -24,13 +24,7 @@ function Events() {
 
   const navigate = useNavigate();
 
-  let defaultCategory = [
-    {category: "Evening Events"},
-    {category: "Sports and Fitness"},
-    {category: "Misc"},
-    {category: "Classes and Workshops"}, 
-    {category: "Music Events"}
-  ];
+  let defaultCategory = [];
   
   useEffect(() => {
     const getEvents = async () => {
@@ -49,20 +43,20 @@ function Events() {
     setCategoryList(defaultCategory);
   }, []);
 
-  const navigateToEventDetails = (event) => {
-    navigate(`/${event._id}`, {state:{
-      id: event.id, 
-      image: event.image,
-      title: event.title,
-      categories: event.categories,
-      time: event.date, 
-      provider: event.provider,
-      duration: event.duration,
-      price: event.price,
-      description: event.description,
-      availability: event.availability,
-    }}
-  )};
+  // const navigateToEventDetails = (event) => {
+  //   navigate(`/${event._id}`, {state:{
+  //     id: event._id, 
+  //     image: event.image,
+  //     title: event.title,
+  //     categories: event.categories,
+  //     time: event.date, 
+  //     provider: event.provider,
+  //     duration: event.duration,
+  //     price: event.price,
+  //     description: event.description,
+  //     availability: event.availability,
+  //   }}
+  // )};
 
  
   function getFilteredList() {
@@ -81,8 +75,7 @@ function Events() {
   }
 
   const eventsList = useMemo(getFilteredList, [selectedCategory, events]);
-  
-  
+
   return (
       <div className="App">
         <SlideShow slides={slides}/>
@@ -106,7 +99,7 @@ function Events() {
           </div>
         <EventsList 
         events={eventsList} 
-        handleClick={navigateToEventDetails} 
+        //handleClick={navigateToEventDetails} 
         />
       </div> 
   )

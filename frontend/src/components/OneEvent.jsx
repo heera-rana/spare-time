@@ -1,20 +1,15 @@
-function OneEvent(props){
-
-    const eventData = props.eventData
-    
+function OneEvent({eventData}){
     return(
         <div>
-            <h2>{eventData.state.title}</h2>
-            <h3>{eventData.state.time}</h3>
-            
-            <img src= {eventData.state.image} alt= "oneevent"/>
-            
-            <p>Hosted by: {eventData.state.provider}</p>
-            <p>The event will last approximately {eventData.state.duration} minutes</p>
-            <p>£{eventData.state.price} per person</p>
-            <p>{eventData.state.categories}</p>
-            <p>Availability: {eventData.state.availability}</p>
-            <p>{eventData.state.description}</p>
+                <h2>{eventData.title}</h2>
+                <h3>{eventData.time}</h3>            
+                <img src= {eventData.image} alt= "oneEvent"/>          
+                <p>Hosted by: {eventData.provider}</p>
+                <p>The event will last approximately {eventData.duration} minutes</p>
+                <p>£{eventData.price} per person</p>
+                <p>{eventData.categories}</p>
+                <p>Availability: {eventData.availability}</p>
+                <p>{eventData.description}</p>
         </div>
     )
 }
