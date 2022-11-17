@@ -12,6 +12,7 @@ function EventsList ({events}) {
             <h3>{event.title}</h3>
             <p>{event.categories}</p>
             <p>Start Time: {event.date}</p>
+            <p>Time: {events.time}</p>
             <p>Hosted by: {event.provider}</p>
             <p>£{event.price}</p>
             <button onClick={() => navigate(`${event._id}`)} > More details  </button>
