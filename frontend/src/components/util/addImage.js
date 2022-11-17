@@ -1,4 +1,5 @@
 function addImage(someData) {
+  console.log(someData)
   let i, j;
   var len = Object.keys(someData).length;
   var myData = Object.values(someData);

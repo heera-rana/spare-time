@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import OneEvent from "../components/OneEvent"
-import addImage from "../components/util/addImage"
 
 function EventDetails () {
     const [oneEvent, setOneEvent] = useState([])
@@ -12,7 +11,6 @@ function EventDetails () {
 
     useEffect(() => {
         const token = (sessionStorage.getItem('token'))
-        console.log(token)
         if (token) {
             setToken(token);
         }
@@ -33,7 +31,7 @@ function EventDetails () {
             })
             if (data) {
                 const response = await data.json()
-                addImage(response)
+                response.image = `eventImages/${response.categories}.jpg`
                 setOneEvent(response);
               } else {
                 console.log("No events found.");
