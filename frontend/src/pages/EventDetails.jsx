@@ -41,9 +41,13 @@ function EventDetails () {
     },[])
 
     const deleteEvent = async () =>{
-        //console.log(oneEvent)
         const response = await fetch(`http://localhost:5000/api/events/oneEvent/${id}`,{
-            method: "DELETE"
+            method: "DELETE",
+            mode:"cors",
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${token}`
+            },
         })
     }
 

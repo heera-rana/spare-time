@@ -9,7 +9,7 @@ const allEvents =  asyncHandler(async (req, res) => {
     const allEvents = await Event.find({})
     res.status(201)
     res.send(allEvents)
-    }) 
+}) 
 
 //find one event
 const oneEvent = asyncHandler(async(req, res)=>{
@@ -27,6 +27,29 @@ const deleteEvent = asyncHandler(async(req, res)=>{
     const deleteEvent = await Event.deleteOne({_id: `${o_id}`})
     res.status(201)
     res.send(deleteEvent)
+})
+
+//update event
+const updateEvent = asyncHandler(async(req,res)=>{
+    let myEvent = req.body
+    const o_id = new ObjectId(req.body.id)
+    const updateEvent = await Event.updateOne(
+        {_id: `${o_id}`},
+        {
+            $set: {
+              title: myEvent.title,
+              ctegories: myEvent.categories,
+              provider: myEvent.provider,
+              date: myEvent.date,
+              duration: myEvent.duration,
+              price: myEvent.price,
+              description: myEvent.description,
+              availability: myEvent.availability,
+            },
+          },
+    )
+    res.status(201)
+    res.send(updateEvent)
 })
 
 //add a new event
@@ -93,5 +116,6 @@ module.exports = {
     newEvent,
     allEvents,
     oneEvent,
-    deleteEvent
+    deleteEvent,
+    updateEvent
 }
