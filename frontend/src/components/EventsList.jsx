@@ -1,3 +1,5 @@
+import '../CSS/eventCard.css'
+
 function EventsList (props) {
     const events = props.events
     const handleClick = props.handleClick

@@ -8,7 +8,7 @@ function EventDetails (props) {
     return (
         <div>
             <OneEvent eventData={eventData} />
-            <button onClick={() => navigate('/events')} >go back</button>
+            <button onClick={() => navigate('/')} >go back</button>
         </div>
     );
 }

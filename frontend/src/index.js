@@ -19,11 +19,10 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route index element={<Home />} />
+        <Route index element={<Events />} />
         <Route path="Login" element={<Login />} />
         <Route path="addEvent" element={<NewEvent />} />
         <Route path="signUp" element={<SignUp />} />
-        <Route path="events" element={<Events />} />
         <Route path=":id" element={<EventDetails />} />
       </Route>
     </Routes>

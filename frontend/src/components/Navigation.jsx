@@ -18,18 +18,19 @@ const Navigation = ({ token , signOut}) => {
         </li>
         {!isLoggedIn(token) && (
             <li>
-              <Link to="/login">Login</Link>
+              <Link to="/login">Login</Link> <br/>
+            </li>
+        )}
+         {!isLoggedIn(token) && (
+            <li>
               <Link to="/signUp">Sign Up</Link>
             </li>
         )}
         {isLoggedIn(token) && (
           <li><Link to="/addEvent">Add Event</Link></li>
         )}
-        <li>
-          <Link to="/events">Events</Link>
-        </li>
         {isLoggedIn(token) && (
-            <button onClick={() => signOut()}>Sign Out</button>
+            <button class='signOutButton' onClick={() => signOut()}>Sign Out</button>
         )}
       </ul>
     </nav>

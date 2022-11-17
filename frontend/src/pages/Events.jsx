@@ -1,13 +1,23 @@
 import React, { useState, useEffect } from "react";
 import {useNavigate} from 'react-router-dom';
-import '../CSS/AppMobile.css';
-import '../CSS/AppDesktop.css';
 import EventsList from "../components/EventsList";
 // import EventFilter from "../components/EventFilter";
 import { useMemo } from "react";
 import addImage from "../components/util/addImage";
+import SlideShow from "../components/SlideShow"
 
 function Events() {
+
+  const slides = [
+    {url: 'http://localhost:3000/eventImages/Evening%20Events.jpg', title:'Evening Events'},
+  //   {url: 'http://localhost:3000/eventImages/Classes%20and%20Workshops.jpg', title: 'Classes and Workshops'},
+    {url: 'http://localhost:3000/eventImages/Childrens%20Events.jpg', title: 'Childrens Events'},
+    {url: 'http://localhost:3000/eventImages/Misc.jpg', title: 'Misc'},
+    {url: 'http://localhost:3000/eventImages/Music%20Events.jpg', title: 'Music Events'},
+  //   {url: 'http://localhost:3000/eventImages/Sports%20and%20Fitness.jpg', title: 'Sports'}
+ ]
+
+
   const [events, setEvents] = useState([]);
   const [categoryList, setCategoryList] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -75,9 +85,10 @@ function Events() {
   
   return (
       <div className="App">
+        <SlideShow slides={slides}/>
         <h2>Collection of Events</h2>
         <div>Filter by Category
-        <div>
+        <div className="category-dropdown" >
             <select
               name="category-list"
               id="category-list"

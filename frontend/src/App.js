@@ -1,7 +1,7 @@
-import './CSS/AppMobile.css';
-import './CSS/AppDesktop.css';
+
 import { Outlet } from "react-router-dom";
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 
@@ -12,10 +12,10 @@ function App() {
     <div className="App">
         <Header />
           <div>
-              
+              <Outlet />
           </div>
-        <footer />
-        <Outlet />  
+
+        <Footer />
     </div>
   
     
