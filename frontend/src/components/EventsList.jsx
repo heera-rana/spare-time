@@ -12,7 +12,8 @@ function EventsList (props) {
                 <img src={event.image} alt="" />
                 <h3>{event.title}</h3>
                 <p>{event.categories}</p>
-                <p>Start Time: {event.date}</p>
+                <p>Date: {event.date}</p>
+                <p>Time: {event.time}</p>
                 <p> Hosted by: {event.provider}</p>
                 <p>£{event.price}</p>
                 <button onClick={() => handleClick(event)} > More details  </button>

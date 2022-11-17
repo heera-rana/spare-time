@@ -20,6 +20,12 @@ const eventSchema = mongoose.Schema({
         type: String,
         required: true, 
     },
+
+    time : {
+        type: String,
+        required: true,
+    },
+    
   
     duration: {
         type: Number,
