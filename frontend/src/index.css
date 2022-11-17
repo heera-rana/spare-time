@@ -1,49 +1,65 @@
-/* this is the css for our landing page's background, App is a "box" */
-body {
-  margin: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: #e8e4e6 ;
-}
+.App-header {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  max-height: 250px;
+  background-color: #004643;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
+.h1 {
+  color: #f9bc60 ;
+  font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif' ;
+  font-weight: bold ;
+}
+.App {
+  text-align: center;
+  background-color: #004643;
+  color: #f9bc60
+}
+ul{
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  color: #f9bc60 ;
+}
+li {
+list-style: none;
+  padding: 6px;
+  margin-right: 5px;
+  margin-left: 5px;
+  }
 
-h1 {
-  text-align: right;
+  body {
+    font-style: normal;
+  }
+
+  .signOutButton{
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif' ;
+
+  }
+
+  a:link {
+    color: #f9bc60 ;
+  }
   
-}
-.item-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2em;
-}
-.card {
-  text-align: center;
-  padding: 10px;
-  width: 300px;
-  border-radius: 5px;
-  padding: 1em;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  background-color: #abd1c6;
-}
-img {
-  height: 200px;
-  display: flex;
-  border-radius: 5px;
-  width: 300px;
-  text-align: center;
-  padding: 0px;
+  /* visited link */
+  a:visited {
+    color: #f9bc60 ;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #f9bc60 ;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #f9bc60 ;
+  }
 
-}
-
-.nav-bar {
-font-size: 9px;
-
-}
+  .category-dropdown {
+    background-color: #004643;
+  }

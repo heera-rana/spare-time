@@ -1,16 +1,17 @@
 import { useState } from "react";
-import "./Slideshow.css" ;
+
 
 const sliderStyles ={
-    height: '100%',
-    position: 'relative',
+    padding: '5px',
+    background: '#004643'
 }
 const slideStyles={
-    width: '100%',
     height: '100%',
+    padding: '10px',
     borderRadius: '10px',
-    backgroundPosition: 'center',
+    backgroundPosition: 'left',
     backgroundSize: 'cover',
+    padding: '50px',
     transition: 'ease 1000ms',
 
 }

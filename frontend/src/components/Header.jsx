@@ -34,15 +34,14 @@ function Header() {
   }
 
   return (
-    <div className="App-header">
-                  <h1>Spare Time</h1>
-                  <div className="h1">
+    <div>
+      <div className="App-header">
+                  <h1 className="h1">Spare Time</h1>
+            <div>
             <Navigation token={token} signOut = {signOut}/>
             </div>
-                <SearchBar placeholder="Search for an event..." data={EventData}/>       
-                {/* <div className="burgerMenuContainer"> */}
-                  {/* <img src={whiteMenu} alt="Menu" width="30px" id="burgerMenu"/>   */}
-                {/* </div> */}
+            </div>
+                <SearchBar placeholder="Search for an event..." data={EventData}/> 
             </div>
           )}
 

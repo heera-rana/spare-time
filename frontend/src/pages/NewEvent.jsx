@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react"
 import { useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
-import "./NewEvent.css"
+import '../CSS/form.css'
 
 function NewEvent (){  
     const [event, setEvent] = useState([])
@@ -64,7 +64,7 @@ function NewEvent (){
 
     return (
         <div>
-            <div className= "newEvent">
+            <div className= "form">
             <h2>Add new event</h2>
             <form onSubmit={onSubmit}>
                 <label className="form-group"> Event Title: </label>

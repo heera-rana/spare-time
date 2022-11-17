@@ -10,14 +10,10 @@ function Home() {
       //   {url: 'http://localhost:3000/eventImages/Sports%20and%20Fitness.jpg', title: 'Sports'}
      ]
 
-     const containerStyles ={
-        width: '700px',
-        height: "500px",
-        margin: '0 auto'
-     }
+   
      return(
         <div>
-           <div style={containerStyles}>
+           <div>
                 <SlideShow slides={slides}/>
            </div>
         </div>

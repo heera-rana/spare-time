@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './SearchBar.css';
+import '../CSS/SearchBar.css';
 
 
 function SearchBar ({placeholder, data}){

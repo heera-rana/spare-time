@@ -2,7 +2,7 @@
 import React, {useState} from "react"
 import { useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
-import "./Signup.css";
+import '../CSS/form.css'
 
 function SignUp (){
     
@@ -54,7 +54,7 @@ function SignUp (){
 
     return (
         <div>
-            <div className= "signUp">
+            <div className= "form">
             <h2>Sign Up</h2>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
