@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import {useNavigate} from 'react-router-dom';
+//import {useNavigate} from 'react-router-dom';
 import EventsList from "../components/EventsList";
 // import EventFilter from "../components/EventFilter";
 import { useMemo } from "react";
@@ -19,12 +19,12 @@ function Events() {
 
 
   const [events, setEvents] = useState([]);
-  const [categoryList, setCategoryList] = useState([]);
+  //const [categoryList, setCategoryList] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
-  let defaultCategory = [];
+  //let defaultCategory = [];
   
   useEffect(() => {
     const getEvents = async () => {
@@ -40,7 +40,7 @@ function Events() {
 
     getEvents().catch(console.error);
 
-    setCategoryList(defaultCategory);
+    //setCategoryList(defaultCategory);
   }, []);
 
   // const navigateToEventDetails = (event) => {

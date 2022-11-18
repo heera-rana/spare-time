@@ -8,6 +8,7 @@ function SignUp (){
     
     const [user, setUser] = useState([])
     const navigate = useNavigate
+    let myToken
 
     function updateUser(value){
         return setUser((prev) => {
@@ -15,9 +16,13 @@ function SignUp (){
         })
     } //... or spread syntax allows us to make shallow copies of js opjects  by expanding an array into individual elements
 
+    const onSubmit = async e => {
+        e.preventDefault();
+        createUser(user)
+    }
 
-    async function onSubmit(e){
-        e.preventDefault()
+    async function createUser(user){
+        let content
 
         const newUser ={ ...user}
 
@@ -35,9 +40,14 @@ function SignUp (){
                     icon: 'success',
                     title: 'Yay',
                     text: 'successfully resgistered',
-                  })
-                navigate("/")
+                })
+                .then(()=>{
+                    window.location.reload()
+                })
+                //navigate("/")
                 console.log('User has been sucessfully registered')
+                content = response.json()
+                return content
             } else {
                 var error = response.status
                 console.log(error)
@@ -45,11 +55,14 @@ function SignUp (){
                     icon: 'error',
                     title: 'Oops...',
                     text: 'something went wrong',
-                  })
+                })
             }
         })
-        setUser({ name: "", email:"", password: ""})
-      
+        .then((data)=>{
+            myToken = data["token"]
+            sessionStorage.setItem('token', myToken)
+            return myToken   
+        })
     }
 
     return (
