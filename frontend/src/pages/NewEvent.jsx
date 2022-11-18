@@ -32,6 +32,7 @@ function NewEvent (){
         const newEvent ={ ...event}
 
         setIsPending(true)
+        console.log(token)
 
         await fetch("http://localhost:5000/api/events/newEvent", {
             method: "POST",

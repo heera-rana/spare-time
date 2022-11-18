@@ -8,6 +8,7 @@ function SignUp (){
     
     const [user, setUser] = useState([])
     const navigate = useNavigate
+    let myToken
 
     function updateUser(value){
         return setUser((prev) => {
@@ -17,6 +18,7 @@ function SignUp (){
 
 
     async function onSubmit(e){
+        let content
         e.preventDefault()
 
         const newUser ={ ...user}
@@ -31,14 +33,18 @@ function SignUp (){
         })
         .then((response)=>{
             if (response.status === 201){
-                console.log(response.body)
                 Swal.fire({
                     icon: 'success',
                     title: 'Yay',
                     text: 'successfully resgistered',
-                  })
-                navigate("/")
+                })
+                // .then(()=>{
+                //     window.location.reload()
+                // })
+                // navigate("/")
                 console.log('User has been sucessfully registered')
+                content = response.json()
+                return content
             } else {
                 var error = response.status
                 console.log(error)
@@ -49,8 +55,14 @@ function SignUp (){
                   })
             }
         })
+        .then((data)=>{
+            console.log(data)
+            myToken = data["token"]
+            console.log(myToken)
+            sessionStorage.setItem('token', myToken)
+            return myToken   
+        })
         setUser({ name: "", email:"", password: ""})
-      
     }
 
     return (
