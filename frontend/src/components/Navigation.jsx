@@ -12,29 +12,31 @@ const Navigation = ({ token , signOut}) => {
   })
 
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        {!isLoggedIn(token) && (
-            <li>
-              <Link to="/login">Login</Link> <br/>
-            </li>
-        )}
-         {!isLoggedIn(token) && (
-            <li>
-              <Link to="/signUp">Sign Up</Link>
-            </li>
-        )}
-        {isLoggedIn(token) && (
-          <li><Link to="/addEvent">Add Event</Link></li>
-        )}
-        {isLoggedIn(token) && (
-            <button class='signOutButton' onClick={() => signOut()}>Sign Out</button>
-        )}
-      </ul>
-    </nav>
+    <label className="nav">
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          {!isLoggedIn(token) && (
+              <li>
+                <Link to="/login">Login</Link> <br/>
+              </li>
+          )}
+          {!isLoggedIn(token) && (
+              <li>
+                <Link to="/signUp">Sign Up</Link>
+              </li>
+          )}
+          {isLoggedIn(token) && (
+            <li><Link to="/addEvent">Add Event</Link></li>
+          )}
+          {isLoggedIn(token) && (
+              <button class='signOutButton' onClick={() => signOut()}>Sign Out</button>
+          )}
+        </ul>
+      </nav>
+    </label>
   );
 }
 

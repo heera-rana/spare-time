@@ -50,11 +50,11 @@ function EventDetails () {
     }
 
     return (
-        <div>
+        <div className="oneEvent">
             <OneEvent eventData={oneEvent} />
-            <button onClick={() => navigate('/')} >go back</button>
+            <button className="button" onClick={() => navigate('/')} >go back</button>
             {isLoggedIn(token) && 
-                <button onClick={()=>deleteEvent()}>delete</button>
+                <button className="button" onClick={()=>deleteEvent()}>delete</button>
            }
         </div>
     )

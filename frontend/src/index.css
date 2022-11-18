@@ -1,65 +1,185 @@
+.head {
+  background-color: #004643;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 0px;
+ font-size: 20px;
+}
+body {
+  font-style: normal;
+  background-color: #004643;
+  font-family: "Montserrat",sans-serif;
+}
 .App-header {
   display: flex;
   flex-direction: row;
   font-size: 20px;
   max-height: 250px;
   background-color: #004643;
-
+  justify-content: space-between;
+  font-family: "Montserrat",sans-serif;
+  
 }
 .h1 {
   color: #f9bc60 ;
   font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif' ;
   font-weight: bold ;
+  font-size: 80px;
+  margin: 0px;
+  margin-left:50px;
+}
+.h2 {
+  font-size: large;
+  margin: 0px;
 }
 .App {
   text-align: center;
   background-color: #004643;
-  color: #f9bc60
+  color: #f9bc60;
 }
 ul{
   display: flex;
-  align-content: center;
   flex-direction: row;
-  color: #f9bc60 ;
+  color: #f9bc60;
+  
 }
 li {
 list-style: none;
   padding: 6px;
-  margin-right: 5px;
-  margin-left: 5px;
+  font-size: 25px;
   }
 
-  body {
-    font-style: normal;
-  }
+  a {
+    text-decoration: none;
 
+}
+a:hover {
+    background-color: lightgrey;
+}
+#clearBtn {
+    cursor: pointer;
+}
+
+
+
+
+  /*  */
   .signOutButton{
     background: none;
     border: none;
-    font-size: 20px;
-    font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif' ;
+    font-size: 25px;
+    font-family: "Montserrat",sans-serif; ;
+    color: #f9bc60;
+  }
 
+  .signOutButton :hover {
+    color: #f9bc60 ;
   }
 
   a:link {
     color: #f9bc60 ;
   }
-  
   /* visited link */
   a:visited {
     color: #f9bc60 ;
   }
-  
   /* mouse over link */
   a:hover {
     color: #f9bc60 ;
   }
-  
   /* selected link */
   a:active {
-    color: #f9bc60 ;
+    color: #f9bc60;
   }
-
   .category-dropdown {
     background-color: #004643;
   }
+
+  select{
+    width: 250px;
+    height:30px;
+    background-color: #abd1c6;
+    margin-bottom: 10px;
+  }
+
+  option {
+    background-color: #abd1c6;
+  }
+
+  .button {
+    background-color: #004643;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color:#d5d9d9;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Montserrat",sans-serif;
+    font-size: 13px;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100px;
+  }
+  
+  .button:hover {
+    background-color: #abd1c6;
+    color:#000000;
+    border: 1px solid #000000;
+    }
+  
+  .button:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+  }
+  .nav-bar {
+    font-size: 9px;
+    }
+/* adjusts the css based on the screen size */
+    @media screen and (max-width: 850px) {
+      .App-header {
+        flex-direction: column;
+        background-color: #004643;
+      }
+      .signOutButton{
+        font-size: 20px;
+      }
+      ul{
+        display: flex;
+        color: #f9bc60;
+        position: relative;
+        margin: 0px;
+      }
+      li {
+        list-style: none;
+          padding: 6px;
+          font-size: 20px;
+          }
+      .nav {
+        display: flex;
+        align-self: center;
+        margin: 5px;
+        padding-inline-start: 0px;
+      }
+      .h1 {
+        color: #f9bc60 ;
+        font-size: 80px;
+        font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif' ;
+        font-weight: bold ;
+        padding-left: 5px;
+        margin: 0px;
+      }
+    }
+     
+

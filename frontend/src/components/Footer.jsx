@@ -1,7 +1,7 @@
 function Footer() {
     return (
       <div>
-        <p> version 1.0.0 </p>
+        <p> Dev version 1.0.0 </p>
       </div>
     )
   }

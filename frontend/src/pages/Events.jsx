@@ -82,11 +82,7 @@ function Events() {
         <h2>Collection of Events</h2>
         <div>Filter by Category
         <div className="category-dropdown" >
-            <select
-              name="category-list"
-              id="category-list"
-              onChange={handleCategoryChange}
-            >
+            <select className="category-list" onChange={handleCategoryChange}>
               <option value="">All</option>
               <option value="Evening Events">Evening Events</option>
               <option value="Sports and Fitness">Sports and Fitness</option>
