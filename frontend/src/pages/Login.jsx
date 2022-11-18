@@ -32,6 +32,7 @@ function Login (){
                 .then(()=>{
                     window.location.reload()
                 })
+                console.log("here")
                 navigate("/")
                 content = response.json()
                 return content

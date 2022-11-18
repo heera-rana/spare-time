@@ -16,10 +16,13 @@ function SignUp (){
         })
     } //... or spread syntax allows us to make shallow copies of js opjects  by expanding an array into individual elements
 
+    const onSubmit = async e => {
+        e.preventDefault();
+        createUser(user)
+    }
 
-    async function onSubmit(e){
+    async function createUser(user){
         let content
-        e.preventDefault()
 
         const newUser ={ ...user}
 
@@ -38,10 +41,10 @@ function SignUp (){
                     title: 'Yay',
                     text: 'successfully resgistered',
                 })
-                // .then(()=>{
-                //     window.location.reload()
-                // })
-                // navigate("/")
+                .then(()=>{
+                    window.location.reload()
+                })
+                //navigate("/")
                 console.log('User has been sucessfully registered')
                 content = response.json()
                 return content
@@ -52,17 +55,14 @@ function SignUp (){
                     icon: 'error',
                     title: 'Oops...',
                     text: 'something went wrong',
-                  })
+                })
             }
         })
         .then((data)=>{
-            console.log(data)
             myToken = data["token"]
-            console.log(myToken)
             sessionStorage.setItem('token', myToken)
             return myToken   
         })
-        setUser({ name: "", email:"", password: ""})
     }
 
     return (
