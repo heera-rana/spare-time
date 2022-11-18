@@ -31,6 +31,7 @@ function SignUp (){
         })
         .then((response)=>{
             if (response.status === 201){
+                console.log(response.body)
                 Swal.fire({
                     icon: 'success',
                     title: 'Yay',
