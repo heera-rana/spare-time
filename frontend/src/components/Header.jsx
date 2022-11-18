@@ -37,7 +37,7 @@ function Header() {
     <div>
       <div className="App-header">
                   <h1 className="h1">Spare Time</h1>
-            <div>
+            <div className="nav">
             <Navigation token={token} signOut = {signOut}/>
             </div>
             </div>
