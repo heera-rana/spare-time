@@ -130,12 +130,12 @@ function EventDetails () {
     }
 
     return (
-        <div>
+        <div className="oneEvent">
             <OneEvent eventData={oneEvent} />
-            <button onClick={() => navigate('/')} >go back</button>
+            <button className="button" onClick={() => navigate('/')} >go back</button>
             {isLoggedIn(token) && 
                 <div>
-                    <button onClick={()=>deleteEvent()}>delete</button>
+                    <button className="button" onClick={()=>deleteEvent()}>delete</button>
                     {/* <button onClick={()=>()}>edit</button> */}
                     <EventForm event={oneEvent} onSubmit={onSubmit} setIsPending={setIsPending} updateEvent={updateEvent} buttonLabel={buttonLabel} title={"Edit event"}/>
                 </div>
