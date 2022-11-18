@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2"
-import '../CSS/form.css'
 
 function Login (){
 
@@ -92,7 +91,7 @@ function Login (){
                     />
                 </div>
                 <div className="form-group">
-                    <input
+                    <input className="button"
                         type="submit"
                         value="Submit"
                     />

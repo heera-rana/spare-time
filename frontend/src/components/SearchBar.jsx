@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-import '../CSS/SearchBar.css';
-
 
 function SearchBar ({placeholder, data}){
 

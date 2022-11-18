@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import '../CSS/eventCard.css'
 
 function EventsList ({events}) {
   const navigate = useNavigate()
