@@ -31,23 +31,29 @@ const deleteEvent = asyncHandler(async(req, res)=>{
 
 //update event
 const updateEvent = asyncHandler(async(req,res)=>{
-    let myEvent = req.body
-    const o_id = new ObjectId(req.body.id)
-    const updateEvent = await Event.updateOne(
-        {_id: `${o_id}`},
-        {
-            $set: {
-              title: myEvent.title,
-              ctegories: myEvent.categories,
-              provider: myEvent.provider,
-              date: myEvent.date,
-              duration: myEvent.duration,
-              price: myEvent.price,
-              description: myEvent.description,
-              availability: myEvent.availability,
-            },
-          },
-    )
+    const {_id, title, categories, provider, date, duration, price, description, availability } = req.body
+    const updateEvent = await Event.findOneAndUpdate(
+        {_id: _id},
+        {   title: title,
+            categories: categories,
+            provider: provider,
+            date: date,
+            duration: duration,
+            price: price,
+            description: description,
+            availability: availability,
+        },
+        {new: true},
+        // (err, data) => {
+        //     console.log(data)
+        //     if (err) {
+        //       //  console.log(err)
+        //         return res.status(500)
+        //     } else {
+        //         return res.status(200).send(data)
+        //     }
+        // }
+        )
     res.status(201)
     res.send(updateEvent)
 })
@@ -106,7 +112,7 @@ const newEvent =  asyncHandler(async (req, res) => {
     }   else {
             res.status(400)
             throw new error('Invalid event data')
-        }
+    }
 })
 
 

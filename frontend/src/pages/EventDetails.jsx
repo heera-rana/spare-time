@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import EventForm from "../components/EventForm"
 import OneEvent from "../components/OneEvent"
+import Swal from "sweetalert2"
 
 function EventDetails () {
     const [oneEvent, setOneEvent] = useState([])
@@ -12,12 +13,6 @@ function EventDetails () {
     const id = params.id
     const buttonLabel = ["Update event", "Updating event"]
 
-
-    function updateEvent(value){
-        return setOneEvent((prev) => {
-            return {...prev, ...value}
-        })
-    } 
 
     useEffect(() => {
         const token = (sessionStorage.getItem('token'))
@@ -33,6 +28,12 @@ function EventDetails () {
           return true
         }
     })
+
+    function updateEvent(value){
+        return setOneEvent((prev) => {
+            return {...prev, ...value}
+        })
+    } 
 
     useEffect(()=>{
         const getOneEvent = async () =>{
@@ -59,11 +60,37 @@ function EventDetails () {
                 Authorization: `Bearer ${token}`
             },
         })
+        .then((response)=>{
+            console.log(response)
+            if (response.status === 201){
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Yay',
+                    text: 'event deleted',
+                  })
+                .then(()=>{
+                    navigate("/")
+                })
+            } else {
+                var error = (response.status === 401)
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'you must login to delete an event',
+                  })
+                  navigate("/login")
+                  console.log('error occured:',error, '. user must be logged in to delete an event')
+            }
+        })
     }
 
     
-    const onSubmit = async () =>{
+    const onSubmit = async (e) =>{
+        e.preventDefault()
+
         setIsPending(true)
+
+        const updatedEvent={...oneEvent}
 
         const data = await fetch(`http://localhost:5000/api/events/oneEvent/${id}`,{
             method: "POST",
@@ -72,17 +99,34 @@ function EventDetails () {
                 "Content-Type": "application/json",
                 Authorization: `Bearer ${token}`
             },
+            body: JSON.stringify(updatedEvent)
         })
-        if (data) {
-            const response = await data.json()
-           // response.image = `eventImages/${response.categories}.jpg`
-            //setOneEvent(response);
-            setIsPending(false)
-        } else {
-            console.log("No events found.");
-        }
-        onSubmit().catch(console.error)
-        setOneEvent([]);
+        .then((response)=>{
+            console.log(response)
+            if (response.status === 201){
+                //response = response.json()
+                setIsPending(false)
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Yay',
+                    text: 'event updated',
+                  })
+                .then(()=>{
+                    window.location.reload()
+                })
+                //navigate("/")
+            } else {
+                var error = (response.status === 401)
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'you must login to add an event',
+                  })
+                  navigate("/login")
+                  console.log('error occured:',error, '. user must be logged in to add an event')
+            }
+        })
+        setOneEvent([])
     }
 
     return (

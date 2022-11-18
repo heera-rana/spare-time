@@ -9,7 +9,6 @@ function NewEvent (){
     const [isPending, setIsPending] = useState(false)
     const navigate = useNavigate()
     const buttonLabel = ["Add new event", "Adding new event"]
-    console.log(buttonLabel)
 
 
     function updateEvent(value){
@@ -25,6 +24,7 @@ function NewEvent (){
         setToken(token);
       }
     }, []);
+
     async function onSubmit(e){
         e.preventDefault()
 
