@@ -58,7 +58,7 @@ function SignUp (){
             <h2>Sign Up</h2>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
-                Name:
+                <label for="name">Name</label>
                     <input
                     type="text"
                     className="form-control"
@@ -71,7 +71,7 @@ function SignUp (){
                     />
                 </div>
                 <div className="form-group">
-                Email:
+                <label for="email">Email</label>
                     <input
                     type="email"
                     className="form-control"
@@ -82,7 +82,7 @@ function SignUp (){
                     />
                 </div>
                 <div className="form-group">
-                    Password:
+                <label for="password">Password</label>
                     <input
                     type="password"
                     className="form-control"
