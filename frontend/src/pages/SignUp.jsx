@@ -19,6 +19,10 @@ function SignUp (){
     const onSubmit = async e => {
         e.preventDefault();
         createUser(user)
+
+        .then(()=>{
+            navigate("/")
+        })
     }
 
     async function createUser(user){

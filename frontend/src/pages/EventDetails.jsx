@@ -61,7 +61,6 @@ function EventDetails () {
             },
         })
         .then((response)=>{
-            console.log(response)
             if (response.status === 201){
                 Swal.fire({
                     icon: 'success',
@@ -92,7 +91,7 @@ function EventDetails () {
 
         const updatedEvent={...oneEvent}
 
-        const data = await fetch(`http://localhost:5000/api/events/oneEvent/${id}`,{
+        await fetch(`http://localhost:5000/api/events/oneEvent/${id}`,{
             method: "POST",
             mode:"cors",
             headers: {
@@ -114,7 +113,6 @@ function EventDetails () {
                 .then(()=>{
                     window.location.reload()
                 })
-                //navigate("/")
             } else {
                 var error = (response.status === 401)
                 Swal.fire({
