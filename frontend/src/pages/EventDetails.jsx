@@ -138,7 +138,7 @@ function EventDetails () {
       }
 
     return (
-        <div lassName="oneEvent">
+        <div className="oneEvent">
             <OneEvent eventData={oneEvent} />
             <button className="button" onClick={() => navigate('/')} >Back</button>
             {isLoggedIn(token) && 
