@@ -23,19 +23,20 @@
 
         To install node download the windows installer, from the link above and follow below:
 
-        1.	Run the node installer
-            a.	Go to the directory where you downloaded the node installer (.msi file). By default, this is your Downloads directory
-            b.	Double-click the .msi file
-        2.	The installer will then run
-            a.	Once open, click next on all the setup screens, until the cmd automatically opens. 
-            b.	You may need to run further node tools in PowerShell, if never installed before, these should run automatically
+        1. Run the node installer
+            a. Go to the directory where you downloaded the node installer (.msi file). By default, this is your Downloads directory
+            b. Double-click the .msi file
+        2. The installer will then run
+            a. Once open, click next on all the setup screens, until the cmd automatically opens. 
+            b. You may need to run further node tools in PowerShell, if never installed before, these should run automatically.
+                - If they do not run automatically, run <<npm i -S node-powershell>> in the cmd
 
         To check that you have node installed: 
         -	Open the command prompt and run:
                 <<npm -v>>
 
         If node is installed, it will return the version number that is installed.
-
+  
     **Install Mongodb on windows**
 
         1. Download the MongoDB Community installer from https://www.mongodb.com/try/download/community
@@ -98,68 +99,49 @@
 
         - If the error message 'ECONNREFUSED ::1:27017, is recieved in the terminal, then a potenial fix is to: open the spare-time folder, then navigate '/backend/config/', then open the dbconnetion.js file in notepad, and replace <<"mongodb://localhost:27017/spare-time">> with <<"mongodb://0.0.0.0:27017/spare-time">> If the change has solved to issue, in the terminal where the app is running, it will say 'mongoDB connected: 0.0.0.0'
 
-
-
-
-   
-    
-    
-    
-    
-    
-    
-    
-    
 **Mac Install**
+
+    **The code to execute below is within <<>> brackets, do not include the brackets when executing the commands**
 
     **Install node.js**
 
     Ensure you have the latest LTS version of NodeJS installed from here: https://nodejs.org/en/download/
 
-    To install node download the windows installer, from the link above and follow below:
-
-    1.	Run the node installer
-        a.	Go to the directory where you downloaded the node installer (.msi file). By default, this is your Downloads directory
-        b.	Double-click the .msi file
-    2.	The installer will then run
-        a.	Once open, click next on all the setup screens, until the cmd automatically opens. 
-        b.	You may need to run further node tools in PowerShell, if never installed before, these should run automatically
-
-    To check that you have node installed: 
-    -	Open the command prompt and run:
-            <<npm -v>>
+    To check that you have node installed, open the command prompt and run:
+            - <<npm -v>>
 
     If node is installed, it will return the version number that is installed.
 
-    *** Install Mongodb ***
-     ///// the below need finishing
-
-
-
-
-
-    //any other pre-requisties? // need instructions for mac and windows
+    ***Install Mongodb***
+    
+    following the guidence from 'https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/'
+    
+    1. Open a a new terminal and run the following commands:
+        2. <<xcode-select --install>>
+        3. <<brew tap mongodb/brew>>
+        4. <<brew update>>
+        5. <<brew install mongodb-community@6.0>>
+    
+    **Importing Data into Mongodb**
 
     Clone repo from 'https://github.com/hra03/spare-time'
 
-    1. open new terminal(Mac) or command prompt (windows)
+    1. Open new terminal
 
     2. Configure the base data in Mongodb
         1. in the terminal, now back in the spare-time folder, run the following
             1. mongoimport --db 'spare-time' --collection 'events' --jsonArray './backend/mongodbdata/eventsData.json'
             2. mongoimport --db 'spare-time' --collection 'users' --jsonArray './backend/mongodbdata/userData.json'
 
-    2. In the terminal 
+    3. In the terminal 
         1. navigate to the folder where you cloned the repo (e.g cd '/Users/Ryan.Sutcliffe/Desktop/spare-time' )
         2. type the following command in the spare-time folder
-            1. npm install 
-            2. cd frontend/
-            3. npm install
-            4. cd ../
-        3. you should now have all the node modules and dependecies installed. 
-
-    3. run the application 
-        1. npm run dev
+            1. <<npm install>>
+            2. <<cd frontend/>>
+            3. <<npm install>>
+            4. <<cd ../>>
+            5. <<npm i nodemon>>
+            6. <<npm run dev>>
 
 
 
