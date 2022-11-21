@@ -4,7 +4,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
             <div className= "form">
             <h2>{title}</h2>
             <form onSubmit={onSubmit}>
-                <label className="form-group"> Event Title: </label>
+                <label for="title">Title: </label>
                     <input
                         type="text"
                         className="form-control"
@@ -14,7 +14,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         required
                     />
                 
-                <label className="form-group"> Category: </label>
+                <label for="Category"> Category: </label>
                     <select 
 
                         value={event.categories} 
@@ -32,7 +32,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         <option value="Sports and Fitness">Sports and Fitness</option>
                     </select>
 
-                <label className="form-group"> Provider: </label>
+                <label for="Provider"> Provider: </label>
                     <input
                         type="text"
                         className="form-control"
@@ -42,7 +42,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         required
                     />
                
-                <label className="form-group"> Date: </label>
+                <label for="Date"> Date: </label>
                     <input
                         type="datetime-local"
                         className="form-control"
@@ -52,7 +52,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         required
                     />
 
-                <label className="form-group"> Availability: </label>
+                <label for="Availabilty"> Availability: </label>
                     <input
                         type="number"
                         className="form-control"
@@ -62,7 +62,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         required
                     />
 
-                <label className="form-group"> Duration: </label>
+                <label for="Duration"> Duration: </label>
                     <input
                         type="number"
                         className="form-control"
@@ -75,18 +75,17 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         step = "5"
                     />
                 
-                <label className="form-group"> Price: </label>
-                    <input
-                        type="number"
-                        className="form-control"
-                        id="price"
-                        value={event.price || ""}
+                <label for="Price"> Price: </label>
+                        <input type="number" 
+                        class="form-control" 
+                        d="price" 
+                        step="0.01" 
+                        required="" value=""
                         onChange={(e)=>updateEvent({price: e.target.value})}
-                        step="0.01"
-                        required
+                        
                     />
 
-                <label className="form-group">Description: </label>
+                <label for="Description">Description: </label>
                     <input
                         type="text"
                         className="form-control"
@@ -98,7 +97,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
 
                     <div>
                 { !isPending && 
-                <button className="button"> {buttonLabel[0]}</button>}
+                <label className="button"> {buttonLabel[0]}</label>}
                 { isPending && <button className="button" disabled> {buttonLabel[1]}</button>}
                 </div>
             </form>
