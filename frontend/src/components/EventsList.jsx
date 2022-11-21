@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import '../CSS/eventCard.css'
 
 function EventsList ({events}) {
   const navigate = useNavigate()
@@ -8,13 +7,15 @@ function EventsList ({events}) {
       <div className="item-container">
           {events.map((event,id) => (
             <div className="card" key={id}>
-            <img src={event.image} alt="" />
-            <div className="cardText">
-            <p>Category: {event.categories}</p>
-            <p>{event.date}</p>
-            <p>Hosted by: {event.provider}</p>
-            <p>£{event.price}</p>
-            </div>
+              <img src={event.image} alt="" />
+               <h3>{event.title}</h3>
+                <div className="cardText">
+                  <p>{event.categories}</p>
+                  <p>Date: {event.date}</p>
+                  <p>Time: {event.time}</p>
+                  <p>Hosted by: {event.provider}</p>
+                  <p>£{event.price}</p>
+                </div>
             <button className="button" onClick={() => navigate(`${event._id}`)} > More details  </button>
           </div>
         ))}

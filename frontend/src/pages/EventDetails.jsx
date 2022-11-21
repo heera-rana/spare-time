@@ -128,16 +128,26 @@ function EventDetails () {
         })
         setOneEvent([])
     }
+    function hideEditEventForm() {
+        var hideEditEventForm = document.getElementById("EditEventForm");
+        if (hideEditEventForm.style.display === "none") {
+            hideEditEventForm.style.display = "block";
+        } else {
+            hideEditEventForm.style.display = "none";
+        }
+      }
 
     return (
         <div className="oneEvent">
             <OneEvent eventData={oneEvent} />
-            <button className="button" onClick={() => navigate('/')} >go back</button>
+            <button className="button" onClick={() => navigate('/')} >Back</button>
             {isLoggedIn(token) && 
                 <div>
-                    <button className="button" onClick={()=>deleteEvent()}>delete</button>
-                    {/* <button onClick={()=>()}>edit</button> */}
-                    <EventForm event={oneEvent} onSubmit={onSubmit} setIsPending={setIsPending} updateEvent={updateEvent} buttonLabel={buttonLabel} title={"Edit event"}/>
+                    <button className="button" onClick={()=>deleteEvent()}>Delete</button>
+                    <button onClick={hideEditEventForm} className="button">Edit</button>
+                    <div id="EditEventForm">
+                        <EventForm event={oneEvent} onSubmit={onSubmit} setIsPending={setIsPending} updateEvent={updateEvent} buttonLabel={buttonLabel} title={"Edit event"}/>
+                    </div>
                 </div>
             }
         </div>
