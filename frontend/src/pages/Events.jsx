@@ -79,8 +79,10 @@ function Events() {
   return (
       <div className="App">
         <SlideShow slides={slides}/>
+        <div>
         <h2>Collection of Events</h2>
-        <div>Filter by Category
+        <h3>Filter by Category</h3>
+        <form>
         <div className="category-dropdown" >
             <select className="category-list" onChange={handleCategoryChange}>
               <option value="">All</option>
@@ -92,6 +94,7 @@ function Events() {
               <option value="Misc">Misc</option>
             </select>
           </div>
+          </form>
           </div>
         <EventsList 
         events={eventsList} 

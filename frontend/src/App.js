@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
         <Header />
-          <div>
+          <div className="body">
               <Outlet />
           </div>
 

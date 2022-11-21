@@ -1,3 +1,4 @@
+/* global CSS */
 .head {
   background-color: #004643;
 }
@@ -7,6 +8,7 @@
   padding-right: 10px;
   padding-left: 0px;
  font-size: 20px;
+ justify-content: space-evenly;
 }
 body {
   font-style: normal;
@@ -21,7 +23,6 @@ body {
   background-color: #004643;
   justify-content: space-between;
   font-family: "Montserrat",sans-serif;
-  
 }
 .h1 {
   color: #f9bc60 ;
@@ -41,21 +42,34 @@ h2 {
   background-color: #004643;
   color: #f9bc60;
 }
+/* this list items cover the navigation link in the header */
+.passwordRequired{
+  display: inline;
+  flex-direction: row;
+
+  font-size: 20px;
+  align-content: center;
+}
+.passwordListItem{
+  font-size: 20px;
+}
+
 ul{
   display: flex;
   flex-direction: row;
   color: #f9bc60;
-  
 }
 li {
-list-style: none;
-  padding: 6px;
+  list-style: none;
+  padding: 30px;
   font-size: 25px;
-}
-ul a {
-  text-decoration: none;
-  font-size: 20px;
-  display: inline-block
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block
+
 }
 /* a:hover {
     background-color: lightgrey;
@@ -63,120 +77,228 @@ ul a {
 #clearBtn {
     cursor: pointer;
 }
- /*  */
-.signOutButton{
-  background: none;
-  color: #f9bc60; 
-  border: none;
-  font-size: 20px;
-  display: inline-block;
-  font-family: "Montserrat",sans-serif; ;
-  color: #f9bc60;
-  cursor: pointer;
-  transition: all .2s ease-in-out
-}
-.signOutButton :hover {
-  color: #f9bc60 ;
-  transform: scale(1.1);
-}
-a:link {
-  color: #f9bc60 ;
-}
-  /* visited link */
-a:visited {
-  color: #f9bc60 ;
-}
-  /* mouse over link */
-ul a:hover {
-  color: #f9bc60 ;
-  transform: scale(1.1);
-}
-  /* selected link */
-a:active {
-  color: #f9bc60;
-}
-.category-dropdown {
-  background-color: #004643;
-}
-select{
-  width: 250px;
-  height:30px;
-  background-color: #abd1c6;
-  margin-bottom: 10px;
-}
-option {
-  background-color: #abd1c6;
-}
-.button {
-  background-color: #004643;
-  border: 1px solid #d5d9d9;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px 0;
-  box-sizing: border-box;
-  color:#d5d9d9;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Montserrat",sans-serif;
-  font-size: 13px;
-  line-height: 29px;
-  padding: 0 10px 0 11px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  width: 100px;
-  margin-bottom: 10px;
-}  
-.button:hover {
-  background-color: #abd1c6;
-  color:#000000;
-  border: 1px solid #000000;
+  /*  */
+  .signOutButton{
+    background: none;
+    color: #f9bc60; 
+    border: none;
+    font-size: 25px;
+    font-family: "Montserrat",sans-serif; ;
+    color: #f9bc60;
   }
-.button:focus {
-  border-color: #008296;
-  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-  outline: 0;
-}
-.nav-bar {
-  font-size: 9px;
-}
-/* adjusts the css based on the screen size */
-    @media screen and (max-width: 850px) {
-      .App-header {
-        flex-direction: column;
-        background-color: #004643;
-      }
-      .signOutButton{
-        font-size: 20px;
-      }
-      ul{
-        display: flex;
-        color: #f9bc60;
-        position: relative;
-        margin: 0px;
-      }
-      li {
-        list-style: none;
-          padding: 6px;
-          font-size: 20px;
-          }
-      .nav {
-        display: flex;
-        align-self: center;
-        margin: 5px;
-        padding-inline-start: 0px;
-      }
-      .h1 {
-        color: #f9bc60 ;
-        font-size: 80px;
-        font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif' ;
-        font-weight: bold ;
-        padding-left: 5px;
-        margin: 0px;
-      }
-    }
-     
 
+  .signOutButton :hover {
+    color: #f9bc60 ;
+  }
+
+  a:link {
+    color: #f9bc60 ;
+  }
+  /* visited link */
+  a:visited {
+    color: #f9bc60 ;
+  }
+  /* mouse over link */
+  a:hover {
+    color: #f9bc60 ;
+  }
+  /* selected link */
+  a:active {
+    color: #f9bc60;
+  }
+  .category-dropdown {
+    background-color: #004643;
+  }
+
+  select{
+    width: 250px;
+    height:30px;
+    background-color: #abd1c6;
+    margin-bottom: 10px;
+  }
+
+  option {
+    background-color: #abd1c6;
+  }
+
+  .button {
+    background-color: #004643;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color:#d5d9d9;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Montserrat",sans-serif;
+    font-size: 13px;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .button:hover {
+    background-color: #abd1c6;
+    color:#000000;
+    border: 1px solid #000000;
+    }
+  
+  .button:focus {
+    border-color: #008296;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+  }
+  .nav-bar {
+    font-size: 9px;
+    }
+/* adjusts the css based on the screen size */
+@media screen and (max-width: 950px) {
+  .App-header {
+    flex-direction: column;
+    background-color: #004643;
+  }
+  .signOutButton{
+    font-size: 20px;
+  }
+  ul{
+    display: flex;
+    color: #f9bc60;
+    position: relative;
+    margin: 0px;
+  }
+  li {
+    list-style: none;
+    padding: 6px;
+    font-size: 20px;
+  }
+  .nav {
+    display: flex;
+    align-self: center;
+    margin: 5px;
+    padding-inline-start: 0px;
+  }
+  .h1 {
+    color: #f9bc60 ;
+    font-size: 50px;
+    font-family: 'Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif' ;
+    font-weight: bold ;
+    padding-left: 5px;
+    margin: 0px;
+  }
+}
+/* for the login, sign up and add new event forms */
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat",sans-serif;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 5px 17px 50px 5p rgba(0,0,0,0.19);
+}
+  .form-control{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    margin:20px auto;
+    padding:15px;
+    background:#abd1c6;
+    color:#fff;
+    border:0;
+  }
+  .form-group{
+    cursor: pointer;
+  }
+/* for the event cards on the homepage */
+.item-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.card {
+  text-align: left;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #abd1c6;
+  color: black;
+  font-family: sans-serif;
+}
+img {
+  height: 200px;
+  display: flex;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  padding: 0px;
+}
+.cardText{
+  margin: 5px;
+}
+.oneEvent{
+  /* text-align: left; */
+  padding: 10px;
+  /* width: 300px; */
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #abd1c6;
+  color: black;
+  font-family: sans-serif;
+}
+.img-container{
+  height: 200px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.search {
+  display: flex;
+  position: relative;
+  background-color: #004643;
+  padding-bottom: 10px; 
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+/* For the serch bar on the homepage */
+  .search input {
+    background-color: #abd1c6;
+    border:0;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 18px;
+    height:30px;
+    width: 250px;
+    padding-left: 20px;
+    box-shadow: black;
+  }
+.dataResult {
+  margin-top: 10px;
+  width: 250px; 
+  height: 200px; 
+  font-size: 18px;
+  background-color: #abd1c6;
+  overflow: hidden;
+  overflow-y: auto;
+  position: fixed;
+  align-self: center;    
+}
+.dataResult .dataItem {
+  color: black;
+}
+dataItem p {
+  margin-left: 10px;
+}
