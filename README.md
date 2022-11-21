@@ -36,7 +36,7 @@ To check that you have node installed:
 
 If node is installed, it will return the version number that is installed.
 
-*** Install Mongodb on windows***
+    Install Mongodb on windows
 1. Download the MongoDB Community installer from https://www.mongodb.com/try/download/community
 within the 'MongoDB Community Server Download'
    - select the version of MongoDB to download
@@ -60,7 +60,7 @@ To import the json files into Mongodb, the Mongo tools need to be intalled
 4. Then click "Extract".
     a. this will create a new folder in downloads, and then place the extacted folder inside. 
     
-** Instruction for the data import **
+Instruction for the data import
 1. clone the repository from https://github.com/hra03/spare-time/
 2. Navigate to the root of the cloned repo for example <<cd '/Users/Ryan.Sutcliffe/Desktop/spare-time'>>
 3. Run the below commands to import both the events and user databases, 
@@ -77,7 +77,7 @@ you must replace the username with your own name....this can be found in your fi
     b. If the json files are not found, make sure you are in the root of the folder cloned from github. if you perform an <<dir>> command in CMD you should see the frontend and backend folders listed
     
     
-**Running the application on windows**
+Running the application on windows
 From the root of the spare time folder, which would look something like '/Users/Ryan.Sutcliffe/Desktop/spare-time', run the following commands:
 
     1. <<npm install>> 
@@ -89,7 +89,7 @@ From the root of the spare time folder, which would look something like '/Users/
     
  There is a standard user with the email 'admin@gmail.com'. Please ask a member of the team for the password.
     
- **potential errors**
+ potential errors
  If the error message 'ECONNREFUSED ::1:27017, is recieved in the terminal, then a potenial fix is to: open the spare-time folder, then navigate '/backend/config/', then open the dbconnetion.js file in notepad, and replace <<"mongodb://localhost:27017/spare-time">> with <<"mongodb://0.0.0.0:27017/spare-time">> If the change has solved to issue, in the terminal where the app is running, it will say 'mongoDB connected: 0.0.0.0'
 
 Mac Install
