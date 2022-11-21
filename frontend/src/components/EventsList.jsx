@@ -10,9 +10,9 @@ function EventsList ({events}) {
             <div className="card" key={id}>
             <img src={event.image} alt="" />
             <div className="cardText">
+            <h4>{event.title}</h4>
             <p>Category: {event.categories}</p>
             <p>{event.date}</p>
-            <p>Hosted by: {event.provider}</p>
             <p>£{event.price}</p>
             </div>
             <button className="button" onClick={() => navigate(`${event._id}`)} > More details  </button>

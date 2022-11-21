@@ -31,9 +31,10 @@ body {
   margin: 0px;
   margin-left:50px;
 }
-.h2 {
-  font-size: large;
-  margin: 0px;
+h2 {
+  display: block;
+  font-size: 1.5em;
+  padding: 10px;
 }
 .App {
   text-align: center;
@@ -50,103 +51,98 @@ li {
 list-style: none;
   padding: 6px;
   font-size: 25px;
-  }
-
-  a {
-    text-decoration: none;
-
 }
-a:hover {
+ul a {
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block
+}
+/* a:hover {
     background-color: lightgrey;
-}
+} */
 #clearBtn {
     cursor: pointer;
 }
-
-
-
-
-  /*  */
-  .signOutButton{
-    background: none;
-    color: #f9bc60; 
-    border: none;
-    font-size: 25px;
-    font-family: "Montserrat",sans-serif; ;
-    color: #f9bc60;
-  }
-
-  .signOutButton :hover {
-    color: #f9bc60 ;
-  }
-
-  a:link {
-    color: #f9bc60 ;
-  }
+ /*  */
+.signOutButton{
+  background: none;
+  color: #f9bc60; 
+  border: none;
+  font-size: 20px;
+  display: inline-block;
+  font-family: "Montserrat",sans-serif; ;
+  color: #f9bc60;
+  cursor: pointer;
+  transition: all .2s ease-in-out
+}
+.signOutButton :hover {
+  color: #f9bc60 ;
+  transform: scale(1.1);
+}
+a:link {
+  color: #f9bc60 ;
+}
   /* visited link */
-  a:visited {
-    color: #f9bc60 ;
-  }
+a:visited {
+  color: #f9bc60 ;
+}
   /* mouse over link */
-  a:hover {
-    color: #f9bc60 ;
-  }
+ul a:hover {
+  color: #f9bc60 ;
+  transform: scale(1.1);
+}
   /* selected link */
-  a:active {
-    color: #f9bc60;
+a:active {
+  color: #f9bc60;
+}
+.category-dropdown {
+  background-color: #004643;
+}
+select{
+  width: 250px;
+  height:30px;
+  background-color: #abd1c6;
+  margin-bottom: 10px;
+}
+option {
+  background-color: #abd1c6;
+}
+.button {
+  background-color: #004643;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color:#d5d9d9;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Montserrat",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+  margin-bottom: 10px;
+}  
+.button:hover {
+  background-color: #abd1c6;
+  color:#000000;
+  border: 1px solid #000000;
   }
-  .category-dropdown {
-    background-color: #004643;
-  }
-
-  select{
-    width: 250px;
-    height:30px;
-    background-color: #abd1c6;
-    margin-bottom: 10px;
-  }
-
-  option {
-    background-color: #abd1c6;
-  }
-
-  .button {
-    background-color: #004643;
-    border: 1px solid #d5d9d9;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.5) 0 2px 5px 0;
-    box-sizing: border-box;
-    color:#d5d9d9;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Montserrat",sans-serif;
-    font-size: 13px;
-    line-height: 29px;
-    padding: 0 10px 0 11px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
-    width: 100px;
-  }
-  
-  .button:hover {
-    background-color: #abd1c6;
-    color:#000000;
-    border: 1px solid #000000;
-    }
-  
-  .button:focus {
-    border-color: #008296;
-    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-    outline: 0;
-  }
-  .nav-bar {
-    font-size: 9px;
-    }
+.button:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
+.nav-bar {
+  font-size: 9px;
+}
 /* adjusts the css based on the screen size */
     @media screen and (max-width: 850px) {
       .App-header {

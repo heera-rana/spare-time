@@ -87,8 +87,8 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                     />
 
                 <label className="form-group">Description: </label>
-                    <input
-                        type="text"
+                    <textarea
+                        type="text area"
                         className="form-control"
                         id="description"
                         value={event.description || ""}
@@ -96,10 +96,10 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         required
                     />
 
-                    <div className="button">
-                { !isPending && <button> {buttonLabel[0]}</button>}
-                { isPending && <button disabled> {buttonLabel[1]}</button>}
-                </div>
+                    {/* <div className="button"> */}
+                { !isPending && <button className="button"> {buttonLabel[0]}</button>}
+                { isPending && <button className="button" disabled> {buttonLabel[1]}</button>}
+                {/* </div> */}
             </form>
             </div>
         </div>

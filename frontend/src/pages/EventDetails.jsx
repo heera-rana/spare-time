@@ -130,6 +130,7 @@ function EventDetails () {
     return (
         <div className="oneEvent">
             <OneEvent eventData={oneEvent} />
+            <div>
             <button className="button" onClick={() => navigate('/')} >go back</button>
             {isLoggedIn(token) && 
                 <div>
@@ -138,6 +139,7 @@ function EventDetails () {
                     <EventForm event={oneEvent} onSubmit={onSubmit} setIsPending={setIsPending} updateEvent={updateEvent} buttonLabel={buttonLabel} title={"Edit event"}/>
                 </div>
             }
+            </div>
         </div>
     )
 }
