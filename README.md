@@ -1,4 +1,4 @@
-** Assignment 1 - Spare Time Application**
+Assignment 1 - Spare Time Application
 
 The frontend of this application was developed using React version 18.2.0.
 
@@ -15,8 +15,9 @@ Dev team
 
 The code to execute below is within <<>> brackets, do not include the brackets when executing the commands
 
-** Windows Install **
-*** Install node.js for windows ***
+Windows Install
+
+Install node.js for windows
 
 Ensure you have the latest LTS version of NodeJS installed from here: https://nodejs.org/en/download/
 
@@ -91,8 +92,8 @@ From the root of the spare time folder, which would look something like '/Users/
  **potential errors**
  If the error message 'ECONNREFUSED ::1:27017, is recieved in the terminal, then a potenial fix is to: open the spare-time folder, then navigate '/backend/config/', then open the dbconnetion.js file in notepad, and replace <<"mongodb://localhost:27017/spare-time">> with <<"mongodb://0.0.0.0:27017/spare-time">> If the change has solved to issue, in the terminal where the app is running, it will say 'mongoDB connected: 0.0.0.0'
 
-** Mac Install **
-*** Install node.js ***
+Mac Install
+Install node.js
 
 Ensure you have the latest LTS version of NodeJS installed from here: https://nodejs.org/en/download/
 
