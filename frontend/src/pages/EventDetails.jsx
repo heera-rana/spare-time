@@ -128,8 +128,7 @@ function EventDetails () {
         })
         setOneEvent([])
     }
-
-    function myFunction() {
+    function hideEditEventForm() {
         var hideEditEventForm = document.getElementById("EditEventForm");
         if (hideEditEventForm.style.display === "none") {
             hideEditEventForm.style.display = "block";
@@ -145,7 +144,7 @@ function EventDetails () {
             {isLoggedIn(token) && 
                 <div>
                     <button className="button" onClick={()=>deleteEvent()}>Delete</button>
-                    <button onClick={myFunction} className="button">Edit</button>
+                    <button onClick={hideEditEventForm} className="button">Edit</button>
                     <div id="EditEventForm">
                         <EventForm event={oneEvent} onSubmit={onSubmit} setIsPending={setIsPending} updateEvent={updateEvent} buttonLabel={buttonLabel} title={"Edit event"}/>
                     </div>
