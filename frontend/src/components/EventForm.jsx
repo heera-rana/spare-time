@@ -4,7 +4,8 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
             <div className= "form">
             <h2>{title}</h2>
             <form onSubmit={onSubmit}>
-                <label className="form-group"> Event Title: </label>
+                
+                <label for="eventTitle">Event Title:</label>
                     <input
                         type="text"
                         className="form-control"
@@ -13,26 +14,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         onChange={(e)=>updateEvent({title: e.target.value})}
                         required
                     />
-                
-                <label className="form-group"> Category: </label>
-                    <select 
-
-                        value={event.categories} 
-                        className="form-control" 
-                        onChange={(e)=>updateEvent({categories: e.target.value})}
-                        required
-                        defaultValue={'DEFAULT'} 
-                    >
-                        <option value="DEFAULT" disabled>--- Select category ---</option>
-                        <option value= "Childrens Events">Childrens Events</option>
-                        <option value="Classes and Workshops">Classes and Workshops</option>
-                        <option value="Evening Events">Evening Events</option>
-                        <option value="Misc">Misc</option>
-                        <option value="Music Events">Music Events</option>
-                        <option value="Sports and Fitness">Sports and Fitness</option>
-                    </select>
-
-                <label className="form-group"> Provider: </label>
+                <label for="provider">Provider: </label>
                     <input
                         type="text"
                         className="form-control"
@@ -41,8 +23,8 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         onChange={(e)=>updateEvent({provider: e.target.value})}
                         required
                     />
-               
-                <label className="form-group"> Date: </label>
+                
+                    <label for="date">Date:</label>
                     <input
                         type="datetime-local"
                         className="form-control"
@@ -52,7 +34,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         required
                     />
 
-                <label className="form-group"> Availability: </label>
+                    <label for="availability">Availability:</label>
                     <input
                         type="number"
                         className="form-control"
@@ -62,7 +44,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         required
                     />
 
-                <label className="form-group"> Duration: </label>
+                    <label for="duration">Duration: </label>         
                     <input
                         type="number"
                         className="form-control"
@@ -75,7 +57,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         step = "5"
                     />
                 
-                <label className="form-group"> Price: </label>
+                <label for="price">Price:</label>
                     <input
                         type="number"
                         className="form-control"
@@ -86,7 +68,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         required
                     />
 
-                <label className="form-group">Description: </label>
+                <label for="description">Description:</label>   
                     <input
                         type="text"
                         className="form-control"
@@ -96,7 +78,25 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         required
                     />
 
+                    <label for="categories">Categories:</label>
+                    <select
+                        value={event.categories} 
+                        className="form-control" 
+                        onChange={(e)=>updateEvent({categories: e.target.value})}
+                        required
+                        defaultValue={'DEFAULT'}>
+                        <option value="DEFAULT" disabled>--- Select category ---</option>
+                        <option value= "Childrens Events">Childrens Events</option>
+                        <option value="Classes and Workshops">Classes and Workshops</option>
+                        <option value="Evening Events">Evening Events</option>
+                        <option value="Misc">Misc</option>
+                        <option value="Music Events">Music Events</option>
+                        <option value="Sports and Fitness">Sports and Fitness</option>
+                    </select>
+
                     <div className="button">
+                    <label for="button"/>
+                        
                 { !isPending && <button> {buttonLabel[0]}</button>}
                 { isPending && <button disabled> {buttonLabel[1]}</button>}
                 </div>

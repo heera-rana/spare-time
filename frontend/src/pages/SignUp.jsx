@@ -31,7 +31,6 @@ function SignUp (){
         })
         .then((response)=>{
             if (response.status === 201){
-                console.log(response.body)
                 Swal.fire({
                     icon: 'success',
                     title: 'Yay',
@@ -59,7 +58,7 @@ function SignUp (){
             <h2>Sign Up</h2>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
-                Name:
+                <label for="name">Name</label>
                     <input
                     type="text"
                     className="form-control"
@@ -72,7 +71,7 @@ function SignUp (){
                     />
                 </div>
                 <div className="form-group">
-                Email:
+                <label for="email">Email</label>
                     <input
                     type="email"
                     className="form-control"
@@ -83,7 +82,7 @@ function SignUp (){
                     />
                 </div>
                 <div className="form-group">
-                    Password:
+                <label for="password">Password</label>
                     <input
                     type="password"
                     className="form-control"
@@ -96,8 +95,9 @@ function SignUp (){
                     password='true'
                     />
                     <div className="mustHave">
+                    <label for="mustContain">Password must contain :</label>
                     <ul>
-                    <li>Password Must contain:</li>
+                    
                         <li>At least 1 Uppercase</li>
                         <li>At least 1 Lowercase</li>
                         <li>At least 1 Number</li>
