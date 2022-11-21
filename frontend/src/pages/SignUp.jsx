@@ -109,18 +109,19 @@ function SignUp (){
                     />
                     <div className="mustHave">
                     <ul>
-                    <li>Password Must contain:</li>
-                        <li>At least 1 Uppercase</li>
-                        <li>At least 1 Lowercase</li>
-                        <li>At least 1 Number</li>
-                        <li>Min 5 chars</li>
+                    <li className="passwordRequired">Password Must contain:</li>
+                        <li className="passwordListItem">At least 1 Uppercase</li>
+                        <li className="passwordListItem">At least 1 Lowercase</li>
+                        <li className="passwordListItem">At least 1 Number</li>
+                        <li className="passwordListItem">Min 5 chars</li>
                     </ul>
                     </div>
                 </div>
-                <div className="form-group">
+                <div>
                     <input
+                    className="button"
                         type="submit"
-                        value="Submit"
+                        value="Sign Up"
                     />
                     
                 </div>

@@ -96,10 +96,10 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         required
                     />
 
-                    <div className="button">
+                    <div>
                 { !isPending && 
-                <button> {buttonLabel[0]}</button>}
-                { isPending && <button disabled> {buttonLabel[1]}</button>}
+                <button className="button"> {buttonLabel[0]}</button>}
+                { isPending && <button className="button" disabled> {buttonLabel[1]}</button>}
                 </div>
             </form>
             </div>
