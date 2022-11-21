@@ -1,4 +1,4 @@
- * Assignment 1 - Spare Time Application *
+ <u>* Assignment 1 - Spare Time Application *</u>
 
 The frontend of this application was developed using React version 18.2.0.
 
