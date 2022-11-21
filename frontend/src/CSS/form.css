@@ -50,28 +50,31 @@
           font-size: 18px;
       }
 
-      .newEvent {
-            position:absolute;
-            height:100%;
-            width:100%;
-            font-family:"Segoe UI, Tahoma, Geneva, Verdana, sans-serif";
-            color:#004643;
-            background: #e8e4e6 ;
-            padding:30px 0px;
+    .newEvent {
+        position:absolute;
+        height:100%;
+        width:100%;
+        font-family:"Segoe UI, Tahoma, Geneva, Verdana, sans-serif";
+        color:#004643;
+        background: #e8e4e6 ;
+        padding:30px 0px;
+      }
+      .newEvent h1{
+            text-align:center;
+            margin:30px 0;
+            font-size:30px;
           }
-          .newEvent h1{
-                text-align:center;
-                margin:30px 0;
-                font-size:30px;
-              }
-              .newEvent input{
-                display:block;
-                width:300px;
-                margin:20px auto;
-                padding:15px;
-                background:#abd1c6;
-                color:#fff;
-                border:0;
-              }
+          .newEvent input{
+            display:block;
+            width:300px;
+            margin:20px auto;
+            padding:15px;
+            background:#abd1c6;
+            color:#fff;
+            border:0;
+          }
+          .form-group{
+            cursor: pointer;
+          }
               
               
