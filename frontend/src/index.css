@@ -223,7 +223,7 @@ select{
 }
 img {
   height: 200px;
-  display: flex;
+  /* display: flex; */
   border-radius: 5px;
   width: 300px;
   text-align: center;
