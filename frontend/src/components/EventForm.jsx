@@ -76,17 +76,19 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                     />
                 
                 <label for="Price"> Price: </label>
-                        <input type="number" 
+                    <input 
+                        type="number" 
                         class="form-control" 
-                        d="price" 
+                        id="price" 
                         step="0.01" 
-                        required="" value=""
+                        required 
+                        value={event.price}
                         onChange={(e)=>updateEvent({price: e.target.value})}
                         
                     />
 
                 <label for="Description">Description: </label>
-                    <input
+                    <textarea
                         type="text"
                         className="form-control"
                         id="description"

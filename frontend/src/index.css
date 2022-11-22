@@ -5,10 +5,10 @@
 .nav {
   display: flex;
   align-items: center;
-  padding-right: 10px;
+  /* padding-right: 10px; */
   padding-left: 0px;
- font-size: 20px;
- justify-content: space-evenly;
+  font-size: 20px;
+  justify-content: space-evenly;
 }
 body {
   font-style: normal;
@@ -45,7 +45,6 @@ body {
 .passwordRequired{
   display: inline;
   flex-direction: row;
-
   font-size: 20px;
   align-content: center;
 }
@@ -65,10 +64,12 @@ li {
 }
 a {
   text-decoration: none;
+  display: inline-block;
 }
 a:hover {
-  background-color: rgba(211, 211, 211, 0.208);
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: scale(1.1);
+  /* background-color: rgba(211, 211, 211, 0.208);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
 }
   a:link {
     color: #f9bc60 ;
@@ -76,15 +77,22 @@ a:hover {
   a:visited {
       color: #f9bc60 ;
   }
-  a:hover {
+  /* a:hover {
     color: #f9bc60 ;
-  }
+    transform: scale(1.1)
+  } */
   a:active {
     color: #f9bc60;
   }
 .category-dropdown {
   background-color: #004643;
 }
+.category-list{
+  cursor: pointer;
+}
+/* .categoty-list{
+  background-color: #e8e4e6;
+} */
 /* sign out button in the header */
 .signOutButton{
   background: none;
@@ -93,9 +101,10 @@ a:hover {
   font-family: "Montserrat",sans-serif; ;
   color: #f9bc60;
   cursor: pointer;
-  text-align: center;
+  /* text-align: center;
   align-self: center;
   height: 30px;
+  display: inline-block */
 }
 .signOutButton:hover {
   background-color: rgba(211, 211, 211, 0.208);
@@ -103,12 +112,14 @@ a:hover {
 }
 /* The mulitple choice boxes on add event and filter */
 select{
+  outline-color: #004643;
   width: 300px;
-  height:30px;
+  height:46px;
   background-color: #abd1c6;
   margin-bottom: 10px;
+  border-radius: 5px;
  }
- option {
+select option {
   background-color: #abd1c6;
 }
 
@@ -135,19 +146,48 @@ select{
   vertical-align: middle;
   width: 100px;
 }
-  .button:hover {
-    background-color: #abd1c6;
-    color:#000000;
-    border: 1px solid #000000;
-  }
-  .button:focus {
-    border-color: #008296;
-    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-    outline: 0;
-  }
-  .nav-bar {
-    font-size: 9px;
-  }
+.button:hover {
+  background-color: #abd1c6;
+  color:#000000;
+  border: 1px solid #000000;
+}
+.button:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
+
+.swal2-styled.swal2-confirm {
+  border: 0;
+  border-radius: 0.25em;
+  background-color: #004643;
+  border: 1px solid #d5d9d9;
+  color:#d5d9d9;
+  font-size: 1em;
+}
+.swal2-styled.swal2-cancel {
+  border: 0;
+  border-radius: 0.25em;
+  background-color: #004643;
+  border: 1px solid #d5d9d9;
+  color:#d5d9d9;
+  font-size: 1em;
+}
+/* .swal2-styled:hover{
+  background-color: #abd1c6;
+} */
+.swal2-styled.swal2-confirm:hover {
+  background-color: #abd1c6;
+  color:#000000;
+  border: 1px solid #000000;
+}
+.swal2-container.swal2-center>.swal2-popup{
+  background-color: #d5d9d9
+}
+.nav-bar {
+  font-size: 9px;
+}
+
 /* adjusts the css based on the screen size */
 @media screen and (max-width: 950px) {
   .App-header {
@@ -184,25 +224,50 @@ select{
   }
 }
 /* for the login, sign up and add new event forms */
+.form-container{
+  background: #e8e4e6;
+  border-radius: 5px;
+  padding-bottom: 80px 
+}
+.login-container{
+  background: #e8e4e6;
+  border-radius: 5px;
+  padding-bottom: 180px 
+}
 .form {
   display: flex;
   flex-direction: column;
+  background: #e8e4e6;
+  color:#004643;
+  border-radius: 5px;
   font-family: "Montserrat",sans-serif;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 5px 17px 50px 5p rgba(0,0,0,0.19);
+  padding-top:50px;
+  padding-bottom: 50px;
 }
-  .form-control{
-    display: flex;
-    flex-direction: column;
-    width:300px;
-    margin:20px auto;
-    padding:15px;
-    background:#abd1c6;
-    color:#004643;
-    border:0;
-  }
-  .form-group{
-    cursor: pointer;
-  }
+.form-control{
+  display: flex;
+  flex-direction: column;
+  width:300px;
+  margin:20px auto;
+  padding:15px;
+  background:#abd1c6;
+  color:#004643;
+  border:0;
+}
+.form-control:focus{
+  outline-color: #004643;
+  box-shadow:#abd1c6 ;
+}
+.form-group{
+  cursor: pointer;
+}
+input{
+  border-radius: 5px;
+}
+textarea{
+  border-radius: 5px;
+}
 /* for the event cards on the homepage */
 .item-container {
   display: flex;
@@ -252,6 +317,7 @@ img {
     width: 250px;
     padding-left: 20px;
     box-shadow: black;
+    border-radius: 5px;
   }
 .dataResult {
   margin-top: 10px;

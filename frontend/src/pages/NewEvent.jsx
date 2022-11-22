@@ -49,6 +49,7 @@ function NewEvent (){
                     icon: 'success',
                     title: 'Yay',
                     text: 'new event added',
+                    confirmButtonColor: "#abd1c6",
                   })
                 navigate("/")
             } else {
@@ -66,9 +67,7 @@ function NewEvent (){
     }
 
     return (
-        <div>
-            <EventForm event = {event} isPending={isPending} onSubmit={onSubmit} updateEvent={updateEvent} buttonLabel = {buttonLabel} title={"Add new Event"}/>
-        </div>               
+        <EventForm event = {event} isPending={isPending} onSubmit={onSubmit} updateEvent={updateEvent} buttonLabel = {buttonLabel} title={"Add new Event"}/>           
     )
 }
   

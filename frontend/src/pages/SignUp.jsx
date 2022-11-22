@@ -40,6 +40,7 @@ function SignUp (){
                     icon: 'success',
                     title: 'Yay',
                     text: 'successfully resgistered',
+                    confirmButtonColor: "#004643",
                 })
                 .then(()=>{
                     window.location.reload()
@@ -55,6 +56,7 @@ function SignUp (){
                     icon: 'error',
                     title: 'Oops...',
                     text: 'something went wrong',
+                    confirmButtonColor: "#abd1c6",
                 })
             }
         })
@@ -66,7 +68,7 @@ function SignUp (){
     }
 
     return (
-        <div>
+        <div className="form-container">
             <div className= "form">
             <h2>Sign Up</h2>
             <form onSubmit={onSubmit}>
@@ -107,7 +109,8 @@ function SignUp (){
                     alert='Please follow the password guidence below'
                     password='true'
                     />
-                    <div className="mustHave">
+                </div>
+                <div className="mustHave">
                     <ul>
                     <li className="passwordRequired">Password Must contain:</li>
                         <li className="passwordListItem">At least 1 Uppercase</li>
@@ -116,7 +119,6 @@ function SignUp (){
                         <li className="passwordListItem">Min 5 chars</li>
                     </ul>
                     </div>
-                </div>
                 <div>
                     <input
                     className="button"

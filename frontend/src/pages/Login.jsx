@@ -66,7 +66,8 @@ function Login (){
     } 
 
     return (
-        <div>
+        <div className="login-container">
+        <div className="form">
             <h2>Good to see you again!</h2>
             <form onSubmit={onSubmit} className= "form">
                 <div className="form-group">
@@ -98,6 +99,7 @@ function Login (){
                     />
                 </div>
             </form>
+        </div>
         </div>
     )
 }

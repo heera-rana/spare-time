@@ -52,8 +52,8 @@ function EventDetails () {
     },[])
 
     const deleteEvent = async () =>{
-        const response = await fetch(`http://localhost:5000/api/events/oneEvent/${id}`,{
-            method: "DELETE",
+        await fetch(`http://localhost:5000/api/events/oneEvent/${id}`,{
+            method: "GET",
             mode:"cors",
             headers: {
                 "Content-Type": "application/json",
@@ -64,13 +64,28 @@ function EventDetails () {
             console.log(response)
             if (response.status === 201){
                 Swal.fire({
-                    icon: 'success',
-                    title: 'Yay',
-                    text: 'event deleted',
+                    icon: 'warning',
+                    title: 'are you sure?',
+                    text: 'event will be permanently deleted',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, delete it!'
+                   // confirmButtonColor: "#abd1c6",
                   })
-                .then(()=>{
+                .then((result) => {
+                    if (result.isConfirmed) {
+                      Swal.fire(
+                        'Deleted!',
+                        'event has been deleted.',
+                        'success'
+                      )
+                    }
                     navigate("/")
-                })
+                }) 
+                // .then(()=>{
+                //     navigate("/")
+                // })
             } else {
                 var error = (response.status === 401)
                 Swal.fire({
