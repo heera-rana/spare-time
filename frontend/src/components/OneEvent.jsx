@@ -1,9 +1,11 @@
 function OneEvent({eventData}){
     return(
-        <div>
+        <div className="event-container">
                 <h2>{eventData.title}</h2>
-                <h3>{eventData.time}</h3>            
-                <img src= {eventData.image} alt= "oneEvent"/>          
+                <h3>{eventData.time}</h3>
+                <div className="one-image-container">
+                    <img src= {eventData.image} alt= "oneEvent"/>          
+                </div>     
                 <p>Hosted by: {eventData.provider}</p>
                 <p>The event will last approximately {eventData.duration} minutes</p>
                 <p>£{eventData.price} per person</p>

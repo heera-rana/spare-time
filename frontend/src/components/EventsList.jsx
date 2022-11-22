@@ -7,7 +7,9 @@ function EventsList ({events}) {
       <div className="item-container">
           {events.map((event,id) => (
             <div className="card" key={id}>
-              <img src={event.image} alt="" />
+              <div className="image-container">
+                <img src={event.image} alt="" />
+              </div>
                <h3>{event.title}</h3>
                 <div className="cardText">
                   <p>{event.categories}</p>

@@ -82,7 +82,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         id="price" 
                         step="0.01" 
                         required 
-                        value={event.price}
+                        value={event.price || ""}
                         onChange={(e)=>updateEvent({price: e.target.value})}
                         
                     />
@@ -99,7 +99,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
 
                     <div>
                 { !isPending && 
-                <label className="button"> {buttonLabel[0]}</label>}
+                <button className="button"> {buttonLabel[0]}</button>}
                 { isPending && <button className="button" disabled> {buttonLabel[1]}</button>}
                 </div>
             </form>
