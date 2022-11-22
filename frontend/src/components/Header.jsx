@@ -26,6 +26,7 @@ function Header() {
       icon: 'success',
       title: 'Logged out',
       text: 'you are successfully logged out',
+      confirmButtonColor: "#abd1c6",
     }) 
     .then(()=>{
       window.location.reload()

@@ -86,7 +86,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                     />
 
                 <label for="Description">Description: </label>
-                    <input
+                    <textarea
                         type="text"
                         className="form-control"
                         id="description"

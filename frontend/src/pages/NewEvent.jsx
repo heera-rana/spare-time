@@ -49,6 +49,7 @@ function NewEvent (){
                     icon: 'success',
                     title: 'Yay',
                     text: 'new event added',
+                    confirmButtonColor: "#abd1c6",
                   })
                 navigate("/")
             } else {

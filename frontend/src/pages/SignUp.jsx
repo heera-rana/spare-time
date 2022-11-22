@@ -40,6 +40,7 @@ function SignUp (){
                     icon: 'success',
                     title: 'Yay',
                     text: 'successfully resgistered',
+                    confirmButtonColor: "#004643",
                 })
                 .then(()=>{
                     window.location.reload()
@@ -55,6 +56,7 @@ function SignUp (){
                     icon: 'error',
                     title: 'Oops...',
                     text: 'something went wrong',
+                    confirmButtonColor: "#abd1c6",
                 })
             }
         })
