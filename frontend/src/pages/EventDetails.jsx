@@ -51,9 +51,28 @@ function EventDetails () {
         getOneEvent().catch(console.error)
     },[])
 
+    const askDelete=()=>{
+        Swal.fire({
+            icon: 'warning',
+            title: 'are you sure?',
+            text: 'event will be permanently deleted',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+           // confirmButtonColor: "#abd1c6",
+          })
+        .then((result) => {
+            if (result.isConfirmed) {
+                deleteEvent()
+                navigate("/")
+            }
+        }) 
+    }
+    
     const deleteEvent = async () =>{
         await fetch(`http://localhost:5000/api/events/oneEvent/${id}`,{
-            method: "GET",
+            method: "DELETE",
             mode:"cors",
             headers: {
                 "Content-Type": "application/json",
@@ -64,28 +83,10 @@ function EventDetails () {
             console.log(response)
             if (response.status === 201){
                 Swal.fire({
-                    icon: 'warning',
-                    title: 'are you sure?',
-                    text: 'event will be permanently deleted',
-                    showCancelButton: true,
-                    confirmButtonColor: '#3085d6',
-                    cancelButtonColor: '#d33',
-                    confirmButtonText: 'Yes, delete it!'
-                   // confirmButtonColor: "#abd1c6",
+                    icon: 'success',
+                    title: 'Deleted!',
+                    text: 'event has been deleted',
                   })
-                .then((result) => {
-                    if (result.isConfirmed) {
-                      Swal.fire(
-                        'Deleted!',
-                        'event has been deleted.',
-                        'success'
-                      )
-                    }
-                    navigate("/")
-                }) 
-                // .then(()=>{
-                //     navigate("/")
-                // })
             } else {
                 var error = (response.status === 401)
                 Swal.fire({
@@ -107,7 +108,7 @@ function EventDetails () {
 
         const updatedEvent={...oneEvent}
 
-        const data = await fetch(`http://localhost:5000/api/events/oneEvent/${id}`,{
+        await fetch(`http://localhost:5000/api/events/oneEvent/${id}`,{
             method: "POST",
             mode:"cors",
             headers: {
@@ -158,9 +159,9 @@ function EventDetails () {
             <button className="button" onClick={() => navigate('/')} >Back</button>
             {isLoggedIn(token) && 
                 <div>
-                    <button className="button" onClick={()=>deleteEvent()}>Delete</button>
+                    <button className="button" onClick={()=>askDelete()}>Delete</button>
                     <button onClick={hideEditEventForm} className="button">Edit</button>
-                    <div id="EditEventForm">
+                    <div id="EditEventForm" style={{display: "none"}}>
                         <EventForm event={oneEvent} onSubmit={onSubmit} setIsPending={setIsPending} updateEvent={updateEvent} buttonLabel={buttonLabel} title={"Edit event"}/>
                     </div>
                 </div>
