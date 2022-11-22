@@ -4,7 +4,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
             <div className= "form">
             <h2>{title}</h2>
             <form onSubmit={onSubmit}>
-                <label for="title">Title: </label>
+                <label>Title: 
                     <input
                         type="text"
                         className="form-control"
@@ -13,8 +13,8 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         onChange={(e)=>updateEvent({title: e.target.value})}
                         required
                     />
-                
-                <label for="Category"> Category: </label>
+                </label>
+                <label> Category:
                     <select 
 
                         value={event.categories} 
@@ -31,8 +31,8 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         <option value="Music Events">Music Events</option>
                         <option value="Sports and Fitness">Sports and Fitness</option>
                     </select>
-
-                <label for="Provider"> Provider: </label>
+                </label>
+                <label> Provider:
                     <input
                         type="text"
                         className="form-control"
@@ -42,7 +42,8 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         required
                     />
                
-                <label for="Date"> Date: </label>
+                </label>
+                <label> Date:
                     <input
                         type="datetime-local"
                         className="form-control"
@@ -51,8 +52,8 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         onChange={(e)=>updateEvent({date: e.target.value})}
                         required
                     />
-
-                <label for="Availabilty"> Availability: </label>
+                </label>
+                <label> Availability:
                     <input
                         type="number"
                         className="form-control"
@@ -61,8 +62,8 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         onChange={(e)=>updateEvent({availability: e.target.value})}
                         required
                     />
-
-                <label for="Duration"> Duration: </label>
+                </label>
+                <label> Duration:
                     <input
                         type="number"
                         className="form-control"
@@ -74,8 +75,8 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         min = "10"
                         step = "5"
                     />
-                
-                <label for="Price"> Price: </label>
+                </label>
+                <label> Price:
                     <input 
                         type="number" 
                         class="form-control" 
@@ -86,8 +87,8 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         onChange={(e)=>updateEvent({price: e.target.value})}
                         
                     />
-
-                <label for="Description">Description: </label>
+                </label>
+                <label>Description:
                     <textarea
                         type="text"
                         className="form-control"
@@ -96,10 +97,13 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         onChange={(e)=>updateEvent({description: e.target.value})}
                         required
                     />
-
-                    <div>
-                { !isPending && 
-                <button className="button"> {buttonLabel[0]}</button>}
+                </label>
+                
+                <div>
+                <label for="submit button">
+                    { !isPending && 
+                    <button className="button"> {buttonLabel[0]}</button>}
+                </label>
                 { isPending && <button className="button" disabled> {buttonLabel[1]}</button>}
                 </div>
             </form>
