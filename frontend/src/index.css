@@ -45,7 +45,6 @@ body {
 .passwordRequired{
   display: inline;
   flex-direction: row;
-
   font-size: 20px;
   align-content: center;
 }
@@ -88,6 +87,12 @@ a:hover {
 .category-dropdown {
   background-color: #004643;
 }
+.category-list{
+  cursor: pointer;
+}
+/* .categoty-list{
+  background-color: #e8e4e6;
+} */
 /* sign out button in the header */
 .signOutButton{
   background: none;
@@ -107,12 +112,14 @@ a:hover {
 }
 /* The mulitple choice boxes on add event and filter */
 select{
+  outline-color: #004643;
   width: 300px;
-  height:45px;
+  height:46px;
   background-color: #abd1c6;
   margin-bottom: 10px;
+  border-radius: 5px;
  }
- option {
+select option {
   background-color: #abd1c6;
 }
 
@@ -180,6 +187,7 @@ select{
 .nav-bar {
   font-size: 9px;
 }
+
 /* adjusts the css based on the screen size */
 @media screen and (max-width: 950px) {
   .App-header {
@@ -216,25 +224,50 @@ select{
   }
 }
 /* for the login, sign up and add new event forms */
+.form-container{
+  background: #e8e4e6;
+  border-radius: 5px;
+  padding-bottom: 80px 
+}
+.login-container{
+  background: #e8e4e6;
+  border-radius: 5px;
+  padding-bottom: 180px 
+}
 .form {
   display: flex;
   flex-direction: column;
+  background: #e8e4e6;
+  color:#004643;
+  border-radius: 5px;
   font-family: "Montserrat",sans-serif;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 5px 17px 50px 5p rgba(0,0,0,0.19);
+  padding-top:50px;
+  padding-bottom: 50px;
 }
-  .form-control{
-    display: flex;
-    flex-direction: column;
-    width:300px;
-    margin:20px auto;
-    padding:15px;
-    background:#abd1c6;
-    color:#004643;
-    border:0;
-  }
-  .form-group{
-    cursor: pointer;
-  }
+.form-control{
+  display: flex;
+  flex-direction: column;
+  width:300px;
+  margin:20px auto;
+  padding:15px;
+  background:#abd1c6;
+  color:#004643;
+  border:0;
+}
+.form-control:focus{
+  outline-color: #004643;
+  box-shadow:#abd1c6 ;
+}
+.form-group{
+  cursor: pointer;
+}
+input{
+  border-radius: 5px;
+}
+textarea{
+  border-radius: 5px;
+}
 /* for the event cards on the homepage */
 .item-container {
   display: flex;
@@ -284,6 +317,7 @@ img {
     width: 250px;
     padding-left: 20px;
     box-shadow: black;
+    border-radius: 5px;
   }
 .dataResult {
   margin-top: 10px;

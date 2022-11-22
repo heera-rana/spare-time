@@ -67,9 +67,7 @@ function NewEvent (){
     }
 
     return (
-        <div>
-            <EventForm event = {event} isPending={isPending} onSubmit={onSubmit} updateEvent={updateEvent} buttonLabel = {buttonLabel} title={"Add new Event"}/>
-        </div>               
+        <EventForm event = {event} isPending={isPending} onSubmit={onSubmit} updateEvent={updateEvent} buttonLabel = {buttonLabel} title={"Add new Event"}/>           
     )
 }
   
