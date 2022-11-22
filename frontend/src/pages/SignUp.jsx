@@ -70,7 +70,6 @@ function SignUp (){
     }
 
     return (
-        <div>
             <div className= "form">
             <h2>Sign Up</h2>
             <form onSubmit={onSubmit}>
@@ -131,7 +130,7 @@ function SignUp (){
                 </div>
             </form>
                 </div>
-        </div>
+     
     )
 }
   

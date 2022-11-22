@@ -32,7 +32,7 @@ const Navigation = ({ token , signOut}) => {
             <li><Link to="/addEvent">Add Event</Link></li>
           )}
           {isLoggedIn(token) && (
-              <button class='signOutButton' onClick={() => signOut()}>Sign Out</button>
+              <button className='signOutButton' onClick={() => signOut()}>Sign Out</button>
           )}
         </ul>
       </nav>
