@@ -7,7 +7,7 @@ function NewEvent (){
     const [event, setEvent] = useState([])
     const [isPending, setIsPending] = useState(false)
     const navigate = useNavigate()
-    const buttonLabel = ["Add new event", "Adding new event"]
+    const buttonLabel = ["Add", "Adding"]
 
 
     function updateEvent(value){

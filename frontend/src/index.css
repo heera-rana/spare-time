@@ -319,6 +319,9 @@ img {
 .cardText{
   margin: 5px;
 }
+#EditEventForm{
+  padding: 1%;
+}
 .search {
   display: flex;
   position: relative;
