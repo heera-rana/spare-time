@@ -1,13 +1,13 @@
 
 import React, {useState} from "react"
-import { useNavigate } from "react-router-dom"
+
 import Swal from "sweetalert2"
 
 
 function SignUp (){
     
     const [user, setUser] = useState([])
-    const navigate = useNavigate
+    
     let myToken
 
     function updateUser(value){

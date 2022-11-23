@@ -7,7 +7,6 @@ const sliderStyles ={
 }
 const slideStyles={
     height: '100%',
-    padding: '10px',
     borderRadius: '10px',
     backgroundPosition: 'left',
     backgroundSize: 'cover',
