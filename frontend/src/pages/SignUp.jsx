@@ -72,7 +72,7 @@ function SignUp (){
             <div className= "form">
             <h2>Sign Up</h2>
             <form onSubmit={onSubmit}>
-                <div className="form-group">
+                <label>
                 Name:
                     <input
                     type="text"
@@ -84,8 +84,8 @@ function SignUp (){
                     onChange={(e)=>updateUser({name: e.target.value})}
                     required
                     />
-                </div>
-                <div className="form-group">
+                </label>
+                <label>
                 Email:
                     <input
                     type="email"
@@ -95,8 +95,8 @@ function SignUp (){
                     onChange={(e)=>updateUser({email: e.target.value})}
                     required
                     />
-                </div>
-                <div className="form-group">
+                </label>
+                <label>
                     Password:
                     <input
                     type="password"
@@ -109,7 +109,8 @@ function SignUp (){
                     alert='Please follow the password guidence below'
                     password='true'
                     />
-                </div>
+                </label>
+                <label>
                 <div className="mustHave">
                     <ul>
                     <li className="passwordRequired">Password Must contain:</li>
@@ -119,6 +120,8 @@ function SignUp (){
                         <li className="passwordListItem">Min 5 chars</li>
                     </ul>
                     </div>
+                </label>
+                <label>
                 <div>
                     <input
                     className="button"
@@ -127,6 +130,7 @@ function SignUp (){
                     />
                     
                 </div>
+                </label>
             </form>
                 </div>
         </div>
