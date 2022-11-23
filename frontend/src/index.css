@@ -5,7 +5,6 @@
 .nav {
   display: flex;
   align-items: center;
-  /* padding-right: 10px; */
   padding-left: 0px;
   font-size: 20px;
   justify-content: space-evenly;
@@ -42,14 +41,16 @@ body {
   color: #f9bc60;
 }
 /* this list items cover the navigation link in the header */
-.passwordRequired{
-  display: inline;
-  flex-direction: row;
-  font-size: 20px;
-  align-content: center;
+.mustHave{
+  display: flex;
+  flex-direction: column;
 }
+.passwordRequired{
+  padding-bottom: 5px;
+}
+
 .passwordListItem{
-  font-size: 20px;
+  padding-bottom: 5px;
 }
 
 ul{
@@ -69,8 +70,6 @@ a {
 }
 a:hover {
   transform: scale(1.1);
-  /* background-color: rgba(211, 211, 211, 0.208);
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
 }
 a:link {
   color: #f9bc60 ;
@@ -78,10 +77,6 @@ a:link {
 a:visited {
   color: #f9bc60 ;
 }
-  /* a:hover {
-    color: #f9bc60 ;
-    transform: scale(1.1)
-  } */
 a:active {
   color: #f9bc60;
 }
@@ -91,9 +86,7 @@ a:active {
 .category-list{
   cursor: pointer;
 }
-/* .categoty-list{
-  background-color: #e8e4e6;
-} */
+
 /* sign out button in the header */
 .signOutButton{
   background: none;
@@ -102,10 +95,6 @@ a:active {
   font-family: "Montserrat",sans-serif; ;
   color: #f9bc60;
   cursor: pointer;
-  /* text-align: center;
-  align-self: center;
-  height: 30px;
-  display: inline-block */
 }
 .signOutButton:hover {
   background-color: rgba(211, 211, 211, 0.208);
@@ -123,7 +112,6 @@ select{
 select option {
   background-color: #abd1c6;
 }
-
 /* covers all form button. exc sign out button */
 .button {
   background-color: #004643;
@@ -136,7 +124,6 @@ select option {
   display: inline-block;
   font-family: "Montserrat",sans-serif;
   font-size: 15px;
-  /* line-height: 29px; */
   padding: 0 10px 0 11px;
   position: relative;
   text-align: center;
@@ -175,9 +162,6 @@ select option {
   color:#d5d9d9;
   font-size: 1em;
 }
-/* .swal2-styled:hover{
-  background-color: #abd1c6;
-} */
 .swal2-styled.swal2-confirm:hover {
   background-color: #abd1c6;
   color:#000000;
@@ -283,8 +267,8 @@ select option {
 }
 .one-image-container{
   display: inline-block;
-  height: 400px;
-  width: 600px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 input{
   border-radius: 5px;
