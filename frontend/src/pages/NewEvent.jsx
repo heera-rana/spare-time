@@ -49,7 +49,7 @@ function NewEvent (){
                     icon: 'success',
                     title: 'Yay',
                     text: 'new event added',
-                    confirmButtonColor: "#abd1c6",
+                    iconColor: "#004643",
                   })
                 navigate("/")
             } else {
@@ -58,6 +58,7 @@ function NewEvent (){
                     icon: 'error',
                     title: 'Oops...',
                     text: 'you must login to add an event',
+                    iconColor: "#e16162",
                   })
                   navigate("/login")
                   console.log('error occured:',error, '. user must be logged in to add an event')

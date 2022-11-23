@@ -57,10 +57,8 @@ function EventDetails () {
             title: 'are you sure?',
             text: 'event will be permanently deleted',
             showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
-           // confirmButtonColor: "#abd1c6",
+            iconColor: "#f9bc60",
+            confirmButtonText: 'Yes, delete it!',
           })
         .then((result) => {
             if (result.isConfirmed) {
@@ -86,6 +84,7 @@ function EventDetails () {
                     icon: 'success',
                     title: 'Deleted!',
                     text: 'event has been deleted',
+                    iconColor: "#004643",
                   })
             } else {
                 var error = (response.status === 401)
@@ -93,6 +92,7 @@ function EventDetails () {
                     icon: 'error',
                     title: 'Oops...',
                     text: 'you must login to delete an event',
+                    iconColor: "#e16162",
                   })
                   navigate("/login")
                   console.log('error occured:',error, '. user must be logged in to delete an event')
@@ -126,6 +126,7 @@ function EventDetails () {
                     icon: 'success',
                     title: 'Yay',
                     text: 'event updated',
+                    iconColor: "#004643",
                   })
                 .then(()=>{
                     window.location.reload()
@@ -137,6 +138,7 @@ function EventDetails () {
                     icon: 'error',
                     title: 'Oops...',
                     text: 'you must login to add an event',
+                    iconColor: "#e16162",
                   })
                   navigate("/login")
                   console.log('error occured:',error, '. user must be logged in to add an event')

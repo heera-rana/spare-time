@@ -27,6 +27,7 @@ function Login (){
                     icon: 'success',
                     title: 'Yay',
                     text: 'you are successfully logged in',
+                    iconColor: "#004643",
                 })
                 .then(()=>{
                     window.location.reload()
@@ -42,6 +43,7 @@ function Login (){
                     icon: 'error',
                     title: 'Oops...',
                     text: 'wrong username or password',
+                    iconColor: "#e16162",
                 })
             }
         })
