@@ -1,5 +1,5 @@
 // import whiteMenu from "../images/whiteMenu.svg";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import EventData from './Data.json'
 import {useState, useEffect} from "react"
@@ -26,7 +26,7 @@ function Header() {
       icon: 'success',
       title: 'Logged out',
       text: 'you are successfully logged out',
-      confirmButtonColor: "#abd1c6",
+      iconColor: "#004643",
     }) 
     .then(()=>{
       window.location.reload()
@@ -37,7 +37,7 @@ function Header() {
   return (
     <div>
       <div className="App-header">
-        <h1 className="h1">Spare Time</h1>
+        <h1 className="h1"><Link to="/">Spare Time</Link></h1>
           <div className="nav">
             <Navigation token={token} signOut = {signOut}/>
           </div>

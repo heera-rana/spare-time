@@ -12,7 +12,7 @@ const Navigation = ({ token , signOut}) => {
   })
 
   return (
-    <label className="nav">
+    // <label className="nav">
       <nav>
         <ul>
           <li>
@@ -38,7 +38,7 @@ const Navigation = ({ token , signOut}) => {
           )}
         </ul>
       </nav>
-    </label>
+    // </label>
   );
 }
 
