@@ -70,7 +70,7 @@ function Login (){
         <div className="form">
             <h2>Good to see you again!</h2>
             <form onSubmit={onSubmit} className= "form">
-                <div className="form-group">
+                <label>
                 Email:
                     <input
                     type="email"
@@ -79,8 +79,8 @@ function Login (){
                     onChange={e => setEmail(e.target.value)}
                     required
                     />
-                </div>
-                <div className="form-group">
+                </label>
+                <label>
                     Password:
                     <input
                     type="password"
@@ -90,7 +90,7 @@ function Login (){
                     required
                     password='true'
                     />
-                </div>
+                </label>
                 <div >
                     <input
                     className="button"
