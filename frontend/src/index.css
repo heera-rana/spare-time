@@ -42,18 +42,18 @@ body {
   color: #f9bc60;
 }
 /* this list items cover the navigation link in the header */
-.passwordRequired{
-  display: inline;
-  flex-direction: row;
-  font-size: 20px;
-  align-content: center;
+.mustHave{
+  display: flex;
+  flex-direction: column;
 }
-.passwordListItem{
-  font-size: 20px;
+.passwordRequired{
+  padding-bottom: 5px;
 }
 
-ul{
-  
+.passwordListItem{
+  padding-bottom: 5px;
+}
+ul{ 
   display: flex;
   flex-direction: row;
   color: #004643;
@@ -91,9 +91,7 @@ a:active {
 .category-list{
   cursor: pointer;
 }
-/* .categoty-list{
-  background-color: #e8e4e6;
-} */
+
 /* sign out button in the header */
 .signOutButton{
   background: none;
@@ -305,8 +303,10 @@ object:hover{
 }
 .one-image-container{
   display: inline-block;
-  height: 400px;
-  width: 600px;
+  max-height: 30%;
+  max-width: 60%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 input{
   border-radius: 5px;

@@ -44,8 +44,9 @@ function SignUp (){
                 })
                 .then(()=>{
                     window.location.reload()
+                    navigate("/")
                 })
-                //navigate("/")
+                
                 console.log('User has been sucessfully registered')
                 content = response.json()
                 return content
@@ -63,7 +64,7 @@ function SignUp (){
         .then((data)=>{
             myToken = data["token"]
             sessionStorage.setItem('token', myToken)
-            return myToken   
+            return myToken     
         })
     }
 
@@ -112,13 +113,11 @@ function SignUp (){
                 </label>
                 <label>
                 <div className="mustHave">
-                    <ul>
-                    <li className="passwordRequired">Password Must contain:</li>
-                        <li className="passwordListItem">At least 1 Uppercase</li>
-                        <li className="passwordListItem">At least 1 Lowercase</li>
-                        <li className="passwordListItem">At least 1 Number</li>
-                        <li className="passwordListItem">Min 5 chars</li>
-                    </ul>
+                    <u><div className="passwordRequired">Password must contain:</div></u>
+                        <div className="passwordListItem">A uppercase letter</div>
+                        <div className="passwordListItem">A lowercase letter</div>
+                        <div className="passwordListItem">A Number</div>
+                        <div className="passwordListItem">A minimum 5 characters</div>
                     </div>
                 </label>
                 <label>
