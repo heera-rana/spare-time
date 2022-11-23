@@ -1,2023 +1,248 @@
 [{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65b6"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Zebulen McAlarney",
-    "date": "2022-10-20T23:00:00.000+00:00",
-    "duration": "57",
-    "price": "16.58",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65b7"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Merv Worsam",
-    "date": "2022-10-20T23:00:00.000+00:01",
-    "duration": "46",
-    "price": "4.38",
-    "description": "Beginners French"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65b8"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Shalne Harsum",
-    "date": "2022-10-20T23:00:00.000+00:02",
-    "duration": "3",
-    "price": "6.78",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65b9"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Reta Bellee",
-    "date": "2022-10-20T23:00:00.000+00:03",
-    "duration": "195",
-    "price": "8.24",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65ba"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Faina Ivanikhin",
-    "date": "2022-10-20T23:00:00.000+00:04",
-    "duration": "226",
-    "price": "7.64",
-    "description": "Cinema "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65bb"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Jacinda Geleman",
-    "date": "2022-10-20T23:00:00.000+00:05",
-    "duration": "31",
-    "price": "8.8",
-    "description": "Cocktail making "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65bc"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Anatollo Clemett",
-    "date": "2022-10-20T23:00:00.000+00:06",
-    "duration": "33",
-    "price": "15.84",
-    "description": "Open mic night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65bd"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Bendick Hartup",
-    "date": "2022-10-20T23:00:00.000+00:07",
-    "duration": "73",
-    "price": "18.78",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65be"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Thorsten By",
-    "date": "2022-10-20T23:00:00.000+00:08",
-    "duration": "82",
-    "price": "5.15",
-    "description": "Yoga"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65bf"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Kath Bendare",
-    "date": "2022-10-20T23:00:00.000+00:09",
-    "duration": "69",
-    "price": "15.31",
-    "description": "Comedy club "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65c0"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Nicolette April",
-    "date": "2022-10-20T23:00:00.000+00:10",
-    "duration": "136",
-    "price": "1.41",
-    "description": "Lego build "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65c1"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Marlin Mandeville",
-    "date": "2022-10-20T23:00:00.000+00:11",
-    "duration": "177",
-    "price": "13.19",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65c2"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Dalli Naile",
-    "date": "2022-10-20T23:00:00.000+00:12",
-    "duration": "52",
-    "price": "14.41",
-    "description": "Pilates"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65c3"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Flem Marusic",
-    "date": "2022-10-20T23:00:00.000+00:13",
-    "duration": "174",
-    "price": "0.09",
-    "description": "Sweaty mama "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65c4"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Klarika Colum",
-    "date": "2022-10-20T23:00:00.000+00:14",
-    "duration": "45",
-    "price": "13.61",
-    "description": "Baby opera "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65c5"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Anthe Langrick",
-    "date": "2022-10-20T23:00:00.000+00:15",
-    "duration": "120",
-    "price": "3.13",
-    "description": "Pub crawl "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65c6"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Elbertina Aldis",
-    "date": "2022-10-20T23:00:00.000+00:16",
-    "duration": "65",
-    "price": "8.13",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65c7"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Rollie Normanton",
-    "date": "2022-10-20T23:00:00.000+00:17",
-    "duration": "73",
-    "price": "2.4",
-    "description": "Ghost walk "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65c8"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Kimmy Wettern",
-    "date": "2022-10-20T23:00:00.000+00:18",
-    "duration": "214",
-    "price": "0.63",
-    "description": "Beginners Italian "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65c9"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Tammara Chantler",
-    "date": "2022-10-20T23:00:00.000+00:19",
-    "duration": "197",
-    "price": "10.94",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65ca"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Samson Tyrie",
-    "date": "2022-10-20T23:00:00.000+00:20",
-    "duration": "59",
-    "price": "3.67",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65cb"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Felicdad Winwood",
-    "date": "2022-10-20T23:00:00.000+00:21",
-    "duration": "144",
-    "price": "17.42",
-    "description": "Soft play "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65cc"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Kiley Snellman",
-    "date": "2022-10-20T23:00:00.000+00:22",
-    "duration": "198",
-    "price": "17.58",
-    "description": "Blobbie Williams Tribute act"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65cd"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Susy Shiell",
-    "date": "2022-10-20T23:00:00.000+00:23",
-    "duration": "146",
-    "price": "3.34",
-    "description": "Beginners German "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65ce"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Patrick Zink",
-    "date": "2022-10-20T23:00:00.000+00:24",
-    "duration": "23",
-    "price": "13.91",
-    "description": "Improv Drama Class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65cf"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Stanislaw Guilbert",
-    "date": "2022-10-20T23:00:00.000+00:25",
-    "duration": "52",
-    "price": "15.57",
-    "description": "Paint and Prosecco "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65d0"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Nani Hembrow",
-    "date": "2022-10-20T23:00:00.000+00:26",
-    "duration": "26",
-    "price": "17.14",
-    "description": "5-a-side"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65d1"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Shaine Bremmer",
-    "date": "2022-10-20T23:00:00.000+00:27",
-    "duration": "20",
-    "price": "18.31",
-    "description": "Gym open day "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65d2"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Deonne Michieli",
-    "date": "2022-10-20T23:00:00.000+00:28",
-    "duration": "115",
-    "price": "5.36",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65d3"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Otes Dugald",
-    "date": "2022-10-20T23:00:00.000+00:29",
-    "duration": "132",
-    "price": "3.37",
-    "description": "Fake That"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65d4"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Yard Chastand",
-    "date": "2022-10-20T23:00:00.000+00:30",
-    "duration": "138",
-    "price": "7.54",
-    "description": "Parent and Child football "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65d5"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Dal Tamblyn",
-    "date": "2022-10-20T23:00:00.000+00:31",
-    "duration": "162",
-    "price": "1.35",
-    "description": "Lez Zepplin"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65d6"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Cornell Prayer",
-    "date": "2022-10-20T23:00:00.000+00:32",
-    "duration": "188",
-    "price": "18.11",
-    "description": "Bootcamp"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65d7"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Tammi Mirfin",
-    "date": "2022-10-20T23:00:00.000+00:33",
-    "duration": "189",
-    "price": "4.27",
-    "description": "Nature walk "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65d8"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Jessi Hosier",
-    "date": "2022-10-20T23:00:00.000+00:34",
-    "duration": "94",
-    "price": "18.07",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65d9"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Jacquie Hethron",
-    "date": "2022-10-20T23:00:00.000+00:35",
-    "duration": "214",
-    "price": "4.13",
-    "description": "Paint- a- long "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65da"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Michale Necolds",
-    "date": "2022-10-20T23:00:00.000+00:36",
-    "duration": "237",
-    "price": "3.63",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65db"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Cosmo Solesbury",
-    "date": "2022-10-20T23:00:00.000+00:37",
-    "duration": "28",
-    "price": "11.08",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65dc"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Kristal Matuszinski",
-    "date": "2022-10-20T23:00:00.000+00:38",
-    "duration": "142",
-    "price": "17.85",
-    "description": "Sweaty mama"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65dd"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Dwight Tocher",
-    "date": "2022-10-20T23:00:00.000+00:39",
-    "duration": "226",
-    "price": "19.44",
-    "description": "Crochet workshop"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65de"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Maiga Skittles",
-    "date": "2022-10-20T23:00:00.000+00:40",
-    "duration": "182",
-    "price": "5.49",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65df"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Kirstin Halbeard",
-    "date": "2022-10-20T23:00:00.000+00:41",
-    "duration": "174",
-    "price": "12.25",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65e0"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Maddi Ambrogiotti",
-    "date": "2022-10-20T23:00:00.000+00:42",
-    "duration": "73",
-    "price": "11.86",
-    "description": "Chocolate making Class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65e1"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Dannel Jamieson",
-    "date": "2022-10-20T23:00:00.000+00:43",
-    "duration": "209",
-    "price": "14.25",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65e2"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Alana Ilieve",
-    "date": "2022-10-20T23:00:00.000+00:44",
-    "duration": "61",
-    "price": "19.97",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65e3"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Ivonne Laye",
-    "date": "2022-10-20T23:00:00.000+00:45",
-    "duration": "8",
-    "price": "12.19",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65e4"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Rey Gonnelly",
-    "date": "2022-10-20T23:00:00.000+00:46",
-    "duration": "138",
-    "price": "2.46",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65e5"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Peg Zoanetti",
-    "date": "2022-10-20T23:00:00.000+00:47",
-    "duration": "216",
-    "price": "14.27",
-    "description": "Park Run "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65e6"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Kit Yarnton",
-    "date": "2022-10-20T23:00:00.000+00:48",
-    "duration": "171",
-    "price": "2.75",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65e7"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Michaelina Laherty",
-    "date": "2022-10-20T23:00:00.000+00:49",
-    "duration": "47",
-    "price": "5.45",
-    "description": "The Koronas"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65e8"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Orsa Strother",
-    "date": "2022-10-20T23:00:00.000+00:50",
-    "duration": "156",
-    "price": "13.4",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65e9"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Saundra Phillins",
-    "date": "2022-10-20T23:00:00.000+00:51",
-    "duration": "231",
-    "price": "1.39",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65ea"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Rubie Staner",
-    "date": "2022-10-20T23:00:00.000+00:52",
-    "duration": "94",
-    "price": "0.68",
-    "description": "Pasta Masterclass"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65eb"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Niels Hoodless",
-    "date": "2022-10-20T23:00:00.000+00:53",
-    "duration": "95",
-    "price": "5.79",
-    "description": "Seafood and Paella Class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65ec"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Nora Birrell",
-    "date": "2022-10-20T23:00:00.000+00:54",
-    "duration": "43",
-    "price": "2.14",
-    "description": "Concert"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65ed"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Elbert Berget",
-    "date": "2022-10-20T23:00:00.000+00:55",
-    "duration": "56",
-    "price": "6.23",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65ee"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Hoyt Morl",
-    "date": "2022-10-20T23:00:00.000+00:56",
-    "duration": "35",
-    "price": "9.67",
-    "description": "Comedy gig "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65ef"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Lonnard Andrzej",
-    "date": "2022-10-20T23:00:00.000+00:57",
-    "duration": "61",
-    "price": "0.32",
-    "description": "Zed Lepplin "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65f0"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Hebert Childs",
-    "date": "2022-10-20T23:00:00.000+00:58",
-    "duration": "67",
-    "price": "5.83",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65f1"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Desdemona Sennett",
-    "date": "2022-10-20T23:00:00.000+00:59",
-    "duration": "21",
-    "price": "16.09",
-    "description": "The Koronas"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65f2"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Roseann Semarke",
-    "date": "2022-10-20T23:00:00.000+00:60",
-    "duration": "168",
-    "price": "17.02",
-    "description": "Photography composition "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65f3"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Emmeline Scrinage",
-    "date": "2022-10-20T23:00:00.000+00:61",
-    "duration": "101",
-    "price": "11.36",
-    "description": "Concert"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65f4"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Merrel Phythien",
-    "date": "2022-10-20T23:00:00.000+00:62",
-    "duration": "17",
-    "price": "6.99",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65f5"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Bale Westcar",
-    "date": "2022-10-20T23:00:00.000+00:63",
-    "duration": "31",
-    "price": "2.17",
-    "description": "Comedy gig "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65f6"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Sheena Galliard",
-    "date": "2022-10-20T23:00:00.000+00:64",
-    "duration": "87",
-    "price": "18.77",
-    "description": "Zed Lepplin "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65f7"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Shirleen Titmuss",
-    "date": "2022-10-20T23:00:00.000+00:65",
-    "duration": "36",
-    "price": "15.49",
-    "description": "Charity singing contest"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65f8"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Chane Driscoll",
-    "date": "2022-10-20T23:00:00.000+00:66",
-    "duration": "189",
-    "price": "6.47",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65f9"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Willyt Paty",
-    "date": "2022-10-20T23:00:00.000+00:67",
-    "duration": "178",
-    "price": "14.89",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65fa"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Rowland Poncet",
-    "date": "2022-10-20T23:00:00.000+00:68",
-    "duration": "46",
-    "price": "4.98",
-    "description": "Concert"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65fb"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Melodie Mogford",
-    "date": "2022-10-20T23:00:00.000+00:69",
-    "duration": "212",
-    "price": "0.38",
-    "description": "Comedy club "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65fc"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Chrissy Nower",
-    "date": "2022-10-20T23:00:00.000+00:70",
-    "duration": "48",
-    "price": "18.41",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65fd"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Brianna Reedyhough",
-    "date": "2022-10-20T23:00:00.000+00:71",
-    "duration": "102",
-    "price": "5.76",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65fe"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Augustina Caghan",
-    "date": "2022-10-20T23:00:00.000+00:72",
-    "duration": "101",
-    "price": "7.39",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f65ff"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Hettie Jordison",
-    "date": "2022-10-20T23:00:00.000+00:73",
-    "duration": "111",
-    "price": "17",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6600"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Adelind Foss",
-    "date": "2022-10-20T23:00:00.000+00:74",
-    "duration": "132",
-    "price": "0.51",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6601"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Sonya Silk",
-    "date": "2022-10-20T23:00:00.000+00:75",
-    "duration": "225",
-    "price": "18.16",
-    "description": "Resin Jewellery class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6602"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Conroy Tubridy",
-    "date": "2022-10-20T23:00:00.000+00:76",
-    "duration": "195",
-    "price": "19.25",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6603"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Yves Dechelette",
-    "date": "2022-10-20T23:00:00.000+00:77",
-    "duration": "55",
-    "price": "18.13",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6604"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Lavinia Brunsden",
-    "date": "2022-10-20T23:00:00.000+00:78",
-    "duration": "23",
-    "price": "12.79",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6605"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Kienan Mozzi",
-    "date": "2022-10-20T23:00:00.000+00:79",
-    "duration": "234",
-    "price": "6.14",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6606"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Tamarra Bowshire",
-    "date": "2022-10-20T23:00:00.000+00:80",
-    "duration": "21",
-    "price": "6.55",
-    "description": "Rock climbing "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6607"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Dolley Tabram",
-    "date": "2022-10-20T23:00:00.000+00:81",
-    "duration": "177",
-    "price": "18.78",
-    "description": "Concert"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6608"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Agnella Grafton",
-    "date": "2022-10-20T23:00:00.000+00:82",
-    "duration": "175",
-    "price": "3.9",
-    "description": "Water Aerobics "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6609"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Roxie Auten",
-    "date": "2022-10-20T23:00:00.000+00:83",
-    "duration": "169",
-    "price": "5.4",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f660a"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Hale Ostick",
-    "date": "2022-10-20T23:00:00.000+00:84",
-    "duration": "221",
-    "price": "13.34",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f660b"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Harmony Sidey",
-    "date": "2022-10-20T23:00:00.000+00:85",
-    "duration": "146",
-    "price": "18.93",
-    "description": "Concert"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f660c"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Marius Cowser",
-    "date": "2022-10-20T23:00:00.000+00:86",
-    "duration": "63",
-    "price": "9.5",
-    "description": "Neighbourhood walkabout "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f660d"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Margaret Pieter",
-    "date": "2022-10-20T23:00:00.000+00:87",
-    "duration": "15",
-    "price": "3.72",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f660e"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Andros McGuckin",
-    "date": "2022-10-20T23:00:00.000+00:88",
-    "duration": "119",
-    "price": "18.76",
-    "description": "Concert"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f660f"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Marijo Netherwood",
-    "date": "2022-10-20T23:00:00.000+00:89",
-    "duration": "32",
-    "price": "13.94",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6610"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Cosmo Hennemann",
-    "date": "2022-10-20T23:00:00.000+00:90",
-    "duration": "134",
-    "price": "4.26",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6611"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Floria Wilmott",
-    "date": "2022-10-20T23:00:00.000+00:91",
-    "duration": "97",
-    "price": "7.13",
-    "description": "Dog walking"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6612"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Doy Dinwoodie",
-    "date": "2022-10-20T23:00:00.000+00:92",
-    "duration": "118",
-    "price": "17.7",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6613"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Massimo Pitt",
-    "date": "2022-10-20T23:00:00.000+00:93",
-    "duration": "182",
-    "price": "0.93",
-    "description": "Netball (open)"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6614"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Tory Copnall",
-    "date": "2022-10-20T23:00:00.000+00:94",
-    "duration": "91",
-    "price": "2.57",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6615"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Jodi Olliar",
-    "date": "2022-10-20T23:00:00.000+00:95",
-    "duration": "157",
-    "price": "3.89",
-    "description": "Tennis (open)"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6616"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Pet Montague",
-    "date": "2022-10-20T23:00:00.000+00:96",
-    "duration": "97",
-    "price": "12.09",
-    "description": "Concert"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6617"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Rochette Schruur",
-    "date": "2022-10-20T23:00:00.000+00:97",
-    "duration": "199",
-    "price": "4.25",
-    "description": "Escape room creator "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6618"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Algernon Dries",
-    "date": "2022-10-20T23:00:00.000+00:98",
-    "duration": "190",
-    "price": "5.6",
-    "description": "Sweet morning pastry class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6619"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Carolyn Nicholson",
-    "date": "2022-10-20T23:00:00.000+00:99",
-    "duration": "12",
-    "price": "18.26",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f661a"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Grannie Dy",
-    "date": "2022-10-20T23:00:00.000+00:100",
-    "duration": "42",
-    "price": "16.25",
-    "description": "Badminton (open)"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f661b"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Lorine Guise",
-    "date": "2022-10-20T23:00:00.000+00:101",
-    "duration": "187",
-    "price": "13.68",
-    "description": "Bowling (open)"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f661c"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Delmer Carlton",
-    "date": "2022-10-20T23:00:00.000+00:102",
-    "duration": "205",
-    "price": "15.47",
-    "description": "Cocktail masterclass"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f661d"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Jacquie Pechacek",
-    "date": "2022-10-20T23:00:00.000+00:103",
-    "duration": "4",
-    "price": "0.63",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f661e"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Pamella Epsly",
-    "date": "2022-10-20T23:00:00.000+00:104",
-    "duration": "237",
-    "price": "11.07",
-    "description": "Ten pin bowling fun night"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f661f"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Valry Stollenwerck",
-    "date": "2022-10-20T23:00:00.000+00:105",
-    "duration": "222",
-    "price": "19.1",
-    "description": "Pub quiz"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6620"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Amye Virgoe",
-    "date": "2022-10-20T23:00:00.000+00:106",
-    "duration": "209",
-    "price": "0.96",
-    "description": "Ghost walk "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6621"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Melisse Grishagin",
-    "date": "2022-10-20T23:00:00.000+00:107",
-    "duration": "66",
-    "price": "2.11",
-    "description": "Concert"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6622"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Markos Gripton",
-    "date": "2022-10-20T23:00:00.000+00:108",
-    "duration": "112",
-    "price": "16.75",
-    "description": "Pole"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6623"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Monah Sulley",
-    "date": "2022-10-20T23:00:00.000+00:109",
-    "duration": "151",
-    "price": "14.6",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6624"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Lavinia Learmond",
-    "date": "2022-10-20T23:00:00.000+00:110",
-    "duration": "153",
-    "price": "13.61",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6625"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Fidela Weymont",
-    "date": "2022-10-20T23:00:00.000+00:111",
-    "duration": "184",
-    "price": "1.67",
-    "description": "Ghost walk "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6626"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Wallache Van Dale",
-    "date": "2022-10-20T23:00:00.000+00:112",
-    "duration": "118",
-    "price": "0.87",
-    "description": "Waste Plastic Jewellery making "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6627"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Zonda Ramalho",
-    "date": "2022-10-20T23:00:00.000+00:113",
-    "duration": "203",
-    "price": "5.31",
-    "description": "Glass blowing "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6628"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Pattie Sear",
-    "date": "2022-10-20T23:00:00.000+00:114",
-    "duration": "73",
-    "price": "4.03",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6629"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Nanice Barrat",
-    "date": "2022-10-20T23:00:00.000+00:115",
-    "duration": "160",
-    "price": "5.94",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f662a"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Roxie Rigler",
-    "date": "2022-10-20T23:00:00.000+00:116",
-    "duration": "136",
-    "price": "13.9",
-    "description": "Sugar making "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f662b"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Sibella Willacot",
-    "date": "2022-10-20T23:00:00.000+00:117",
-    "duration": "72",
-    "price": "15.6",
-    "description": "Beginners French"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f662c"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Claudie McMackin",
-    "date": "2022-10-20T23:00:00.000+00:118",
-    "duration": "17",
-    "price": "4.95",
-    "description": "Ghost walk "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f662d"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Eugenie Chalcraft",
-    "date": "2022-10-20T23:00:00.000+00:119",
-    "duration": "239",
-    "price": "2.59",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f662e"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Vale Gussie",
-    "date": "2022-10-20T23:00:00.000+00:120",
-    "duration": "56",
-    "price": "19.65",
-    "description": "Ghost walk "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f662f"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Birch Rendle",
-    "date": "2022-10-20T23:00:00.000+00:121",
-    "duration": "221",
-    "price": "2.34",
-    "description": "Music"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6630"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Kele Faill",
-    "date": "2022-10-20T23:00:00.000+00:122",
-    "duration": "240",
-    "price": "7.64",
-    "description": "Music"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6631"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Zerk Chastan",
-    "date": "2022-10-20T23:00:00.000+00:123",
-    "duration": "6",
-    "price": "1.97",
-    "description": "Crochet workshop"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6632"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Arlette Robberts",
-    "date": "2022-10-20T23:00:00.000+00:124",
-    "duration": "75",
-    "price": "10.18",
-    "description": "Chocolate making Class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6633"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Camilla Gosforth",
-    "date": "2022-10-20T23:00:00.000+00:125",
-    "duration": "16",
-    "price": "15.71",
-    "description": "Pasta Masterclass"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6634"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Alexandra Matusovsky",
-    "date": "2022-10-20T23:00:00.000+00:126",
-    "duration": "189",
-    "price": "16.91",
-    "description": "Ghost walk "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6635"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Hildagarde Zmitruk",
-    "date": "2022-10-20T23:00:00.000+00:127",
-    "duration": "28",
-    "price": "19.13",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6636"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Gelya Caws",
-    "date": "2022-10-20T23:00:00.000+00:128",
-    "duration": "6",
-    "price": "18.18",
-    "description": "Ghost walk "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6637"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Malcolm Galero",
-    "date": "2022-10-20T23:00:00.000+00:129",
-    "duration": "215",
-    "price": "17.38",
-    "description": "Ghost walk "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6638"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Yasmin Reding",
-    "date": "2022-10-20T23:00:00.000+00:130",
-    "duration": "18",
-    "price": "16.2",
-    "description": "Music"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6639"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Barrie Allibon",
-    "date": "2022-10-20T23:00:00.000+00:131",
-    "duration": "54",
-    "price": "15.16",
-    "description": "Resin Jewellery class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f663a"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Randell Stapford",
-    "date": "2022-10-20T23:00:00.000+00:132",
-    "duration": "115",
-    "price": "13.72",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f663b"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Ernst Cacacie",
-    "date": "2022-10-20T23:00:00.000+00:133",
-    "duration": "201",
-    "price": "9.12",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f663c"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Crystal Harlin",
-    "date": "2022-10-20T23:00:00.000+00:134",
-    "duration": "24",
-    "price": "4.42",
-    "description": "Cocktail making "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f663d"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Adi Congreave",
-    "date": "2022-10-20T23:00:00.000+00:135",
-    "duration": "68",
-    "price": "7.04",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f663e"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Germaine Findlay",
-    "date": "2022-10-20T23:00:00.000+00:136",
-    "duration": "101",
-    "price": "1.25",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f663f"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Jaquith Simants",
-    "date": "2022-10-20T23:00:00.000+00:137",
-    "duration": "103",
-    "price": "0.78",
-    "description": "Kettlebell (Online class)"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6640"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Mareah Caughte",
-    "date": "2022-10-20T23:00:00.000+00:138",
-    "duration": "112",
-    "price": "11.6",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6641"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Rubie Trasler",
-    "date": "2022-10-20T23:00:00.000+00:139",
-    "duration": "103",
-    "price": "1.93",
-    "description": "Archery"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6642"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Rubia Bachnic",
-    "date": "2022-10-20T23:00:00.000+00:140",
-    "duration": "213",
-    "price": "17.42",
-    "description": "Ice skating"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6643"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Carlie Adamec",
-    "date": "2022-10-20T23:00:00.000+00:141",
-    "duration": "174",
-    "price": "16.51",
-    "description": "Music"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6644"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Stefanie Prisk",
-    "date": "2022-10-20T23:00:00.000+00:142",
-    "duration": "34",
-    "price": "8.59",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6645"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Luciano Westcarr",
-    "date": "2022-10-20T23:00:00.000+00:143",
-    "duration": "15",
-    "price": "13.7",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6646"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Tillie Lyle",
-    "date": "2022-10-20T23:00:00.000+00:144",
-    "duration": "16",
-    "price": "12.41",
-    "description": "Cocktail making "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6647"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Washington Dawidowitz",
-    "date": "2022-10-20T23:00:00.000+00:145",
-    "duration": "36",
-    "price": "5.75",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6648"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Shaina Giraldon",
-    "date": "2022-10-20T23:00:00.000+00:146",
-    "duration": "31",
-    "price": "18.05",
-    "description": "Beginners French"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6649"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Hillary Harce",
-    "date": "2022-10-20T23:00:00.000+00:147",
-    "duration": "155",
-    "price": "18.04",
-    "description": "Beginners Italian "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f664a"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Manfred Rousby",
-    "date": "2022-10-20T23:00:00.000+00:148",
-    "duration": "93",
-    "price": "6.9",
-    "description": "Beginners German "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f664b"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Amalee Stollenhof",
-    "date": "2022-10-20T23:00:00.000+00:149",
-    "duration": "96",
-    "price": "6.36",
-    "description": "Music"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f664c"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Kristyn Opdenort",
-    "date": "2022-10-20T23:00:00.000+00:150",
-    "duration": "138",
-    "price": "15.15",
-    "description": "Music"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f664d"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Orville Dunridge",
-    "date": "2022-10-20T23:00:00.000+00:151",
-    "duration": "240",
-    "price": "2.95",
-    "description": "Sensory class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f664e"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Augusta Baldini",
-    "date": "2022-10-20T23:00:00.000+00:152",
-    "duration": "3",
-    "price": "7.85",
-    "description": "Music"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f664f"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Roderigo Toward",
-    "date": "2022-10-20T23:00:00.000+00:153",
-    "duration": "184",
-    "price": "3.61",
-    "description": "Chocolate making Class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6650"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Tracey Thurman",
-    "date": "2022-10-20T23:00:00.000+00:154",
-    "duration": "51",
-    "price": "8.39",
-    "description": "Nature walk "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6651"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Humbert McAllister",
-    "date": "2022-10-20T23:00:00.000+00:155",
-    "duration": "54",
-    "price": "15.78",
-    "description": "Cocktail making "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6652"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Kiley Pow",
-    "date": "2022-10-20T23:00:00.000+00:156",
-    "duration": "203",
-    "price": "19.22",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6653"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Trescha Ismead",
-    "date": "2022-10-20T23:00:00.000+00:157",
-    "duration": "23",
-    "price": "0.99",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6654"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Jenifer Stritton",
-    "date": "2022-10-20T23:00:00.000+00:158",
-    "duration": "163",
-    "price": "16.71",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6655"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Grace Antic",
-    "date": "2022-10-20T23:00:00.000+00:159",
-    "duration": "149",
-    "price": "1.47",
-    "description": "Nature walk "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6656"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Gerladina Stallan",
-    "date": "2022-10-20T23:00:00.000+00:160",
-    "duration": "18",
-    "price": "1.29",
-    "description": "Nature walk "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6657"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Patric Alen",
-    "date": "2022-10-20T23:00:00.000+00:161",
-    "duration": "78",
-    "price": "16.18",
-    "description": "Nature walk "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6658"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Ancell MacKim",
-    "date": "2022-10-20T23:00:00.000+00:162",
-    "duration": "9",
-    "price": "7.61",
-    "description": "Cocktail masterclass"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6659"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Corena Craythorn",
-    "date": "2022-10-20T23:00:00.000+00:163",
-    "duration": "148",
-    "price": "11.49",
-    "description": "Waste Plastic Jewellery making "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f665a"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Vivi Corsan",
-    "date": "2022-10-20T23:00:00.000+00:164",
-    "duration": "111",
-    "price": "0.43",
-    "description": "Glass blowing "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f665b"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Bendite Hearley",
-    "date": "2022-10-20T23:00:00.000+00:165",
-    "duration": "54",
-    "price": "15.83",
-    "description": "Cocktail making "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f665c"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Kordula Farr",
-    "date": "2022-10-20T23:00:00.000+00:166",
-    "duration": "132",
-    "price": "19.05",
-    "description": "Soft play "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f665d"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Ginger Ratcliff",
-    "date": "2022-10-20T23:00:00.000+00:167",
-    "duration": "114",
-    "price": "13.19",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f665e"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Timi Welfair",
-    "date": "2022-10-20T23:00:00.000+00:168",
-    "duration": "112",
-    "price": "4.55",
-    "description": "Cocktail making "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f665f"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Phillis Arrighi",
-    "date": "2022-10-20T23:00:00.000+00:169",
-    "duration": "70",
-    "price": "14.48",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6660"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Tallia Gallimore",
-    "date": "2022-10-20T23:00:00.000+00:170",
-    "duration": "46",
-    "price": "15.24",
-    "description": "Beginners Pilates"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6661"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Goldy Joblin",
-    "date": "2022-10-20T23:00:00.000+00:171",
-    "duration": "40",
-    "price": "6",
-    "description": "Music"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6662"
-    },
-    "title ": "Purple",
-    "categories": "Misc",
-    "provider": "Nikki MacCarlich",
-    "date": "2022-10-20T23:00:00.000+00:172",
-    "duration": "43",
-    "price": "11.22",
-    "description": "Board game night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6663"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Annabelle Thackeray",
-    "date": "2022-10-20T23:00:00.000+00:173",
-    "duration": "240",
-    "price": "14.31",
-    "description": "Music"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6664"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Nanete Antonsson",
-    "date": "2022-10-20T23:00:00.000+00:174",
-    "duration": "40",
-    "price": "1.62",
-    "description": "Music"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6665"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Elvin Espadas",
-    "date": "2022-10-20T23:00:00.000+00:175",
-    "duration": "168",
-    "price": "12.05",
-    "description": "Card house building "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6666"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Killian Methley",
-    "date": "2022-10-20T23:00:00.000+00:176",
-    "duration": "73",
-    "price": "8.76",
-    "description": "Seafood and Paella Class"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6667"
-    },
-    "title ": "Orange",
-    "categories": "Music Events ",
-    "provider": "Marmaduke Hanton",
-    "date": "2022-10-20T23:00:00.000+00:177",
-    "duration": "59",
-    "price": "19.12",
-    "description": "Open Mic night "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6668"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Ronnie O'Dunniom",
-    "date": "2022-10-20T23:00:00.000+00:178",
-    "duration": "171",
-    "price": "7.71",
-    "description": "Basic Photography "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f6669"
-    },
-    "title ": "Yellow",
-    "categories": "Evening Events",
-    "provider": "Loretta Dimond",
-    "date": "2022-10-20T23:00:00.000+00:179",
-    "duration": "33",
-    "price": "9.15",
-    "description": "Cocktail making "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f666a"
-    },
-    "title ": "Blue",
-    "categories": "Sports and Fitness",
-    "provider": "Tawsha Ibbott",
-    "date": "2022-10-20T23:00:00.000+00:180",
-    "duration": "171",
-    "price": "19.45",
-    "description": "Wreath making (Live stream)"
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f666b"
-    },
-    "title ": "Red",
-    "categories": "Childrens Events ",
-    "provider": "Brennan Fullbrook",
-    "date": "2022-10-20T23:00:00.000+00:181",
-    "duration": "127",
-    "price": "15.97",
-    "description": "Soft play "
-  },{
-    "_id": {
-      "$oid": "635144a3ac288956e06f666c"
-    },
-    "title ": "Green",
-    "categories": "Classes and Workshops ",
-    "provider": "Wash Swire",
-    "date": "2022-10-20T23:00:00.000+00:182",
-    "duration": "8",
-    "price": "7.7",
-    "description": "Sweet morning pastry class"
-  },{
-    "_id": {
-      "$oid": "6352917b91826d5f22a9afca"
-    },
-    "categories": "h",
-    "provider": "h",
-    "duration": "h",
-    "price": "h",
-    "description": "h"
-  }]
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa665"
+  },
+  "title": "Cocktail making",
+  "categories": "Evening Events",
+  "provider": "Jacinda Geleman",
+  "date": "Fri Jan 06 2023",
+  "duration": 31,
+  "price": 8.8,
+  "description": "We can provide Interacting and engaging workshops such as gen essence distillation, wonders of whisky, science lab experiences and cocktail masterclasses!",
+  "availability": 90,
+  "time": "9.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa662"
+  },
+  "title": "Sensory class",
+  "categories": "Childrens Events",
+  "provider": "Shalne Harsum",
+  "date": "Tue Jan 03 2023 ",
+  "duration": 3,
+  "price": 6.78,
+  "description": "Baby Sensory provides ideas for creative play, massage, tummy time, movement, visual development, textures, scents and music in simple practical ways that can be easily repeated at home. We also use a combination of original and traditional songs and rhymes to develop early speech and language skills, and sensory signing activities to help you and your baby communicate from birth.lass",
+  "availability": 8,
+  "time": "10.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa66a"
+  },
+  "title": "Lego build",
+  "categories": "Misc",
+  "provider": "Nicolette April",
+  "date": "Thu Jan 12 2023 ",
+  "duration": 136,
+  "price": 1.41,
+  "description": "Lego therapy is a collaborative play therapy in which children work together to build Lego models.",
+  "availability": 10,
+  "time ": "18.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa667"
+  },
+  "title": "Escape room creator",
+  "categories": "Misc",
+  "provider": "Bendick Hartup",
+  "date": "Mon Jan 09 2023 ",
+  "duration": 73,
+  "price": 18.78,
+  "description": "An escape room is�a game where players must work together to uncover clues, solve puzzles, and complete tasks in one or more rooms with the objective of completing a specified goal in a restricted period of time, and the main goal is simple� ESCAPE!",
+  "availability": 21,
+  "time": "13.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa66c"
+  },
+  "title": "Pilates",
+  "categories": "Sports and Fitness",
+  "provider": "Dalli Naile",
+  "date": "Sat Jan 14 2023 ",
+  "duration": 52,
+  "price": 14.41,
+  "description": "A system of exercises using special apparatus, designed to improve physical strength, flexibility, and posture, and enhance mental awareness.",
+  "availability": 92,
+  "time": "11.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa66b"
+  },
+  "title": "Board game night",
+  "categories": "Misc",
+  "provider": "Marlin Mandeville",
+  "date": "Fri Jan 13 2023 ",
+  "duration": 177,
+  "price": 13.19,
+  "description": "Welcoming space for gamers old and new to explore our library of over 800 board games, with expert staff on hand to make game recommendations and help with the rules.",
+  "availability": 19,
+  "time": "19.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa66d"
+  },
+  "title": "Sweaty mama",
+  "categories": "Childrens Events",
+  "provider": "Flem Marusic",
+  "date": "Sun Jan 15 2023 ",
+  "duration": 174,
+  "price": 0.09,
+  "description": "Be ready to chase your child, they won't be able to get enough of the softplay event, with special guests",
+  "availability": 2,
+  "time": "13.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa664"
+  },
+  "title": "Cinema",
+  "categories": "Evening Events",
+  "provider": "Faina Ivanikhin",
+  "date": "Thu Jan 05 2023 ",
+  "duration": 226,
+  "price": 7.64,
+  "description": "Experience film on an epic scale. Crystal-clear images, earth-shaking surround sound and high-resolution screens so big the film seems to surround you.",
+  "availability": 80,
+  "time": "16.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa66f"
+  },
+  "title": "Pub crawl",
+  "categories": "Evening Events",
+  "provider": "Anthe Langrick",
+  "date": "Tue Jan 17 2023 ",
+  "duration": 120,
+  "price": 3.13,
+  "description": "a tour taking in several pubs or drinking places, with one or more drinks at each.",
+  "availability": 69,
+  "time": "19.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa66e"
+  },
+  "title": "Baby opera",
+  "categories": "Childrens Events",
+  "provider": "Klarika Colum",
+  "date": "Mon Jan 16 2023 ",
+  "duration": 45,
+  "price": 13.61,
+  "description": "It's like watching a real-life movie. And it can be very exciting. Well, an opera is a play with music. In opera, the performers on the stage are normally singers, instead of actors. The story is told in song and by the music from the orchestra.",
+  "availability": 44,
+  "time": "13.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa672"
+  },
+  "title": "Beginners Italian",
+  "categories": "Classes and Workshops",
+  "provider": "Kimmy Wettern",
+  "date": "Fri Jan 20 2023 ",
+  "duration": 214,
+  "price": 0.63,
+  "description": "Entry level class to start your jorney on learning Italian",
+  "availability": 51,
+  "time": "09.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa670"
+  },
+  "title": "Escape room creator",
+  "categories": "Misc",
+  "provider": "Elbertina Aldis",
+  "date": "Wed Jan 18 2023",
+  "duration": 65,
+  "price": 8.13,
+  "description": "An escape room is�a game where players must work together to uncover clues, solve puzzles, and complete tasks in one or more rooms with the objective of completing a specified goal in a restricted period of time, and the main goal is simple� ESCAPE!",
+  "availability": 49,
+  "time": "15.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa671"
+  },
+  "title": "Ghost walk",
+  "categories": "Evening Events",
+  "provider": "Rollie Normanton",
+  "date": "Thu Jan 19 2023 ",
+  "duration": 73,
+  "price": 2.4,
+  "description": "A ghost story is any piece of fiction, or drama, that includes a ghost, or simply takes as a premise the possibility of ghosts or characters' belief in them. The \"ghost\" may appear of its own accord or be summoned by magic.",
+  "availability": 69,
+  "time": "17.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa663"
+  },
+  "title": "Board game night",
+  "categories": "Evening Events",
+  "provider": "Reta Bellee",
+  "date": "Wed Jan 04 2023 ",
+  "duration": 195,
+  "price": 8.24,
+  "description": "Welcoming space for gamers old and new to explore our library of over 800 board games, with expert staff on hand to make game recommendations and help with the rules.",
+  "availability": 35,
+  "time": "20.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa669"
+  },
+  "title": "Comedy club",
+  "categories": "Music Events",
+  "provider": "Kath Bendare",
+  "date": "Wed Jan 11 2023 ",
+  "duration": 69,
+  "price": 15.31,
+  "description": "where comedians give stand-up performances in front of an audience.",
+  "availability": 81,
+  "time": "18.30"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa666"
+  },
+  "title": "Open mic night",
+  "categories": "Music Events",
+  "provider": "Anatollo Clemett",
+  "date": "Sun Jan 08 2023 ",
+  "duration": 33,
+  "price": 15.84,
+  "description": "An open mic or open mike is a live show at a venue such as a coffeehouse, nightclub, comedy club, strip club, or pub, usually taking place at night, in which audience members may perform on stage whether they are amateurs or professionals,",
+  "availability": 81,
+  "time": "18.30"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa661"
+  },
+  "title": "Beginners French",
+  "categories": "Classes and Workshops",
+  "provider": "Merv Worsam",
+  "date": "Sun Jan 02 2022 ",
+  "duration": 46,
+  "price": 4.38,
+  "description": "Entry level class to start your jorney on learning French",
+  "availability": 79,
+  "time": "10.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa668"
+  },
+  "title": "Yoga",
+  "categories": "Sports and Fitness",
+  "provider": "Thorsten By",
+  "date": "Tue Jan 10 2023 ",
+  "duration": 82,
+  "price": 5.15,
+  "description": "a spiritual and ascetic discipline, a part of which, including breath control, simple meditation, and the adoption of specific bodily postures, is widely practised for health and relaxation.",
+  "availability": 33,
+  "time": "13.00"
+},{
+  "_id": {
+    "$oid": "636d10ba2026309d9a2fa660"
+  },
+  "title": "Pub quiz",
+  "categories": "Evening Events",
+  "provider": "Zebulen McAlarney",
+  "date": "Sat Jan 01 2022",
+  "duration": 57,
+  "price": 16.58,
+  "description": "Grab you knowledge squad for a classic pub quiz",
+  "availability": 82,
+  "time": "18.00"
+}]
