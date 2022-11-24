@@ -22,7 +22,7 @@ function Login (){
         })
         .then((response)=>{
             if (response.status === 200){
-                //console.log(response)
+                
                 Swal.fire({
                     icon: 'success',
                     title: 'Yay',

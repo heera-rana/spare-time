@@ -120,7 +120,6 @@ function EventDetails () {
         .then((response)=>{
             console.log(response)
             if (response.status === 201){
-                //response = response.json()
                 setIsPending(false)
                 Swal.fire({
                     icon: 'success',
@@ -131,7 +130,7 @@ function EventDetails () {
                 .then(()=>{
                     window.location.reload()
                 })
-                //navigate("/")
+                
             } else {
                 var error = (response.status === 401)
                 Swal.fire({

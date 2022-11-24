@@ -5,7 +5,6 @@ const {protect} = require('../authorisation/auth')
 
 router.get('/allEvents', allEvents) //
 router.post('/newEvent', protect, newEvent) //brings in the registe set fucntion from the controller
-// router.post('/newEvent', newEvent)
 router.get('/oneEvent/:id', oneEvent)
 router.post('/oneEvent/:id', protect, updateEvent)
 router.delete('/oneEvent/:id', protect, deleteEvent)

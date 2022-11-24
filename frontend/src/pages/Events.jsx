@@ -10,21 +10,16 @@ function Events() {
 
   const slides = [
     {url: 'http://localhost:3000/eventImages/Evening%20Events.jpg', title:'Evening Events'},
-  //   {url: 'http://localhost:3000/eventImages/Classes%20and%20Workshops.jpg', title: 'Classes and Workshops'},
     {url: 'http://localhost:3000/eventImages/Childrens%20Events.jpg', title: 'Childrens Events'},
     {url: 'http://localhost:3000/eventImages/Misc.jpg', title: 'Misc'},
     {url: 'http://localhost:3000/eventImages/Music%20Events.jpg', title: 'Music Events'},
-  //   {url: 'http://localhost:3000/eventImages/Sports%20and%20Fitness.jpg', title: 'Sports'}
  ]
 
 
   const [events, setEvents] = useState([]);
-  //const [categoryList, setCategoryList] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  //const navigate = useNavigate();
 
-  //let defaultCategory = [];
   
   useEffect(() => {
     const getEvents = async () => {
@@ -40,33 +35,16 @@ function Events() {
 
     getEvents().catch(console.error);
 
-    //setCategoryList(defaultCategory);
   }, []);
 
-  // const navigateToEventDetails = (event) => {
-  //   navigate(`/${event._id}`, {state:{
-  //     id: event._id, 
-  //     image: event.image,
-  //     title: event.title,
-  //     categories: event.categories,
-  //     time: event.date, 
-  //     provider: event.provider,
-  //     duration: event.duration,
-  //     price: event.price,
-  //     description: event.description,
-  //     availability: event.availability,
-  //   }}
-  // )};
+ 
 
  
   function getFilteredList() {
     if (!selectedCategory) {
-     // console.log("No selected category:", events)
       return events;
     }
-    // console.log("Selected category: ", selectedCategory)
     const filteredEvents = events.filter((event) => event.categories === selectedCategory);
-    //console.log("Filtered events: ", filteredEvents)
     return filteredEvents;
   }
 
@@ -98,7 +76,6 @@ function Events() {
           </div>
         <EventsList 
         events={eventsList} 
-        //handleClick={navigateToEventDetails} 
         />
       </div> 
   )

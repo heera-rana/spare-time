@@ -44,15 +44,7 @@ const updateEvent = asyncHandler(async(req,res)=>{
             availability: availability,
         },
         {new: true},
-        // (err, data) => {
-        //     console.log(data)
-        //     if (err) {
-        //       //  console.log(err)
-        //         return res.status(500)
-        //     } else {
-        //         return res.status(200).send(data)
-        //     }
-        // }
+        
         )
     res.status(201)
     res.send(updateEvent)
