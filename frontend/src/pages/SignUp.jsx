@@ -45,7 +45,8 @@ function SignUp (){
                 })
                 .then(()=>{
                 console.log("here")
-                navigate("/Login")
+                navigate("/")
+                window.location.reload()
                 content = response.json()
                 return content
                 })
