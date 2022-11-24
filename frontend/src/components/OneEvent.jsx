@@ -1,11 +1,11 @@
 function OneEvent({eventData}){
     const myDate = new Date(eventData.date)
-    const myDay = myDate.getDay()
+    const myDay = myDate.toDateString()
     console.log(myDay)
     return(
         <div className="event-container">
                 <h2>{eventData.title}</h2>
-                <h3>{eventData.date}</h3>
+                <h3>{myDay}</h3>
                 <h3>{eventData.time}</h3>
                 <div className="one-image-container">
                     <img src= {eventData.image} alt= "oneEvent"/>          
