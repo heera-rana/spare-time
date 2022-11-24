@@ -45,11 +45,21 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                 </label>
                 <label> Date:
                     <input
-                        type="datetime-local"
+                        type="date"
+                        className="form-control"
+                        id="date"
+                        value={event.date}
+                        onChange={(e)=>updateEvent({date: e.target.value})}
+                        required
+                    />
+                </label>
+                <label> Time:
+                    <input
+                        type="time"
                         className="form-control"
                         id="date"
                         value={event.time}
-                        onChange={(e)=>updateEvent({date: e.target.value})}
+                        onChange={(e)=>updateEvent({time: e.target.value})}
                         required
                     />
                 </label>
