@@ -1,13 +1,14 @@
 
 import React, {useState} from "react"
-
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2"
 
 
 function SignUp (){
     
     const [user, setUser] = useState([])
-    
+    const navigate = useNavigate()
+
     let myToken
 
     function updateUser(value){
@@ -45,8 +46,10 @@ function SignUp (){
                 .then(()=>{
                     window.location.reload()
                 })
+                
                 //navigate("/")
                 console.log('User has been sucessfully registered')
+                navigate("/Login")
                 content = response.json()
                 return content
             } else {
