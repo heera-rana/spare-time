@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import EventsList from "../components/EventsList";
 // import EventFilter from "../components/EventFilter";
 import { useMemo } from "react";
-import addImage from "../components/util/addImage";
+import addImageAndDateFormat from "../components/util/addImage";
 import SlideShow from "../components/SlideShow"
 
 function Events() {
@@ -26,7 +26,7 @@ function Events() {
       const data = await fetch("http://localhost:5000/api/events/allevents");
       if (data) {
         const response = await data.json();
-        addImage(response)
+        addImageAndDateFormat(response)
         setEvents(response);
       } else {
         console.log("No events found.");

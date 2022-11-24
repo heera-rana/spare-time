@@ -3,12 +3,6 @@ import { useNavigate } from "react-router-dom";
 function EventsList ({events}) {
   const navigate = useNavigate()
 
-  events.map((ev, i)=>{
-    const eventDate = new Date(ev.date)
-    console.log(eventDate)
-    const myDay = eventDate.toDateString() 
-    const myTime = eventDate.toTimeString()
-  })
 
   
   return (
@@ -22,8 +16,8 @@ function EventsList ({events}) {
                <h3>{event.title}</h3>
                 <div className="cardText">
                   <p>{event.categories}</p>
-                  <p>Date: {event.date}</p>
-                  <p>Time: {event.time}</p>
+                  <p>Date: {event.myDay}</p>
+                  <p>Time: {event.myTime}</p>
                   <p>Hosted by: {event.provider}</p>
                   <p>£{event.price}</p>
                 </div>
