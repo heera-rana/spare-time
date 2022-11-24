@@ -2,6 +2,15 @@ import { useNavigate } from "react-router-dom";
 
 function EventsList ({events}) {
   const navigate = useNavigate()
+
+  events.map((ev, i)=>{
+    const eventDate = new Date(ev.date)
+    console.log(eventDate)
+    const myDay = eventDate.toDateString() 
+    const myTime = eventDate.toTimeString()
+  })
+
+  
   return (
     <div className="App">
       <div className="item-container">
