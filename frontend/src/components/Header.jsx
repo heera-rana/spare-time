@@ -12,7 +12,6 @@ function Header() {
 
   useEffect(() => {
     const token = (sessionStorage.getItem('token'))
-    //console.log(token)
     if (token) {
     setToken(token);
     }
@@ -20,8 +19,6 @@ function Header() {
 
   const signOut = ()=>{
     sessionStorage.removeItem('token')
-    // const token = (sessionStorage.getItem('token'))
-    // console.log(token)
     Swal.fire({
       icon: 'success',
       title: 'Logged out',
