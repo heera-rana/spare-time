@@ -47,7 +47,7 @@ function SignUp (){
                     window.location.reload()
                 })
                 
-                //navigate("/Login")
+                
                 console.log('User has been sucessfully registered')
                 navigate("/Login")
                 content = response.json()
