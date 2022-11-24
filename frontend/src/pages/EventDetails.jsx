@@ -7,7 +7,7 @@ import Swal from "sweetalert2"
 function EventDetails () {
     const [oneEvent, setOneEvent] = useState([])
     const [token, setToken] = useState([])
-    const [setIsPending] = useState(false)
+    const [isPending, setIsPending] = useState(false)
     const navigate = useNavigate()
     const params = useParams()
     const id = params.id
@@ -49,7 +49,7 @@ function EventDetails () {
               }
         }
         getOneEvent().catch(console.error)
-    },)
+    },[])
 
     const askDelete=()=>{
         Swal.fire({
