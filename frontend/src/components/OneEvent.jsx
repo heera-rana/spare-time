@@ -1,8 +1,11 @@
 function OneEvent({eventData}){
-    return(
+  const eventDate = new Date(eventData.date)
+  const myDate = eventDate.toUTCString() 
+    
+  return(
         <div className="event-container">
                 <h2>{eventData.title}</h2>
-                <h3>{eventData.time}</h3>
+                <h3>{myDate}</h3>
                 <div className="one-image-container">
                     <img src= {eventData.image} alt= "oneEvent"/>          
                 </div>     
