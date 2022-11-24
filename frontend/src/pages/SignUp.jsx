@@ -44,8 +44,10 @@ function SignUp (){
                     iconColor: "#004643",
                 })
                 .then(()=>{
-                    window.location.reload()
-                    navigate("/")
+                console.log("here")
+                navigate("/Login")
+                content = response.json()
+                return content
                 })
                 
                 console.log('User has been sucessfully registered')
