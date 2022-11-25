@@ -31,7 +31,7 @@ const Navigation = ({ token , signOut}) => {
           )}
           {isLoggedIn(token) && (
             <li>
-              <button class='signOutButton' onClick={() => signOut()}>Sign Out</button>
+              <button className='signOutButton' onClick={() => signOut()}>Sign Out</button>
             </li>
           )}
         </ul>

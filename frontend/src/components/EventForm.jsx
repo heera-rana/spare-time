@@ -79,7 +79,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                 <label> Price:
                     <input 
                         type="number" 
-                        class="form-control" 
+                        className="form-control" 
                         id="price" 
                         step="0.01" 
                         required 
@@ -100,7 +100,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                 </label>
                 
                 <div>
-                <label for="submit button">
+                <label htmlfor="submit button">
                     { !isPending && 
                     <button className="button"> {buttonLabel[0]}</button>}
                 </label>

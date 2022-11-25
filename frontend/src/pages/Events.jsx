@@ -9,10 +9,10 @@ import SlideShow from "../components/SlideShow"
 function Events() {
 
   const slides = [
-    {url: 'http://localhost:3000/eventImages/Evening%20Events.jpg', title:'Evening Events'},
-    {url: 'http://localhost:3000/eventImages/Childrens%20Events.jpg', title: 'Childrens Events'},
-    {url: 'http://localhost:3000/eventImages/Misc.jpg', title: 'Misc'},
-    {url: 'http://localhost:3000/eventImages/Music%20Events.jpg', title: 'Music Events'},
+    {url: 'http://localhost:3000/eventImages/slideShowImages/Evening%20Events.jpg', title:'Evening Events'},
+    {url: 'http://localhost:3000/eventImages/slideShowImages/Childrens%20Events.jpg', title: 'Childrens Events'},
+    {url: 'http://localhost:3000/eventImages/slideShowImages/Misc.jpg', title: 'Misc'},
+    {url: 'http://localhost:3000/eventImages/slideShowImages/Music%20Events.jpg', title: 'Music Events'},
  ]
 
 

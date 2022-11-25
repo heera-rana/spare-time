@@ -154,6 +154,7 @@ function EventDetails () {
         }
       }
 
+
     return (
         <div className="oneEvent">
             <OneEvent eventData={oneEvent} />
@@ -164,6 +165,7 @@ function EventDetails () {
                     <button onClick={hideEditEventForm} className="button">Edit</button>
                     <div id="EditEventForm" style={{display: "none"}}>
                         <EventForm event={oneEvent} onSubmit={onSubmit} setIsPending={setIsPending} updateEvent={updateEvent} buttonLabel={buttonLabel} title={"Edit event"}/>
+                    
                     </div>
                 </div>
             }
