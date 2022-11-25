@@ -390,3 +390,6 @@ img {
 .dataItem p {
   margin-left: 10px;
 }
+.js-is-hidden{
+  display: none;
+}

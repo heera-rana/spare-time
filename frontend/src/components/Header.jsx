@@ -39,7 +39,9 @@ function Header() {
             <Navigation token={token} signOut = {signOut}/>
           </div>
       </div>
+      <div className="searchBar">
       <SearchBar placeholder="Search for an event..." data={EventData}/> 
+      </div>
   </div>
 )}
 
