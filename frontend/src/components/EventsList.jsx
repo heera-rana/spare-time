@@ -17,7 +17,7 @@ function EventsList ({events}) {
                 <div className="cardText">
                   <p>{event.categories}</p>
                   <p>Date: {event.myDay}</p>
-                  <p>Time: {event.myTime}</p>
+                  <p>Time: {event.time}</p>
                   <p>Hosted by: {event.provider}</p>
                   <p>£{event.price}</p>
                 </div>
