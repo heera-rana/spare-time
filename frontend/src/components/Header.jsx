@@ -31,6 +31,8 @@ function Header() {
     navigate("/")
   }
 
+
+
   return (
     <div>
       <div className="App-header">
@@ -39,8 +41,9 @@ function Header() {
             <Navigation token={token} signOut = {signOut}/>
           </div>
       </div>
+    
       <div className="searchBar">
-      <SearchBar placeholder="Search for an event..." data={EventData}/> 
+      <SearchBar placeholder="Search for an event..." data={EventData} /> 
       </div>
   </div>
 )}
