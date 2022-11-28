@@ -5,7 +5,7 @@
   "name": "admin",
   "email": "admin@gmail.com",
   "password": "$2a$10$6Cy75nl/8wlQK9i8Jy0H3u1YQqDgXNTjzFzXD9LbV9XoeIJQMkA5W",
-  "isAdmin": "true",
+  "isAdmin": true,
   "createdAt": {
     "$date": {
       "$numberLong": "1667826438843"

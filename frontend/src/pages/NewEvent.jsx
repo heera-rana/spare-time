@@ -15,7 +15,7 @@ function NewEvent (){
             return {...prev, ...value}
         })
     } //... or spread syntax allows us to make shallow copies of js opjects  by expanding an array into individual elements
-    const [token, setToken] = useState([]);
+    const [token, setToken] = useState([])
 
     useEffect(() => {
       const token = (sessionStorage.getItem('token'));
@@ -50,9 +50,8 @@ function NewEvent (){
                     text: 'new event added',
                     iconColor: "#004643",
                   })
-                  console.log(response, "Event Added Succesfully")
                 navigate("/")
-                console.log(response, "Event Successfully added")
+                console.log("Event Successfully added")
             } else {
                 var error = (response.status === 401)
                 Swal.fire({

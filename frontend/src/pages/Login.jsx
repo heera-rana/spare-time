@@ -7,6 +7,7 @@ function Login (){
 
     const navigate = useNavigate()
     let myToken
+    let isAdmin
 
     async function loginUser(userData) {
         let content
@@ -32,7 +33,6 @@ function Login (){
                 .then(()=>{
                     window.location.reload()
                 })
-                console.log("here")
                 navigate("/")
                 content = response.json()
                 return content
@@ -49,8 +49,10 @@ function Login (){
         })
         .then((data)=>{
             myToken = data["token"]
+            isAdmin = data["isAdmin"]
             sessionStorage.setItem('token', myToken)
-            return myToken   
+            sessionStorage.setItem('admin', isAdmin)
+            return 
         })
         return 
     }

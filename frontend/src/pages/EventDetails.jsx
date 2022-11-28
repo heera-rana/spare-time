@@ -7,6 +7,7 @@ import Swal from "sweetalert2"
 function EventDetails () {
     const [oneEvent, setOneEvent] = useState([])
     const [token, setToken] = useState([])
+    const [admin, setAdmin] = useState([])
     const [isPending, setIsPending] = useState(false)
     const navigate = useNavigate()
     const params = useParams()
@@ -14,11 +15,18 @@ function EventDetails () {
     const buttonLabel = ["Update event", "Updating event"]
 
 
+    console.log("before",admin)
     useEffect(() => {
-        const token = (sessionStorage.getItem('token'))
-        if (token) {
-            setToken(token);
-        }
+        // const token = (sessionStorage.getItem('token'))
+        // if (token) {
+        //     setToken(token);
+        // }
+        const admin = (sessionStorage.getItem('admin'))
+       
+        if (admin) {
+            console.log("yay")
+            setAdmin(JSON.parse(admin))
+        } 
     }, [])
 
     const isLoggedIn=((check)=>{
@@ -43,7 +51,7 @@ function EventDetails () {
             if (data) {
                 const response = await data.json()
                 response.image = `eventImages/${response.categories}.jpg`
-                setOneEvent(response);
+                setOneEvent(response)
               } else {
                 console.log("No events found.");
               }
@@ -78,7 +86,6 @@ function EventDetails () {
             },
         })
         .then((response)=>{
-            console.log(response)
             if (response.status === 201){
                 Swal.fire({
                     icon: 'success',
@@ -118,7 +125,6 @@ function EventDetails () {
             body: JSON.stringify(updatedEvent)
         })
         .then((response)=>{
-            console.log(response)
             if (response.status === 201){
                 setIsPending(false)
                 Swal.fire({
@@ -159,7 +165,7 @@ function EventDetails () {
         <div className="oneEvent">
             <OneEvent eventData={oneEvent} />
             <button className="button" onClick={() => navigate('/')} >Back</button>
-            {isLoggedIn(token) && 
+            {admin && 
                 <div>
                     <button className="button" onClick={()=>askDelete()}>Delete</button>
                     <button onClick={hideEditEventForm} className="button">Edit</button>
