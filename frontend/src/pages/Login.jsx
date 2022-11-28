@@ -6,8 +6,7 @@ import Swal from "sweetalert2"
 function Login (){
 
     const navigate = useNavigate()
-    let myToken
-    let isAdmin
+    let myToken, isAdmin, userId
 
     async function loginUser(userData) {
         let content
@@ -50,8 +49,10 @@ function Login (){
         .then((data)=>{
             myToken = data["token"]
             isAdmin = data["isAdmin"]
+            userId = data["_id"]
             sessionStorage.setItem('token', myToken)
             sessionStorage.setItem('admin', isAdmin)
+            sessionStorage.setItem('userId', userId)
             return 
         })
         return 

@@ -8,32 +8,37 @@ function EventDetails () {
     const [oneEvent, setOneEvent] = useState([])
     const [token, setToken] = useState([])
     const [admin, setAdmin] = useState([])
+    const [userId, setUserId] = useState([])
     const [isPending, setIsPending] = useState(false)
     const navigate = useNavigate()
     const params = useParams()
     const id = params.id
     const buttonLabel = ["Update event", "Updating event"]
 
-
-    console.log("before",admin)
     useEffect(() => {
-        // const token = (sessionStorage.getItem('token'))
-        // if (token) {
-        //     setToken(token);
-        // }
-        const admin = (sessionStorage.getItem('admin'))
-       
-        if (admin) {
-            console.log("yay")
-            setAdmin(JSON.parse(admin))
-        } 
+        const token = (sessionStorage.getItem('token'))
+        if (token) {
+            setToken(token);
+        }
     }, [])
 
-    const isLoggedIn=((check)=>{
-        if (check.length === 0){
-          return false
-        } else {
-          return true
+    useEffect(()=>{
+        const admin = (sessionStorage.getItem('admin'))
+        if (admin) {
+            setAdmin(JSON.parse(admin))
+        } 
+    })
+
+    useEffect(() => {
+        const userId = (sessionStorage.getItem('userId'))
+        if (userId) {
+          setUserId(userId);
+        }
+    })
+
+    const isCreator=((check)=>{
+        if (userId === check["creator"]){
+            return true
         }
     })
 
@@ -165,13 +170,13 @@ function EventDetails () {
         <div className="oneEvent">
             <OneEvent eventData={oneEvent} />
             <button className="button" onClick={() => navigate('/')} >Back</button>
-            {admin && 
+            {admin &&
+            // {isCreator(oneEvent) && 
                 <div>
                     <button className="button" onClick={()=>askDelete()}>Delete</button>
                     <button onClick={hideEditEventForm} className="button">Edit</button>
                     <div id="EditEventForm" style={{display: "none"}}>
-                        <EventForm event={oneEvent} onSubmit={onSubmit} setIsPending={setIsPending} updateEvent={updateEvent} buttonLabel={buttonLabel} title={"Edit event"}/>
-                    
+                        <EventForm event={oneEvent} onSubmit={onSubmit} setIsPending={setIsPending} updateEvent={updateEvent} buttonLabel={buttonLabel} title={"Edit event"}/>        
                     </div>
                 </div>
             }

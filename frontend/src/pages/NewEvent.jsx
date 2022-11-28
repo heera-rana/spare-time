@@ -9,26 +9,35 @@ function NewEvent (){
     const navigate = useNavigate()
     const buttonLabel = ["Add", "Adding"]
 
-
     function updateEvent(value){
         return setEvent((prev) => {
             return {...prev, ...value}
         })
     } //... or spread syntax allows us to make shallow copies of js opjects  by expanding an array into individual elements
     const [token, setToken] = useState([])
+    const [userId, setUserId] = useState([])
 
     useEffect(() => {
       const token = (sessionStorage.getItem('token'));
       if (token) {
         setToken(token);
       }
-    }, []);
+    }, [])
+
+    useEffect(() => {
+        const userId = (sessionStorage.getItem('userId'))
+        if (userId) {
+          setUserId(userId);
+        }
+    });
 
     async function onSubmit(e){
         e.preventDefault()
 
-
+        console.log(userId)
         const newEvent ={ ...event}
+        newEvent["creator"]=userId
+        console.log(newEvent)
 
         setIsPending(true)
 
@@ -65,6 +74,7 @@ function NewEvent (){
             }
         })
         setEvent([])
+        console.log(newEvent)
     }
 
     return (
