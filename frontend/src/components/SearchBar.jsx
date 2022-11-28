@@ -1,12 +1,7 @@
 import React, {useState} from 'react';
 
-
 function SearchBar ({placeholder, data}){
-
-    
-
     const[filteredData, setFilteredData] = useState([]);
-
     const handleFilter = (event) => {
         const searchWord = event.target.value
         const newFilter = data.filter ((value) => {
@@ -17,13 +12,9 @@ function SearchBar ({placeholder, data}){
         } else {
             setFilteredData(newFilter);
         }
-       
-        
+          
     };
-
-
     return (
-        
         <div className='search'>
             <div className='searchInputs'>
                 <input type= "text" placeholder={placeholder} onChange={handleFilter}/>
@@ -35,7 +26,6 @@ function SearchBar ({placeholder, data}){
                         <a key={key} className="dataItem" href= {value._id.$oid}> 
                         <p>{value.title}{" "}</p>
                         </a>
-                        
                     );
                 })}
             </div>

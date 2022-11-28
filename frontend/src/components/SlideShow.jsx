@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 const sliderStyles ={
     padding: '5px',
     background: '#004643'

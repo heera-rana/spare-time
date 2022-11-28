@@ -61,7 +61,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         type="time"
                         className="form-control"
                         id="date"
-                        value={event.time}
+                        value={event.time || ""}
                         onChange={(e)=>updateEvent({time: e.target.value})}
                         required
                     />
