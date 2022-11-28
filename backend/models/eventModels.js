@@ -16,6 +16,10 @@ const mongoose = require('mongoose')
             type: String,
             required: true, 
         },
+        time: {
+            type: String,
+            required: true, 
+        },
         duration: {
             type: Number,
             required: true,
