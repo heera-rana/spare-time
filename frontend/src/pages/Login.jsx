@@ -79,7 +79,7 @@ function Login (){
                     onChange={e => setEmail(e.target.value)}
                     required
                     placeholder="Email Address"
-                    />  
+                    />
                 </label>
                 <label>
                     Password

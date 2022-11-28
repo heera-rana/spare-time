@@ -88,6 +88,7 @@ function SignUp (){
                     value={user.name || ""}
                     onChange={(e)=>updateUser({name: e.target.value})}
                     required
+                    placeholder="Full Name"
                     />
                 </label>
                 <label>
@@ -99,6 +100,7 @@ function SignUp (){
                     value={user.email || ""}
                     onChange={(e)=>updateUser({email: e.target.value})}
                     required
+                    placeholder="Email Address"
                     />
                 </label>
                 <label>
@@ -113,6 +115,7 @@ function SignUp (){
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}"
                     alert='Please follow the password guidence below'
                     password='true'
+                    placeholder="Password"
                     />
                 </label>
                 <label>
