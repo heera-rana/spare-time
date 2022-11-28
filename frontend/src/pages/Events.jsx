@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import EventsList from "../components/EventsList";
 // import EventFilter from "../components/EventFilter";
 import { useMemo } from "react";
-import addImageAndDateFormat from "../components/util/addImage";
+import addImageAndDateFormat from "../components/util/addImageAndDateFormat";
 import SlideShow from "../components/SlideShow"
 
 function Events() {
@@ -38,7 +38,6 @@ function Events() {
   }, []);
 
  
-
  
   function getFilteredList() {
     if (!selectedCategory) {

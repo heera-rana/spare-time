@@ -1,14 +1,14 @@
-import SlideShow from "../components/SlideShow"
+// import SlideShow from "../components/SlideShow"
 
-function Home() {
+// function Home() {
 
-     return(
-        <div>
-           <div>
-                <SlideShow slides={slides}/>
-           </div>
-        </div>
-     )
-}
+//      return(
+//         <div>
+//            <div>
+//                 <SlideShow slides={slides}/>
+//            </div>
+//         </div>
+//      )
+// }
 
-export default Home
+// export default Home

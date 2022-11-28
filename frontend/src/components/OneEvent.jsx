@@ -1,7 +1,6 @@
 function OneEvent({eventData}){
     const myDate = new Date(eventData.date)
     const myDay = myDate.toDateString()
-    console.log(myDay)
     return(
         <div className="event-container">
                 <h2>{eventData.title}</h2>

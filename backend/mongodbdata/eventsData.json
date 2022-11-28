@@ -5,12 +5,12 @@
   "title": "Cocktail making",
   "categories": "Evening Events",
   "provider": "Jacinda Geleman",
-  "date": "Fri Jan 06 2023",
+  "date": "2023-01-06",
   "duration": 31,
   "price": 8.8,
   "description": "We can provide Interacting and engaging workshops such as gen essence distillation, wonders of whisky, science lab experiences and cocktail masterclasses!",
   "availability": 90,
-  "time": "9.00"
+  "time": "9:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa662"
@@ -18,12 +18,12 @@
   "title": "Sensory class",
   "categories": "Childrens Events",
   "provider": "Shalne Harsum",
-  "date": "Tue Jan 03 2023 ",
+  "date": "2023-01-03 ",
   "duration": 3,
   "price": 6.78,
   "description": "Baby Sensory provides ideas for creative play, massage, tummy time, movement, visual development, textures, scents and music in simple practical ways that can be easily repeated at home. We also use a combination of original and traditional songs and rhymes to develop early speech and language skills, and sensory signing activities to help you and your baby communicate from birth.lass",
   "availability": 8,
-  "time": "10.00"
+  "time": "10:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa66a"
@@ -31,12 +31,12 @@
   "title": "Lego build",
   "categories": "Misc",
   "provider": "Nicolette April",
-  "date": "Thu Jan 12 2023 ",
+  "date": "2023-01-12",
   "duration": 136,
   "price": 1.41,
   "description": "Lego therapy is a collaborative play therapy in which children work together to build Lego models.",
   "availability": 10,
-  "time": "14.30"
+  "time": "14:30"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa667"
@@ -44,12 +44,12 @@
   "title": "Escape room creator",
   "categories": "Misc",
   "provider": "Bendick Hartup",
-  "date": "Mon Jan 09 2023 ",
+  "date": "2023-01-09",
   "duration": 73,
   "price": 18.78,
   "description": "An escape room is�a game where players must work together to uncover clues, solve puzzles, and complete tasks in one or more rooms with the objective of completing a specified goal in a restricted period of time, and the main goal is simple� ESCAPE!",
   "availability": 21,
-  "time": "13.00"
+  "time": "13:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa66c"
@@ -57,12 +57,12 @@
   "title": "Pilates",
   "categories": "Sports and Fitness",
   "provider": "Dalli Naile",
-  "date": "Sat Jan 14 2023 ",
+  "date": "2023-01-14",
   "duration": 52,
   "price": 14.41,
   "description": "A system of exercises using special apparatus, designed to improve physical strength, flexibility, and posture, and enhance mental awareness.",
   "availability": 92,
-  "time": "11.00"
+  "time": "11:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa66b"
@@ -70,12 +70,12 @@
   "title": "Board game night",
   "categories": "Misc",
   "provider": "Marlin Mandeville",
-  "date": "Fri Jan 13 2023 ",
+  "date": "2023-01-13",
   "duration": 177,
   "price": 13.19,
   "description": "Welcoming space for gamers old and new to explore our library of over 800 board games, with expert staff on hand to make game recommendations and help with the rules.",
   "availability": 19,
-  "time": "19.00"
+  "time": "19:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa66d"
@@ -83,12 +83,12 @@
   "title": "Sweaty mama",
   "categories": "Childrens Events",
   "provider": "Flem Marusic",
-  "date": "Sun Jan 15 2023 ",
+  "date": "2023-01-15",
   "duration": 174,
   "price": 0.09,
   "description": "Be ready to chase your child, they won't be able to get enough of the softplay event, with special guests",
   "availability": 2,
-  "time": "13.00"
+  "time": "13:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa664"
@@ -96,12 +96,12 @@
   "title": "Cinema",
   "categories": "Evening Events",
   "provider": "Faina Ivanikhin",
-  "date": "Thu Jan 05 2023 ",
+  "date": "2023-01-05",
   "duration": 226,
   "price": 7.64,
   "description": "Experience film on an epic scale. Crystal-clear images, earth-shaking surround sound and high-resolution screens so big the film seems to surround you.",
   "availability": 80,
-  "time": "16.00"
+  "time": "16:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa66f"
@@ -109,12 +109,12 @@
   "title": "Pub crawl",
   "categories": "Evening Events",
   "provider": "Anthe Langrick",
-  "date": "Tue Jan 17 2023 ",
+  "date": "2023-01-17",
   "duration": 120,
   "price": 3.13,
   "description": "a tour taking in several pubs or drinking places, with one or more drinks at each.",
   "availability": 69,
-  "time": "19.00"
+  "time": "19:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa66e"
@@ -122,12 +122,12 @@
   "title": "Baby opera",
   "categories": "Childrens Events",
   "provider": "Klarika Colum",
-  "date": "Mon Jan 16 2023 ",
+  "date": "2023-01-16",
   "duration": 45,
   "price": 13.61,
   "description": "It's like watching a real-life movie. And it can be very exciting. Well, an opera is a play with music. In opera, the performers on the stage are normally singers, instead of actors. The story is told in song and by the music from the orchestra.",
   "availability": 44,
-  "time": "13.00"
+  "time": "13:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa672"
@@ -135,12 +135,12 @@
   "title": "Beginners Italian",
   "categories": "Classes and Workshops",
   "provider": "Kimmy Wettern",
-  "date": "Fri Jan 20 2023 ",
+  "date": "2023-01-20",
   "duration": 214,
   "price": 0.63,
   "description": "Entry level class to start your jorney on learning Italian",
   "availability": 51,
-  "time": "09.00"
+  "time": "09:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa670"
@@ -148,12 +148,12 @@
   "title": "Escape room creator",
   "categories": "Misc",
   "provider": "Elbertina Aldis",
-  "date": "Wed Jan 18 2023",
+  "date": "2023-01-18",
   "duration": 65,
   "price": 8.13,
   "description": "An escape room is�a game where players must work together to uncover clues, solve puzzles, and complete tasks in one or more rooms with the objective of completing a specified goal in a restricted period of time, and the main goal is simple� ESCAPE!",
   "availability": 49,
-  "time": "15.00"
+  "time": "15:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa671"
@@ -161,12 +161,12 @@
   "title": "Ghost walk",
   "categories": "Evening Events",
   "provider": "Rollie Normanton",
-  "date": "Thu Jan 19 2023 ",
+  "date": "2023-01-19",
   "duration": 73,
   "price": 2.4,
   "description": "A ghost story is any piece of fiction, or drama, that includes a ghost, or simply takes as a premise the possibility of ghosts or characters' belief in them. The \"ghost\" may appear of its own accord or be summoned by magic.",
   "availability": 69,
-  "time": "17.00"
+  "time": "17:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa663"
@@ -174,12 +174,12 @@
   "title": "Board game night",
   "categories": "Evening Events",
   "provider": "Reta Bellee",
-  "date": "Wed Jan 04 2023 ",
+  "date": "2023-01-04",
   "duration": 195,
   "price": 8.24,
   "description": "Welcoming space for gamers old and new to explore our library of over 800 board games, with expert staff on hand to make game recommendations and help with the rules.",
   "availability": 35,
-  "time": "20.00"
+  "time": "20:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa669"
@@ -187,12 +187,12 @@
   "title": "Comedy club",
   "categories": "Music Events",
   "provider": "Kath Bendare",
-  "date": "Wed Jan 11 2023 ",
+  "date": "2023-01-11",
   "duration": 69,
   "price": 15.31,
   "description": "where comedians give stand-up performances in front of an audience.",
   "availability": 81,
-  "time": "18.30"
+  "time": "18:30"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa666"
@@ -200,12 +200,12 @@
   "title": "Open mic night",
   "categories": "Music Events",
   "provider": "Anatollo Clemett",
-  "date": "Sun Jan 08 2023 ",
+  "date": "2023-01-08",
   "duration": 33,
   "price": 15.84,
   "description": "An open mic or open mike is a live show at a venue such as a coffeehouse, nightclub, comedy club, strip club, or pub, usually taking place at night, in which audience members may perform on stage whether they are amateurs or professionals,",
   "availability": 81,
-  "time": "18.30"
+  "time": "18:30"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa661"
@@ -213,12 +213,12 @@
   "title": "Beginners French",
   "categories": "Classes and Workshops",
   "provider": "Merv Worsam",
-  "date": "Sun Jan 02 2022 ",
+  "date": "2023-01-02",
   "duration": 46,
   "price": 4.38,
   "description": "Entry level class to start your jorney on learning French",
   "availability": 79,
-  "time": "10.00"
+  "time": "10:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa668"
@@ -226,12 +226,12 @@
   "title": "Yoga",
   "categories": "Sports and Fitness",
   "provider": "Thorsten By",
-  "date": "Tue Jan 10 2023 ",
+  "date": "2023-01-10",
   "duration": 82,
   "price": 5.15,
   "description": "a spiritual and ascetic discipline, a part of which, including breath control, simple meditation, and the adoption of specific bodily postures, is widely practised for health and relaxation.",
   "availability": 33,
-  "time": "13.00"
+  "time": "13:00"
 },{
   "_id": {
     "$oid": "636d10ba2026309d9a2fa660"
@@ -239,10 +239,10 @@
   "title": "Pub quiz",
   "categories": "Evening Events",
   "provider": "Zebulen McAlarney",
-  "date": "Sat Jan 01 2022",
+  "date": "2022-01-01",
   "duration": 57,
   "price": 16.58,
   "description": "Grab you knowledge squad for a classic pub quiz",
   "availability": 82,
-  "time": "18.00"
+  "time": "18:00"
 }]

@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom";
 function EventsList ({events}) {
   const navigate = useNavigate()
 
-
-  
   return (
     <div className="App">
       <div className="item-container">
