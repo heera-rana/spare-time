@@ -31,13 +31,14 @@ const deleteEvent = asyncHandler(async(req, res)=>{
 
 //update event
 const updateEvent = asyncHandler(async(req,res)=>{
-    const {_id, title, categories, provider, date, duration, price, description, availability } = req.body
+    const {_id, title, categories, provider, date, time, duration, price, description, availability } = req.body
     const updateEvent = await Event.findOneAndUpdate(
         {_id: _id},
         {   title: title,
             categories: categories,
             provider: provider,
             date: date,
+            time: time,
             duration: duration,
             price: price,
             description: description,
@@ -53,7 +54,7 @@ const updateEvent = asyncHandler(async(req,res)=>{
 //add a new event
 // using the route /api/users
 const newEvent =  asyncHandler(async (req, res) => {
-    const {title, categories, provider, date, duration, price, description, availability } = req.body
+    const {title, categories, provider, date, time, duration, price, description, availability } = req.body
 
     //form validation this is too ensure all data is forms are filled out
     if(!title || !categories || !provider || !date || !duration || !price || !description || !availability) {
@@ -66,6 +67,7 @@ const newEvent =  asyncHandler(async (req, res) => {
         categories: `${categories}`,
         provide: `${provider}`,
         data: `${date}`,
+        time: `${time}`,
         duration: `${duration}`,
         price: `${price}`,
         description: `${description}`,
@@ -83,6 +85,7 @@ const newEvent =  asyncHandler(async (req, res) => {
         categories,
         provider,
         date,
+        time,
         duration,
         price,
         description,
@@ -97,6 +100,7 @@ const newEvent =  asyncHandler(async (req, res) => {
             categories: event.categories,
             provider: event.provider,
             date: event.date,  
+            time: event.time,
             price: event.price,
             description: event.description,
             availability: event.availability
