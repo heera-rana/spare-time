@@ -12,6 +12,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         value={event.title || ""}
                         onChange={(e)=>updateEvent({title: e.target.value})}
                         required
+                        placeholder="Title of the Event"
                     />
                 </label>
                 <label> Category:
@@ -40,6 +41,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         value={event.provider || ""}
                         onChange={(e)=>updateEvent({provider: e.target.value})}
                         required
+                        placeholder="Person/company hosting the event"
                     />
                
                 </label>
@@ -51,6 +53,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         value={event.date || ""}
                         onChange={(e)=>updateEvent({date: e.target.value})}
                         required
+                        placeholder="Date of the event"
                     />
                 </label>
                 <label> Availability:
@@ -61,6 +64,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         value={event.availability || ""}
                         onChange={(e)=>updateEvent({availability: e.target.value})}
                         required
+                        placeholder="Available Places"
                     />
                 </label>
                 <label> Duration:
@@ -71,7 +75,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         value={event.duration || ""}
                         onChange={(e)=>updateEvent({duration: e.target.value})}
                         required
-                        placeholder="minutes"
+                        placeholder="Minutes"
                         min = "10"
                         step = "5"
                     />
@@ -85,7 +89,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         required 
                         value={event.price || ""}
                         onChange={(e)=>updateEvent({price: e.target.value})}
-                        
+                        placeholder="Price in great british pounds"                        
                     />
                 </label>
                 <label>Description:
@@ -96,6 +100,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         value={event.description || ""}
                         onChange={(e)=>updateEvent({description: e.target.value})}
                         required
+                        placeholder="Description"
                     />
                 </label>
                 

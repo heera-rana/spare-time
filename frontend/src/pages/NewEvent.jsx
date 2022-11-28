@@ -31,7 +31,7 @@ function NewEvent (){
         const newEvent ={ ...event}
 
         setIsPending(true)
-        console.log(token)
+       
 
         await fetch("http://localhost:5000/api/events/newEvent", {
             method: "POST",
@@ -51,6 +51,7 @@ function NewEvent (){
                     text: 'new event added',
                     iconColor: "#004643",
                   })
+                  console.log(response, "Event Added Succesfully")
                 navigate("/")
             } else {
                 var error = (response.status === 401)

@@ -80,6 +80,7 @@ function Login (){
                     id="email"
                     onChange={e => setEmail(e.target.value)}
                     required
+                    placeholder="Email Address"
                     />
                 </label>
                 <label>
@@ -91,6 +92,7 @@ function Login (){
                     onChange={e => setPassword(e.target.value)}
                     required
                     password='true'
+                    placeholder="Password"
                     />
                 </label>
                 <div >

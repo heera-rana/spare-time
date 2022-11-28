@@ -270,12 +270,15 @@ object:hover{
 .form-control{
   display: flex;
   flex-direction: column;
-  width:300px;
+  max-width:500px;
+  width:50%;
   margin:20px auto;
   padding:15px;
   background:#abd1c6;
   color:#004643;
   border:0;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .form-control:focus{
   outline-color: #004643;
