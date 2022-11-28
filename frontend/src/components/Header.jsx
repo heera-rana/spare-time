@@ -16,7 +16,6 @@ function Header() {
     setToken(token);
     }
   }, [])
-
   const signOut = ()=>{
     sessionStorage.removeItem('token')
     Swal.fire({
@@ -30,9 +29,6 @@ function Header() {
     })
     navigate("/")
   }
-
-
-
   return (
     <div>
       <div className="App-header">

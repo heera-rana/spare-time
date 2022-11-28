@@ -13,7 +13,6 @@ function EventDetails () {
     const id = params.id
     const buttonLabel = ["Update event", "Updating event"]
 
-
     useEffect(() => {
         const token = (sessionStorage.getItem('token'))
         if (token) {
@@ -54,8 +53,8 @@ function EventDetails () {
     const askDelete=()=>{
         Swal.fire({
             icon: 'warning',
-            title: 'are you sure?',
-            text: 'event will be permanently deleted',
+            title: 'Are you sure?',
+            text: 'Event will be permanently deleted',
             showCancelButton: true,
             iconColor: "#f9bc60",
             confirmButtonText: 'Yes, delete it!',
@@ -83,19 +82,28 @@ function EventDetails () {
                 Swal.fire({
                     icon: 'success',
                     title: 'Deleted!',
-                    text: 'event has been deleted',
+                    text: 'Event has been deleted',
                     iconColor: "#004643",
                   })
-            } else {
-                var error = (response.status === 401)
+                  .then(()=>{
+                    window.location.reload()
+                })
+            } else if (response.status === 401){
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
-                    text: 'you must login to delete an event',
+                    text: 'You must login to delete an event',
                     iconColor: "#e16162",
                   })
                   navigate("/login")
-                  console.log('error occured:',error, '. user must be logged in to delete an event')
+                  console.log('User must be logged in to delete an event')
+            } else if (response.status === 403){
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'You must be an admin to delete this event',
+                    iconColor: "#e16162",
+                  })
             }
         })
     }
@@ -120,27 +128,31 @@ function EventDetails () {
         .then((response)=>{
             console.log(response)
             if (response.status === 201){
-                setIsPending(false)
                 Swal.fire({
                     icon: 'success',
-                    title: 'Yay',
-                    text: 'event updated',
+                    title: 'Deleted!',
+                    text: 'Event has been updated',
                     iconColor: "#004643",
                   })
-                .then(()=>{
+                  .then(()=>{
                     window.location.reload()
                 })
-                
-            } else {
-                var error = (response.status === 401)
+            } else if (response.status === 401){
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
-                    text: 'you must login to add an event',
+                    text: 'You must login to delete an event',
                     iconColor: "#e16162",
                   })
                   navigate("/login")
-                  console.log('error occured:',error, '. user must be logged in to add an event')
+                  console.log('User must be logged in to update an event')
+            } else if (response.status === 403){
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'You must be an admin to update this event',
+                    iconColor: "#e16162",
+                  })
             }
         })
         setOneEvent([])

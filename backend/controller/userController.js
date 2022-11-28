@@ -8,14 +8,12 @@ const jwt = require('jsonwebtoken')
 const registerUser =  asyncHandler(async (req, res) => {
     const {name, email, password} = req.body
 
-    //form validation this is too ensure all data is forms are filled out
     if(!name || !email || !password) {
         res.status(400)
         throw new Error ('Please include all of the fields')
     }
-//duplicate user check then returns error message if duplicated
+//duplicate user check 
 const userExists = await User.findOne({email: `${email}`})
-
 if (userExists) {
     res.status(400)
     throw new Error('User already exists')
@@ -29,7 +27,7 @@ const user = await User.create({
     email,
     password: hashedPassword
 })
-//this comes from the user above and then sends the data back
+
 if (user) {
     res.status(201).json({
         _id: user._id,
@@ -41,6 +39,7 @@ if (user) {
         res.status(400).json('Invalid user data')
     }
 })
+
 //user login 
 // using the route /api/users/login
 const loginUser =  asyncHandler(async (req, res) => {
@@ -48,7 +47,7 @@ const loginUser =  asyncHandler(async (req, res) => {
 
     const user = await User.findOne({email})
 
-//checks if the user name and password match. password from the login request against the user password from database
+//email and password match
     if(user && (await bcrypt.compare(password, user.password))) {
         res.status(200).json({
             _id: user._id,
@@ -62,7 +61,7 @@ const loginUser =  asyncHandler(async (req, res) => {
     }
 
 })
-//generate webtoken function 
+//generate webtoken
 const generateToken = (user) => {
     return jwt.sign({ 
         id: user._id,
@@ -72,7 +71,6 @@ const generateToken = (user) => {
         expiresIn: '30d',
     })
 }
-
 module.exports = {
     registerUser,
     loginUser,
