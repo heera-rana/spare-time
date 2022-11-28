@@ -48,13 +48,14 @@ const loginUser =  asyncHandler(async (req, res) => {
 
     const user = await User.findOne({email})
 
-//checks if the user name and password match. password from the login request agaainst the user password from database
+//checks if the user name and password match. password from the login request against the user password from database
     if(user && (await bcrypt.compare(password, user.password))) {
         res.status(200).json({
             _id: user._id,
             name: user.name,
             email: user.email,
             token: generateToken(user.id),
+            isAdmin: user.isAdmin,
         }) 
     } else {
         res.status(401).json('Invalid Credentials')
@@ -62,8 +63,12 @@ const loginUser =  asyncHandler(async (req, res) => {
 
 })
 //generate webtoken function 
-const generateToken = (id) => {
-    return jwt.sign({ id }, process.env.JWT_SECRET, {
+const generateToken = (user) => {
+    return jwt.sign({ 
+        id: user._id,
+        isAdmin: user.isAdmin,
+    }, 
+    process.env.JWT_SECRET, {
         expiresIn: '30d',
     })
 }

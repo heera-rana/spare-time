@@ -19,6 +19,14 @@ const userSchema = mongoose.Schema({
         required: [true, 'Please add an password'],
         match: [/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}$/, 'At least 1 Uppercase, At least 1 Lowercase, At least 1 Number, Min 5 chars']
     }, 
+    isAdmin: {
+        type: Boolean,
+        required: true,
+        default: false,
+
+    }, 
+
+
 },
 {
     timestamps: true

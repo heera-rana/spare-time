@@ -2,15 +2,13 @@ const jwt = require('jsonwebtoken')
 const asyncHandler = require('express-async-handler')
 const User = require ('../models/userModels')
 
-
 const protect = asyncHandler(async (req, res, next) => {
     let token 
     if(req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
         try {
             token = req.headers.authorization.split(' ')[1] //this get the token from the header ansd then splits the string the space is important
-            const decoded = jwt.verify(token, process.env.JWT_SECRET)
-            req.user = await User.findById(decoded.id).select('-password')
-
+            const user = jwt.verify(token, process.env.JWT_SECRET)
+            req.user = user
             next()
         } catch (error) {
             console.log(error)
@@ -25,4 +23,16 @@ const protect = asyncHandler(async (req, res, next) => {
     }
 })
 
-module.exports = { protect }
+const isAdmin = (req, res, next ) => {
+    protect(req, res, ()=> {
+        if(req.user.isAdmin){
+            next()
+        }else {
+            res.status(403).send("Access denied. You must be an Administrator to perform this action")
+        }
+    }
+    )
+
+}
+
+module.exports = { protect, isAdmin}
