@@ -48,7 +48,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         type="datetime-local"
                         className="form-control"
                         id="date"
-                        value={event.date}
+                        value={event.date || ""}
                         onChange={(e)=>updateEvent({date: e.target.value})}
                         required
                     />
@@ -100,7 +100,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                 </label>
                 
                 <div>
-                <label htmlfor="submit button">
+                <label htmlFor="submit button">
                     { !isPending && 
                     <button className="button"> {buttonLabel[0]}</button>}
                 </label>
