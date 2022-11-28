@@ -48,9 +48,7 @@ function Login (){
             }
         })
         .then((data)=>{
-            //console.log(data)
             myToken = data["token"]
-            //console.log(myToken)
             sessionStorage.setItem('token', myToken)
             return myToken   
         })
@@ -73,17 +71,18 @@ function Login (){
             <h2>Good to see you again!</h2>
             <form onSubmit={onSubmit} className= "form">
                 <label>
-                Email:
+                Email
                     <input
                     type="email"
                     className="form-control"
                     id="email"
                     onChange={e => setEmail(e.target.value)}
                     required
-                    />
+                    placeholder="Email Address"
+                    />  
                 </label>
                 <label>
-                    Password:
+                    Password
                     <input
                     type="password"
                     className="form-control"
@@ -91,6 +90,7 @@ function Login (){
                     onChange={e => setPassword(e.target.value)}
                     required
                     password='true'
+                    placeholder="Password"
                     />
                 </label>
                 <div >

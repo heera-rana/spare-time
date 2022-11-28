@@ -31,7 +31,7 @@ function NewEvent (){
         const newEvent ={ ...event}
 
         setIsPending(true)
-        console.log(token)
+        
 
         await fetch("http://localhost:5000/api/events/newEvent", {
             method: "POST",
@@ -52,6 +52,7 @@ function NewEvent (){
                     iconColor: "#004643",
                   })
                 navigate("/")
+                console.log(response, "Event Successfully added")
             } else {
                 var error = (response.status === 401)
                 Swal.fire({

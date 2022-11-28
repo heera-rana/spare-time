@@ -40,7 +40,7 @@ function SignUp (){
                 Swal.fire({
                     icon: 'success',
                     title: 'Yay',
-                    text: 'successfully resgistered',
+                    text: 'successfully registered',
                     iconColor: "#004643",
                 })
                 .then(()=>{
