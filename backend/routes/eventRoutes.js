@@ -6,10 +6,10 @@ const {protect, isAdmin} = require('../authorisation/auth')
 router.get('/allEvents', allEvents) //
 router.post('/newEvent', protect, newEvent) //brings in the registe set fucntion from the controller
 router.get('/oneEvent/:id', oneEvent)
-// router.post('/oneEvent/:id', protect, updateEvent)
-// router.delete('/oneEvent/:id', protect, deleteEvent)
-router.post('/oneEvent/:id', protect, isAdmin, updateEvent)
-router.delete('/oneEvent/:id', protect, isAdmin, deleteEvent)
+router.post('/oneEvent/:id', protect, updateEvent)
+router.delete('/oneEvent/:id', protect, deleteEvent)
+// router.post('/oneEvent/:id', protect, isAdmin, updateEvent)
+// router.delete('/oneEvent/:id', protect, isAdmin, deleteEvent)
 
 
 module.exports = router
