@@ -31,7 +31,6 @@ function NewEvent (){
         const newEvent ={ ...event}
 
         setIsPending(true)
-       
 
         await fetch("http://localhost:5000/api/events/newEvent", {
             method: "POST",
@@ -53,6 +52,7 @@ function NewEvent (){
                   })
                   console.log(response, "Event Added Succesfully")
                 navigate("/")
+                console.log(response, "Event Successfully added")
             } else {
                 var error = (response.status === 401)
                 Swal.fire({
