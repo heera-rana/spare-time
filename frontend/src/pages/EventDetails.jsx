@@ -27,14 +27,14 @@ function EventDetails () {
         if (admin) {
             setAdmin(JSON.parse(admin))
         } 
-    })
+    },[])
 
     useEffect(() => {
         const userId = (sessionStorage.getItem('userId'))
         if (userId) {
           setUserId(userId);
         }
-    })
+    },[])
 
     const isCreator=((check)=>{
         if (userId === check["creator"]){
@@ -143,7 +143,7 @@ function EventDetails () {
             if (response.status === 201){
                 Swal.fire({
                     icon: 'success',
-                    title: 'Deleted!',
+                    title: 'Updated!',
                     text: 'Event has been updated',
                     iconColor: "#004643",
                   })

@@ -33,7 +33,8 @@ if (user) {
         _id: user._id,
         name: user.name,
         email:user.email,
-        token: generateToken(user.id),
+        token: generateToken(user),
+        isAdmin: user.isAdmin,
     }) 
 }   else {
         res.status(400).json('Invalid user data')
