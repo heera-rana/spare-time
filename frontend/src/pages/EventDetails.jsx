@@ -171,7 +171,7 @@ function EventDetails () {
         <div className="oneEvent">
             <OneEvent eventData={oneEvent} />
             <button className="button" onClick={() => navigate('/')} >Back</button>
-            {admin &&
+            {(admin || isCreator(oneEvent))  &&
                 <div>
                     <button className="button" onClick={()=>askDelete()}>Delete</button>
                     <button onClick={hideEditEventForm} className="button">Edit</button>
