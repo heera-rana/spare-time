@@ -4,17 +4,19 @@ import EventForm from "../components/EventForm"
 import OneEvent from "../components/OneEvent"
 import Swal from "sweetalert2"
 
+// EventDetails is the page for a single event. It gets, updates and deletes
 function EventDetails () {
     const [oneEvent, setOneEvent] = useState([])
     const [token, setToken] = useState([])
     const [admin, setAdmin] = useState([])
     const [userId, setUserId] = useState([])
-    const [isPending, setIsPending] = useState(false)
+    const [isPending, setIsPending] = useState([])
     const navigate = useNavigate()
     const params = useParams()
     const id = params.id
     const buttonLabel = ["Update event", "Updating event"]
 
+    // getting the token from sessionStorage
     useEffect(() => {
         const token = (sessionStorage.getItem('token'))
         if (token) {
@@ -22,6 +24,7 @@ function EventDetails () {
         }
     }, [])
 
+    // getting the admin access from sessionStorage
     useEffect(()=>{
         const admin = (sessionStorage.getItem('admin'))
         if (admin) {
@@ -31,6 +34,7 @@ function EventDetails () {
         }
     },[])
 
+    // getting the userId from sessionStorage
     useEffect(() => {
         const userId = (sessionStorage.getItem('userId'))
         if (userId) {
@@ -38,25 +42,21 @@ function EventDetails () {
         }
     },[])
 
+    // isCreator checks that the userId and the event creator id are a match
     const isCreator=((check)=>{
         if (userId === check["creator"]){
             return true
         }
     })
 
+    // updateEvent is the hook that changes the event data after updating it
     function updateEvent(value){
         return setOneEvent((prev) => {
             return {...prev, ...value}
         })
     } 
-    function test(){
-        if (isCreator(oneEvent)){
-            console.log(true)
-        } else {
-            console.log(false)
-        }
-    }
 
+    // getOneEvent gets the data for the event which id is passes as a parameter
     useEffect(()=>{
         const getOneEvent = async () =>{
             const data = await fetch(`http://localhost:5000/api/events/oneEvent/${id}`,{
@@ -71,9 +71,9 @@ function EventDetails () {
               }
         }
         getOneEvent().catch(console.error)
-       // test()
     },[])
 
+    // askDelete is the popup that calls/uncalls the delete function
     const askDelete=()=>{
         Swal.fire({
             icon: 'warning',
@@ -91,6 +91,7 @@ function EventDetails () {
         }) 
     }
     
+    // deleteEvent deletes an event with id passed in the parameter
     const deleteEvent = async () =>{
         await fetch(`http://localhost:5000/api/events/oneEvent/${id}`,{
             method: "DELETE",
@@ -133,6 +134,7 @@ function EventDetails () {
     }
 
     
+    // onSubmit makes a request to update an event
     const onSubmit = async (e) =>{
         e.preventDefault()
 
@@ -180,12 +182,14 @@ function EventDetails () {
         })
         setOneEvent([])
     }
+
+    // hideEditEventForm displays the edit form when clicking the edit button
     function hideEditEventForm() {
-        var hideEditEventForm = document.getElementById("EditEventForm");
+        var hideEditEventForm = document.getElementById("EditEventForm")
         if (hideEditEventForm.style.display === "none") {
-            hideEditEventForm.style.display = "block";
+            hideEditEventForm.style.display = "block"
         } else {
-            hideEditEventForm.style.display = "none";
+            hideEditEventForm.style.display = "none"
         }
       }
 

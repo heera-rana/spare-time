@@ -1,6 +1,8 @@
+// OneEvent is rendered in the individual event page
 function OneEvent({eventData}){
     const myDate = new Date(eventData.date)
     const myDay = myDate.toDateString()
+    
     return(
         <div className="event-container">
                 <h2>{eventData.title}</h2>

@@ -22,26 +22,27 @@ const dotStyle = {
     margin: "0 3px",
     cursor: "pointer",
     fontSize: "20px",
-};
+}
 
+// SlideShow is a slideshow of dynamic css in the header
 const SlideShow = ({slides})=>{
     const [currentIndex, setCurrentIndex] = useState(0)
     const slideStylesWidthBackground = {
         ...slideStyles,
         backgroundImage: `url(${slides[currentIndex].url})`,
-      };
+    }
     const goToNext = () => {
-        const isLastSlide = currentIndex === slides.length - 1;
-        const newIndex = isLastSlide ? 0 : currentIndex + 1;
-        setCurrentIndex(newIndex);
-      };
+        const isLastSlide = currentIndex === slides.length - 1
+        const newIndex = isLastSlide ? 0 : currentIndex + 1
+        setCurrentIndex(newIndex)
+    }
     const goToSlide = (slideIndex) => {
-        setCurrentIndex(slideIndex);
-      };
+        setCurrentIndex(slideIndex)
+    }
     
     setTimeout(() => {
         goToNext()
-      }, 3000);
+      }, 3000)
 
     return (
         <div style={sliderStyles}>

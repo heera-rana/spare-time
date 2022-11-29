@@ -3,28 +3,29 @@ import React, {useState} from "react"
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2"
 
-
-function SignUp (){
-    
+// SignUp is the sign up page
+function SignUp (){  
     const [user, setUser] = useState([])
     const navigate = useNavigate()
 
     let myToken, isAdmin, userId
 
+    // updateUser changes the initial user data when the form is submitted
     function updateUser(value){
         return setUser((prev) => {
             return {...prev, ...value}
         })
-    } //... or spread syntax allows us to make shallow copies of js opjects  by expanding an array into individual elements
+    } 
 
+    // onSubmit calls the createdUser funtion when the form is submitted
     const onSubmit = async e => {
         e.preventDefault();
         createUser(user)
     }
 
+    // createUser makes the POST request with the input data 
     async function createUser(user){
         let content
-
         const newUser ={ ...user}
 
         await fetch("http://localhost:5000/api/users/register", {

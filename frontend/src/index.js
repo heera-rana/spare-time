@@ -9,10 +9,8 @@ import SignUp from "./pages/SignUp";
 import Events from "./pages/Events";
 import EventDetails from "./pages/EventDetails";
 
-//This are our routes
 
-//Rendering Root as App: App's id is Root
-
+// Rendering Root as App: App's id is Root
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
@@ -26,4 +24,4 @@ root.render(
       </Route>
     </Routes>
   </BrowserRouter>
-);
+)

@@ -1,6 +1,7 @@
 const jwt = require('jsonwebtoken')
 const asyncHandler = require('express-async-handler')
 
+// protect is the function that verifies the user's token
 const protect = asyncHandler(async (req, res, next) => {
     let token 
     if(req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
@@ -22,6 +23,7 @@ const protect = asyncHandler(async (req, res, next) => {
     }
 })
 
+// isAdmin protects the routes against not admin/creator users
 const isAdmin = (req, res, next ) => {
     protect(req, res, ()=> {
         if(req.user.isAdmin){

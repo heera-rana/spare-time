@@ -4,7 +4,7 @@ const { newEvent, allEvents, oneEvent, deleteEvent, updateEvent} = require('../c
 const {protect, isAdmin} = require('../authorisation/auth')
 
 
-// Event Routes
+// event routes
 router.get('/allEvents', allEvents) //
 router.post('/newEvent', protect, newEvent) //brings in the registe set fucntion from the controller
 router.get('/oneEvent/:id', oneEvent)

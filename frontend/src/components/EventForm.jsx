@@ -1,3 +1,4 @@
+// EventForm renders when an event is added or updated
 function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title}){
     return (
         <div>
@@ -17,7 +18,6 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                 </label>
                 <label> Category:
                     <select 
-
                         value={event.categories} 
                         className="form-control" 
                         onChange={(e)=>updateEvent({categories: e.target.value})}
@@ -43,7 +43,6 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                         required
                         placeholder="Person/company hosting the event"
                     />
-               
                 </label>
                 <label> Date:
                     <input
@@ -121,6 +120,7 @@ function EventForm ({event, onSubmit, updateEvent, isPending, buttonLabel, title
                 </label>
                 { isPending && <button className="button" disabled> {buttonLabel[1]}</button>}
                 </div>
+
             </form>
             </div>
         </div>

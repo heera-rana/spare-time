@@ -1,3 +1,4 @@
+// Footer is rendered at the button of every page
 function Footer() {
     return (
       <div>

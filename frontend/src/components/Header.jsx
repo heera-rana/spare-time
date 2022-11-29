@@ -6,6 +6,7 @@ import {useState, useEffect} from "react"
 import Navigation from "./Navigation"
 import Swal from "sweetalert2"
 
+// Header is rendered at the top of every page
 function Header() {
   const [token, setToken] = useState([])
   const navigate = useNavigate()
@@ -16,6 +17,8 @@ function Header() {
     setToken(token);
     }
   }, [])
+
+  // signOut signs the user out by removing the session
   const signOut = ()=>{
     sessionStorage.removeItem('token')
     sessionStorage.removeItem('admin')
@@ -31,6 +34,7 @@ function Header() {
     })
     navigate("/")
   }
+  
   return (
     <div>
       <div className="App-header">

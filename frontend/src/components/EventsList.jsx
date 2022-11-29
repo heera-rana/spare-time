@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
+//EventsList renders all the events data
 function EventsList ({events}) {
   const navigate = useNavigate()
 

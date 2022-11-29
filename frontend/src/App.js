@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 
 
 
-//this is our landing page
+// App is our landing page
 function App() {
 
   return (
@@ -14,12 +14,9 @@ function App() {
           <div className="body">
               <Outlet />
           </div>
-
         <Footer />
-    </div>
-  
-    
-  );
+    </div>  
+  )
 }
 
 export default App;

@@ -4,8 +4,10 @@ const dotenv = require('dotenv').config()
 const PORT = 5000 || 8000
 const cors = require("cors");
 
+// calling connection to mongoDb
 connectDB() 
 
+// initialising the server
 const app = express () 
 
 app.use(
@@ -20,7 +22,7 @@ app.get('/', (req, res) => {
     res.status(200).json({message: 'Welcome to the SpareTime API'})
 }) 
 
-//Routes 
+// api routes
 app.use('/api/users', require('./routes/userRoutes'))
 app.use('/api/events', require('./routes/eventRoutes')) 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`)) 

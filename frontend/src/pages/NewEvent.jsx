@@ -3,34 +3,39 @@ import { useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
 import EventForm from "../components/EventForm"
 
+// NewEvent is the page for adding a new event 
 function NewEvent (){  
     const [event, setEvent] = useState([])
     const [isPending, setIsPending] = useState(false)
+    const [token, setToken] = useState([])
+    const [userId, setUserId] = useState([])
     const navigate = useNavigate()
     const buttonLabel = ["Add", "Adding"]
 
+    // updateEvent changes the initial event data when the form is submitted
     function updateEvent(value){
         return setEvent((prev) => {
             return {...prev, ...value}
         })
-    } //... or spread syntax allows us to make shallow copies of js opjects  by expanding an array into individual elements
-    const [token, setToken] = useState([])
-    const [userId, setUserId] = useState([])
+    } 
 
+    // getting the token from sessionStorage
     useEffect(() => {
-      const token = (sessionStorage.getItem('token'));
+      const token = (sessionStorage.getItem('token'))
       if (token) {
-        setToken(token);
+        setToken(token)
       }
     }, [])
 
+    // getting the user id from sessionStorage
     useEffect(() => {
         const userId = (sessionStorage.getItem('userId'))
         if (userId) {
-          setUserId(userId);
+          setUserId(userId)
         }
-    });
+    })
 
+    // onSubmit makes the POST request when the form is submitted
     async function onSubmit(e){
         e.preventDefault()
         const newEvent ={ ...event}
@@ -71,7 +76,6 @@ function NewEvent (){
             }
         })
         setEvent([])
-        console.log(newEvent)
     }
 
     return (

@@ -1,19 +1,21 @@
 import React, {useState} from 'react';
 
+// SearchBar is in the header and allows us to search for events by title
 function SearchBar ({placeholder, data}){
-    const[filteredData, setFilteredData] = useState([]);
+    const[filteredData, setFilteredData] = useState([])
     const handleFilter = (event) => {
         const searchWord = event.target.value
         const newFilter = data.filter ((value) => {
-            return value.title.toLowerCase().includes (searchWord.toLowerCase());
-        });
+            return value.title.toLowerCase().includes (searchWord.toLowerCase())
+        })
         if (searchWord === "") {
-            setFilteredData ([]);   
+            setFilteredData ([])
         } else {
-            setFilteredData(newFilter);
+            setFilteredData(newFilter)
         }
           
-    };
+    }
+
     return (
         <div className='search'>
             <div className='searchInputs'>

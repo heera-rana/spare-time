@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
+// Navigation is the nav bar
 const Navigation = ({ token , signOut}) => {
+
   const isLoggedIn=((check)=>{
     if (check.length === 0){
       return false

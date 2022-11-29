@@ -3,13 +3,14 @@ const { ObjectId } = require('mongodb')
 const mongoose = require("mongoose")
 const Event = require('../models/eventModels')
 
-//pulls through all the current event data uses - http://localhost:5000/api/events
+// allEvents pulls through all the current event data uses - http://localhost:5000/api/events
 const allEvents =  asyncHandler(async (req, res) => {
     const allEvents = await Event.find({})
     res.status(201)
     res.send(allEvents)
 }) 
-//find one event
+
+// oneEvent finds the event with id passed trough in the parameter
 const oneEvent = asyncHandler(async(req, res)=>{
     let id = req.params.id
     const o_id = new ObjectId(id)
@@ -17,7 +18,8 @@ const oneEvent = asyncHandler(async(req, res)=>{
     res.status(201)
     res.send(oneEvent)
 })
-//delete one event
+
+// deleteEvent deletes the event with id passed trough in the parameter
 const deleteEvent = asyncHandler(async(req, res)=>{ 
     let id = req.params.id
     const o_id = new ObjectId(id)
@@ -25,7 +27,8 @@ const deleteEvent = asyncHandler(async(req, res)=>{
     res.status(201)
     res.send(deleteEvent)
 })
-//update event
+
+// updateEvent finds an event and updates it with the data passed on the body
 const updateEvent = asyncHandler(async(req,res)=>{
     const {_id, title, categories, provider, date, time, duration, price, description, availability } = req.body
     const updateEvent = await Event.findOneAndUpdate(
@@ -45,8 +48,8 @@ const updateEvent = asyncHandler(async(req,res)=>{
     res.status(201)
     res.send(updateEvent)
 })
-//add a new event
-// using the route /api/users
+
+// newEvent creates a new event from the data in the body
 const newEvent =  asyncHandler(async (req, res) => {
     const {title, categories, provider, date, time, duration, price, description, availability, creator} = req.body
 
@@ -54,7 +57,8 @@ const newEvent =  asyncHandler(async (req, res) => {
         res.status(400)
         throw new Error ('Please include all of the fields')
     }
-//duplicate user check 
+
+    // eventExists checks that the event sent is not a duplicate
     const eventExists = await Event.findOne({
         title: `${title}`,
         categories: `${categories}`,
@@ -71,7 +75,8 @@ const newEvent =  asyncHandler(async (req, res) => {
         res.status(400)
         throw new Error('Event already exists')
     }
-    //create an event
+
+    //event creates a new event instance
     const event = await Event.create({
         title,
         categories,
@@ -102,6 +107,7 @@ const newEvent =  asyncHandler(async (req, res) => {
             throw new error('Invalid event data')
     }
 })
+
 module.exports = {
     newEvent,
     allEvents,
