@@ -63,6 +63,7 @@ function EventDetails () {
                 method: "GET"
             })
             if (data) {
+                console.log("event fetched")
                 const response = await data.json()
                 response.image = `eventImages/${response.categories}.jpg`
                 setOneEvent(response)
@@ -104,6 +105,7 @@ function EventDetails () {
         })
         .then((response)=>{
             if (response.status === 201){
+                console.log("event deleted")
                 Swal.fire({
                     icon: 'success',
                     title: 'Deleted!',
@@ -153,6 +155,7 @@ function EventDetails () {
         })
         .then((response)=>{
             if (response.status === 201){
+                console.log("event updated")
                 Swal.fire({
                     icon: 'success',
                     title: 'Updated!',

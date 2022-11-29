@@ -34,7 +34,8 @@ function Login (){
             body: JSON.stringify(userData),
         })
         .then((response)=>{
-            if (response.status === 200){     
+            if (response.status === 200){   
+                console.log("successfully logged in")  
                 Swal.fire({
                     icon: 'success',
                     title: 'Yay',

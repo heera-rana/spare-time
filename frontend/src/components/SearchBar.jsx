@@ -12,8 +12,7 @@ function SearchBar ({placeholder, data}){
             setFilteredData ([])
         } else {
             setFilteredData(newFilter)
-        }
-          
+        }      
     }
 
     return (

@@ -45,6 +45,7 @@ const updateEvent = asyncHandler(async(req,res)=>{
         },
         {new: true},
         )
+    console.log("event updated")
     res.status(201)
     res.send(updateEvent)
 })
@@ -102,6 +103,7 @@ const newEvent =  asyncHandler(async (req, res) => {
             availability: event.availability,
             creator: event.creator
         }) 
+        console.log("event successfully created")
     }   else {
             res.status(400)
             throw new error('Invalid event data')
