@@ -48,7 +48,7 @@ const updateEvent = asyncHandler(async(req,res)=>{
 //add a new event
 // using the route /api/users
 const newEvent =  asyncHandler(async (req, res) => {
-    const {title, categories, provider, date, time, duration, price, description, availability } = req.body
+    const {title, categories, provider, date, time, duration, price, description, availability, creator} = req.body
 
     if(!title || !categories || !provider || !date || !duration || !price || !description || !availability) {
         res.status(400)
@@ -64,7 +64,8 @@ const newEvent =  asyncHandler(async (req, res) => {
         duration: `${duration}`,
         price: `${price}`,
         description: `${description}`,
-        availability: `${availability}`
+        availability: `${availability}`,
+        creator: `${creator}`
     })
     if (eventExists) {
         res.status(400)
@@ -81,6 +82,7 @@ const newEvent =  asyncHandler(async (req, res) => {
         price,
         description,
         availability,
+        creator
     })
     if (event) {
         res.status(201).json({
@@ -92,7 +94,8 @@ const newEvent =  asyncHandler(async (req, res) => {
             time: event.time,
             price: event.price,
             description: event.description,
-            availability: event.availability
+            availability: event.availability,
+            creator: event.creator
         }) 
     }   else {
             res.status(400)

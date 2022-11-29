@@ -7,6 +7,8 @@ import Swal from "sweetalert2"
 function EventDetails () {
     const [oneEvent, setOneEvent] = useState([])
     const [token, setToken] = useState([])
+    const [admin, setAdmin] = useState([])
+    const [userId, setUserId] = useState([])
     const [isPending, setIsPending] = useState(false)
     const navigate = useNavigate()
     const params = useParams()
@@ -20,11 +22,23 @@ function EventDetails () {
         }
     }, [])
 
-    const isLoggedIn=((check)=>{
-        if (check.length === 0){
-          return false
-        } else {
-          return true
+    useEffect(()=>{
+        const admin = (sessionStorage.getItem('admin'))
+        if (admin) {
+            setAdmin(JSON.parse(admin))
+        } 
+    })
+
+    useEffect(() => {
+        const userId = (sessionStorage.getItem('userId'))
+        if (userId) {
+          setUserId(userId);
+        }
+    })
+
+    const isCreator=((check)=>{
+        if (userId === check["creator"]){
+            return true
         }
     })
 
@@ -42,7 +56,7 @@ function EventDetails () {
             if (data) {
                 const response = await data.json()
                 response.image = `eventImages/${response.categories}.jpg`
-                setOneEvent(response);
+                setOneEvent(response)
               } else {
                 console.log("No events found.");
               }
@@ -75,9 +89,9 @@ function EventDetails () {
                 "Content-Type": "application/json",
                 Authorization: `Bearer ${token}`
             },
+            body: JSON.stringify(oneEvent)
         })
         .then((response)=>{
-            console.log(response)
             if (response.status === 201){
                 Swal.fire({
                     icon: 'success',
@@ -126,7 +140,6 @@ function EventDetails () {
             body: JSON.stringify(updatedEvent)
         })
         .then((response)=>{
-            console.log(response)
             if (response.status === 201){
                 Swal.fire({
                     icon: 'success',
@@ -171,13 +184,12 @@ function EventDetails () {
         <div className="oneEvent">
             <OneEvent eventData={oneEvent} />
             <button className="button" onClick={() => navigate('/')} >Back</button>
-            {isLoggedIn(token) && 
+            {(admin || isCreator(oneEvent))  &&
                 <div>
                     <button className="button" onClick={()=>askDelete()}>Delete</button>
                     <button onClick={hideEditEventForm} className="button">Edit</button>
                     <div id="EditEventForm" style={{display: "none"}}>
-                        <EventForm event={oneEvent} onSubmit={onSubmit} setIsPending={setIsPending} updateEvent={updateEvent} buttonLabel={buttonLabel} title={"Edit event"}/>
-                    
+                        <EventForm event={oneEvent} onSubmit={onSubmit} setIsPending={setIsPending} updateEvent={updateEvent} buttonLabel={buttonLabel} title={"Edit event"}/>        
                     </div>
                 </div>
             }

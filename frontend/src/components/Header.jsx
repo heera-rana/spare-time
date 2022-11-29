@@ -18,6 +18,8 @@ function Header() {
   }, [])
   const signOut = ()=>{
     sessionStorage.removeItem('token')
+    sessionStorage.removeItem('admin')
+    sessionStorage.removeItem('userId')
     Swal.fire({
       icon: 'success',
       title: 'Logged out',

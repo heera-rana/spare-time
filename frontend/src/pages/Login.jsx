@@ -6,7 +6,7 @@ import Swal from "sweetalert2"
 function Login (){
 
     const navigate = useNavigate()
-    let myToken
+    let myToken, isAdmin, userId
 
     async function loginUser(userData) {
         let content
@@ -32,7 +32,6 @@ function Login (){
                 .then(()=>{
                     window.location.reload()
                 })
-                console.log("here")
                 navigate("/")
                 content = response.json()
                 return content
@@ -49,8 +48,12 @@ function Login (){
         })
         .then((data)=>{
             myToken = data["token"]
+            isAdmin = data["isAdmin"]
+            userId = data["_id"]
             sessionStorage.setItem('token', myToken)
-            return myToken   
+            sessionStorage.setItem('admin', isAdmin)
+            sessionStorage.setItem('userId', userId)
+            return 
         })
         return 
     }

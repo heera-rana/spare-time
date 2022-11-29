@@ -35,7 +35,10 @@ const mongoose = require('mongoose')
         description: {
             type: String,
             required: true, 
-        } 
+        },
+        creator: {
+            type: String,
+        }
     },
         {
             timestamps: true
