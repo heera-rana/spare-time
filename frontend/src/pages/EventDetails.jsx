@@ -26,15 +26,17 @@ function EventDetails () {
         const admin = (sessionStorage.getItem('admin'))
         if (admin) {
             setAdmin(JSON.parse(admin))
-        } 
-    })
+        } else {
+            setAdmin(false)
+        }
+    },[])
 
     useEffect(() => {
         const userId = (sessionStorage.getItem('userId'))
         if (userId) {
           setUserId(userId);
         }
-    })
+    },[])
 
     const isCreator=((check)=>{
         if (userId === check["creator"]){
@@ -47,6 +49,13 @@ function EventDetails () {
             return {...prev, ...value}
         })
     } 
+    function test(){
+        if (isCreator(oneEvent)){
+            console.log(true)
+        } else {
+            console.log(false)
+        }
+    }
 
     useEffect(()=>{
         const getOneEvent = async () =>{
@@ -62,6 +71,7 @@ function EventDetails () {
               }
         }
         getOneEvent().catch(console.error)
+       // test()
     },[])
 
     const askDelete=()=>{
@@ -143,7 +153,7 @@ function EventDetails () {
             if (response.status === 201){
                 Swal.fire({
                     icon: 'success',
-                    title: 'Deleted!',
+                    title: 'Updated!',
                     text: 'Event has been updated',
                     iconColor: "#004643",
                   })
