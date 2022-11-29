@@ -38,6 +38,7 @@ const registerUser =  asyncHandler(async (req, res) => {
             token: generateToken(user),
             isAdmin: user.isAdmin,
         }) 
+        console.log("user successfully registered")
     }   else {
             res.status(400).json('Invalid user data')
     }
@@ -57,6 +58,7 @@ const loginUser =  asyncHandler(async (req, res) => {
             token: generateToken(user),
             isAdmin: user.isAdmin,
         }) 
+        console.log("user successfully logged in")
     } else {
         res.status(401).json('Invalid Credentials')
     }
@@ -65,6 +67,7 @@ const loginUser =  asyncHandler(async (req, res) => {
 
 //generateToken generates a new token to authenticate the user
 const generateToken = (user) => {
+    console.log("generating token")
     return jwt.sign(
     { 
         id: user._id,
@@ -73,7 +76,8 @@ const generateToken = (user) => {
     process.env.JWT_SECRET, 
     {
         expiresIn: '30d',
-    })
+    }
+    )
 }
 
 module.exports = {

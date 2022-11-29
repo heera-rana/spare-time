@@ -23,6 +23,8 @@ function Header() {
     sessionStorage.removeItem('token')
     sessionStorage.removeItem('admin')
     sessionStorage.removeItem('userId')
+    
+    console.log("successfully signed out")
     Swal.fire({
       icon: 'success',
       title: 'Logged out',
@@ -34,7 +36,7 @@ function Header() {
     })
     navigate("/")
   }
-  
+
   return (
     <div>
       <div className="App-header">

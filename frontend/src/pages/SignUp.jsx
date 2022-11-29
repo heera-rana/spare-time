@@ -50,8 +50,7 @@ function SignUp (){
                     window.location.reload()
                     content = response.json()
                     return content
-                })
-                
+                })   
                 console.log('User has been sucessfully registered')
                 content = response.json()
                 return content
@@ -67,7 +66,6 @@ function SignUp (){
             }
         })
         .then((data)=>{
-            console.log(data)
             myToken = data["token"]
             isAdmin = data["isAdmin"]
             userId = data["_id"]

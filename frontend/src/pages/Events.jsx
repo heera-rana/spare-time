@@ -21,6 +21,7 @@ function Events() {
     const getEvents = async () => {
       const data = await fetch("http://localhost:5000/api/events/allevents");
       if (data) {
+        console.log("all events data was fetched")
         const response = await data.json();
         addImageAndDateFormat(response)
         setEvents(response);
@@ -42,7 +43,8 @@ function Events() {
   
   // handleCategoryChange sets the filtered category to the one selected
   function handleCategoryChange(event) {
-    setSelectedCategory(event.target.value);
+    setSelectedCategory(event.target.value)
+    console.log("events filtered")
   }
 
   const eventsList = useMemo(getFilteredList, [selectedCategory, events]);
