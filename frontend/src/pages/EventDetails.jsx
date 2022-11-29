@@ -26,7 +26,9 @@ function EventDetails () {
         const admin = (sessionStorage.getItem('admin'))
         if (admin) {
             setAdmin(JSON.parse(admin))
-        } 
+        } else {
+            setAdmin(false)
+        }
     },[])
 
     useEffect(() => {
@@ -47,6 +49,13 @@ function EventDetails () {
             return {...prev, ...value}
         })
     } 
+    function test(){
+        if (isCreator(oneEvent)){
+            console.log(true)
+        } else {
+            console.log(false)
+        }
+    }
 
     useEffect(()=>{
         const getOneEvent = async () =>{
@@ -62,6 +71,7 @@ function EventDetails () {
               }
         }
         getOneEvent().catch(console.error)
+       // test()
     },[])
 
     const askDelete=()=>{
