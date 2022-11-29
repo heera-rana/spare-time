@@ -89,6 +89,7 @@ function EventDetails () {
                 "Content-Type": "application/json",
                 Authorization: `Bearer ${token}`
             },
+            body: JSON.stringify(oneEvent)
         })
         .then((response)=>{
             if (response.status === 201){
@@ -171,7 +172,6 @@ function EventDetails () {
             <OneEvent eventData={oneEvent} />
             <button className="button" onClick={() => navigate('/')} >Back</button>
             {admin &&
-            // {isCreator(oneEvent) && 
                 <div>
                     <button className="button" onClick={()=>askDelete()}>Delete</button>
                     <button onClick={hideEditEventForm} className="button">Edit</button>

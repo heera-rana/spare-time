@@ -33,11 +33,8 @@ function NewEvent (){
 
     async function onSubmit(e){
         e.preventDefault()
-
-        console.log(userId)
         const newEvent ={ ...event}
         newEvent["creator"]=userId
-        console.log(newEvent)
 
         setIsPending(true)
 

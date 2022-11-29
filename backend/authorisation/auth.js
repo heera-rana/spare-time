@@ -27,6 +27,8 @@ const isAdmin = (req, res, next ) => {
     protect(req, res, ()=> {
         if(req.user.isAdmin){
             next()
+        } else if (req.user.id === req.body.creator){
+            next()
         } else {
             res.status(403).send("Access denied. You must be an Administrator to perform this action")
         }
