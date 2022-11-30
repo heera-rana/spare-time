@@ -8,7 +8,7 @@ function SignUp (){
     const [user, setUser] = useState([])
     const navigate = useNavigate()
 
-    let myToken, isAdmin, userId
+    let myToken, isAdmin, userId, name
 
     // updateUser changes the initial user data when the form is submitted
     function updateUser(value){
@@ -69,9 +69,11 @@ function SignUp (){
             myToken = data["token"]
             isAdmin = data["isAdmin"]
             userId = data["_id"]
+            name = data["name"]
             sessionStorage.setItem('token', myToken)
             sessionStorage.setItem('admin', isAdmin)
-            sessionStorage.setItem('userId', userId)   
+            sessionStorage.setItem('userId', userId)
+            sessionStorage.setItem('name', name)   
         })
     }
 

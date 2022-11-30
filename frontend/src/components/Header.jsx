@@ -9,6 +9,7 @@ import Swal from "sweetalert2"
 // Header is rendered at the top of every page
 function Header() {
   const [token, setToken] = useState([])
+  const [name, setName] = useState([])
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -17,6 +18,13 @@ function Header() {
     setToken(token);
     }
   }, [])
+
+  useEffect(() => {
+    const name = (sessionStorage.getItem('name'))
+    if (name) {
+    setName(name);
+    }
+  },[])
 
   // signOut signs the user out by removing the session
   const signOut = ()=>{
@@ -42,7 +50,7 @@ function Header() {
       <div className="App-header">
         <h1 className="h1"><Link to="/">Spare Time</Link></h1>
           <div className="nav">
-            <Navigation token={token} signOut = {signOut}/>
+            <Navigation token={token} signOut={signOut} name={name}/>
           </div>
       </div>
     

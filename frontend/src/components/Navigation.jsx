@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 // Navigation is the nav bar
-const Navigation = ({ token , signOut}) => {
+const Navigation = ({ token , signOut, name}) => {
 
   const isLoggedIn=((check)=>{
     if (check.length === 0){
@@ -14,9 +14,6 @@ const Navigation = ({ token , signOut}) => {
   return (
       <nav>
         <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
           {!isLoggedIn(token) && (
               <li>
                 <Link to="/login">Login</Link> <br/>
@@ -26,6 +23,11 @@ const Navigation = ({ token , signOut}) => {
               <li>
                 <Link to="/signUp">Sign Up</Link>
               </li>
+          )}
+          {isLoggedIn(token) && (
+            <li>
+              <Link to="/myProfile">Hello {name}</Link>
+            </li>
           )}
           {isLoggedIn(token) && (
             <li><Link to="/addEvent">Add Event</Link></li>

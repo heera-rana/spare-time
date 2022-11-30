@@ -4,8 +4,8 @@ import { useMemo } from "react"
 import addImageAndDateFormat from "../components/util/addImageAndDateFormat"
 import SlideShow from "../components/SlideShow"
 
-// Event is the home page funtion
-function Events() {
+// Home is the home page funtion
+function Home() {
   const slides = [
     {url: 'http://localhost:3000/eventImages/slideShowImages/Evening%20Events.jpg', title:'Evening Events'},
     {url: 'http://localhost:3000/eventImages/slideShowImages/Childrens%20Events.jpg', title: 'Childrens Events'},
@@ -76,4 +76,4 @@ function Events() {
   )
 }
   
-export default Events
+export default Home

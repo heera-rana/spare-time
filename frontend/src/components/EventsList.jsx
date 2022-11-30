@@ -20,7 +20,7 @@ function EventsList ({events}) {
                   <p>Hosted by: {event.provider}</p>
                   <p>£{event.price}</p>
                 </div>
-            <button className="button" onClick={() => navigate(`${event._id}`)} > More details  </button>
+            <button className="button" onClick={() => navigate(`/${event.$oid}`)} > More details  </button>
           </div>
         ))}
       </div>
