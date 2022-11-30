@@ -143,7 +143,7 @@ function EventDetails () {
             if (response.status === 201){
                 Swal.fire({
                     icon: 'success',
-                    title: 'Deleted!',
+                    title: 'Updated!',
                     text: 'Event has been updated',
                     iconColor: "#004643",
                   })
