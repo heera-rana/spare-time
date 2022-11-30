@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 //EventsList renders all the events data
 function EventsList ({events}) {
   const navigate = useNavigate()
-
   return (
     <div className="App">
       <div className="item-container">
@@ -20,7 +19,7 @@ function EventsList ({events}) {
                   <p>Hosted by: {event.provider}</p>
                   <p>£{event.price}</p>
                 </div>
-            <button className="button" onClick={() => navigate(`/${event.$oid}`)} > More details  </button>
+            <button className="button" onClick={() => navigate(`/${event._id}`)} > More details  </button>
           </div>
         ))}
       </div>

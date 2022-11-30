@@ -36,11 +36,9 @@ function Profile(){
         }
     },[])
 
-    // checking that the userId and the event creator id are a match
-
-    let myData=[]
-
+    // getMyEvents filters the events to display only the ones created by the user
     useEffect(()=>{
+        let myData=[]
         function getMyEvents (){
             allEvents.forEach((value,id)=>{
                 if (userId===value["creator"]){
@@ -48,14 +46,10 @@ function Profile(){
                     myData.push(value)
                     setMyEvents(myData)
                 }
-                
             })
             return 
         }
         getMyEvents()
-       // console.log(myData)
-       // console.log(creator)
-        console.log(myEvents)
     },[allEvents])
 
     // getEvents makes a get request for all the event data
