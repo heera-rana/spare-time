@@ -50,7 +50,7 @@ function Profile(){
             return 
         }
         getMyEvents()
-    },[allEvents])
+    },[userId, allEvents])
 
     // getEvents makes a get request for all the event data
     useEffect(() => {
@@ -71,9 +71,10 @@ function Profile(){
 
     return(
         <div>
-            <h1>
+            <h2>
                 Hello {name}
-            </h1>
+            </h2>
+            
             {admin &&
                 <EventsList events={allEvents} />
             }
