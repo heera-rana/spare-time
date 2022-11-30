@@ -4,13 +4,15 @@ import EventForm from "../components/EventForm"
 import OneEvent from "../components/OneEvent"
 import Swal from "sweetalert2"
 
-// EventDetails is the page for a single event. It gets, updates and deletes
+// EventDetails is the page for a single event. It Gets, Updates and Deletes
 function EventDetails () {
     const [oneEvent, setOneEvent] = useState([])
     const [token, setToken] = useState([])
     const [admin, setAdmin] = useState([])
     const [userId, setUserId] = useState([])
-    const [isPending, setIsPending] = useState(false)
+    // const [isPending, setIsPending] = useState(false)
+    const [isPending, setIsPending] = useState([])
+    const [isCreator, setIsCreator] = useState([])
     const navigate = useNavigate()
     const params = useParams()
     const id = params.id
@@ -42,10 +44,12 @@ function EventDetails () {
         }
     },[])
 
-    // isCreator checks that the userId and the event creator id are a match
-    const isCreator=((check)=>{
-        if (userId === check["creator"]){
-            return true
+    // checking that the userId and the event creator id are a match
+    useEffect(()=>{
+        if (userId === oneEvent["creator"]){
+            setIsCreator(true)
+        } else {
+            setIsCreator(false)
         }
     })
 
@@ -183,7 +187,7 @@ function EventDetails () {
                   })
             }
         })
-        setOneEvent([])
+       // setOneEvent([])
     }
 
     // hideEditEventForm displays the edit form when clicking the edit button
@@ -201,7 +205,7 @@ function EventDetails () {
         <div className="oneEvent">
             <OneEvent eventData={oneEvent} />
             <button className="button" onClick={() => navigate('/')} >Back</button>
-            {(admin || isCreator(oneEvent))  &&
+            {(admin || isCreator) &&
                 <div>
                     <button className="button" onClick={()=>askDelete()}>Delete</button>
                     <button onClick={hideEditEventForm} className="button">Edit</button>
