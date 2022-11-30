@@ -50,7 +50,7 @@ function EventDetails () {
         } else {
             setIsCreator(false)
         }
-    })
+    },[userId, oneEvent])
 
     // updateEvent is the hook that changes the event data after updating it
     function updateEvent(value){
