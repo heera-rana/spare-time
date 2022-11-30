@@ -6,7 +6,7 @@ import Swal from "sweetalert2"
 // Login is the login page
 function Login (){
     const navigate = useNavigate()
-    let myToken, isAdmin, userId
+    let myToken, isAdmin, userId, name
         
     const [email, setEmail] = useState({})
     const [password, setPassword] = useState({})
@@ -63,9 +63,11 @@ function Login (){
             myToken = data["token"]
             isAdmin = data["isAdmin"]
             userId = data["_id"]
+            name = data["name"]
             sessionStorage.setItem('token', myToken)
             sessionStorage.setItem('admin', isAdmin)
             sessionStorage.setItem('userId', userId)
+            sessionStorage.setItem('name', name)
             return 
         })
         return 

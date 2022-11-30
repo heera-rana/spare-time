@@ -10,7 +10,7 @@ function EventDetails () {
     const [token, setToken] = useState([])
     const [admin, setAdmin] = useState([])
     const [userId, setUserId] = useState([])
-    const [isPending, setIsPending] = useState([])
+    const [isPending, setIsPending] = useState(false)
     const [isCreator, setIsCreator] = useState([])
     const navigate = useNavigate()
     const params = useParams()
