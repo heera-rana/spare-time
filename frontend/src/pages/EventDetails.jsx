@@ -10,7 +10,7 @@ function EventDetails () {
     const [token, setToken] = useState([])
     const [admin, setAdmin] = useState([])
     const [userId, setUserId] = useState([])
-    const [isPending, setIsPending] = useState([])
+    const [isPending, setIsPending] = useState(false)
     const navigate = useNavigate()
     const params = useParams()
     const id = params.id
@@ -72,7 +72,7 @@ function EventDetails () {
               }
         }
         getOneEvent().catch(console.error)
-    },[])
+    },[id])
 
     // askDelete is the popup that calls/uncalls the delete function
     const askDelete=()=>{
@@ -206,7 +206,7 @@ function EventDetails () {
                     <button className="button" onClick={()=>askDelete()}>Delete</button>
                     <button onClick={hideEditEventForm} className="button">Edit</button>
                     <div id="EditEventForm" style={{display: "none"}}>
-                        <EventForm event={oneEvent} onSubmit={onSubmit} setIsPending={setIsPending} updateEvent={updateEvent} buttonLabel={buttonLabel} title={"Edit event"}/>        
+                        <EventForm event={oneEvent} onSubmit={onSubmit} isPending={isPending} updateEvent={updateEvent} buttonLabel={buttonLabel} title={"Edit event"}/>        
                     </div>
                 </div>
             }
