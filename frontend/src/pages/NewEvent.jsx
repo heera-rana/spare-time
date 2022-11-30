@@ -33,7 +33,7 @@ function NewEvent (){
         if (userId) {
           setUserId(userId)
         }
-    })
+    },[])
 
     // onSubmit makes the POST request when the form is submitted
     async function onSubmit(e){
