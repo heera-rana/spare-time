@@ -169,7 +169,7 @@ function EventDetails () {
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
-                    text: 'You must login to delete an event',
+                    text: 'You must login to update an event',
                     iconColor: "#e16162",
                   })
                   navigate("/login")
